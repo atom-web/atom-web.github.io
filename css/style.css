@@ -75,16 +75,17 @@ hr {
 }
 
 .right-cont {
-   width: 770px;
-   height: 500px;
-   float: right;
-   background: rgba(204, 204, 204, 0.1);
-   margin-top: 20px;
-   border-radius: 5px;
+ width: 770px;
+ height: 500px;
+ float: right;
+ background: rgba(204, 204, 204, 0.1);
+ margin-top: 20px;
+ border-radius: 5px;
 }
 
 .right-cont a {
-    margin: 40px 20px;
+    margin: 15px 15px;
+    display: inline-block;
 }
 
 .icon-html {
