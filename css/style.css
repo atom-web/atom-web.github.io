@@ -1,131 +1,90 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
-    background-image: url(../img/background.jpg);
+    position: relative;
 }
-.footer {
 
+.main-page {
+    background: #000 url(../img/bg-main-page.jpg) top center;
+    background-size: cover;
+    height: 100vh;
+}
 
+.portfolio {
+    background: url(../img/bg-portfolio.jpg) top center;
+    background-size: cover;
+    height: 100vh;
 }
 
 .container {
-    margin: 0 auto;
     width: 1100px;
+    margin: 0 auto;
 }
 
-.menu {
-    float: right;
-    margin-top: 90px;
+.main-menu {
+    width: 70px;
+    margin: 0 auto;
 }
 
-.menu ul {
+.main-menu ul {
     margin: 0;
+    padding: 0;
 }
 
-.menu li {
-    display: inline;
-    height: 10px;
-    margin-left: 10px;
-    font-family: 'Poiret One', cursive;
+.main-menu li {
+    display: inline-block;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.menu a {
-    color:floralwhite;
-    text-decoration: none;
-    font-size: 21px;
-}
-a:hover {
-    color: deepskyblue
-}
-
-.logo {
-    width: 600px;
-    padding: 50px 0 0 0;
+.information {
+    position: absolute;
+    text-align: center;
+    top: 18%;
+    right: 0%;
+    left: 0%
+    
 }
 
 h1 {
-    color: floralwhite;
-    font-family: 'Pacifico', cursive;
-    font-size: 50px;
-    margin: 0 auto;
-    font-weight: 500;
-    
+    color: #A5A3A3;
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 0;
 }
+
 h2 {
-    color: floralwhite;
-    font-family: 'Poiret One', cursive;
-    margin-top: 20px;
-    font-weight: 500;
+    color: #505050;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
 }
-hr {
-    border: none;
-    background-color: #fffaf0;
+
+.clik-portf {
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    background-color:#AE431D;
+    border-radius: 5px;
+    transition: background-color .3s linear;
+    -webkit-transition: background-color .3s linear;
+    -o-transition: background-color .3s linear;
+    -moz-transition: background-color .3s linear;
+}
+
+.clik-portf:hover {
+    background-color: #A9A9A9;
+    color: #000;
+}
+
+.content {
     
-    height: 1px;
-}
-
-.left-cont {
-    width: 320px;
-    height: 500px;
-    margin-top: 20px;
-    background: rgba(204, 204, 204, 0.1);
-    border-radius: 5px;
-    display: inline-block
-}
-
-.right-cont {
- width: 770px;
- height: 500px;
- float: right;
- background: rgba(204, 204, 204, 0.1);
- margin-top: 20px;
- border-radius: 5px;
-}
-
-.right-cont a {
-    margin: 15px 15px;
-    display: inline-block;
-}
-
-.icon-html {
-    background: url(../img/logo-html.png) no-repeat;
-    display: inline-block;
-    background-size: 120px 170px;
-    height: 170px;
-    width: 120px;
-    margin: 15px;
-}
-
-.icon-css {
-    background: url(../img/logo-css.png) no-repeat;
-    background-size: 120px 170px;
-    height: 170px;
-    width: 120px;
-    float: right;
-    margin: 15px;
-}
-
-.line {
-    margin: 0 auto;
-    height: 1px;
-    width: 250px;
-    background-color: floralwhite;
-}
-
-.text-motiv {
-    margin: 0 auto;
-    width: 270px;
-    margin-top: 25px;
-}
-
-.text-motiv h3 {
-    color: floralwhite;
-    font-family: 'Poiret One', cursive;
-    text-align: center;
-    line-height: 19px;
-}
-
-.right-cont img {
-    border-radius: 5px;
+    background-color: #717171;
+    
+    
 }
