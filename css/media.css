@@ -1,0 +1,120 @@
+@media only screen and (max-width : 773px) {
+    .information {
+        top: 14%
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .clik-portf {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width : 769px) {
+    .information {
+        top: 14%
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .clik-portf {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width : 736px) {
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .clik-portf {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width : 667px) {
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .clik-portf {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width : 435px) {
+    .information {
+        top: 14%
+    }
+    
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .clik-portf {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .information {
+        top: 12%
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .clik-portf {
+        font-size: 10px;
+    }
+}
+
+
+@media only screen and (max-width : 414px) {
+    .information {
+        top: 12%
+    }
+    
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .clik-portf {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width : 321px) {
+    .information {
+        top: 12%
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .clik-portf {
+        font-size: 10px;
+    }
+}

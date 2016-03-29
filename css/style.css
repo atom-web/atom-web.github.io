@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #1A1616;
     position: relative;
 }
 
@@ -82,9 +83,85 @@ h2 {
     color: #000;
 }
 
-.content {
-    
-    background-color: #717171;
-    
-    
+.portfolio {
+    padding-top: px;
 }
+
+.content {
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    top: 50%;
+    bottom: 0%;
+    border-radius: 5px;
+    background-color: rgba(41, 36, 35, 0.66);
+}
+
+.box {
+    width: 250px;
+    margin: 5% 0 0 11.5%;
+    float: left;
+}
+
+.box p {
+    margin: 10px 0;
+    color: #eaeaea;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 19px;
+    text-indent: 0.1px;
+    line-height: 22px;
+}
+
+.box-logo {
+    background: url(../img/Progress.jpg) top center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+
+.name-logo {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #AE431D;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+}
+
+.border {
+    margin: 0 auto;
+    border-bottom: solid 1px #563B31;
+    width: 150px;
+}
+
+.social-vk {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    position: fixed;
+}
+
+.social-vk a {
+    color: #4388C5;
+    font-size: 25px;
+    padding: 2px;
+    border-radius: 100%
+}
+
+.social-vk i {
+    margin-top: 5px;
+}
+
+.cont-vk {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin: 5px auto 5px;
+    background-color: #313131;
+    border: solid 1px #525252;
+}
+
