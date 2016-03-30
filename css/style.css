@@ -11,6 +11,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    $(elem).css( "background-size", "cover" );
     height: 100vh;
 }
 
@@ -20,6 +21,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    $(elem).css( "background-size", "cover" );
     height: 100vh;
 }
 
