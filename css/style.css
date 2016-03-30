@@ -16,6 +16,9 @@ body {
 
 .portfolio {
     background: url(../img/bg-portfolio.jpg) top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100vh;
 }
