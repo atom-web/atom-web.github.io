@@ -11,8 +11,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    $(elem).css( "background-size", "cover" );
-    height: 100vh;
 }
 
 .portfolio {
@@ -21,8 +19,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    $(elem).css( "background-size", "cover" );
-    height: 100vh;
 }
 
 .container {
