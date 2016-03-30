@@ -6,11 +6,12 @@ body {
 }
 
 .main-page {
-    background: #000 url(../img/bg-main-page.jpg) top center;
+    background: #000 url(../img/bg-main-page.jpg) top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100vh;
 }
 
 .portfolio {
@@ -19,6 +20,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100vh;
 }
 
 .container {
