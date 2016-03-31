@@ -144,7 +144,7 @@
 
 @media only screen and (max-width : 684px) {
     .box {
-        margin: 0 auto;
+        margin: 50px auto;
         float: none;
     }
 
@@ -166,7 +166,7 @@
     }
     
     .box {
-        margin: 0 auto;
+        margin: 50px auto;
         float: none;
     }
     
@@ -194,6 +194,10 @@
     .clik-portf {
         font-size: 12px;
     }
+    
+    .box {
+        margin: 50px auto;
+    }
 }
 
 
@@ -213,7 +217,7 @@
     }
     
     .box {
-        margin: 0 auto;
+        margin: 50px auto;
         float: none;
     }
     
@@ -241,6 +245,10 @@
     }
     .clik-portf {
         font-size: 10px;
+    }
+    
+    .box {
+        margin: 50px auto;
     }
     
     .box-logo {
