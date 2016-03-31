@@ -7,14 +7,19 @@ body {
 
 .main-page {
     background: #000 url(../img/bg-main-page.jpg) top center fixed;
-    
-    background-size: 100% 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100vh;
 }
 
 .portfolio {
     background: url(../img/bg-portfolio.jpg) top center;
-    background-size: 100% 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -115,13 +120,26 @@ h2 {
 }
 
 .box-logo {
-    background: url(../img/Progress.jpg) top center;
+    background: url(../img/icon-smile.jpg) top center;
     background-size: cover;
     width: 250px;
     height: 250px;
     border-radius: 100%;
     box-shadow: 0 0 30px rgba(0,0,0,1);
 }
+
+.link{
+    width: 250px;
+    height: 250px;
+    display: block;
+    border-radius: 100%;
+}
+
+#progress {
+    background: url(../img/Progress.jpg) top center;
+    background-size: cover;
+}
+
 
 .name-logo {
     margin-bottom: 20px;
@@ -163,6 +181,6 @@ h2 {
     height: 35px;
     margin: 5px auto 5px;
     background-color: #313131;
-    border: solid 1px #525252;
+    border: solid 1px #383838;
 }
 
