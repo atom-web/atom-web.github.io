@@ -1,0 +1,43 @@
+@charset "utf-8";
+*{
+	padding:0; margin:0;
+	}
+#slider{
+	background: url(../img/bg-marketing.png) center;
+	border: 1px solid #3f282f;
+	height: 423px;
+    width: 100%;
+	overflow: hidden;
+	position: relative;
+    
+}
+#cycle {
+    position: relative;
+    width: 940px;
+    height: 427px;
+    overflow: hidden;
+    margin: 0 auto; 
+}
+
+#cyclePager{
+	position: absolute;
+	height: 18px;
+	overflow: hidden;
+	right: 20px;
+	bottom: 20px;
+	z-index: 99;
+}
+
+#cyclePager a{
+    background: transparent url(../img/pager-gal.png) 0 0 no-repeat;
+    display: block;
+    float: left;
+    height: 17px;
+    margin-left: 10px;
+    text-indent: -9999px;
+    width: 19px;
+}
+
+#cyclePager a:hover,
+#cyclePager a.activeSlide{background-position: -20px 0;}
+
