@@ -1,0 +1,35 @@
+@media only screen and (max-width : 1028px) {
+     .img-loh, .gif-loh{
+		background-size: 550px 300px;
+		width: 550px;
+		height: 300px;
+     }
+}
+
+@media only screen and (max-width : 800px) {
+     .img-loh, .gif-loh{
+		background-size: 300px 200px;
+		width: 300px;
+		height: 200px;
+     }
+}
+
+@media only screen and (max-width : 500px) {
+	body {
+		background-size: 80px 80px;
+	}
+     .img-loh {
+     	background: url(3.jpg) no-repeat;
+		background-size: 200px 380px;
+		width: 200px;
+		height: 380px;
+     }
+
+     .gif-loh {
+     	background: url(5.gif) no-repeat;
+     	background-size: 200px 380px;
+		width: 200px;
+		height: 380px;
+     }
+
+}

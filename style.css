@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(1.gif) ;
+	-webkit-background-size: 100px 100px;
+	background-size: 150px 150px;
+
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.content {
+	background-color: #020202;
+	border-radius: 5px;
+
+}
+
+.img-loh {
+	background: url(2.jpg) no-repeat;
+	-webkit-background-size: 400px 400px;
+	background-size: 700px 400px;
+	width: 700px;
+	height: 400px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.gif-loh {
+	background: url(4.gif) no-repeat;
+	-webkit-background-size: 400px 400px;
+	background-size: 700px 400px;
+	width: 700px;
+	height: 400px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.healing-click {
+	background-color: black;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+
+}
+
+.healing-click a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.healing-click p {
+	text-align: center;
+	font-size: 21px;
+}
+
+.click {
+	background-color: #B10000;
+}
+
+.click:hover {
+	background-color: #FF0101;
+}
