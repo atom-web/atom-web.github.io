@@ -135,7 +135,7 @@ nav a:hover {
 .fa-phone {
 	font-size: 35px;
 	color: #000;
-	margin: 30px 0 5px 5px;
+	margin: 30px 0 5px 22px;
 }
 .contacts-info{
 	margin: 30px 0 20px 0;
@@ -201,4 +201,45 @@ nav a:hover {
 .info-company {
 	font-size: 14px;
 	margin: 20px 5px;
+}
+/*Footer*/
+footer{
+	height: 120px;
+	background: #f6f6f6;
+}
+.box-time-company{
+	float: left;
+    margin-top: 44px;
+}
+.time-company{
+	font-size: 20px;
+}
+.boss-company{
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #9a9a9a;
+}
+.social-network{
+	display: inline-block;
+	padding: 42px 0 0 0;
+	margin-left: 40px;
+}
+.vk-link{
+	font-size: 20px;
+	color: #009fff;
+	background-color: #02427b;
+	border-radius: 100%;
+	padding: 7px;
+    float: left;
+    margin: 0 0 0 10px;
+}
+.inst-link{
+	font-size: 20px;
+	color: #f772ff;
+	background-color: #02427b;
+	border-radius: 100%;
+	padding: 7px 10px 7px 10px;
+
+    float: left;
+    margin: 0 0 0 10px;
 }
