@@ -29,15 +29,24 @@
 	.lnk-box-cont{
 		margin: 0px 0 0 37px;
 	}
+	.grid-item-maps{
+		width: 500px;
+	}
 }
 @media screen and (max-width: 1000px){
 	.container {
 		width: 750px;
 	}
+	.grid-item-maps{
+		width: 375px;
+	}
 }
 @media screen and (max-width: 800px){
 	.container {
 		width: 500px;
+	}
+	.grid-item-maps{
+		width: 100%;
 	}
 }
 @media screen and (max-width: 600px){
@@ -59,5 +68,32 @@
 	}
 	.lnk-box-cont{
 		margin: 0px 0 0 77px;
+	}
+	.contacts-info{
+		text-align: center;
+	}
+	.info-cooperation {
+		text-align: center;
+		padding: 0 5px;
+	}
+	.link-cooperation{
+    	width: 100%;
+		text-align: center;
+		display: inline-block;
+		padding: 13px 0px;
+	}
+	.number-phone{
+		text-align: center;
+	}
+	.number-phone p{
+		border: none;
+		padding: 0;
+		margin: 0 0 10px 0;
+		display: inherit;
+
+	}
+	.contacts-cooperation{
+		text-align: center;
+		display: inherit;
 	}
 }
