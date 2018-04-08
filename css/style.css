@@ -118,7 +118,7 @@ nav a:hover {
 
 /*contacts*/
 .contacts{
-	height: 100vh;
+	/*height: 100vh;*/
 }
 .contacts-nav{
 	border-bottom: 1px solid #cecece;
@@ -220,7 +220,7 @@ footer{
 	color: #9a9a9a;
 }
 .social-network{
-	display: inline-block;
+	float: left;
 	padding: 42px 0 0 0;
 	margin-left: 40px;
 }
@@ -242,4 +242,15 @@ footer{
 
     float: left;
     margin: 0 0 0 10px;
+}
+.box-info-company{
+	float: left;
+	margin-left: 15px;
+	margin: 51px 10px 0 126px;
+
+}
+.box-info-company p{
+	display: inline-block;
+	padding: 0 10px;
+	border-right: 1px solid #cecece;
 }
