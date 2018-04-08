@@ -70,9 +70,9 @@
 		height: 360px;
 	}
 	.txt-box-cont{
-		width: 245px;
+		width: 185px;
 		font-size: 25px;
-		margin: 42px 0 0px 0;
+		margin: 42px 0 0px 2%;
 		float: left;
 	}
 	.lnk-box-cont{
@@ -116,5 +116,15 @@
 	    border: none;
 	    padding-right: 0; 
 	    margin: 0 0 10px 0;
+	}
+@media screen and (max-width: 358px){
+	.txt-box-cont{
+		width: 164px;
+	    font-size: 21px;
+	    margin: 46px 0 0px 0;
+	}
+	.img-box-cont{
+		bottom: 10px;
+    	height: 100px;
 	}
 }
