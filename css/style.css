@@ -185,6 +185,9 @@ nav a:hover {
 .style-number-phone {
 	font-weight: 600;
 }
+.fa-map-marker{
+	color: #ff7581;
+}
 .grid-item-maps{
 	width: 600px;
 	height: 300px;
