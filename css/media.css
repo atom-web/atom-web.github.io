@@ -72,10 +72,12 @@
 	.txt-box-cont{
 		width: 245px;
 		font-size: 25px;
-		margin: 23px 0 20px 15px;
+		margin: 42px 0 0px 0;
+		float: left;
 	}
 	.lnk-box-cont{
-		margin: 0px 0 0 96px;
+		margin: 41px 0 0 0;
+    	float: left;
 	}
 	.contacts-info{
 		text-align: center;
