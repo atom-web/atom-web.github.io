@@ -96,6 +96,9 @@
 		text-align: center;
 		display: inherit;
 	}
+	.info-company{
+		text-align: center;
+	}
 }
 @media screen and (max-width: 460px){
 	.txt-cooperation{
