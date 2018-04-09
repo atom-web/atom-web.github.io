@@ -209,6 +209,30 @@ nav a:hover {
 	font-size: 14px;
 	margin: 20px 5px;
 }
+/*Comments*/
+
+.box-slide-comments img{
+	width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin: 75px auto 40px auto;
+}
+.comments-txt{
+	text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 0 4%;
+}
+.comments-name {
+	text-align: center;
+    margin-bottom: 25px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #ff7581;
+}
+
+
 /*Footer*/
 footer{
 	height: 120px;
