@@ -209,8 +209,7 @@ footer{
 }
 .box-time-company{
 	float: left;
-    margin-top: 44px;
-}
+    margin: 44px 0 0 15px;}
 .time-company{
 	font-size: 20px;
 }
@@ -227,30 +226,30 @@ footer{
 .vk-link{
 	font-size: 20px;
 	color: #009fff;
-	background-color: #02427b;
-	border-radius: 100%;
-	padding: 7px;
     float: left;
-    margin: 0 0 0 10px;
+    padding: 8px 9px 8px 9px;
 }
 .inst-link{
 	font-size: 20px;
 	color: #f772ff;
-	background-color: #02427b;
-	border-radius: 100%;
-	padding: 7px 10px 7px 10px;
-
+	padding: 9px 11px 9px 11px;
     float: left;
-    margin: 0 0 0 10px;
 }
 .box-info-company{
 	float: left;
 	margin-left: 15px;
-	margin: 51px 10px 0 126px;
+	margin: 51px 10px 0 100px;
 
 }
 .box-info-company p{
 	display: inline-block;
 	padding: 0 10px;
 	border-right: 1px solid #cecece;
+}
+.box-vk, .box-insta{
+	background-color: #00294e;
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 10px;
 }
