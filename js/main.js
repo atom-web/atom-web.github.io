@@ -9,14 +9,6 @@ $('.grid-maps').masonry({
   columnWidth: 0,
 });
 
-$(document).ready(function(){
-  $('.comments-cooperation').click(function (){
-    $('.cont-call').load('page.html');
-  });
-  $('.contacts-cooperation').click(function (){
-    $('.cont-call').load('index.html .cont-call');
-  });
-});
 
 
 $('.slider').slick({
@@ -25,6 +17,12 @@ $('.slider').slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+
+$('.slider-contacts').slick({
+  slidesToShow: 1,
+  arrows: false,
+});
+
 
 
 
