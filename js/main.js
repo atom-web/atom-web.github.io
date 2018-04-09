@@ -33,7 +33,13 @@ $('.slider-comments').slick({
   accessibility: false,
   autoplay: true,
   autoplaySpeed: 2000,
-  adaptiveHeight: true
+});
+
+$( ".comments-cooperation" ).click(function() {
+  $(".cont-call").css("opacity", "1");
+});
+$( ".contacts-cooperation" ).click(function() {
+  $(".cont-call").css("opacity", "0");
 });
 
 

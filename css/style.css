@@ -210,6 +210,19 @@ nav a:hover {
 	margin: 20px 5px;
 }
 /*Comments*/
+.contact-box{
+	position: relative;
+	overflow: hidden;
+}
+.cont-call{
+	position: absolute;
+	top: 0;
+	background-color: #eaeaea;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
 
 .box-slide-comments img{
 	width: 200px;
