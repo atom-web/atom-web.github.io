@@ -9,18 +9,6 @@ $('.grid-maps').masonry({
   columnWidth: 0,
 });
 
-
-
-$('.slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
-$('.slider-info').slick({
-  slidesToShow: 1,
-});
-
 $(document).ready(function(){
   $('.comments-cooperation').click(function (){
     $('.cont-call').load('page.html');
@@ -29,6 +17,15 @@ $(document).ready(function(){
     $('.cont-call').load('index.html .cont-call');
   });
 });
+
+
+$('.slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+
 
 
 

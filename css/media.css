@@ -140,6 +140,9 @@
 	.info-company{
 		text-align: center;
 	}
+	.box-info-company{
+		font-size: 12px;
+	}
 }
 @media screen and (max-width: 460px){
 	.txt-cooperation{
@@ -147,9 +150,6 @@
 	    border: none;
 	    padding-right: 0; 
 	    margin: 0 0 10px 0;
-	}
-	.box-info-company{
-		font-size: 13px;
 	}
 }
 @media screen and (max-width: 358px){
