@@ -16,6 +16,11 @@ $('.slider').slick({
   autoplay: true,
   autoplaySpeed: 2000,
 });
+$('.slider-info').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+});
+
 
 
 
