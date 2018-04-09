@@ -10,6 +10,7 @@ $('.grid-maps').masonry({
 });
 
 
+
 $('.slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -18,9 +19,16 @@ $('.slider').slick({
 });
 $('.slider-info').slick({
   slidesToShow: 1,
-  slidesToScroll: 1,
 });
 
+$(document).ready(function(){
+  $('.comments-cooperation').click(function (){
+    $('.cont-call').load('page.html');
+  });
+  $('.contacts-cooperation').click(function (){
+    $('.cont-call').load('index.html .cont-call');
+  });
+});
 
 
 

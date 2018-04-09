@@ -67,6 +67,18 @@
 	}
 }
 @media screen and (max-width: 600px){
+	.fa-phone, .fa-comments{
+		font-size: 35px;
+    	color: #000;
+    	margin: 0 auto;
+    	display: block;
+    	width: 32px;
+	}
+	.contacts-cooperation p, .comments-cooperation p{
+		margin: 0;
+    	width: 97px;
+    	text-align: center;
+	}
 	.img-box-cont{
 		bottom: 1px;
 		height: 117px;
@@ -119,9 +131,11 @@
 		display: inherit;
 
 	}
-	.contacts-cooperation{
-		text-align: center;
-		display: inherit;
+	.contacts-nav{
+		display: block;
+    	margin: 15px auto;
+    	width: 200px;
+}
 	}
 	.info-company{
 		text-align: center;
