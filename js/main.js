@@ -32,6 +32,8 @@ $('.slider-comments').slick({
   accessibility: false,
   autoplay: true,
   autoplaySpeed: 2000,
+  draggable: false,
+
 });
 
 $( ".comments-cooperation" ).click(function() {
