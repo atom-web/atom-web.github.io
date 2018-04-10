@@ -67,6 +67,12 @@
 	}
 }
 @media screen and (max-width: 600px){
+	.grid-item-maps{
+		height: 180px;
+	}
+	.grid-item-maps img{
+		height: 180px;
+	}
 	.lnk-box-cont{
 		display: none;
 	}
