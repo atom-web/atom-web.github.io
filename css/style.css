@@ -63,8 +63,7 @@ nav a:hover {
 
 /*прайс*/
 .price{
-	background: #f6f6f6;
-	padding-bottom: 30px;
+	background: #fff;
 }
 .grid{
 	margin-bottom: 40px;
@@ -135,12 +134,11 @@ nav a:hover {
 	text-transform: uppercase;
 	font-weight: 600;
 	background: #eaeaea;
-    padding: 10px 0px;
+    padding: 4px 0px;
     width: 115px;
     text-align: center;
     transition: 0.5s;
     border-radius: 5px;
-    box-shadow: 0 0 4px rgba(25, 181, 241, 0.41);
 }
 .contacts-cooperation p:hover, .comments-cooperation p:hover{
 	background-color: #19b5f1;
@@ -246,7 +244,7 @@ nav a:hover {
     height: 200px;
     border-radius: 100%;
     object-fit: cover;
-    margin: 75px auto 40px auto;
+    margin: 40px auto 40px auto;
 }
 .comments-txt{
 	text-align: center;
