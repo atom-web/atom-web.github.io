@@ -36,13 +36,26 @@ $('.slider-comments').slick({
 
 });
 
-$( ".comments-cooperation" ).click(function() {
-  $(".cont-call").css("opacity", "1");
-});
-$( ".contacts-cooperation" ).click(function() {
-  $(".cont-call").css("opacity", "0");
-});
+// $( ".comments-cooperation" ).click(function() {
+//   $(".cont-call").css("display", "inherit");
+//   $(".cont-call").css("position", "inherit");
+//   $(".op-link").css("display", "none");
+// });
+// $( ".contacts-cooperation" ).click(function() {
+//   $(".cont-call").css("opacity", "0");
+//   $(".op-link").css("display", "inherit");
+// });
 
+$(document).ready(function(){
+    $(".comments-cooperation").click(function(){
+        $(".op-link").css("display", "none");
+        $(".cont-call").addClass("cont-call-vis");
+    });
+    $(".contacts-cooperation").click(function(){
+        $(".op-link").css("display", "inherit");
+        $(".cont-call").removeClass("cont-call-vis");
+    });
+});
 
 
 

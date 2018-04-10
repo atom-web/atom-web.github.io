@@ -222,13 +222,16 @@ nav a:hover {
 	overflow: hidden;
 }
 .cont-call{
-	position: absolute;
-	top: 0;
 	background-color: #eaeaea;
 	height: 100%;
 	width: 100%;
 	opacity: 0;
 	transition-duration: 0.5s;
+	position: absolute;
+}
+.cont-call-vis {
+	opacity: 1;
+	position: inherit;
 }
 
 .box-slide-comments img{
@@ -242,7 +245,7 @@ nav a:hover {
 	text-align: center;
     font-size: 18px;
     line-height: 32px;
-    padding: 0 4%;
+    padding: 0px 4% 45px 4%;
 }
 .comments-name {
 	text-align: center;
