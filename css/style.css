@@ -122,22 +122,23 @@ nav a:hover {
 }
 .contacts-nav{
 	border-bottom: 1px solid #cecece;
+	width: 237px;
+	margin: 0 auto;
 }
 .contacts-cooperation, .comments-cooperation{
 	display: inline-block;
 	cursor: pointer;
+	margin: 30px 10px 10px 10px;
 }
 .contacts-cooperation p{
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: 600;
-	margin: 0 20px 10px 0;
 }
 .comments-cooperation p{
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: 600;
-	margin: 10px 20px 10px 0;
 }
 .fa-phone,.fa-comments {
 	font-size: 35px;
