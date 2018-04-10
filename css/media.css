@@ -68,10 +68,10 @@
 }
 @media screen and (max-width: 600px){
 	.grid-item-maps{
-		height: 180px;
+		height: 220px;
 	}
 	.grid-item-maps img{
-		height: 180px;
+		height: 220px;
 	}
 	.lnk-box-cont{
 		display: none;
@@ -151,6 +151,12 @@
 	}
 }
 @media screen and (max-width: 460px){
+	.grid-item-maps{
+		height: 180px;
+	}
+	.grid-item-maps img{
+		height: 180px;
+	}
 	.txt-cooperation{
 		display: inherit;
 	    border: none;
