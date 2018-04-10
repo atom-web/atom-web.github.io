@@ -128,7 +128,7 @@ nav a:hover {
 .contacts-cooperation, .comments-cooperation{
 	display: inline-block;
 	cursor: pointer;
-	margin: 30px 10px 10px 10px;
+	margin: 18px 10px;
 }
 .contacts-cooperation p, .comments-cooperation p{
 	font-size: 13px;
@@ -140,7 +140,7 @@ nav a:hover {
     text-align: center;
     transition: 0.5s;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    box-shadow: 0 0 4px rgba(25, 181, 241, 0.41);
 }
 .contacts-cooperation p:hover, .comments-cooperation p:hover{
 	background-color: #19b5f1;
