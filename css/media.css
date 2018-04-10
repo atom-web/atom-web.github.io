@@ -67,6 +67,9 @@
 	}
 }
 @media screen and (max-width: 600px){
+	.lnk-box-cont{
+		display: none;
+	}
 	.fa-phone, .fa-comments{
 		font-size: 35px;
     	color: #000;

@@ -125,6 +125,7 @@ nav a:hover {
 }
 .contacts-cooperation, .comments-cooperation{
 	display: inline-block;
+	cursor: pointer;
 }
 .contacts-cooperation p{
 	font-size: 13px;

@@ -26,7 +26,7 @@ $('.slider-contacts').slick({
   accessibility: false,
 });
 $('.slider-comments').slick({
-  slidesToShow: 2,
+  slidesToShow: 1,
   arrows: true,
   dots: true,
   accessibility: false,
