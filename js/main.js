@@ -48,12 +48,17 @@ $('.slider-comments').slick({
 
 $(document).ready(function(){
     $(".comments-cooperation").click(function(){
-        $(".op-link").css("display", "none");
-        $(".cont-call").addClass("cont-call-vis");
+        $(".op-link").css("opacity", "0");
+        $(".op-link").css("position", "absolute");
+        $(".cont-call").css("position", "inherit");
+        $(".cont-call").css("opacity", "1");
+
     });
     $(".contacts-cooperation").click(function(){
-        $(".op-link").css("display", "inherit");
-        $(".cont-call").removeClass("cont-call-vis");
+        $(".op-link").css("position", "inherit");
+        $(".op-link").css("opacity", "1");
+        $(".cont-call").css("position", "absolute");
+        $(".cont-call").css("opacity", "0");
     });
 });
 

@@ -150,6 +150,13 @@ nav a:hover {
 	color: #000;
 	margin: 30px 0 5px 0px;
 }
+.op-link{
+	transition-duration: 0.9s;
+	bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
 .contacts-info{
 	margin: 30px 0 20px 0;
 }
@@ -222,11 +229,11 @@ nav a:hover {
 	overflow: hidden;
 }
 .cont-call{
-	background-color: #eaeaea;
+	background-color: #fff;
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-	transition-duration: 0.5s;
+	transition-duration: 0.9s;
 	position: absolute;
 }
 .cont-call-vis {
