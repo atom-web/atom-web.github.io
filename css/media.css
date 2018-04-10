@@ -134,11 +134,9 @@
 		display: inherit;
 
 	}
-	/*.contacts-nav{
-		display: block;
-    	margin: 15px auto;
-    	width: 215px;
-	}*/
+	.contacts-nav{
+		width: 255px;
+	}
 	.info-company{
 		text-align: center;
 	}
