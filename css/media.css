@@ -79,7 +79,7 @@
 	}
 	.contacts-cooperation p, .comments-cooperation p{
 		margin: 0;
-    	width: 97px;
+    	width: 105px;
     	text-align: center;
 	}
 	.img-box-cont{
@@ -102,7 +102,7 @@
 		height: 360px;
 	}
 	.txt-box-cont{
-		width: 185px;
+		text-align: left;
 		font-size: 25px;
 		margin: 42px 0 0px 2%;
 		float: left;
@@ -137,7 +137,7 @@
 	.contacts-nav{
 		display: block;
     	margin: 15px auto;
-    	width: 200px;
+    	width: 215px;
 	}
 	.info-company{
 		text-align: center;
@@ -153,10 +153,14 @@
 	    padding-right: 0; 
 	    margin: 0 0 10px 0;
 	}
+	.txt-box-cont{
+		width: 250px;
+		text-align: center;
+	}
 }
 @media screen and (max-width: 358px){
 	.txt-box-cont{
-		width: 164px;
+		width: 235px;
 	    font-size: 21px;
 	    margin: 46px 0 0px 0;
 	}
