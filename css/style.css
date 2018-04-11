@@ -96,7 +96,7 @@ nav a:hover {
 	margin: 10px; 
 	border-radius:3px;
 	/*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
-	background-color: rgb(152, 152, 152);
+	background-color: #dcdcdc;
     
 	overflow: hidden;
 }
@@ -114,7 +114,7 @@ nav a:hover {
     font-size: 26px;
     width: 200px;
     text-align: center;
-    color: #fff;
+    color: #252525;
 }
 .lnk-box-cont {
 	text-decoration: none;
