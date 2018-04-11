@@ -233,6 +233,15 @@ button{
 .grid-maps{
 	position: relative;
 }
+.bg-overlay{
+	background: url(../img/overlay-pattern.png) rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
 .grid-item-maps{
 	width: 600px;
 	height: 300px;
