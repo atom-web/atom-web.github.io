@@ -67,7 +67,7 @@ nav a:hover {
 .video-style{
 	display: none;
 }
-.bg-overlay{
+.bg-overlay2{
 	background: url(../img/overlay-pattern.png) rgba(70, 70, 70, 0.44);
 	position: absolute;
     width: 100%;
@@ -230,6 +230,9 @@ button{
 .fa-map-marker{
 	color: #ff7581;
 }
+.grid-maps{
+	position: relative;
+}
 .grid-item-maps{
 	width: 600px;
 	height: 300px;
@@ -241,6 +244,7 @@ button{
 	height: 100%;
 	object-fit: cover;
 }
+
 .info-company {
 	font-size: 14px;
 	margin: 20px 5px;
