@@ -2,14 +2,22 @@
 	.grid-item--width2 img{
 		height: 520px;
 	}
+	.price{
+		padding: 40px 0;
+	}
+	.box-slide-comments{
+	height: 100%;
+	}
 }
 @media screen and (max-width: 1200px){
+
 	.header{
 		
 	}
 	.slick-slide{
 		height: 350px;
 	}
+
 	.container {
 		width: 1000px;
 	}
@@ -36,6 +44,9 @@
 	}
 	.grid-item-maps{
 		width: 500px;
+	}
+	.box-slide-comments{
+	height: 100%;
 	}
 }
 @media screen and (max-width: 1000px){
@@ -65,6 +76,9 @@
     	margin: -29px 0 0 0;
     	display: inline-grid;
     }
+    .box-slide-comments{
+	height: 100%;
+	}
 }
 @media screen and (max-width: 800px){
 	.header{
@@ -75,6 +89,9 @@
 	}
 	.grid-item-maps{
 		width: 100%;
+	}
+	.box-slide-comments{
+	height: 100%;
 	}
 }
 @media screen and (max-width: 600px){
@@ -185,6 +202,9 @@
 	    width: 50%;
 	    border: none;
 	}
+	.box-slide-comments{
+	height: 100%;
+	}
 }
 @media screen and (max-width: 500px){
 	.video-style{
@@ -199,6 +219,9 @@
 	}
 	.bg-overlay{
 	    display: inherit;
+	}
+	.box-slide-comments{
+	height: 100%;
 	}
 }
 @media screen and (max-width: 460px){
@@ -235,6 +258,9 @@
 	.comments-txt{
 		padding: 0px 4% 15px 4%;
 	}
+	.box-slide-comments{
+	height: 100%;
+	}
 }
 @media screen and (max-width: 358px){
 	.box-slide-comments img{
@@ -266,6 +292,9 @@
 	}
 	.box-time-company{
 		padding: 20px 0 12px 10px;
+	}
+	.box-slide-comments{
+	height: 100%;
 	}
 
 }
