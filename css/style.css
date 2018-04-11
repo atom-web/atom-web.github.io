@@ -51,6 +51,12 @@ nav a:hover {
 	height: 100vh;
 	overflow: hidden;
 }
+.header-page{
+
+}
+.content{
+	height: 100vh;
+}
 .navigation {
 	background-color: #131313;
 	height: 48px;
