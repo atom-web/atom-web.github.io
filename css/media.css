@@ -1,6 +1,6 @@
 @media screen and (max-width: 1200px){
 	.header{
-		background: url(../img/bg-iphone-1200.jpg) no-repeat center;
+		
 	}
 	.container {
 		width: 1000px;
@@ -38,7 +38,7 @@
 }
 @media screen and (max-width: 1000px){
 	.header{
-		background: url(../img/bg-iphone-1000.jpg) no-repeat center;
+		   
 	}
 	.container {
 		width: 750px;
@@ -65,14 +65,8 @@
     }
 }
 @media screen and (max-width: 800px){
-	h1 {
-		font-size: 43px;
-	}
-	h2 {
-		font-size: 19px;
-	}
 	.header{
-		background: url(../img/bg-iphone-800.jpg) no-repeat center;
+	
 	}
 	.container {
 		width: 500px;
@@ -82,15 +76,8 @@
 	}
 }
 @media screen and (max-width: 600px){
-	h1 {
-		padding: 328px 0px 0 175px;
-	}
-	h2 {
-		font-size: 11px;
-		margin-left: 178px;
-	}
 	.header{
-		background: url(../img/bg-iphone-600.jpg) no-repeat center;
+
 	}
 	.grid-item-maps{
 		height: 220px;
@@ -126,7 +113,7 @@
 	.grid-item {
 		width: 100%;
 		height: 120px;
-		margin: 1px 0;
+		margin: 0 0 1px 0;
 	}
 	.grid-item--width2 {
 		width: 100%;
@@ -175,20 +162,19 @@
 		font-size: 12px;
 	}
 }
+@media screen and (max-width: 500px){
+	.video-style{
+		height: 100vh;
+		display: inherit;
+	}
+	.header {
+		background: url(../img/overlay-pattern.png);
+	}
+	.bg-overlay{
+	    display: inherit;
+	}
+}
 @media screen and (max-width: 460px){
-	h1 {
-		padding: 238px 0 0 60px;
-    	font-size: 37px;
-    	width: 220px;
-    	margin: 0 auto;
-	}
-	h2 {
-		margin: 0 auto;
-    	width: 200px;
-    	padding-left: 43px;
-    	font-size: 10px;
-	}
-
 	.grid-item-maps{
 		height: 180px;
 	}
