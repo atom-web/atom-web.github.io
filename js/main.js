@@ -50,6 +50,7 @@ $(document).ready(function(){
     $(".comments-cooperation").click(function(){
         $(".op-link").css("opacity", "0");
         $(".op-link").css("position", "absolute");
+        $(".op-link").css("bottom", "0");
         $(".cont-call").css("position", "inherit");
         $(".cont-call").css("opacity", "1");
 

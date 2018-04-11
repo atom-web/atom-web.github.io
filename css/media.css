@@ -96,8 +96,6 @@
     	width: 32px;
 	}
 	.contacts-cooperation p, .comments-cooperation p{
-		margin: 0;
-    	width: 105px;
     	text-align: center;
 	}
 	.img-box-cont{
@@ -136,12 +134,12 @@
 		text-align: center;
 		padding: 0 5px;
 	}
-	.link-cooperation{
+	/*.link-cooperation{
     	width: 100%;
 		text-align: center;
 		display: inline-block;
 		padding: 13px 0px;
-	}
+	}*/
 	.number-phone{
 		text-align: center;
 	}
@@ -153,13 +151,30 @@
 
 	}
 	.contacts-nav{
-		width: 255px;
+		width: 100%;
+		position: relative;
 	}
 	.info-company{
 		text-align: center;
 	}
 	.box-info-company{
 		font-size: 12px;
+	}
+	.contacts-cooperation{
+		position: absolute;
+	    left: 0;
+	    height: 30px;
+	    width: 50%;
+	    border: none;
+	    border-radius: 5px 0 0 5px;
+	}
+	.comments-cooperation{
+		position: absolute;
+	    right: 0;
+	    height: 30px;
+	    width: 50%;
+	    border: none;
+	    border-radius: 0 5px 5px 0;
 	}
 }
 @media screen and (max-width: 500px){
@@ -197,7 +212,7 @@
 	.box-slide-comments img{
 		width: 150px;
     	height: 150px;
-    	margin: 25px auto 40px auto;
+    	margin: 10px auto 40px auto;
 	}
 	.comments-txt{
 		font-size: 16px;
