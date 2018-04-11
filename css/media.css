@@ -164,7 +164,7 @@
 }
 @media screen and (max-width: 500px){
 	.video-style{
-		height: 100vh;
+		
 		display: inherit;
 	}
 	.header {
