@@ -291,7 +291,7 @@
 		font-size: 11px;
 	}
 	svg{
-		padding: 13px 49px;
+		padding: 29px 49px;
 		width: 44%;
     	height: 43px;
     	margin: 0 auto;
@@ -300,7 +300,7 @@
     	left: 0;
 	}
 	.grid-item-cont a{
-		padding: 0 100% 53px 0;
+		padding: 0 100% 83px 0;
 	}
 	.preview-txt p{
 		padding: 0 15px 30px 15px;
@@ -374,6 +374,9 @@
 	.grid-item {
 		height: 70px;
 	}
+	.grid-item-cont{
+		height: 100px;
+	}
 	.txt-box-cont{
 		margin: 25px 0;
 		font-size: 19px;
@@ -383,6 +386,12 @@
 	}
 	.slick-slide{
 		height: 289px;
+	}
+	svg{
+		padding: 28px 49px;
+	}
+	.grid-item-cont a{
+		padding: 0 100% 83px 0;
 	}
 
 }
