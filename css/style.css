@@ -54,9 +54,7 @@ nav a:hover {
 .header-page{
 
 }
-.content{
-	height: 100vh;
-}
+
 .navigation {
 	background-color: #131313;
 	height: 48px;
@@ -343,4 +341,84 @@ footer{
 	height: 40px;
 	float: left;
 	margin-right: 10px;
+}
+
+/*Content*/
+
+.preview{
+	height: 540px;
+}
+.preview img{
+	margin-top: 115px;
+	float: left;
+}
+.preview-txt p{
+	color: #545454;
+	text-align: center;
+	border-bottom: 1px solid #dedede;
+    padding-bottom: 30px;
+    height: 120px;
+}
+.preview h3{
+	color:#0051b4;
+	padding: 4% 0;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.preview-txt{
+	float: left;
+    display: inline-block;
+    width: 700px;
+    margin: 115px 0 0 71px;
+    padding-bottom: 35px;
+}
+.grid-cont {
+	margin-bottom: 40px;
+}
+.grid-item-cont{
+	width: 230px;
+    height: 150px;
+    margin: 5px;
+    overflow: hidden;
+}
+.grid-item-cont a{
+	padding: 138px 0 0 0;
+}
+svg{
+	width: 80%;
+    height: 75px;
+    padding: 38px 23px;
+    fill: #505050;
+    transition: 0.3s;
+}
+svg:hover {
+	fill: #0028a9;
+}
+.popular {
+	float: left;
+    margin-left: 131px;
+}
+.popular a{
+	border-radius: 50px;
+}
+.popular-box{
+	width: 139px;
+    height: 40px;
+	background: rgba(0, 80, 195, 0.4117647058823529);
+	display: inline-block;
+	float: left;
+    margin: 3px;
+    border-radius: 50px;
+}
+.popular-box p{
+	margin: 11px 10px;
+    text-align: center;
+    color: #ffffff;
+}
+.popular-name {
+	display: inline-block;
+    width: 700px;
+    margin: 0 0 20px 71px;
+    text-align: center;
+    color: #0051b4;
 }
