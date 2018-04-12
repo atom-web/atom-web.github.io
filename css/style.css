@@ -360,7 +360,7 @@ footer{
     height: 120px;
 }
 .preview h3{
-	color:#0051b4;
+	color:#000000;
 	padding: 4% 0;
 	font-size: 24px;
 	text-transform: uppercase;
@@ -404,7 +404,7 @@ svg:hover {
 .popular-box{
 	width: 139px;
     height: 40px;
-	background: rgba(0, 80, 195, 0.4117647058823529);
+	background: rgba(0, 80, 195, 0.52);
 	display: inline-block;
 	float: left;
     margin: 3px;
@@ -420,5 +420,5 @@ svg:hover {
     width: 700px;
     margin: 0 0 20px 71px;
     text-align: center;
-    color: #0051b4;
+    color: #000000;
 }
