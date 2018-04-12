@@ -179,7 +179,7 @@
 		height: 220px;
 	}
 	.slick-slide {
-		height: 406px;
+		height: 409px;
 	}
 	.grid-item--width2 img{
 		object-fit: cover;
@@ -213,12 +213,12 @@
 	.grid-item {
 		width: 49%;
 		height: 100px;
-		margin: 0 2px 2px 2px;
+		margin: 0 2px 3px 2px;
 		overflow: hidden;
 	}
 	.grid-item--width2 {
 		width: 49%;
-		height: 406px;
+		height: 409px;
 	}
 	.txt-box-cont{
 		text-align: left;
@@ -379,10 +379,10 @@
 		font-size: 19px;
 	}
 	.grid-item--width2{
-		height: 286px;
+		height: 289px;
 	}
 	.slick-slide{
-		height: 286px;
+		height: 289px;
 	}
 
 }
