@@ -303,6 +303,7 @@
 	}
 	.preview-txt p{
 		padding: 0 15px 30px 15px;
+		color: #2d2d2d;
 	}
 }
 @media screen and (max-width: 500px){
