@@ -475,7 +475,7 @@ svg:hover {
     right: 0;
     margin: 0px 18px;
     width: 33px;
-    height: 48px;
+    height: 0px;
     cursor: pointer;
     display: none;
 }
