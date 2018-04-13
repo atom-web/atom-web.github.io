@@ -173,7 +173,6 @@ button{
 .contacts-cooperation p, .comments-cooperation p{
 	font-size: 13px;
 	text-transform: uppercase;
-	font-weight: 600;
     text-align: center;
 }
 .contacts-cooperation:hover, .comments-cooperation:hover{
@@ -218,7 +217,7 @@ button{
 }
 .info-cooperation{
 	margin-bottom: 30px;
-	font-size: 15px;
+	font-size: 17px;
 	color: #000;
 }
 /*.link-cooperation{
@@ -237,9 +236,6 @@ button{
 	border-right: 1px solid #cecece;
 	padding-right: 20px;
     margin-right: 20px;
-}
-.style-number-phone {
-	font-weight: 600;
 }
 .fa-map-marker{
 	color: #ff7581;
