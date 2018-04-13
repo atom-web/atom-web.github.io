@@ -66,6 +66,7 @@ nav a:hover {
 }
 .animate-menu{
 	height: 100vh;
+	overflow: hidden;
 }
 .animate-nav {
     display: inherit;
