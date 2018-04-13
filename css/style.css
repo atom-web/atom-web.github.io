@@ -62,7 +62,7 @@ nav a:hover {
 	width: 100%;
 	position: fixed;
 	z-index: 999;
-	transition: 1s;
+	transition: 0.5s;
 }
 .animate-menu{
 	height: 100vh;
