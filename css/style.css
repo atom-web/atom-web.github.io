@@ -29,11 +29,12 @@ nav {
 }
 nav li{
 	display: inline-block;
-	margin: 10px;
+	margin: 15px;
 }
 nav a{
 	color: #fff;
 	padding: 16px;
+	text-decoration: none;
 }
 nav a:hover {
 	text-decoration: none;
@@ -61,6 +62,20 @@ nav a:hover {
 	width: 100%;
 	position: fixed;
 	z-index: 999;
+	transition: 1s;
+}
+.animate-menu{
+	height: 100vh;
+}
+.animate-nav {
+    display: inherit;
+    padding-top: 23vh;
+    font-size: 24px;
+}
+.animate-nav li {
+    display: inherit;
+    margin: 0;
+    padding: 18px;
 }
 .head-info {
 	width: 100%;
@@ -441,4 +456,72 @@ svg:hover {
 	text-align: center;
 	margin: 60px 0;
 	font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu-wrapper {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    margin: 0px 18px;
+    width: 33px;
+    height: 48px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 33px;
+  height: 2px;
+}
+
+.hamburger-menu {
+  position: relative;
+  transform: translateY(25px);
+  background: white;
+  transition: all 0ms 300ms;
+}
+.hamburger-menu.animate {
+  background: rgba(255, 255, 255, 0);
+}
+
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  background: white;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  background: white;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }

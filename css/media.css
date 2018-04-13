@@ -172,6 +172,12 @@
 		height: 100%;
     	margin-bottom: 60px;
 	}
+	nav{
+		display: none;
+	}
+	.menu-wrapper{
+		display: inherit;
+	}
 }
 @media screen and (max-width: 600px){
 	.header{

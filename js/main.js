@@ -69,9 +69,17 @@ $(document).ready(function(){
         $(".cont-call").css("position", "absolute");
         $(".cont-call").css("opacity", "0");
     });
+    $(".hamburger-menu").on('click', function(){
+        $(".navigation").toggleClass('animate-menu');
+        $('nav').toggleClass('animate-nav');
+    });
 });
 
-
+(function () {
+  $('.menu-wrapper').on('click', function() {
+    $('.hamburger-menu').toggleClass('animate');
+  })
+})();
 
 
 
