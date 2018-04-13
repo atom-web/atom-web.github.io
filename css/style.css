@@ -349,8 +349,11 @@ footer{
 	height: 540px;
 }
 .preview img{
-	margin-top: 115px;
-	float: left;
+	margin-top: 110px;
+    float: left;
+    width: 392px;
+    height: 392px;
+    object-fit: cover;
 }
 .preview-txt p{
 	color: #3c3c3c;
