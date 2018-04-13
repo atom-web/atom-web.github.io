@@ -5,7 +5,7 @@
 }
 body {
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-	background: #f3f3f3;
+	background: #ececec;
 
 }
 h1 {
@@ -103,6 +103,7 @@ nav a:hover {
 }
 .grid{
 	margin-bottom: 10px;
+	margin-top: 10px;
 }
 .grid-item--width2 img{
 	object-fit: cover;
