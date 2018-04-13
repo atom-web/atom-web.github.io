@@ -403,6 +403,9 @@
 	.slick-slide{
 		height: 289px;
 	}
+	.box-slide-comments{
+		height: 100%;
+	}
 	svg{
 		padding: 28px 25px;
 	}
@@ -455,6 +458,9 @@
 	}
 	.slick-slide{
 		height: 289px;
+	}
+	.box-slide-comments{
+		height: 100%;
 	}
 	.grid-item-cont p{
 		font-size: 16px;
