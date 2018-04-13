@@ -74,11 +74,14 @@
 	    left: 0;
 	    margin: 0 auto;
 	}
-	.grid-item-cont a{
+	.link-brend{
 		padding: 157px 0 0 0;
 	}
 	svg{
 		padding: 48px 23px;
+	}
+	.grid-item-cont p{
+		margin: 70px 0;
 	}
 }
 @media screen and (max-width: 1000px){
@@ -299,12 +302,16 @@
     	right: 0;
     	left: 0;
 	}
-	.grid-item-cont a{
+	.link-brend{
 		padding: 0 100% 83px 0;
 	}
 	.preview-txt p{
 		padding: 0 15px 30px 15px;
 		color: #2d2d2d;
+	}
+	.grid-item-cont p{
+		margin: 39px 0;
+    	font-size: 19px;
 	}
 
 }
@@ -390,7 +397,7 @@
 	svg{
 		padding: 28px 25px;
 	}
-	.grid-item-cont a{
+	.link-brend{
 		padding: 0 100% 83px 0;
 	}
 
@@ -439,6 +446,9 @@
 	}
 	.slick-slide{
 		height: 289px;
+	}
+	.grid-item-cont p{
+		font-size: 16px;
 	}
 
 }
