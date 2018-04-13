@@ -48,7 +48,7 @@ nav a:hover {
 .header {
 	position: relative;
 	/*background-color: #f5f5f5;*/
-	background: url(../img/bg-iphone.jpg) no-repeat center;
+	background: url(../img/maxresdefault.jpg) no-repeat center;
 	height: 100vh;
 	overflow: hidden;
 }
@@ -148,6 +148,7 @@ nav a:hover {
 /*contacts*/
 .contacts{
 	/*height: 100vh;*/
+	background: #ecedf2;
 }
 .contacts-nav{
 	height: 30px;

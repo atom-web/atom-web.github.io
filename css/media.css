@@ -15,7 +15,7 @@
 	}
 
 	.header{
-		background: url(../img/bg-iphone-1200.jpg) no-repeat center;
+		
 	}
 	.slick-slide{
 		height: 350px;
@@ -90,7 +90,7 @@
 @media screen and (max-width: 1000px){
 	
 	.header{
-		background: url(../img/bg-iphone-1000.jpg) no-repeat center;
+		
 	}
 	.container {
 		width: 750px;
@@ -136,7 +136,7 @@
 }
 @media screen and (max-width: 800px){
 	.header{
-		background: url(../img/bg-iphone-800.jpg) no-repeat center;
+		
 	}
 	.container {
 		width: 500px;
@@ -181,7 +181,7 @@
 }
 @media screen and (max-width: 600px){
 	.header{
-		background: url() no-repeat center;
+		
 	}
 	.grid-item{
 		border-radius: 0;
@@ -321,6 +321,9 @@
 	.grid-item-cont p{
 		margin: 39px 0;
     	font-size: 19px;
+	}
+	.grid {
+		background: #d0d5db;
 	}
 
 }
