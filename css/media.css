@@ -197,6 +197,9 @@
 		width: 63px;
 		padding: 17px 0px 17px 0px;
 	}
+	.popular-price{
+		padding-bottom: 0;
+	}
 
 }
 @media screen and (max-width: 600px){
