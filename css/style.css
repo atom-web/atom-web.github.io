@@ -539,13 +539,13 @@ svg:hover {
 
 /*page model*/
 
-/*.link-model{
+.link-model{
 	text-decoration: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-}*/
+}
 
 .grid-item-cont p{
 	color: #424242;
