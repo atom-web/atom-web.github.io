@@ -181,6 +181,8 @@
 	.section-price{
 		overflow: hidden;
     	text-overflow: clip;
+    	margin-top: 0;
+    	padding: 0;
 	}
 	.price-product{
 		font-size: 11px;
