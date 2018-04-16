@@ -164,7 +164,10 @@ nav a:hover {
 	width: 100%;
 	height: 50px;
 	border-top: 1px solid #b9b9b9;
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: baseline;
 }
 .price-name{
 	color: #eaeaea;
