@@ -178,6 +178,26 @@
 	.menu-wrapper{
 		display: inherit;
 	}
+	.section-price{
+		overflow: hidden;
+    	text-overflow: clip;
+	}
+	.price-product{
+		font-size: 11px;
+		width: 360px;
+	}
+	.price-cost-poduct{
+		padding: 17px 10px 17px 0px;
+	}
+	.price-cost{
+		padding: 6px 10px 6px 0px;
+	}
+	.price-cost-poduct{
+		font-size: 12px;
+		width: 63px;
+		padding: 17px 0px 17px 0px;
+	}
+
 }
 @media screen and (max-width: 600px){
 	.header{
@@ -344,6 +364,12 @@
 	.box-slide-comments{
 	height: 100%;
 	}
+	.price-product{
+		width: 300px;
+	}
+	.price-name{
+		font-size: 13px;
+	}
 }
 @media screen and (max-width: 460px){
 	.grid-item-maps{
@@ -388,6 +414,9 @@
 	.popular{
 		width: 285px;
 	}
+	.price-product{
+		width: 260px;
+	}
 }
 @media screen and (max-width: 400px){
 	.grid-item {
@@ -414,6 +443,13 @@
 	}
 	.link-brend{
 		padding: 0 100% 83px 0;
+	}
+	.price-product{
+		width: 236px;
+	}
+	.price-name{
+		font-size: 11px;
+		padding: 8px 6px 8px 13px;
 	}
 
 }
@@ -467,6 +503,9 @@
 	}
 	.grid-item-cont p{
 		font-size: 16px;
+	}
+	.price-product{
+		width: 204px;
 	}
 
 }
