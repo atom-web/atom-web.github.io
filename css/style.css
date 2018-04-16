@@ -46,6 +46,10 @@ nav a:hover {
 	position: relative;
 }
 .header {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 	position: relative;
 	/*background-color: #f5f5f5;*/
 	background: url(../img/maxresdefault.jpg) no-repeat center;
@@ -66,6 +70,7 @@ nav a:hover {
 	position: fixed;
 	z-index: 999;
 	transition: 0.5s;
+	top: 0;
 }
 .animate-menu{
 	height: 100vh;
@@ -100,7 +105,7 @@ nav a:hover {
     display: none;
 }
 .info-txt{
-	margin: 25% 0 0 0;
+
 }
 
 /*прайс*/
@@ -177,7 +182,7 @@ nav a:hover {
 }
 .price-cost{
 	float: right;
-	padding: 6px 60px 6px 6px;
+	padding: 6px 20px 6px 6px;
 	color:  #ff6363;
 	font-weight: 600;
 }
