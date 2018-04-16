@@ -565,7 +565,7 @@ svg:hover {
 
 
 .menu-wrapper {
-    position: absolute;
+    position: fixed;
     top: -3px;
     right: 0;
     margin: 0px 18px;
