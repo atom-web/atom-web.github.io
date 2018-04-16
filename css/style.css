@@ -152,13 +152,12 @@ nav a:hover {
 	border-radius: 3px;
 }
 .price-box{
-	background-color: red;
 	width: 100%;
 }
 .top-section-price{
 	width: 100%;
 	height: 30px;
-	background: #085fbf;
+	background: #636363;
 }
 .section-price {
 	background: #d2d2d2;
