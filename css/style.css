@@ -227,6 +227,7 @@ button{
 .contacts-info-box {
 	margin-bottom: 30px;
 }
+
 .contacts-cooperation p, .comments-cooperation p{
 	font-size: 13px;
 	text-transform: uppercase;
@@ -287,6 +288,9 @@ button{
 .box-contacts-info{
 	margin: 50px 0 20px 0;
 	color: #000;
+}
+.contacts-pade-info{
+	margin: 78px 0 20px 0;
 }
 .number-phone p{
 	display: inline-block;
