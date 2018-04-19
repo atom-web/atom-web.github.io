@@ -1,0 +1,252 @@
+* {
+	margin: 0;
+	padding: 0;
+	    font-family: 'Terminal Dosis',Tahoma, Geneva, sans-serif;
+}
+body{
+	background: url(../img/page_tile_12.png);
+	background-color: #4c4c4c;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+h1{
+	color: #eaeaea;
+	margin: 0;
+	text-transform: uppercase;
+
+}
+h1 span{
+	color: red;
+}
+h2{
+	color: #a2a2a2;
+	font-size: 15px;
+	margin: 0 0 0 0;
+}
+.registration{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: -200px;
+	background: #2c2c2c;
+	z-index: 99999;
+	transition: top 0.5s ease-out 0.1s;
+}
+.title-reg{
+	color: #eaeaea;
+    margin: 30px 0 14px;
+}
+.description-reg{
+	color: #8c8c8c;
+    font-size: 12px;
+
+}
+.link-reg{
+	color: #ff4e4e;
+	font-size: 13px;
+}
+.bord-right-box{
+	border-right: 1px solid; 
+}
+.active-reg{
+	top: 0;
+}
+.container{
+	position: relative;
+}
+.cont-form{
+	width: 100%;
+	height: 200px;
+}
+.link-registration{
+	color: #eaeaea;
+    position: absolute;
+    bottom: -30px;
+    width: 75px;
+    right: 0;
+    height: 30px;
+    z-index: 999999;
+    background: #2c2c2c;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+.logo{
+	margin: 22px 0 0 21px;
+}
+.head-logo{
+	height: 100px;
+}
+.link-social{
+	height: 30px;
+    width: 100%;
+}
+.vk a{
+	color: #b5b5b5;
+    padding: 3px 8px;
+    font-size: 19px;
+    transition: 0.3s;
+}
+.insta a{
+	color: #b5b5b5;
+    padding: 3px 10px;
+    font-size: 19px;
+    transition: 0.3s;
+
+}
+.vk, .insta{
+	float: right;
+    width: 35px;
+    height: 30px;
+    background: #2c2c2c;
+    margin-left: 5px;
+}
+.insta a:hover, .vk a:hover{
+	background: #ff5a5a;
+	color: #fff;
+}
+.header-bg {
+	/*background: url(../img/1504638335_4ui4l1.jpg) ;*/
+	background-size: 100%; 
+	background-position: center;
+	width: 100%;
+}
+.menu{
+	background: #2b2b2b;
+	height: 60px;
+	box-shadow: 0 0 40px rgba(0,0,0,0.9);
+}
+.menu li {
+	display: inline-block;
+}
+.menu a{
+	color: #eaeaea;
+	padding: 11px 21px 18px;
+    display: inline-block;
+    font-size: 19px;
+    text-transform: uppercase;
+    float: left;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.menu a:hover{
+	background: #545454;
+	color: fff;
+}
+.menu-dubl{
+	text-transform: none;
+    font-size: 10px;
+    color: #9e9e9e;
+    display: inherit;
+    line-height: 0px;
+
+}
+.form-box{
+	position: absolute;
+    top: 0;
+    right: 0;
+}
+.search {
+	width: 200px;
+    margin: 13px 21px;
+    position: relative;
+    height: 34px;
+}
+
+.search input {
+  border: none;
+}
+.search .input {
+  width: 100%;
+  padding: 8px 37px 9px 15px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+  background: #252525;
+  font: 13px Tahoma, Arial, sans-serif;
+  color: #a7a7a7;
+  outline: none;
+  transition: 0.5s;
+}
+.search .input:focus {
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+  background: #E8E8E8;
+  color: #333;
+}
+.search .submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 37px;
+  height: 100%;
+  cursor: pointer;
+  background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+	opacity: 0.5;
+}
+.search .submit:hover {
+  opacity: 0.8;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+/*Content*/
+.content {
+	margin-top: 20px; 
+}
+.conntent-bg {
+	background: #2d2d2d;;
+	padding: 15px 0;
+	box-shadow: 0 0 40px rgba(0,0,0,0.9);
+	position: relative;
+}
+.box-cont {
+	height: 380px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+.info-content{
+	position: absolute;
+    top: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.82);
+    width: 90%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+.info-content:hover {
+
+	opacity: 1;
+}
+.name-content {
+	font-size: 22px;
+    text-align: center;
+    margin: 75px 0 30px 0
+}
+.description-content {
+	font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+}
+.feat-cont {
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+.feat-cont span{
+	margin-right: 5px;
+	font-weight: 700;
+}
+.feat-rating {
+	float: right;
+}
+
