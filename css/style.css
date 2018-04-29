@@ -511,6 +511,7 @@ footer{
 	display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 50px;
     align-items: center;
 }
 .footer-info{
@@ -632,8 +633,19 @@ footer{
 .content-description-page{
 	margin-top: 30px;
 }
+.name-cinema-page{
+	color: #eaeaea;
+	margin-bottom: 25px;
+}
+.description-cinema-page{
+	color: #8a8a8a;
+    font-size: 13px;
+}
 .box-cont-page{
 
+}
+.description-name-page{
+	margin: 0px 7px;
 }
 .video-player-box{
 	background: #000000;
@@ -663,4 +675,28 @@ footer{
 }
 .border-rig{
 	border-right: 1px solid rgba(156, 156, 156, 0.28);
+}
+.link-like, .link-dislike{
+	width: 61px;
+    height: 30px;
+    border-radius: 10%;
+    background: green;
+    float: left;
+    margin: 17px 13px 0 0;
+}
+.red{
+	background: #b30213;
+}
+.fa-thumbs-o-up, .fa-thumbs-o-down{
+	color: #eaeaea;
+	font-size: 23px;
+	margin: 4px 20px 4px 20px;
+}
+.page-descript-cont a{
+	color: #ff4d4d;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.page-descript-cont a:hover{
+	color: #fda5a5;
 }
