@@ -2,170 +2,498 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Фильмы</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="css/nprogress.css">
+	<link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="slick/slick.css"/>
+  <link rel="stylesheet"  href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-	<section class="header">
-		<div class="menu-wrapper">
-			<div class="hamburger-menu"></div>	  
-		</div>
-		<div class="navigation">
+	<header>
+		<div class="registration">
 			<div class="container">
-				<nav>
-					<ul>
-						<li><a href="index.html">Главная</a></li>
-						<li><a href="#">Контакты</a></li>
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Отзывы</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<div class="head-info">
-			<div class="container">
-				<div class="info-txt">
-					<h1>"Мастерская Цифровых <span class="nane-company">Устройств</span>"</h1>
-					<h2>Качественный и очень быстрый ремент цифровых устройств</h2>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="price">
-			<div class="container">
-				<div class="grid">
-					<div class="grid-item grid-item--width2">
-						<div class="slider">
-							<div><a href=""><img src="img/smart-1.jpg" alt=""></a></div>
-							<div><a href=""><img src="img/smart-2.jpg" alt=""></a><img src="img/smart-2.jpg" alt=""></div>
-							<div><a href=""><img src="img/smart-3.jpg" alt=""></a><img src="img/smart-3.jpg" alt=""></div>
+				<!-- <div class="cont-form">
+					<div class="row">
+						<div class="col-md-6 bord-right-box">
+							<p class="title-reg">And now some Lorem Ipsum to fill the content</p>
+							<p class="description-reg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent scelerisque commodo massa. Ut volutpat. Maecenas luctus augue quis velit.Ut volutpat. Maecenas luctus augue quis velit. Lorem ipsum dolor sit amet, adipiscing elit. Scelerisque commodo massa.</p>
+							<a class="link-reg" href="#">Зарегистрироваться</a>
+						</div>
+						<div class="col-md-6">
+							<p class="log-in">Авторизация</p>
+							<form name="contact_form" class="generic-form" action="contact.html">
+		                        <p>
+		                            <input type="text" name="txt_name" id="txt_name" class="validate-login" />
+		                            <input type="text" name="txt_email" id="txt_email" class="validate-password" />
+		                            <input type="submit" name="" value="" class="submit" />
+		                        </p>                                               
+		                        <p>
+		                            <input type="checkbox" name="chk_rememberme" /><label for="chk_rememberme">Запомнить меня</label>
+		                            &nbsp;/&nbsp;
+		                            <a href="#" class="orange-only">Забыли пароль?</a>
+								</p>
+
+		                    </form>
+
 						</div>
 					</div>
-					<a href="page-smartphone-brend.html">
-						<div class="grid-item">
-							<img class="img-box-cont" src="img/Blog_Facebook.png" alt="">
-							<p class="txt-box-cont">Смартфоны</p>
-							<!-- <a class="lnk-box-cont" href="#">link</a> -->
-						</div>
-					</a>
-					<a href="#">
-						<div class="grid-item">
-							<img class="img-box-cont" src="img/tablet_PNG8593.png" alt="">
-							<p class="txt-box-cont" >Планшеты</p>
-							<!-- <a class="lnk-box-cont" href="#">link</a> -->
-						</div>
-					</a>
-					<a href="#">
-						<div class="grid-item">
-							<img class="img-box-cont" src="img/nout.png" alt="">
-							<p class="txt-box-cont" >Ноутбуки</p>
-							<!-- <a class="lnk-box-cont" href="#">link</a> -->
-						</div>
-					</a>
-					<a href="#">
-						<div class="grid-item">
-							<img class="img-box-cont" src="img/telek.png" alt="">
-							<p class="txt-box-cont" >Телевизоры</p>
-							<!-- <a class="lnk-box-cont" href="#">link</a> -->
-						</div>
-					</a>
+					<div class="link-registration">Вход</div>
+				</div> -->
+			</div>
+		</div>
+		<div class="head-logo">
+			<div class="container">
+				<div class="row">
+					<div class="logo">
+						<h1>Kino <span>Relax</span></h1>
+						<!-- <h2>txt my site</h2> -->
+					</div>
+					<!-- <div class="link-social">
+						<div class="insta"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+						<div class="vk"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
+					</div> -->
 				</div>
 			</div>
-	</section>
-	<section class="contacts">
-		<div class="cont-call">
-					<div class="container">
-						<div class="slider-comments">
-							<div class="box-slide-comments">
-								<img src="img/face-1.jpeg" alt="">
-								<p class="comments-name">Ольга Борисовна</p>
-								<p class="comments-txt">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ea optio quod, nostrum magni sequi dolor, nesciunt, doloremque dolorum mollitia unde porro. Tempora debitis odio
-								</p>
-							</div>
-							<div class="box-slide-comments">
-								<img src="img/face-2.jpg" alt="">
-								<p class="comments-name">Иван Алексеевич</p>
-								<p class="comments-txt">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ea optio quod, nostrum magni sequi dolor, nesciunt, doloremque dolorum mollitia unde porro. Tempora debitis odio
-								</p>
-							</div>
-							<div class="box-slide-comments">
-								<img src="img/face-3.jpg" alt="">
-								<p class="comments-name">Юлия Михайловна</p>
-								<p class="comments-txt">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ea optio quod, nostrum magni sequi dolor, nesciunt, doloremque dolorum mollitia unde porro. Tempora debitis odio
-								</p>
-							</div>
-						</div>
+		</div>
+		<div class="menu">
+			<div class="container">
+				<div class="row">
+					<div class="burger">
+					  <span></span>
+					</div>
+					<nav>
+					  <ul class="main">
+					    <li><a href="/">Главная <span class="menu-dubl">Home</span></a></li>
+					    <li><a data-fancybox data-src="#hidden-category" href="#">Категории<span class="menu-dubl">Category</span></a></li>
+					    <li><a href="#0">О проекте<span class="menu-dubl">About the project</span></a></li>
+					    <li><a href="#0">Новости<span class="menu-dubl">News</span></a></li>
+					    <li><a href="#0">Донат<span class="menu-dubl">Donate</span></a></li>
+					  </ul>
+					  <div class="about">
+					    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					  </div>
+					</nav>
+					<div class="overlay"></div>
+					<div class="category-box" id="hidden-category">
+						<ul>
+							<li><a href="#">Приключения</a></li>
+							<li><a href="#">Комедии</a></li>
+							<li><a href="#">Ужасы</a></li>
+						</ul>
+						<img src="img/cat.png" alt="">
+					</div>
+					<div class="form-box">
+						<form action="" method="post" class="search">
+						  <input type="search" name="" placeholder="Поиск" class="input" />
+						  <input type="submit" name="" value="" class="submit" />
+						</form>
 					</div>
 				</div>
-			<div class="contact-box">
-					<div class="container contacts-info-box">
-						<div class="contacts-info">
-							<div class="email-info">
-								<p class="txt-cooperation">Cотрудничество с нами</p>
-								<div class="email-link">
-									<a href="mailto:Service@name.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i><p>Service@name.ru</p></a>
+			</div>
+		</div>
+	</header>
+	<div class="header-bg">
+		<div class="container">
+			<div class="row">
+				<div class="single-item">
+		    		<a href="#"><img src="img/1504638335_4ui4l1.jpg" alt=""></a>
+		    		<a href="#"><img src="img/ru_fb5d7b9d43188956f7297c7761da5fe1.jpg" alt=""></a>
+		    		<a href="#"><img src="img/v.jpg" alt=""></a>
+		  		</div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="container">
+			<div class="row conntent-bg">
+				<div class="col-md-9 col-sm-9">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 box-cont">
+							<div class="img-box-cont">
+								<img src="img/eva.jpeg" alt="">
+							</div>
+							<div class="description-box-cont">
+								<div class="description-name-cont">
+									<h3 class="name-cinema">ЕВА</h3>
+									<p class="description-cinema">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, iste, sunt. Deleniti nemo voluptates quam quia eveniet id maxime blanditiis, aliquid iure, dolore explicabo! Tempore officia quis asperiores nisi praesentium.</p>
+								</div>
+								<div class="feat-item-box">
+									<div class="year-cinema">
+										<i class="fa fa-calendar cinema-icon" aria-hidden="true"></i>
+										<p class="cinema-descript-cont">2018</p>
+									</div>
+								</div>
+								<div class="category-cinema">
+									<i class="fa fa-bookmark cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">Мелодрама</p>
+								</div>
+								<div class="rating-cinema">
+									<i class="fa fa-star-half-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">7.2 КП</p>
+								</div>
+								<div class="time-cinema">
+									<i class="fa fa-clock-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">1:58</p>
+								</div>
+								<div class="quality-cinema">
+									<i class="fa fa-thumbs-up cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">HD</p>
+								</div>
+								<div class="link-cinema-open">
+									<a class="play-btn" href="post.html"></a>
 								</div>
 							</div>
 						</div>
-					
-						<p class="info-cooperation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ea optio quod, nostrum magni sequi dolor, nesciunt, doloremque dolorum mollitia unde porro. Tempora debitis odioit amet, consectetur adipisicing elit. Dolorem ea optio quod, nostrum magni sequi dolor, nesciunt, doloremque dolorum m</p>
-					</div>
-					<div class="container">
-						<div class="op-link">
-						<div class="box-contacts-info">
-							<div class="number-phone">
-								<p>тел <span class="style-number-phone" >+79202596689</span></p>
-								<p><i class="fa fa-map-marker" aria-hidden="true"></i><span class="style-number-phone" > г. Тула, ул. Каминского д.23А, 2 этаж</span></p>
+						<div class="col-md-4 col-sm-6 box-cont">
+							<div class="img-box-cont">
+								<img src="img/eva.jpeg" alt="">
+							</div>
+							<div class="description-box-cont">
+								<div class="description-name-cont">
+									<h3 class="name-cinema">ЕВА</h3>
+									<p class="description-cinema">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, iste, sunt. Deleniti nemo voluptates quam quia eveniet id maxime blanditiis, aliquid iure, dolore explicabo! Tempore officia quis asperiores nisi praesentium.</p>
+								</div>
+								<div class="feat-item-box">
+									<div class="year-cinema">
+										<i class="fa fa-calendar cinema-icon" aria-hidden="true"></i>
+										<p class="cinema-descript-cont">2018</p>
+									</div>
+								</div>
+								<div class="category-cinema">
+									<i class="fa fa-bookmark cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">Мелодрама</p>
+								</div>
+								<div class="rating-cinema">
+									<i class="fa fa-star-half-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">7.2 КП</p>
+								</div>
+								<div class="time-cinema">
+									<i class="fa fa-clock-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">1:58</p>
+								</div>
+								<div class="quality-cinema">
+									<i class="fa fa-thumbs-up cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">HD</p>
+								</div>
+								<div class="link-cinema-open">
+									<a class="play-btn" href="#"></a>
+								</div>
 							</div>
 						</div>
+						<div class="col-md-4 col-sm-6 box-cont">
+							<div class="img-box-cont">
+								<img src="img/eva.jpeg" alt="">
+							</div>
+							<div class="description-box-cont">
+								<div class="description-name-cont">
+									<h3 class="name-cinema">ЕВА</h3>
+									<p class="description-cinema">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, iste, sunt. Deleniti nemo voluptates quam quia eveniet id maxime blanditiis, aliquid iure, dolore explicabo! Tempore officia quis asperiores nisi praesentium.</p>
+								</div>
+								<div class="feat-item-box">
+									<div class="year-cinema">
+										<i class="fa fa-calendar cinema-icon" aria-hidden="true"></i>
+										<p class="cinema-descript-cont">2018</p>
+									</div>
+								</div>
+								<div class="category-cinema">
+									<i class="fa fa-bookmark cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">Мелодрама</p>
+								</div>
+								<div class="rating-cinema">
+									<i class="fa fa-star-half-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">7.2 КП</p>
+								</div>
+								<div class="time-cinema">
+									<i class="fa fa-clock-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">1:58</p>
+								</div>
+								<div class="quality-cinema">
+									<i class="fa fa-thumbs-up cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">HD</p>
+								</div>
+								<div class="link-cinema-open">
+									<a class="play-btn" href="#"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 box-cont">
+							<div class="img-box-cont">
+								<img src="img/eva.jpeg" alt="">
+							</div>
+							<div class="description-box-cont">
+								<div class="description-name-cont">
+									<h3 class="name-cinema">ЕВА</h3>
+									<p class="description-cinema">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, iste, sunt. Deleniti nemo voluptates quam quia eveniet id maxime blanditiis, aliquid iure, dolore explicabo! Tempore officia quis asperiores nisi praesentium.</p>
+								</div>
+								<div class="feat-item-box">
+									<div class="year-cinema">
+										<i class="fa fa-calendar cinema-icon" aria-hidden="true"></i>
+										<p class="cinema-descript-cont">2018</p>
+									</div>
+								</div>
+								<div class="category-cinema">
+									<i class="fa fa-bookmark cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">Мелодрама</p>
+								</div>
+								<div class="rating-cinema">
+									<i class="fa fa-star-half-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">7.2 КП</p>
+								</div>
+								<div class="time-cinema">
+									<i class="fa fa-clock-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">1:58</p>
+								</div>
+								<div class="quality-cinema">
+									<i class="fa fa-thumbs-up cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">HD</p>
+								</div>
+								<div class="link-cinema-open">
+									<a class="play-btn" href="#"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 box-cont">
+							<div class="img-box-cont">
+								<img src="img/eva.jpeg" alt="">
+							</div>
+							<div class="description-box-cont">
+								<div class="description-name-cont">
+									<h3 class="name-cinema">ЕВА</h3>
+									<p class="description-cinema">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, iste, sunt. Deleniti nemo voluptates quam quia eveniet id maxime blanditiis, aliquid iure, dolore explicabo! Tempore officia quis asperiores nisi praesentium.</p>
+								</div>
+								<div class="feat-item-box">
+									<div class="year-cinema">
+										<i class="fa fa-calendar cinema-icon" aria-hidden="true"></i>
+										<p class="cinema-descript-cont">2018</p>
+									</div>
+								</div>
+								<div class="category-cinema">
+									<i class="fa fa-bookmark cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">Мелодрама</p>
+								</div>
+								<div class="rating-cinema">
+									<i class="fa fa-star-half-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">7.2 КП</p>
+								</div>
+								<div class="time-cinema">
+									<i class="fa fa-clock-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">1:58</p>
+								</div>
+								<div class="quality-cinema">
+									<i class="fa fa-thumbs-up cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">HD</p>
+								</div>
+								<div class="link-cinema-open">
+									<a class="play-btn" href="#"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 box-cont">
+							<div class="img-box-cont">
+								<img src="img/lara.jpeg" alt="">
+							</div>
+							<div class="description-box-cont">
+								<div class="description-name-cont">
+									<h3 class="name-cinema">Tomb Raider</h3>
+									<p class="description-cinema">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, iste, sunt. Deleniti nemo voluptates quam quia eveniet id maxime blanditiis, aliquid iure, dolore explicabo! Tempore officia quis asperiores nisi praesentium.</p>
+								</div>
+								<div class="feat-item-box">
+									<div class="year-cinema">
+										<i class="fa fa-calendar cinema-icon" aria-hidden="true"></i>
+										<p class="cinema-descript-cont">2018</p>
+									</div>
+								</div>
+								<div class="category-cinema">
+									<i class="fa fa-bookmark cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">Мелодрама</p>
+								</div>
+								<div class="rating-cinema">
+									<i class="fa fa-star-half-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">7.2 КП</p>
+								</div>
+								<div class="time-cinema">
+									<i class="fa fa-clock-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">1:58</p>
+								</div>
+								<div class="quality-cinema">
+									<i class="fa fa-thumbs-up cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">HD</p>
+								</div>
+								<div class="link-cinema-open">
+									<a class="play-btn" href="#"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 box-cont">
+							<div class="img-box-cont">
+								<img src="img/ice.jpeg" alt="">
+							</div>
+							<div class="description-box-cont">
+								<div class="description-name-cont">
+									<h3 class="name-cinema">Ice</h3>
+									<p class="description-cinema">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, iste, sunt. Deleniti nemo voluptates quam quia eveniet id maxime blanditiis, aliquid iure, dolore explicabo! Tempore officia quis asperiores nisi praesentium.</p>
+								</div>
+								<div class="feat-item-box">
+									<div class="year-cinema">
+										<i class="fa fa-calendar cinema-icon" aria-hidden="true"></i>
+										<p class="cinema-descript-cont">2018</p>
+									</div>
+								</div>
+								<div class="category-cinema">
+									<i class="fa fa-bookmark cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">Мелодрама</p>
+								</div>
+								<div class="rating-cinema">
+									<i class="fa fa-star-half-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">7.2 КП</p>
+								</div>
+								<div class="time-cinema">
+									<i class="fa fa-clock-o cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">1:58</p>
+								</div>
+								<div class="quality-cinema">
+									<i class="fa fa-thumbs-up cinema-icon" aria-hidden="true"></i>
+									<p class="cinema-descript-cont">HD</p>
+								</div>
+								<div class="link-cinema-open">
+									<a class="play-btn" href="#"></a>
+								</div>
+							</div>
 
-						<div class="grid-maps">
-							<div class="grid-item-maps">
-								<a href="https://yandex.ru/maps/?um=constructor%3Ad8040e40100e24c34d857ed0b55060709388e36373210720dd7ba5458ece73cd&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Ad8040e40100e24c34d857ed0b55060709388e36373210720dd7ba5458ece73cd&amp;width=600&amp;height=300&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
-							</div>
-							<div class="grid-item-maps">
-								<img src="img/image5.jpg" alt="">
-							</div>
 						</div>
-						<p class="info-company">ИНН: 79554646546565, номер свидетельства: 87411564, выдано 03.06.1991</p>
 					</div>
 				</div>
+				
+				<div class="col-md-3 col-sm-3">
+					<div class="col-md-12 box-txt-sidebar">Популярное</div>
+					<div class="col-md-12 box-cont-sidebar">
+						<div class="img-cont-sidebar">
+							<a href="img/eva.jpeg" data-fancybox="images">
+								<img src="img/eva.jpeg" alt="">
+							</a>
+						</div>
+						<div class="cont-sidebar-box">
+							<div class="description-cont-sidebar">
+								<a href="#"><p class="name-cinema-sidebar">Ева</p></a>
+								<p class="year-cinema">2018</p>
+								<p class="categor-cinema-sidebar">Мелодрама</p>
+								<p class="top-cinema-sidebar"> КиноПоиск - <span class="top-cinema-box">6.4</span></p>
+								<p class="time-cinema-sidebar">01:46</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 box-cont-sidebar">
+						<div class="img-cont-sidebar">
+							<a href="img/velichayshiy-shoumen.jpg" data-fancybox="images">
+								<img src="img/velichayshiy-shoumen.jpg" alt="">
+							</a>
+						</div>
+						<div class="cont-sidebar-box">
+							<div class="description-cont-sidebar">
+								<a href="#"><p class="name-cinema-sidebar">Шоумен</p></a>
+								<p class="year-cinema">2018</p>
+								<p class="categor-cinema-sidebar">Мелодрама</p>
+								<p class="top-cinema-sidebar"> КиноПоиск - <span class="top-cinema-box">7.2</span></p>
+								<p class="time-cinema-sidebar">01:36</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-md-12 box-cont-sidebar">
+						<div class="img-cont-sidebar">
+							<a href="img/lara.jpeg" data-fancybox="images">
+								<img src="img/lara.jpeg" alt="">
+							</a>
+						</div>
+						<div class="cont-sidebar-box">
+							<div class="description-cont-sidebar">
+								<a href="#"><p class="name-cinema-sidebar">Лара Крофт</p></a>
+								<p class="year-cinema">2018</p>
+								<p class="categor-cinema-sidebar">Приключения</p>
+								<p class="top-cinema-sidebar"> КиноПоиск - <span class="top-cinema-box">7.8</span></p>
+								<p class="time-cinema-sidebar">02:23</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-12 box-txt-sidebar top-mar">Последние добавления</div>
+					<div class="col-md-12 box-cont-sidebar">
+						<div class="img-cont-sidebar">
+							<a href="img/eva.jpeg" data-fancybox="images">
+								<img src="img/eva.jpeg" alt="">
+							</a>
+						</div>
+						<div class="cont-sidebar-box">
+							<div class="description-cont-sidebar">
+								<a href="#"><p class="name-cinema-sidebar">Ева</p></a>
+								<p class="year-cinema">2018</p>
+								<p class="categor-cinema-sidebar">Мелодрама</p>
+								<p class="top-cinema-sidebar"> КиноПоиск - <span class="top-cinema-box">6.4</span></p>
+								<p class="time-cinema-sidebar">01:46</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 box-cont-sidebar">
+						<div class="img-cont-sidebar">
+							<a href="img/velichayshiy-shoumen.jpg" data-fancybox="images">
+								<img src="img/velichayshiy-shoumen.jpg" alt="">
+							</a>
+						</div>
+						<div class="cont-sidebar-box">
+							<div class="description-cont-sidebar">
+								<a href="#"><p class="name-cinema-sidebar">Шоумен</p></a>
+								<p class="year-cinema">2018</p>
+								<p class="categor-cinema-sidebar">Мелодрама</p>
+								<p class="top-cinema-sidebar"> КиноПоиск - <span class="top-cinema-box">7.2</span></p>
+								<p class="time-cinema-sidebar">01:36</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-md-12 box-cont-sidebar">
+						<div class="img-cont-sidebar">
+							<a href="img/lara.jpeg" data-fancybox="images">
+								<img src="img/lara.jpeg" alt="">
+							</a>
+						</div>
+						<div class="cont-sidebar-box">
+							<div class="description-cont-sidebar">
+								<a href="#"><p class="name-cinema-sidebar">Лара Крофт</p></a>
+								<p class="year-cinema">2018</p>
+								<p class="categor-cinema-sidebar">Приключения</p>
+								<p class="top-cinema-sidebar"> КиноПоиск - <span class="top-cinema-box">7.8</span></p>
+								<p class="time-cinema-sidebar">02:23</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-md-3 box-cont">
+					<a href="img/velichayshiy-shoumen.jpg" data-fancybox="images">
+						<img src="img/velichayshiy-shoumen.jpg" alt="">
+						
+					</a>
+				</div> -->
 			</div>
-	</section>
-  	<footer>
-  		<div class="container">
-  			<div class="box-time-company">
-  				<p class="time-company">2018 Name</p>
-  				<p class="boss-company">ИП Вася Пупкин</p>
-  			</div>
-  			<div class="social-network">
-  				<div class="box-vk">
-  					<a class="vk-link" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-  				</div>
-  				<div class="box-insta">
-  					<a class="inst-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
-  				</div>
-  			</div>
-  			<div class="box-info-company">
-	  			<p>Service@name.ru</p>
-	  			<p>+79202596689</p>
-	  			<p>г. Тула, ул. Каминского д.23А, 2 этаж</p>
-  			</div>
-  		</div>
-  	</footer>
-	<script src="js/nprogress.js"></script>
-	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
-	<script src="js/main.js"></script>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer-info">KinoRelax <span class="footer-info-year">2018</span></div>
+		</div>
+	</footer>
+
+	
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
