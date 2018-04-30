@@ -4,6 +4,14 @@ $('.single-item').slick({
   	accessibility: false,
   	arrows: false,
 });
+$('.slick-img-page').slick({
+	autoplay: true,
+  	autoplaySpeed: 3000,
+  	accessibility: false,
+  	arrows: false,
+  	slidesToShow: 3,
+  	slidesToScroll: 1
+});
 
 $( document ).ready(function() {
     $('.link-registration').click(function(){

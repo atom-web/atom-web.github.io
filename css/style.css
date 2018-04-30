@@ -193,7 +193,7 @@ form.generic-form label{
 }
 .category-box ul{
 	width: 200px;
-    height: 400px;
+    height: 250px;
 }
 .category-box li {
 	list-style: none;
@@ -642,13 +642,13 @@ footer{
     font-size: 13px;
 }
 .box-cont-page{
-
+	margin: 0 0 50px 0;
 }
 .description-name-page{
 	margin: 0px 7px;
 }
 .video-player-box{
-	background: #000000;
+	/*background: #000000;*/
 }
 .img-box-page{
 	width: 220px;
@@ -699,4 +699,8 @@ footer{
 }
 .page-descript-cont a:hover{
 	color: #fda5a5;
+}
+.slick-img-page{
+	height: 130px;
+	margin-top: 2px;
 }
