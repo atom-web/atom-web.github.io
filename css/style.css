@@ -704,3 +704,44 @@ footer{
 	height: 130px;
 	margin-top: 2px;
 }
+.comment-box{
+	width: 100%;
+	background: #333333;
+	min-height: 70px;
+	position: relative;
+    border-bottom: 1px solid rgba(234, 234, 234, 0.08);
+}
+.comment-avatar{
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	float: right;
+	margin: 5px 5px;
+}
+.comment-name-img{
+	position: absolute;
+    width: 200px;
+    height: auto;
+    left: -10px;
+    top: 19px;
+}
+.comment-name-user{
+	position: absolute;
+    top: 19px;
+    left: 14px;
+    color: #eaeaea;
+}
+.comment-description{
+	color: #eaeaea;
+	padding: 65px 20px 0 20px;
+	font-size: 13px;
+	text-align: center;
+}
+.link-reply{
+	text-align: right;
+	text-decoration: none;
+	color: #eaeaea;
+}
+.link-reply p{
+	padding: 10px;
+}
