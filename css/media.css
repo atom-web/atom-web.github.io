@@ -28,6 +28,16 @@
 		right: 0px;
     	bottom: 37px;
 	}
+	.video-player-box iframe{
+		height: 390px;
+		width: 100%;
+	}
+	.img-box-page{
+		width: 208px;
+	}
+	.page-descript-box, .page-category-cinema, .page-rating-cinema, .page-time-cinema, .page-quality-cinema, .page-age-cinema{
+		width: 215px;
+	}
 }
 @media screen and (max-width: 991px){
 	.search{
@@ -76,6 +86,26 @@
   	margin-bottom: 15px;
     padding-bottom: 10px;
   }
+  .video-player-box iframe{
+  	height: 289px;
+  	width: 100%;
+  }
+  .page-descript-box{
+  	width: 100%;
+  	text-align: center;
+  }
+  .img-box-page{
+  	float: none;
+  	margin: 0 auto;
+  }
+  .description-name-page{
+  	text-align: center;
+  }
+  .link-raiting{
+	margin: 0 auto;
+    width: 148px;
+    height: 47px;
+	}
 }
 @media screen and (max-width: 767px) {
 	.box-cont{
@@ -232,6 +262,10 @@
 	  transform: translateY(0px);
 	  opacity: 1;
 	  transition-delay: 0.85s;
+	}
+	.video-player-box iframe{
+		height: 214px;
+		width: 100%;
 	}
 @media (min-width: 667px) {
 	nav {
@@ -459,9 +493,30 @@
 	.slick-slider{
 		height: 160px;
 	}
+	.video-player-box iframe{
+		height: 206px;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 432px){
+	.video-player-box iframe{
+		height: 169px;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 384px){
+	.video-player-box iframe{
+		height: 149px;
+		width: 100%;
+	}
 }
 @media screen and (max-width: 369px){
 	.slick-slider{
 		height: 131px;
+		width: 100%;
+	}
+	.video-player-box iframe{
+		height: 142px;
+		width: 100%;
 	}
 }
