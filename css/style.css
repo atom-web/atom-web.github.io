@@ -701,6 +701,7 @@ footer{
 .slick-img-page{
 	height: 130px;
 	margin: 0 0 20px 0;
+	box-shadow: none;
 }
 .comment-box{
 	width: 100%;

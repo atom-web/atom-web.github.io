@@ -9,6 +9,7 @@ $('.slick-img-page').slick({
   	autoplaySpeed: 3000,
   	accessibility: false,
   	arrows: false,
+  	lazyLoad: 'ondemand',
   	slidesToShow: 3,
   	slidesToScroll: 1
 });
