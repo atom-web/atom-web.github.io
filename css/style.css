@@ -21,7 +21,7 @@ h1{
 	color: #eaeaea;
 	margin: 0;
 	text-transform: uppercase;
-
+	font-size: 36px;
 }
 h1 span{
 	color: red;
@@ -116,7 +116,7 @@ form.generic-form label{
     cursor: pointer;
 }
 .logo{
-	margin: 22px 0 0 21px;
+	margin: 29px 0 0 21px;
 }
 .head-logo{
 	height: 100px;
@@ -629,7 +629,7 @@ footer{
 	width: 100%;
 }
 .content-description-page{
-	margin-top: 30px;
+	margin-top: 8px;
 }
 .name-cinema-page{
 	color: #eaeaea;
@@ -647,10 +647,6 @@ footer{
 }
 .video-player-box{
 	/*background: #000000;*/
-}
-.video-player-box iframe{
-	height: 465px;
-	width: 100%;
 }
 .img-box-page{
 	width: 220px;
@@ -704,14 +700,14 @@ footer{
 }
 .slick-img-page{
 	height: 130px;
-	margin-top: 2px;
+	margin: 0 0 20px 0;
 }
 .comment-box{
 	width: 100%;
 	background: #333333;
 	min-height: 70px;
 	position: relative;
-    border-bottom: 1px solid rgba(234, 234, 234, 0.08);
+    border: 1px solid rgba(234, 234, 234, 0.08);
 }
 .comment-avatar{
 	width: 50px;
@@ -760,6 +756,7 @@ footer{
     font-size: 23px;
     color: #eaeaea;
     padding: 0 10px;
+    text-align: center;
 }
 
 #feedback-page{

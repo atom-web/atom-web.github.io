@@ -28,18 +28,20 @@
 		right: 0px;
     	bottom: 37px;
 	}
-	.video-player-box iframe{
-		height: 390px;
-		width: 100%;
-	}
 	.img-box-page{
 		width: 208px;
 	}
 	.page-descript-box, .page-category-cinema, .page-rating-cinema, .page-time-cinema, .page-quality-cinema, .page-age-cinema{
 		width: 215px;
 	}
+	.comment-box-name, .trailer-name{
+		margin-bottom: 10px;
+	}
 }
 @media screen and (max-width: 991px){
+	.img-box-page{
+		display: none;
+	}
 	.search{
 		width: 100px;
 	}
@@ -86,28 +88,37 @@
   	margin-bottom: 15px;
     padding-bottom: 10px;
   }
-  .video-player-box iframe{
-  	height: 289px;
-  	width: 100%;
-  }
-  .page-descript-box{
-  	width: 100%;
-  	text-align: center;
-  }
   .img-box-page{
-  	float: none;
-  	margin: 0 auto;
+  	width: 160px;
   }
   .description-name-page{
   	text-align: center;
   }
   .link-raiting{
-	margin: 0 auto;
     width: 148px;
     height: 47px;
 	}
 }
 @media screen and (max-width: 767px) {
+	.box-container-page{
+		margin: 0 auto;
+	    max-width: 385px;
+	}
+	.border-rig{
+  		border: none;
+  	}
+  	.video-player-box{
+  		background: #000;
+  	}
+  	.img-box-page{
+  		float: left;
+  		margin: 0 25px 0 0;
+  		display: inherit;
+  	}
+  	.page-descript-box{
+  		width: 195px;
+  		text-align: left;
+  	}
 	.box-cont{
 		height: 253px;
 	}
@@ -262,10 +273,6 @@
 	  transform: translateY(0px);
 	  opacity: 1;
 	  transition-delay: 0.85s;
-	}
-	.video-player-box iframe{
-		height: 214px;
-		width: 100%;
 	}
 @media (min-width: 667px) {
 	nav {
@@ -446,6 +453,21 @@
   	}
 }
 @media screen and (max-width: 575px){
+	.img-box-page{
+		width: 165px;
+	}
+	h1{
+		font-size: 26px;
+	}
+	h3{
+		font-size: 1.3em;
+	}
+	.name-descript-cont{
+		font-size: 12px;
+	}
+	.page-descript-cont{
+		font-size: 15px;
+	}
 	.img-box-cont img{
 		width: 50%;
 		float: right;
@@ -478,7 +500,7 @@
   		display: none;
   	}
   	.logo{
-  		margin: 26px auto;
+  		margin: 9px auto;
   	}
   	.description-cinema{
   		text-align: left;
@@ -487,36 +509,48 @@
   	.box-cont-sidebar{
   		border: none;
   	}
+  	.head-logo{
+  		height: 50px;
+  	}
+
 
 }
 @media screen and (max-width: 519px){
 	.slick-slider{
 		height: 160px;
 	}
-	.video-player-box iframe{
-		height: 206px;
-		width: 100%;
-	}
 }
 @media screen and (max-width: 432px){
-	.video-player-box iframe{
-		height: 169px;
-		width: 100%;
+	.img-box-page{
+		width: 143px;
+	}
+	.img-box-page{
+		margin: 0 18px 0 0;
+	}
+	.name-cinema-page{
+		margin-bottom: 12px;
+	}
+	.page-descript-cont{
+		font-size: 13px;
+	}
+	.name-descript-cont{
+		font-size: 11px;
+	}
+	.page-descript-box{
+		width: 166px;
+	}
+	.box-container-page{
+		width: 327px;
+	}
+	.page-descript-box, .page-category-cinema, .page-rating-cinema, .page-time-cinema, .page-quality-cinema, .page-age-cinema{
+		width: 165px;
 	}
 }
 @media screen and (max-width: 384px){
-	.video-player-box iframe{
-		height: 149px;
-		width: 100%;
-	}
+	
 }
 @media screen and (max-width: 369px){
 	.slick-slider{
 		height: 131px;
-		width: 100%;
-	}
-	.video-player-box iframe{
-		height: 142px;
-		width: 100%;
 	}
 }
