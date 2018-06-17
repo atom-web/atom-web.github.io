@@ -1,0 +1,205 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Arsenal', sans-serif;
+}
+h1{
+	font-size: 3.7em;
+    font-weight: bold;
+    color: white;
+}
+h2{
+	font-size: 1.3em;
+	color: #e8e8e8;
+}
+h3{
+	text-align: center;
+	font-size: 25px;
+	padding: 10px 0;
+	width: 100%;
+}
+h4{
+	text-align: center;
+	font-size: 17px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/*Header*/
+header{
+	width: 100%;
+    height: 80px;
+    background: #383838;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 999;
+}
+menu{
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav{
+	display: inline-block;
+}
+nav ul{
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+}
+nav a{
+	color: white;
+	font-size: 19px;
+	padding: 8px 18px;
+	transition: .2s;
+}
+nav a:hover{
+	color: #ff3366;
+	text-decoration: none;
+}
+.logo{
+	position: absolute;
+	left: 0;
+}
+.logo p{
+	color: #ff3366;
+    font-size: 37px;
+    margin-left: 50px;
+}
+.callback-box{
+    margin: 0 50px;
+}
+.callback-link:hover{
+	background: #e50039;
+	color: #d0d0d0;
+	text-decoration: none;
+}
+.callback-link{
+	background: rgb(255, 51, 102);
+    padding: 6px 21px 11px;
+    font-size: 21px;
+    border-radius: 20px;
+    color: white;
+    transition: .1s;
+}
+.fa-phone{
+	font-size: 27px;
+    float: left;
+    margin: 3px 13px;
+
+}
+
+/*Header-bg*/
+.header-bg{
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.header-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-filter: blur(35px) brightness(0.9);
+    -ms-filter: blur(35px) brightness(0.9);
+    -moz-filter: blur(35px) brightness(0.9);
+    -o-filter: blur(35px) brightness(0.9);
+    filter: blur(35px) brightness(0.9);
+    z-index: -1;
+}
+.description-link-head{
+	background: rgb(255, 51, 102);
+	padding: 7px 20px 10px;
+	color: white;
+	font-size: 23px;
+	border-radius: 30px;
+	transition: .2s;
+
+}
+.description-header{
+	margin-bottom: 50px;
+}
+.description-link-head:hover{
+	text-decoration: none;
+	background: #e50039;
+	color: #d0d0d0;
+}
+
+/*preview-descript*/
+.preview-descript{
+	padding: 40px 0;
+}
+.preview-descript-img{
+	height: 213px;
+}
+
+/*Gallery*/
+
+.gallery{
+	background: #f5f5f5;
+	padding: 40px 0;
+}
+.gallery-img{
+	height: 150px;
+	margin-bottom: 30px;
+}
+
+/*Our-team*/
+.our-team{
+	padding: 40px;
+}
+.our-team-img{
+	height: 300px;
+}
+.our-team-name{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0;
+}
+.our-team-position{
+	text-align: center;
+	margin: 0;
+}
+.fa-vk{
+	margin: 0 auto;
+    width: 20px;
+    display: block;
+    font-size: 23px;
+}
+/*intro-video*/
+.intro-video{
+	background: #f5f5f5;
+	padding: 40px 0;
+}
+.intro-video-name{
+	text-align: right;
+	font-size: 30px;
+}
+.intro-video-description{
+	text-align: right;
+}
+.intro-video-link{
+	color: white;
+	font-size: 20px;
+	background: #ff3366;
+	border-radius: 30px;
+	padding: 5px 15px 8px;
+	float: right;
+	transition: .2s;
+}
+.intro-video-link:hover{
+	text-decoration: none;
+	color: #000;
+}
