@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body{
-	font-family: 'Arsenal', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 h1{
 	font-size: 3.7em;
@@ -19,12 +19,14 @@ h3{
 	font-size: 25px;
 	padding: 10px 0;
 	width: 100%;
+	font-weight: 600;
 }
 h4{
 	text-align: center;
 	font-size: 17px;
 	width: 100%;
 	margin-bottom: 40px;
+	color: #797979;
 }
 img{
 	width: 100%;
@@ -75,6 +77,7 @@ nav a:hover{
 	color: #ff3366;
     font-size: 37px;
     margin-left: 50px;
+    margin-top: 12px;
 }
 .callback-box{
     margin: 0 50px;
@@ -86,7 +89,7 @@ nav a:hover{
 }
 .callback-link{
 	background: rgb(255, 51, 102);
-    padding: 6px 21px 11px;
+    padding: 6px 21px;
     font-size: 21px;
     border-radius: 20px;
     color: white;
@@ -154,10 +157,81 @@ nav a:hover{
 	height: 150px;
 	margin-bottom: 30px;
 }
+/*price*/
+.price{
+	padding: 40px;
+}
+.price-name-items{
+	text-align: center;
+	color: #000;
+	margin-top: 15px;
+	font-weight: 600;
+}
+.price-descript-items{
+	color: #616161;
+	font-size: 15px;
+}
+.price-img{
+	height: 180px;
+}
+.border-box{
+	border-bottom: 1px solid #d8d8d8;
+	width: 190px;
+	margin: 0 auto;
+}
+.price-box{
+	background: #eaeaea;
+	padding-top: 15px;
+	border: 5px solid #fff;
+	margin-bottom: 20px;
+}
+.price-number-box{
+	text-align: center;
+}
+.price-number{
+	font-size: 32px;
+	font-weight: bold;
+	color: #ff3366;
+}
+.price-currency{
+	font-size: 19px;
+	font-weight: 100;
+	color: #adadad;
+}
+.price-link{
+	color: #eaeaea;
+	background: #ff3366;
+    border-radius: 30px;
+    padding: 3px 15px;
+    transition: .2s;
+    position: absolute;
+    bottom: 200px;
+    right: 3px;
+}
+.price-link:hover, .price-list-link:hover, .social-networks:hover{
+	color: #000;
+	text-decoration: none;
+}
+.price-list-box{
+	width: 100%;
+	margin-bottom: 40px;
+}
+.price-list-link{
+	color: #eaeaea;
+	background: #ff3366;
+	border-radius: 30px;
+	padding: 3px 15px 5px;
+	transition: .2s;
+	margin: 0 auto;
+	max-width: 300px;
+	display: block;
+	text-align: center;
+}
 
 /*Our-team*/
 .our-team{
 	padding: 40px;
+	background: #f5f5f5;
 }
 .our-team-img{
 	height: 300px;
@@ -179,27 +253,36 @@ nav a:hover{
     font-size: 23px;
 }
 /*intro-video*/
-.intro-video{
-	background: #f5f5f5;
+.intro{
+	background: #fff;
 	padding: 40px 0;
 }
-.intro-video-name{
-	text-align: right;
-	font-size: 30px;
+.intro-description{
+	text-align: center;
 }
-.intro-video-description{
-	text-align: right;
+
+/*footer{*/
+footer{
+	background: #373737;
+	padding: 40px 0;
+	color: #eaeaea;
 }
-.intro-video-link{
-	color: white;
-	font-size: 20px;
-	background: #ff3366;
-	border-radius: 30px;
-	padding: 5px 15px 8px;
-	float: right;
-	transition: .2s;
+.logo-footer p{
+	font-size: 30px
 }
-.intro-video-link:hover{
-	text-decoration: none;
-	color: #000;
+.logo-info-name{
+	margin-bottom: 25px;
+}
+.social-networks{
+	display: block;
+    color: #4ea3ff;
+    transition: .2s;
+}
+.mobile-contacts {
+    margin: 0;
+    font-size: 15px;
+    color: #b3b3b3;
+}
+.mobile-contact-items{
+	color: #ff3366;
 }
