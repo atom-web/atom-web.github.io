@@ -39,11 +39,23 @@
    		margin-bottom: 30px;
 	}
 }
+@media screen and (max-width: 500px){
+	h1{
+		font-size: 1.6em;
+	}
+	.description-header{
+		font-size: 0.9em;
+		margin-bottom: 30px;
+	}
+	.description-link-head{
+		font-size: 13px;
+	}
+}
 @media screen and (max-width: 314px){
 	h1{
 		font-size: 2em;
 	}
-	h2{
+	.description-header{
 		font-size: 1.1em;
 	}
 }
