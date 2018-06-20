@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	 <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -19,19 +21,22 @@
 		<nav>
 			<ul>
 				<li><a href="">Главная</a></li>
-				<li><a href="">Прайс лист</a></li>
+				<li><a href="price.html">Прайс лист</a></li>
 				<li><a href="">О нас</a></li>
 			</ul>
+			<div class="callback-box">
+				<a class="callback-link" href="#"><i class="fa fa-phone" aria-hidden="true"></i>Заказать обратный звонок</a>
+			</div>
 		</nav>
-		<div class="callback-box">
-			<a class="callback-link" href="#"><i class="fa fa-phone" aria-hidden="true"></i>Заказать обратный звонок</a>
+		<div class="hamburger-menu">
+		  <div class="bar"></div>	
 		</div>
 	</header>
 	<div class="header-bg">
 		<img class="header-img" src="img/background.jpg" alt="">
 		<div class="container">
-			<h1>Воздушные шары на праздник</h1>
-			<h2 class="description-header">Украсим любое торжество воздушными шарами. Индивидуальный подход к каждому мероприятию.</h2>
+			<h1 class="animated flipInX">Воздушные шары на праздник</h1>
+			<h2 class="description-header animated flipInX">Украсим любое торжество воздушными шарами. Индивидуальный подход к каждому мероприятию.</h2>
 			<a class="description-link-head" href="#">Подробнее</a>
 		</div>
 	</div>
@@ -62,28 +67,28 @@
 				<h3>Название галереи</h3>
 				<h4>Текст с описанием галереи</h4>
 				<div class="col-lg-3">
-					<a href="#"><img class="gallery-img" src="img/4785074611819863-257-1920x1080.jpg" alt=""></a>
+					<a href="img/4785074611819863-257-1920x1080.jpg" data-fancybox="images"><img class="gallery-img" src="img/4785074611819863-257-1920x1080.jpg" alt=""></a>
 				</div>
 				<div class="col-lg-3">
-					<a href="#"><img class="gallery-img" src="img/3-676x380.jpg" alt=""></a>
+					<a href="img/3-676x380.jpg" data-fancybox="images" ><img class="gallery-img" src="img/3-676x380.jpg" alt=""></a>
 				</div>
 				<div class="col-lg-3">
-					<a href="#"><img class="gallery-img" src="img/5-676x380.jpg" alt=""></a>
+					<a href="img/5-676x380.jpg" data-fancybox="images" ><img class="gallery-img" src="img/5-676x380.jpg" alt=""></a>
 				</div>
 				<div class="col-lg-3">
-					<a href="#"><img class="gallery-img" src="img/11-1920x1080.jpg" alt=""></a>
+					<a href="img/11-1920x1080.jpg" data-fancybox="images" ><img class="gallery-img" src="img/11-1920x1080.jpg" alt=""></a>
 				</div>
 				<div class="col-lg-3">
-					<a href="#"><img class="gallery-img" src="img/background.jpg" alt=""></a>
+					<a href="img/background.jpg" data-fancybox="images" ><img class="gallery-img" src="img/background.jpg" alt=""></a>
 				</div>
 				<div class="col-lg-3">
-					<a href="#"><img class="gallery-img" src="img/new-year-wallpapers-air-garland-051381-23-1920x1080.jpg" alt=""></a>
+					<a href="img/new-year-wallpapers-air-garland-051381-23-1920x1080.jpg" data-fancybox="images" ><img class="gallery-img" src="img/new-year-wallpapers-air-garland-051381-23-1920x1080.jpg" alt=""></a>
 				</div>
 				<div class="col-lg-3">
-					<a href="#"><img class="gallery-img" src="img/5-676x380.jpg" alt=""></a>
+					<a href="img/5-676x380.jpg" data-fancybox="images" ><img class="gallery-img" src="img/5-676x380.jpg" alt=""></a>
 				</div>
 				<div class="col-lg-3">
-					<a href="#"><img class="gallery-img" src="img/11-1920x1080.jpg" alt=""></a>
+					<a href="img/11-1920x1080.jpg" data-fancybox="images" ><img class="gallery-img" src="img/11-1920x1080.jpg" alt=""></a>
 				</div>
 			</div>
 		</div>
@@ -94,7 +99,7 @@
 				<h3>Название Прайс листа</h3>
 				<h4>Текст с описанием Прайс листа. Опишите эти блоки.</h4>
 				<div class="price-list-box"><a class="price-list-link" href="#">Посмотреть полный прайс Лист</a></div>
-				<div class="col-lg-3 price-box">
+				<!-- <div class="col-lg-3 price-box">
 					<img class="price-img" src="img/11-1920x1080.jpg" alt="">
 					<h2 class="price-name-items">Связка из 9 шаров</h2>
 					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
@@ -103,76 +108,86 @@
 						<p class="price-number">300 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
 					</div>
 					<a class="price-link" href="#">Заказать</a>
+				</div> -->
+				<div class="col-lg-3 price-box">
+					<img class="price-img" src="img/sharik_krasnyy.jpg" alt="">
+					<h2 class="price-name-items">Обычный шар</h2>
+					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
+					<div class="border-box"></div>
+					<div class="price-number-box">
+						<p class="price-number"><span class="price-currency">от</span> 55 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
+					</div>
+					<a class="price-link" href="#">Подробнее</a>
+				</div>
+				<div class="col-lg-3 price-box">
+					<img class="price-img" src="img/shop_items_catalog_image3198.jpg" alt="">
+					<h2 class="price-name-items">Фольгированные шары</h2>
+					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
+					<div class="border-box"></div>
+					<div class="price-number-box">
+						<p class="price-number"><span class="price-currency">от</span> 250 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
+					</div>
+					<a class="price-link" href="#">Подробнее</a>
+				</div>
+				<div class="col-lg-3 price-box">
+					<img class="price-img" src="img/5.jpg" alt="">
+					<h2 class="price-name-items">Букеты из шаров</h2>
+					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
+					<div class="border-box"></div>
+					<div class="price-number-box">
+						<p class="price-number"><span class="price-currency">от</span> 350 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
+					</div>
+					<a class="price-link" href="#">Подробнее</a>
+				</div>
+				<div class="col-lg-3 price-box">
+					<img class="price-img" src="img/5534.750x0.jpg" alt="">
+					<h2 class="price-name-items">Надпись на шарах</h2>
+					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
+					<div class="border-box"></div>
+					<div class="price-number-box">
+						<p class="price-number"><span class="price-currency">от</span> 390 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
+					</div>
+					<a class="price-link" href="#">Подробнее</a>
+				</div>
+				<div class="col-lg-3 price-box">
+					<img class="price-img" src="img/000b0798_586205.jpg" alt="">
+					<h2 class="price-name-items">Светящиеся шары</h2>
+					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
+					<div class="border-box"></div>
+					<div class="price-number-box">
+						<p class="price-number"><span class="price-currency">от</span> 1150 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
+					</div>
+					<a class="price-link" href="#">Подробнее</a>
+				</div>
+				<div class="col-lg-3 price-box">
+					<img class="price-img" src="img/2378.970.jpg" alt="">
+					<h2 class="price-name-items">Фигуры из шаров</h2>
+					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
+					<div class="border-box"></div>
+					<div class="price-number-box">
+						<p class="price-number"><span class="price-currency">от</span> 1500 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
+					</div>
+					<a class="price-link" href="#">Подробнее</a>
+				</div>
+				<div class="col-lg-3 price-box">
+					<img class="price-img" src="img/9717_8201969202007329025_1ff4f73029.jpg" alt="">
+					<h2 class="price-name-items">Цифры</h2>
+					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
+					<div class="border-box"></div>
+					<div class="price-number-box">
+						<p class="price-number"><span class="price-currency">от</span> 300 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
+					</div>
+					<a class="price-link" href="#">Подробнее</a>
 				</div>
 				<div class="col-lg-3 price-box">
 					<img class="price-img" src="img/new-year-wallpapers-air-garland-051381-23-1920x1080.jpg" alt="">
-					<h2 class="price-name-items">Связка из 12 шаров</h2>
+					<h2 class="price-name-items">Композиции</h2>
 					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
 					<div class="border-box"></div>
 					<div class="price-number-box">
-						<p class="price-number">500 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
+						<p class="price-number"><span class="price-currency">от</span> 900 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
 					</div>
-					<a class="price-link" href="#">Заказать</a>
-				</div>
-				<div class="col-lg-3 price-box">
-					<img class="price-img" src="img/140737495082429-858a-676x380.jpg" alt="">
-					<h2 class="price-name-items">Связка из 20 шаров</h2>
-					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
-					<div class="border-box"></div>
-					<div class="price-number-box">
-						<p class="price-number">750 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
-					</div>
-					<a class="price-link" href="#">Заказать</a>
-				</div>
-				<div class="col-lg-3 price-box">
-					<img class="price-img" src="img/3-676x380.jpg" alt="">
-					<h2 class="price-name-items">Связка из 27 шаров</h2>
-					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
-					<div class="border-box"></div>
-					<div class="price-number-box">
-						<p class="price-number">1050 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
-					</div>
-					<a class="price-link" href="#">Заказать</a>
-				</div>
-				<div class="col-lg-3 price-box">
-					<img class="price-img" src="img/3-676x380.jpg" alt="">
-					<h2 class="price-name-items">Связка из 27 шаров</h2>
-					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
-					<div class="border-box"></div>
-					<div class="price-number-box">
-						<p class="price-number">1050 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
-					</div>
-					<a class="price-link" href="#">Заказать</a>
-				</div>
-				<div class="col-lg-3 price-box">
-					<img class="price-img" src="img/140737495082429-858a-676x380.jpg" alt="">
-					<h2 class="price-name-items">Связка из 20 шаров</h2>
-					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
-					<div class="border-box"></div>
-					<div class="price-number-box">
-						<p class="price-number">750 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
-					</div>
-					<a class="price-link" href="#">Заказать</a>
-				</div>
-				<div class="col-lg-3 price-box">
-					<img class="price-img" src="img/11-1920x1080.jpg" alt="">
-					<h2 class="price-name-items">Связка из 9 шаров</h2>
-					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
-					<div class="border-box"></div>
-					<div class="price-number-box">
-						<p class="price-number">300 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
-					</div>
-					<a class="price-link" href="#">Заказать</a>
-				</div>
-				<div class="col-lg-3 price-box">
-					<img class="price-img" src="img/new-year-wallpapers-air-garland-051381-23-1920x1080.jpg" alt="">
-					<h2 class="price-name-items">Связка из 12 шаров</h2>
-					<h3 class="price-descript-items" >Описание к этому посту. Напишите тут продающий текст</h3>
-					<div class="border-box"></div>
-					<div class="price-number-box">
-						<p class="price-number">500 <span class="price-currency"><i class="fa fa-rub" aria-hidden="true"></i></span></p>
-					</div>
-					<a class="price-link" href="#">Заказать</a>
+					<a class="price-link" href="#">Подробнее</a>
 				</div>
 			</div>
 		</div>
@@ -260,6 +275,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
