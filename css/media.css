@@ -39,6 +39,21 @@
    		margin-bottom: 30px;
 	}
 }
+@media screen and (max-width: 870px){
+	.container__child{
+		width: auto;
+	}
+	.signup__container{
+		box-shadow: none;
+		width: auto;
+	}
+	.signup__thumbnail{
+		display: none;
+	}
+	.container__child{
+		height: auto;
+	}
+}
 @media screen and (max-width: 500px){
 	h1{
 		font-size: 1.6em;

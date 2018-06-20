@@ -25,7 +25,54 @@
 				<li><a href="">О нас</a></li>
 			</ul>
 			<div class="callback-box">
-				<a class="callback-link" href="#"><i class="fa fa-phone" aria-hidden="true"></i>Заказать обратный звонок</a>
+				<a class="callback-link " href="#" data-fancybox data-animation-duration="700" data-src="#animatedModal"><i class="fa fa-phone" aria-hidden="true"></i>Заказать обратный звонок</a>
+				<div style="display: none; background: #ffffff00;" id="animatedModal" class="animated-modal">
+					<div class="signup__container">
+					  <div class="container__child signup__thumbnail">
+					    <div class="thumbnail__logo">
+					      <p class="logo__text">#Sharlina</p>
+					    </div>
+					    <div class="thumbnail__content text-center">
+					      <p class="heading--primary">Укажите ваши контактные данные.</p>
+					      <p class="heading--secondary">Мы вам перезвоним в течении часа<br> В порядке очереди</p>
+					    </div>
+					    <!-- <div class="thumbnail__links">
+					      <ul class="list-inline m-b-0 text-center">
+					        <li><a href="http://alexdevero.com/" target="_blank"><i class="fa fa-globe"></i></a></li>
+					        <li><a href="https://www.behance.net/alexdevero" target="_blank"><fa class="fa fa-behance"></fa></a></li>
+					        <li><a href="https://github.com/alexdevero" target="_blank"><i class="fa fa-github"></i></a></li>
+					        <li><a href="https://twitter.com/alexdevero" target="_blank"><i class="fa fa-twitter"></i></a></li>
+					      </ul>
+					    </div> -->
+					    <div class="signup__overlay"></div>
+					  </div>
+					  <div class="container__child signup__form">
+					    <form action="#">
+					      <div class="form-group">
+					        <label for="username">Ваше имя</label>
+					        <input class="form-control" type="text" name="username" id="username" placeholder="Введите ваше имя" required />
+					      </div>
+					      <div class="form-group">
+					        <label for="email">Телефон</label>
+					        <input class="form-control" type="tel" id="email" placeholder="Введите номер вашего телефона" required />
+					      </div>
+					      <div class="form-group">
+					        <label for="password">Тема вопроса</label>
+					        <input class="form-control" type="text" placeholder="Краткое описание вашего вопроса" name="name">
+					      </div>
+					      <div class="m-t-lg">
+					        <ul class="list-inline">
+					          <li>
+					            <input class="btn btn--form" type="submit" value="Отправить" />
+					          </li>
+					        </ul>
+					      </div>
+					    </form>  
+					  </div>
+					</div>		          
+				
+
+		        </div>
 			</div>
 		</nav>
 		<div class="hamburger-menu">
