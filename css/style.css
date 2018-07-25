@@ -1,0 +1,287 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #eaeaea;
+	font-family: 'Noto Sans', sans-serif;
+}
+h1 {
+    color: #efefef;
+}
+img{
+	width: 100%;
+	object-fit: cover;
+}
+header{
+	background: #000;
+	margin-bottom: 15px;
+}
+menu{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+menu img{
+	width: auto;
+	height: auto;
+}
+nav{
+	position: absolute;
+	right: 33px;
+	bottom: 5px;
+}
+nav a{
+	color: #eaeaea;
+    padding: 10px;
+    transition: .2s;
+}
+
+a:hover{
+	color: #f5a367;
+	text-decoration: none;
+}
+nav li{
+	display: inline-block;
+}
+/*input{
+	border: #b5b5b5 1px solid;
+    padding: 7px;
+    background: #cccccc;
+    outline: none;
+}
+input[type=submit]{
+	width: 100%;
+    background: #cccccc;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+input[type=submit]:hover{
+	background: #9ec7f3;
+}
+textarea{
+	outline: none;
+    border: none;
+    background: #dedede;
+    outline: none;
+    font-size: 13px;
+    text-align: center;
+    padding: 22px;
+}
+form{
+	width: 100%;
+}*/
+.contacts-header{
+	position: absolute;
+    left: 33px;
+    bottom: 5px;
+}
+.contacts-header i{
+	margin: 5px;
+	color: #f5a367;
+}
+.cont-head-number{
+	color: #eaeaea;
+}
+.cont-head-feat{
+	color: #f5a367;
+}
+.price-name{
+	text-align: center;
+	font-size: 12px;
+	color: #000;
+}
+/*.form-descript {
+    text-align: center;
+    font-size: 21px;
+    margin-top: 20px;
+}*/
+.price-descript{
+	font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+}
+.price-link{
+	float: right;
+    color: #000;
+    transition: .2s;
+    background: #f5a367;
+    padding: 0px 17px;
+    border-radius: 20px;
+}
+.price-link:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.present{
+	
+}
+.multiple-items{
+	margin-top: 40px;
+}
+.present-name{
+	font-size: 33px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+.present-feat-txt{
+	color: #fd6c01;
+}
+.present-descript{
+	font-size: 14px;
+}
+.contact-name{
+	font-size: 33px;
+    font-weight: 600;
+    text-align: center;
+}
+.contact-feat{
+	color: #fd6c01;
+}
+.border-line{
+	border-bottom: 1px solid #c3c3c3;
+    max-width: 800px;
+    margin: 40px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.border-line img{
+	width: 50px;
+    position: absolute;
+    top: -24px;
+}
+
+.maps-box{
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+
+
+
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+
+footer{
+	background: #000;
+	margin-top: 40px;
+}
+footer .container{
+	height: 100px;
+}
