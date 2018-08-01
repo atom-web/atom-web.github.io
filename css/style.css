@@ -20,6 +20,7 @@ header{
   background: #27282d;
   height: 185px;
   color: #eaeaea;
+  margin-bottom: 65px;
 }
 .top-menu{
   background: #34363d;
@@ -167,4 +168,14 @@ header .fa-bars{
 
 .slideout-open .slideout-menu {
   display: block;
+}
+
+/*Content*/
+.content [class*="col-"] {
+   padding-right: 0;
+  padding-left: 0;
+}
+.banner-box{
+  overflow: hidden;
+  height: 235px;
 }
