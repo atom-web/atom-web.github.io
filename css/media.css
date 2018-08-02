@@ -52,10 +52,20 @@
 		display: block;
 		padding: 5px 0px;
 	}
+	.info-work{
+		font-size: 32px;
+	}
 }
 @media screen and (max-width: 767px){
 	.compan-info{
 		display: none;
+	}
+	.slick-slide div{
+		height: 290px;
+	}
+	.items-info{
+		top: 227px;
+		right: 0;
 	}
 }
 @media screen and (max-width: 575px){
@@ -81,13 +91,35 @@
 		width: 120px;
 	}
 	.call-back{
-		padding: 50px 0px;
+		padding: 43px 0px;
     	font-size: 18px;
     	text-align: center;
+	}
+	.items-info{
+		font-size: 17px;
+	}
+	.items-info:after{
+		border: 21px solid transparent;
+    	border-top: 23px solid #d4161e;
+    	border-right: 19px solid #d4161e;
+    	left: -40px;
+	}
+	.items-info{
+		top: 245px;
+	}
+	.home-name{
+		font-size: 14px;
+	}
+	.home-descript{
+		font-size: 11px;
 	}
 }
 @media screen and (max-width: 340px){
 	.numbers-phone{
 		font-size: 18px;
+		top: -42px;
+	}
+	.info-work{
+		font-size: 23px;
 	}
 }
