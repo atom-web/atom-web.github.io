@@ -21,7 +21,7 @@ header{
   background: #27282d;
   height: 185px;
   color: #eaeaea;
-  margin-bottom: 80px;
+  margin-bottom: 65px;
 }
 main{
   background: #d8d8d8;
@@ -60,7 +60,7 @@ main{
 }
 input[type=search]{
   border: none;
-  padding: 5px 18px;
+  padding: 5px 20px;
   outline: none;
 }
 
@@ -93,7 +93,7 @@ input[type=submit]{
 menu {
     height: 65px;
     background: #34363d;
-    box-shadow: -0.6em 2.4em 78px rgba(122,122,122,0.5);
+    box-shadow: -0.6em 2.4em 78px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +244,7 @@ header .fa-bars{
   font-size: 29px;
   color: white;
   padding: 10px 25px;
-  right: 30px;
+  right: 0px;
 }
 
 .items-info:after{
@@ -255,4 +255,37 @@ header .fa-bars{
   border: 27px solid transparent;
   border-top: 36px solid #d4161e;
   border-right: 20px solid #d4161e;
+}
+.banner-price{
+  height: 170px;
+  overflow: hidden;
+  transition: .2s;
+}
+.banner-price img{
+  filter: brightness(0.6) contrast(0.9);
+  position: relative;
+  transition: .2s;
+}
+.img-ban-active{
+  -webkit-transform: scale(1.15)!important;
+  transform: scale(1.15);
+  filter: brightness(0.3) contrast(1.1) saturate(10)!important;
+}
+.banner-price-name{
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+
 }
