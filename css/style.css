@@ -294,6 +294,62 @@ header .fa-bars{
   margin: 0;
 
 }
+.sale-box{
+  overflow: hidden;
+  transition: .3s;
+}
+.sale-box img{
+  transition: .3s;
+}
+.sale-banner, .sale-banner-top{
+  position: absolute;
+  top: 150px;
+  right: 0;
+  color: white;
+  font-size: 34px;
+  padding: 10px 20px;
+  background: #d4161e;
+  transition: .6s;
+}
+.sale-banner:after{
+  content: "";
+  position: absolute;
+  left: -46px;
+  top: 0;
+  border: 28px solid transparent;
+  border-top: 42px solid #d4161e;
+  border-right: 18px solid #d4161e;
+}
+.sale-banner-top{
+  top: 0px;
+  right: 80px;
+  font-size: 17px;
+  width: 195px;
+  height: 70px;
+  padding: 10px 10px;
+  opacity: 0;
+}
+.sale-banner-top:after{
+  content: "";
+  position: absolute;
+  left: -46px;
+  top: 0;
+  border: 28px solid transparent;
+  border-top: 42px solid #d4161e;
+  border-right: 18px solid #d4161e;
+}
+.sale-banner-top:before{
+  content: "";
+  position: absolute;
+  right: -46px;
+  top: 0;
+  border: 28px solid transparent;
+  border-bottom: 42px solid #d4161e;
+  border-left: 18px solid #d4161e;
+}
+.sale-banner-active{
+  opacity: 1;
+}
 
 /*ad*/
 .ad-title{
