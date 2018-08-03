@@ -43,7 +43,12 @@ main{
   margin: 0;
 }
 .head-box img{
-  width: 165px;
+  width: 190px;
+}
+.logo{
+  font-family: 'Philosopher', sans-serif;
+  color: #f1f1f1;
+  font-size: 40px;
 }
 .numbers-phone{
   font-size: 35px;
@@ -288,4 +293,69 @@ header .fa-bars{
   text-align: center;
   margin: 0;
 
+}
+
+/*ad*/
+.ad-title{
+  color: #d5171e;
+  font-weight: 600;
+  font-size: 27px;
+  margin: 50px 0 10px;
+  text-transform: uppercase;
+}
+.ad-description{
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.ad-box{
+  background: #eaeaea;
+  padding: 10px 12px;
+  height: 100%;
+}
+.ad-feat-title{
+  text-align: center;
+  color: #d5171e;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.ad-feat-description{
+  font-size: 14px;
+}
+
+/*footer*/
+
+footer{
+  background: #34363d;
+  height: 250px;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+.footer-box{
+  background: #434549;
+  height: 210px;
+}
+.footer-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 210px;
+}
+.footer-info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 210px;
+}
+.footer-logo img{
+  width: 190px;
+}
+.footer-location{
+  font-size: 14px;
+  color: #d0d0d0;
+  margin: 0;
+}
+.footer-phone{
+  color: #d5171e;
+  font-size: 27px;
+  font-weight: bold;
 }

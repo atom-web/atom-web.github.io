@@ -85,6 +85,18 @@
 		padding: 15px 20px;
 	}
 }
+@media screen and (max-width: 450px){
+	.logo{
+		font-size: 30px;
+		text-align: center;
+	}
+	.footer-location{
+		font-size: 12px;
+	}
+	.footer-phone{
+		font-size: 17px;
+	}
+}
 @media screen and (max-width: 400px){
 	.head-box img{
 		width: 120px;
@@ -113,12 +125,15 @@
 		font-size: 11px;
 	}
 }
-@media screen and (max-width: 340px){
+@media screen and (max-width: 350px){
 	.numbers-phone{
 		font-size: 18px;
 		top: -42px;
 	}
 	.info-work{
 		font-size: 23px;
+	}
+	.logo{
+		font-size: 25px;
 	}
 }
