@@ -1,0 +1,39 @@
+.left-feed,
+.right-content,
+.main-news-bottom-share,
+.main-news-group__banner,
+.print,
+.news-group,
+.share,
+.size-content,
+header,
+.main-news-tags,
+footer,
+.middle-content .about .blue-title,
+.contacts-form,
+#hypercomments_widget,
+iframe,
+.main-news-container__orange .slick-dots {
+	display: none !important;
+}
+
+.noprint {
+	display: block;
+}
+
+.middle-content {
+	width: 100%;
+}
+
+.main-news-img-container {
+	margin: 0 auto;
+	width: 725px;
+}
+
+.link-group {
+	text-decoration: none;
+}
+
+.left-screen {
+	box-shadow: none;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Контакты</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+	<header>
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="img/logo.png" alt="">
+			</a>
+			<nav>
+				<a href="company.html"><span>Компания</span></a>
+				<a href="production.html"><span>Продукция</span></a>
+				<a href="#"><span>Акции</span></a>
+				<a href="proizvodstvo.html"><span>Производство</span></a>
+				<a href="feed.html"><span>Новости</span></a>
+				<a href="#"><span>Контакты</span></a>
+				<a href="#"><span>Рецепты</span></a>
+			</nav>
+			<div class="callback">
+				<div class="container">
+					<a href="tel:+79514440951" class="callback__tel">
+						<img src="img/header-phone.svg" alt="">
+						<span>+7 951 444 0951</span>
+					</a>
+					<a href="#" class="callback__btn">Обратный звонок</a>
+				</div>
+			</div>
+		</div>
+		<div id="nav-icon">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+	</header>
+
+	<main>
+		<section class="page-title">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li><a href="index.html">Главная</a></li>
+					<li class="active">Контакты</li>
+				</ul>
+				<h1>
+					<span>Контакты</span>
+				</h1>
+			</div>
+		</section>
+		<section class="main-content">
+			<div class="container-small">
+				<div class="contacts-item">
+					<div class="row">
+						<span>Телефон: </span><strong>8951444-09-51</strong>
+					</div>
+					<div class="row">
+						<span>Контактное лицо: </span><strong>Александр</strong>
+					</div>
+					<div class="row">
+						<span>Адрес: </span><strong>Россия</strong>
+					</div>
+					<div class="row">
+						<a href="#" class="contacts-item__link callback-btn">
+							<span>Заказать<br> обратный звонок</span>
+						</a>
+						<a href="#contacts" class="contacts-item__link contacts-anchor">
+							<span>Написать нам</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="main-contacts" id="contacts">
+			<div class="container">
+				<h2>
+					<span>Свяжитесь с нами</span>
+				</h2>
+				<form action="#" class="main-contacts__form">
+					<div class="title">
+						<span>Если у вас есть вопросы,</span>
+						<span>свяжитесь с нами, мы будем рады ответить вам!</span>
+					</div>
+					<div class="form__content">
+						<div class="row">
+							<input type="text" placeholder="Имя и Фамилия">
+							<input type="tel" placeholder="Телефон">
+						</div>
+						<textarea name="#" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+						<div class="row">
+							<div class="conf">
+								Нажимая кнопку "Отправить", вы подтверждаете
+								свое согласие с <a href="#">Политикой конфиденциальности</a>
+							</div>
+							<input type="submit" value="Отправить">
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer__top">
+			<div class="container">
+				<nav>
+					<div class="footer__nav-clm">
+						<a href="company.html">
+							<span>Компания</span>
+						</a>
+						<a href="production.html">
+							<span>Продукция</span>
+						</a>
+						<a href="#">
+							<span>Акции</span>
+						</a>
+						<a href="proizvodstvo.html">
+							<span>Производство</span>
+						</a>
+					</div>
+					<div class="footer__nav-clm">
+						<a href="feed.html">
+							<span>Новости</span>
+						</a>
+						<a href="contacts.html">
+							<span>Контакты</span>
+						</a>
+						<a href="#">
+							<span>Рецепты</span>
+						</a>
+					</div>
+				</nav>
+				<div class="footer__nav-clm">
+					<div class="footer__soc">
+						<div class="title">
+							Мы в соц. сетях:
+						</div>
+						<ul>
+							<li><a href="#" class="twit"><span class="icon-twitter"></span></a></li>
+							<li><a href="#" class="vk"><span class="icon-vk"></span></a></li>
+							<li><a href="#" class="fb"><span class="icon-facebook"></span></a></li>
+							<li><a href="#" class="ok"><span class="icon-odnoklassniki"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__nav-clm">
+					<div class="footer__callback">
+						<div class="title">Свяжитесь с нами!</div>
+						<a href="tel:+79514440951" class="tel">
+							<img src="img/header-phone.svg" alt="">
+							<span>+7 951 444 0951</span>
+						</a>
+						<div class="callback-btn">Обратный звонок</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<span>© Компания ООО «Снэк Ландия»</span>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal-callback">
+		<form action="#">
+			<div class="title">Обратный звонок</div>
+			<div class="content">
+				<input type="text" placeholder="Имя и фамилия">
+				<input type="tel" placeholder="Телефон">
+				<input type="submit" value="Отправить">
+				<div class="conf">
+					Нажимая кнопку "Отправить", вы подтвержаете 
+					своё согласие с <a href="#">Политикой конфиденциальности.</a>
+				</div>
+			</div>
+			<div class="close-modal"></div>
+		</form>
+	</div>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/3.2.2/jquery.dotdotdot.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
