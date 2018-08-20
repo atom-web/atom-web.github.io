@@ -1,0 +1,264 @@
+@media (min-width: 1280px){
+	.container{
+		max-width: 1250px;
+	}
+}
+@media screen and (max-width: 1280px){
+	li .link-menu{
+		padding: 0px 13px;
+	}
+	.top-features-img{
+		width: 499px;
+    	height: 458px;
+    	top: 202px;
+	}
+	.folder-img{
+		top: 105px;
+		height: 459px;
+		width: 555px;
+		left: 29px;
+	}
+}
+@media screen and (max-width: 1200px){
+	.title-party{
+		font-size: 16px;
+	}
+	.top-features-img{
+		width: 358px;
+    	height: 329px;
+    	top: 200px;
+    	left: 31px;
+	}
+	.folder-img{
+		top: 169px;
+    	height: 340px;
+    	width: 401px;
+    	left: 0px;
+	}
+	.footer-copyright{
+		font-size: 11px;
+	}
+	.link-menu-footer{
+		font-size: 11px;
+	}
+}
+@media screen and (max-width: 991px){
+	.head-menu{
+		height: auto;
+	}
+	.menu-box{
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.head-nav-menu{
+		display: none;
+	}
+	.logo{
+		top: -37px;
+    	right: 2%;
+	}
+	.top-features-img{
+		display: none;
+	}
+	.folder-img{
+		position: static;
+		-webkit-transform: rotate(11deg);
+		    -ms-transform: rotate(11deg);
+		        transform: rotate(11deg);
+	}
+	.folder-row{
+		padding: 40px 0;
+	}
+	.command-item{
+		margin-top: 70px;
+	}
+	.preview-descript{
+		margin: 10px 0px 21px;
+	}
+	.folder-items{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 769px){
+	.title-page{
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+	}
+	.logo{
+		top: 12px;
+	}
+	.title-page h2{
+		font-weight: 600;
+	}
+	.top-feat-items{
+		display: none;
+	}
+	.top-features-bg{
+		padding: 35px 0 50px;
+	}
+	.top-feat-descript{
+		border: none;
+	}
+	.folder-img{
+		display: none;
+	}
+	.command-img, 
+	.command-descript-items{
+		width: auto;
+   		height: 135px;
+	}
+	.descript-items-1, .descript-items-2, .descript-items-3, .descript-items-4, .descript-items-5, .descript-items-6, .descript-items-7, .descript-items-8, .descript-items-9, .descript-items-10, .descript-items-11, .descript-items-12, .descript-items-13{
+		font-size: 11px;
+	}
+	.descript-items-2{
+		left: -101px;
+    	bottom: 17px;
+	}
+	.descript-items-3{
+		left: -103px;
+    	bottom: 45px;
+	}
+	.descript-items-4{
+		left: -71px;
+    	bottom: 70px;
+    	width: 63px;
+	}
+	.descript-items-5{
+		left: -83px;
+    	bottom: 112px;
+	}
+	.descript-items-6{
+		left: -15px;
+    	bottom: 130px;
+    	width: 50px;
+	}
+	.descript-items-7{
+		left: 45px;
+    	bottom: 140px;
+    	width: 50px;
+	}
+	.descript-items-8{
+		left: 105px;
+    	bottom: 123px;
+    	width: 71px;
+	}
+	.descript-items-9{
+		left: 145px;
+    	bottom: 86px;
+    	width: 73px;
+	}
+	.descript-items-10 {
+	    left: 149px;
+	    bottom: 50px;
+	    width: 81px;
+	}
+	.descript-items-11 {
+	    left: 137px;
+	    bottom: 16px;
+	    width: 99px;
+	}
+	.descript-items-12 {
+	    left: 126px;
+	    bottom: -26px;
+	    width: 106px;
+	}
+	.descript-items-13 {
+	    left: 20px;
+	    bottom: -27px;
+	}
+	.command-title{
+		font-size: 37px;
+	}
+	.bord:after, .bord:before{
+		display: none;
+	}
+	.social{
+		margin: 50px 0;
+	}
+	.footer-descript{
+		margin-bottom: 45px;
+	}
+	.logo-footer{
+		margin: 0px 0px 40px;
+    	float: right;
+	}
+	.region{
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+	}
+	.footer-copy-items{
+		margin: 15px 0;
+	}
+}
+@media screen and (max-width: 535px){
+	.top-feat-descript{
+		width: auto;
+	}
+	.head-menu {
+	    position: fixed;
+	    z-index: 99;
+	    background: #f1f1f1;
+	    top: 0;
+	    bottom: 0;
+	    right: -190px;
+	    width: 190px;
+	    z-index: 999999;
+	    text-align: center;
+	}
+	.top-txt-box{
+		text-align: center;
+	}
+	.menu-box{
+		display: block;
+		height: auto;
+	}
+	.title-party-box{
+		display: block;
+	}
+	.title-party-box{
+		height: auto;
+	}
+	.title-party{
+		font-size: 13px;
+    	padding: 8px 0;
+    	border-bottom: 1px solid #dadada;
+	}
+	li .link-menu{
+		border: none;
+    	font-size: 16px;
+    	padding: 0;
+	}
+	.menu-box li{
+		display: block;
+	}
+	.title-page h2{
+		font-size: 25px;
+	}
+	.head-menu::after{
+		display: none;
+	}
+	.logo{
+		display: none;
+	}
+	i.fa.fa-bars{
+		display: block;
+		position: absolute;
+	    top: -49px;
+	    left: -44px;
+	    font-size: 38px;
+	}
+	.social{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.social-title{
+		font-size: 17px;
+	    color: #666666;
+	    margin-bottom: 15px;
+	}
+}
