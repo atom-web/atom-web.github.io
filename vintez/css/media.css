@@ -22,6 +22,7 @@
 @media screen and (max-width: 1200px){
 	.title-party{
 		font-size: 16px;
+		margin-bottom: 20px;
 	}
 	.top-features-img{
 		width: 358px;
@@ -203,7 +204,7 @@
 	    background: #f1f1f1;
 	    top: 0;
 	    bottom: 0;
-	    right: -190px;
+	    left: -191px;
 	    width: 190px;
 	    z-index: 999999;
 	    text-align: center;
@@ -228,7 +229,7 @@
 	}
 	li .link-menu{
 		border: none;
-    	font-size: 16px;
+    	font-size: 21px;
     	padding: 0;
 	}
 	.menu-box li{
@@ -245,10 +246,11 @@
 	}
 	i.fa.fa-bars{
 		display: block;
-		position: absolute;
-	    top: -49px;
-	    left: -44px;
 	    font-size: 38px;
+	    position: absolute;
+	    top: 30px;
+	    right: 19px;
+	    z-index: 9999999;
 	}
 	.social{
 		-webkit-box-orient: vertical;
@@ -260,5 +262,8 @@
 		font-size: 17px;
 	    color: #666666;
 	    margin-bottom: 15px;
+	}
+	menu{
+		text-align: center;
 	}
 }
