@@ -192,7 +192,7 @@ li:last-child .link-menu {
 	content: "";
 	background: url(../img/Shape.png) no-repeat;
 	position: absolute;
-	top: 9px;
+	top: 8px;
 	width: 10px;
 	height: 10px;
 }
