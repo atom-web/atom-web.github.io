@@ -114,7 +114,7 @@ li:last-child .link-menu {
 	        justify-content: flex-end;
 }
 .head-nav-menu nav{
-	margin-right: 14px;
+	margin-right: 16px;
 }
 .head-nav-adout{
 	position: relative;
@@ -135,10 +135,10 @@ li:last-child .link-menu {
 .head-menu-img{
 	width: 27px;
     float: left;
-    margin-right: 5px;
+    margin-right: 6px;
 }
 .head-menu-link{
-	font-size: 20px;
+	font-size: 22px;
     text-transform: uppercase;
     color: #afafaf;
     -webkit-transition: .3s;
@@ -163,15 +163,15 @@ li:last-child .link-menu {
 }
 .title-page h2{
 	font-weight: 100;
-    font-size: 38px;
+    font-size: 41px;
     color: #515151;
 }
 .logo{
 	position: absolute;
-    width: 115px;
-    height: 73px;
-    top: 12px;
-    right: 13%;
+	width: 130px;
+	height: 82px;
+	top: 8px;
+	right: 9%;
 }
 .breadcrumb-pagination{
 	height: 28px;
@@ -594,12 +594,12 @@ footer{
 .logo-footer {
     width: 123px;
     height: 78px;
-    margin: 60px -20px;
+    margin: 80px -20px;
 }
 .footer-copy{
-	border-top: 1px solid #6b6b6b;
     color: #c8c8c8;
     font-size: 13px;
+    padding: 0 58px;
 }
 .footer-copy-items{
 	display: -webkit-box;
@@ -609,6 +609,17 @@ footer{
 	    -ms-flex-align: center;
 	        align-items: center;
 	margin: 35px 0;
+}
+.bord-footer:after{
+	content: "";
+    max-width: 998px;
+    height: 2px;
+    border-top: 1px solid #6b6b6b;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
 }
 .footer-copyright{
 	margin-right: 15px;

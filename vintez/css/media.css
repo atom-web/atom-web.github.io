@@ -22,7 +22,6 @@
 @media screen and (max-width: 1200px){
 	.title-party{
 		font-size: 16px;
-		margin-bottom: 20px;
 	}
 	.top-features-img{
 		width: 358px;
@@ -44,6 +43,9 @@
 	}
 }
 @media screen and (max-width: 991px){
+	.footer-copy{
+		padding: 0 15px;
+	}
 	.img-cont, 
 	.fot-box-3{
 		padding: 0;
@@ -65,8 +67,7 @@
 		display: none;
 	}
 	.logo{
-		top: -37px;
-    	right: 2%;
+		display: none;
 	}
 	.top-features-img{
 		display: none;
@@ -97,6 +98,9 @@
 	}
 }
 @media screen and (max-width: 769px){
+	.footer-items{
+		padding-left: 15px;
+	}
 	.title-page{
 		-webkit-box-pack: start;
 		    -ms-flex-pack: start;
