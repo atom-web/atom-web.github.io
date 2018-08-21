@@ -336,7 +336,7 @@ li:last-child .link-menu {
 	border: 1.2px solid #c2c2c2;
 	border-radius: 7px;
 	text-align: right;
-	margin: 8px 0;
+	margin: 8px 5px;
 }
 .folder-items-box{
 	display: inline-block;
@@ -573,6 +573,10 @@ footer{
 }
 .img-cont{
 	flex-direction: column;
+	padding-left: 110px;
+}
+.fot-box-3{
+	padding-left: 77px;
 }
 .footer-title{
 	color: white;
@@ -588,8 +592,8 @@ footer{
 	max-width: 160px;
 }
 .logo-footer {
-    width: 150px;
-    height: 96px;
+    width: 123px;
+    height: 78px;
     margin: 60px -20px;
 }
 .footer-copy{
