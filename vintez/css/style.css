@@ -113,6 +113,9 @@ li:last-child .link-menu {
 	    -ms-flex-pack: end;
 	        justify-content: flex-end;
 }
+.head-nav-menu nav{
+	margin-right: 14px;
+}
 .head-nav-adout{
 	position: relative;
 	height: 100px;
@@ -231,6 +234,7 @@ li:last-child .link-menu {
 
 .top-txt-box {
 	text-align: right;
+	margin-right: 40px;
 }
 
 .top-features-img{
@@ -350,6 +354,7 @@ li:last-child .link-menu {
 	color: #404470;
 	font-weight: 600;
 	font-size: 17px;
+	margin-bottom: 6px;
 }
 .folder-row{
 	padding: 120px 0;
@@ -557,8 +562,17 @@ li:last-child .link-menu {
 
 /*FOOTER*/
 footer{
-	background: #323232;
-	padding: 35px 0;
+}
+.footer-cont{
+	background: #323232;/*
+	padding: 35px 0 0;*/
+}
+.footer-items{
+	display: flex;
+	justify-content: center;
+}
+.img-cont{
+	flex-direction: column;
 }
 .footer-title{
 	color: white;
@@ -571,12 +585,12 @@ footer{
 .footer-descript{
 	font-size: 13px;
 	color: #eaeaea;
-	max-width: 200px;
+	max-width: 160px;
 }
-.logo-footer{
-	width: auto;
-	height: 100px;
-	margin: 60px -27px;
+.logo-footer {
+    width: 150px;
+    height: 96px;
+    margin: 60px -20px;
 }
 .footer-copy{
 	border-top: 1px solid #6b6b6b;
@@ -594,9 +608,10 @@ footer{
 }
 .footer-copyright{
 	margin-right: 15px;
+	font-size: 11px;
 }
 .link-menu-footer{
-	font-size: 13px;
+	font-size: 11px;
 	color: #c8c8c8;
 	border-left: 1px solid  #c8c8c8;
 	padding: 0 9px;
@@ -616,4 +631,9 @@ footer{
     height: 8px;
     margin: 6px 10px 0 0;
 
+}
+.test{
+	max-width: 1085px;
+    margin: 0 auto;
+   	padding-top: 40px;
 }
