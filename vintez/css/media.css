@@ -2,6 +2,12 @@
 	.container{
 		max-width: 1250px;
 	}
+	.folder-items{
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 55%;
+		        flex: 0 0 55%;
+    	max-width: 56%;
+	}
 }
 @media screen and (max-width: 1280px){
 	li .link-menu{
@@ -107,11 +113,18 @@
 		        justify-content: flex-start;
 	}
 	.footer-items{
-		justify-content: flex-start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 	}
 	.footer-copy-items{
-		align-items: flex-start;
-	    flex-direction: column;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	        -ms-flex-direction: column;
+	            flex-direction: column;
 	}
 	.
 	.logo{
