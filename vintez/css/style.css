@@ -115,6 +115,7 @@ li:last-child .link-menu {
 }
 .head-nav-menu nav{
 	margin-right: 16px;
+	z-index: 9
 }
 .head-nav-adout{
 	position: relative;
