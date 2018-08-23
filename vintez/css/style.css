@@ -223,8 +223,10 @@ li:last-child .link-menu {
 	background: none;
 }
 .top-features-bg{
-	background: url(../img/bg-feat.jpg);
+	background: url(../img/bg-feat.jpg) no-repeat;
+    background-size: 100%;
 	position: relative;
+	padding-bottom: 70px;
 }
 
 .top-features-bg:after{
