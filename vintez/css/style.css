@@ -84,7 +84,7 @@ i.fa.fa-bars{
     font-family: initial;
     font-size: 22px;
     letter-spacing: -1.2px;
-    margin-left: 17px;
+    margin-left: 19px;
 }
 .menu-box{
 	padding: 0;
@@ -402,7 +402,40 @@ li:last-child .link-menu {
     z-index: 9;
     height: 487px;
 }
-
+.head-img-5{
+    margin: 0 -2px 0px 4px;
+}
+.head-img-4 {
+	margin: 0 2px 0 11px;
+}
+.head-img-3 {
+	margin: 0 3px 1px 10px;
+}
+.head-img-2 {
+	margin: 0 2px 0 6px;
+}
+.head-img-1 {
+	margin: 0 0 0 0;
+}
+.menu-box li:nth-child(1) a{
+    padding: 0px 14px 0 0px;
+}
+.menu-box li:nth-child(2) a{
+    padding: 0px 14px 0 8px;
+}
+.menu-box li:nth-child(3) a{
+    padding: 0px 14px 0 8px;
+}
+.menu-box li:nth-child(4) a{
+    padding: 0px 15px 0 9px;
+}
+.menu-box li:nth-child(5) a{
+    padding: 0px 16px 0 9px;
+}
+.menu-box li:nth-child(6) a{
+    padding: 0px 6px 0 7px;
+}
+}
 /*COMMAND*/
 .command{
 	margin-bottom: 25px;
