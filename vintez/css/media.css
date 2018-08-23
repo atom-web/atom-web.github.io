@@ -1,6 +1,6 @@
 @media (min-width: 1280px){
 	.container{
-		max-width: 1280px;
+		max-width: 1250px;
 	}
 	.folder-items{
 		-webkit-box-flex: 0;
@@ -11,7 +11,7 @@
 }
 @media screen and (max-width: 1280px){
 	li .link-menu{
-		padding: 0px 13px;
+		padding: 0px 7px;
 	}
 	.top-features-img{
 		width: 499px;

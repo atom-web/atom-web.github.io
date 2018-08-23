@@ -90,7 +90,7 @@ li .link-menu {
 	font-family: 'kalinga';
     font-size: 14px;
 	color: #5c5c5c;
-    padding: 0px 9px;
+    padding: 0px 11px;
 	border-right: 1.2px solid #adacac;
 	font-weight: 600;
 }
@@ -120,7 +120,7 @@ li:last-child .link-menu {
 	        justify-content: flex-end;
 }
 .head-nav-menu nav{
-	margin-right: 16px;
+	margin-right: 12px;
 	z-index: 9
 }
 .head-nav-adout{
@@ -145,7 +145,7 @@ li:last-child .link-menu {
     margin-right: 6px;
 }
 .head-menu-link{
-	font-size: 22px;
+	font-size: 20px;
     text-transform: uppercase;
     color: #afafaf;
     -webkit-transition: .3s;
