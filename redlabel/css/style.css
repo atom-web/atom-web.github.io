@@ -19,6 +19,9 @@ header{
   min-height: 100vh;
   /*overflow: hidden;*/
   /*height: 100%;*/
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 header::-webkit-scrollbar {
   width: 5px;
@@ -121,17 +124,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e50015', end
 
 }
 .preview-audio-active{
-  
   top: 0px;
   animation-name: zoomInRight;
-    animation-duration: 1s;
-    animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 .out-audio-active{
   top: 0px;
   animation-name: bounceOutRight;
-    animation-duration: 1s;
-    animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 .radio-img{
   display: flex;
@@ -265,7 +267,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e50015', end
 .categor-box  i{
   font-size: 17px;
   width: 25px;
-  color: #e50015;
+  color: #4c4c4c;
 }
 .sidebar{
   z-index: 999;
@@ -281,4 +283,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e50015', end
   height: 50px;
   background: #5d0000;
   margin-top: 15px !important;
+  display: flex;
+  align-items: center;
+  padding: 0 15px !important;
+}
+.station-information i{
+  font-size: 24px;
+  color: #797979;
+  margin-right: 10px !important;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1150px) {
+  
 }
