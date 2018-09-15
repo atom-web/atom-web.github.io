@@ -43,13 +43,13 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".menu-categor").click(function(){
-        $(".categor-box").toggleClass('categor-box-active');
-        $(".city-box").removeClass('sity-box-active');
+        $(".categor-box").toggleClass('categor-box-active animated fadeIn');
+        $(".city-box").removeClass('sity-box-active animated fadeIn');
     });
 });
 $(document).ready(function(){
     $(".menu-city").click(function(){
-        $(".city-box").toggleClass('sity-box-active');
-        $(".categor-box").removeClass('categor-box-active');
+        $(".city-box").toggleClass('sity-box-active animated fadeIn');
+        $(".categor-box").removeClass('categor-box-active animated fadeIn');
     });
 });
