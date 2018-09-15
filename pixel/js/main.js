@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
 
-
+// Изменяемая высота Menu__________________
 $(window).scroll(function() {
   var s = $(window).scrollTop();
   if (s > 0) {
