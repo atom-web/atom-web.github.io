@@ -1,6 +1,6 @@
 var resbox = $('body');
 
-$('.voiceLink a', resbox).click(function (e) {
+$('.link-open-sound', resbox).click(function (e) {
     e.preventDefault();
     var link = $(this).prop('href'),
     	linkalt = $(this).prop('alt'),
@@ -34,6 +34,7 @@ $('.voiceLink a', resbox).click(function (e) {
     
 });
 
+// Меню_______________
 $(document).ready(function(){
     $("#sticker").sticky({
     	topSpacing:0,
@@ -46,10 +47,26 @@ $(document).ready(function(){
         $(".categor-box").toggleClass('categor-box-active');
         $(".city-box").removeClass('sity-box-active');
     });
-});
-$(document).ready(function(){
     $(".menu-city").click(function(){
         $(".city-box").toggleClass('sity-box-active');
         $(".categor-box").removeClass('categor-box-active');
+    });
+    $(".popilar-categor").click(function(){
+        $(".popular-box").toggleClass('popular-box-active');
+        $(".top-popular-box").removeClass('top-popular-active');
+    });
+       $(".top-categor").click(function(){
+        $(".top-popular-box").toggleClass('top-popular-active');
+        $(".popular-box").removeClass('popular-box-active');
+    });
+});
+
+
+// Блок контента_____________
+$(document).ready(function(){
+    $(".station-box").hover(function(){
+        $(this).find(".img-station-box").toggleClass('station-img-active');
+        $(this).find(".link-station").toggleClass('link-station-active animated bounceInUp');
+        $(this).find(".icon-station-box").toggleClass('station-icon-active');
     });
 });
