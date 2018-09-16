@@ -228,7 +228,7 @@
 .plyr__captions span {
     border-radius: 2px;
     padding: 3px 10px;
-    background: rgba(0, 0, 0, .7);
+    /*background: rgba(0, 0, 0, .7);*/
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     line-height: 150%}
@@ -341,8 +341,8 @@
 }
 /*Фон на play/pause*/
 .plyr--audio .plyr__controls button.tab-focus:focus, .plyr--audio .plyr__controls button:hover {
-    background: #1d1d1d;
-    color: #eaeaea;
+    background: #42383800;
+    color: #cacaca;
     opacity: 1;
 }
 

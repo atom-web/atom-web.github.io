@@ -194,6 +194,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e50015', end
 .name-art{
   color: #eaeaea;
   margin-left: 10px !important;
+  position: relative;
+}
+.name-radio-box{
+  display: flex;
 }
 .name-radio{
   color: #969696;
@@ -354,9 +358,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e50015', end
   color: #797979;
   margin-right: 10px !important;
 }
-
-
-
+.information-station-txt{
+  position: absolute;
+  z-index: -9;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.spin-play{
+  height: 14px;
+  font-size: 14px;
+  display: inline-block;
+  color: #e50015;
+  margin: 2px 0 0 7px !important;
+}
+.spin-active{
+  animation: unset;
+}
 
 
 

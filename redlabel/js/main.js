@@ -9,8 +9,17 @@ $('.link-open-sound', resbox).click(function (e) {
     var imgRad = $(this).find('img').attr('src');
     $('.radio-img').find('img').attr('src', imgRad);
 
-    var namealt = $(this).find('img').attr('alt');
-    $('.name-radio').text(namealt);
+    var namewave = $(this).find('.wave-title').text();
+    $('.name-radio').text(namewave);
+
+    var locStat = $(this).find('.location-station').text();
+    $('.location-radio').text(locStat);
+
+    var lageLimit = $(this).find('.age-station').text();
+    $('.age-limit').text(lageLimit);
+
+    var waveStat = $(this).find('.wave-station').text();
+    $('.wave-radio').text(waveStat);
 
     $('.preview-audio').addClass('animated fadeIn');
 
@@ -20,18 +29,27 @@ $('.link-open-sound', resbox).click(function (e) {
 	    	audio.find('audio')[0].pause();
 	    	$('.preview-audio').removeClass('preview-audio-active');
 	    	$('.preview-audio').addClass('out-audio-active');
+            $('.fa-spin').addClass("spin-active");
     } else {
 	    	$('.voiceLink a').removeClass('is-play');
 	    	$('.preview-audio').removeClass('out-audio-active');
 	    	$('.preview-audio').addClass('preview-audio-active');
+            $('.fa-spin').removeClass("spin-active");
 	    	$(this).addClass('is-play');
 	    	audio.find('source').prop('src', link);
 		    // audio.parent().css('display', 'inline-block');
 		    audio.find('audio').load();
 		    audio.find('audio')[0].play();
-    }
+    } 
+});
 
-    
+// Условие для Спинера в плеере______________
+$('.audioHide', resbox).click(function (e){
+    if ($('.plyr').hasClass('plyr--playing')) {
+            $('.fa-spin').addClass("spin-active");
+    } else {
+        $('.fa-spin').removeClass("spin-active");
+    }
 });
 
 // Меню_______________
