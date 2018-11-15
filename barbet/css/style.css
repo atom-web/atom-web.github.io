@@ -1,0 +1,738 @@
+/*Общие_____________________________________*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	overflow-x: hidden;
+}
+a{
+	color: #eaeaea;
+	text-decoration: none;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+li{
+	list-style-type: none;
+}
+img{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.container-fluid{
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+}
+.panel-open-menu{
+	display: none;
+}
+/*Header_____________________________________*/
+header{
+	font-size: 13px;
+}
+.header__contacts{
+	background: #005aa7;
+	color: #fff;
+	position: absolute;
+    width: 100%;
+    height: 47px;
+    z-index: 999;
+}
+.cont-pos{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 10px 0;
+}
+.header__contacts-info{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.header__contacts-sale{
+	margin-right: 15px;
+}
+.header__link-buy{
+	border: 1px solid #fff;
+	padding: 5px 7px;
+}
+.header__link-buy:hover{
+	 -webkit-transform: scale(1.05);
+	     -ms-transform: scale(1.05);
+	         transform: scale(1.05);
+}
+.logo{
+	width: 70px;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+.logo-menu-active{
+	width: 40px;
+}
+/*Navigation Header____________________*/
+.header__menu{
+	background: rgba(234, 234, 234, 0.75);
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 47px;
+    z-index: 99;
+}
+.header__menu-active {
+	background: rgb(197, 212, 224);
+  	position: fixed;
+  	width: 100%;
+  	top: 0;
+}
+nav{
+	margin-right: 15%;
+}
+nav a{
+	color: #000;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+nav ul {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+}
+
+/*Первая секция top-preview__________________*/
+.top-preview{
+	height: 100vh;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.main-nav-scrolled {
+	background: rgb(197, 212, 224);
+  	position: fixed;
+  	width: 100%;
+  	top: 0;
+}
+.test {
+  	padding-bottom: 0px;
+}
+.bg-prev-img{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    -webkit-filter: invert(0.4);
+}
+.preview__box-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+}
+.preview__title{
+	font-size: 50px;
+	text-shadow: 0px 0px 0 #003969;
+}
+.preview__desc{
+	font-size: 35px;
+	text-shadow: 0px 0px 0 #003969;
+}
+/*About Us__________________________*/
+.about{
+	padding: 80px 0;
+}
+.about__cont-img{
+	width: 100%;
+    height: 540px;
+    -webkit-box-shadow: 8px 9px 57px -11px #000000;
+            box-shadow: 8px 9px 57px -11px #000000;
+}
+.about__title, 
+.question__title{
+	font-size: 40px;
+    margin-bottom: 15px;
+}
+.about__descript{
+	font-size: 20px;
+    color: #383838;
+    margin-bottom: 50px;
+
+}
+.about__link-more{
+	background: #C4C4C4;
+    color: #000;
+    padding: 12px;
+    font-size: 22px;
+    -webkit-box-shadow: 0px 4px 45px -16px #000000;
+            box-shadow: 0px 4px 45px -16px #000000;
+}
+.about__link-more:hover{
+	background: #005aa7;
+	color: #fff;
+}
+
+/*question___________________*/
+.question{
+	background-image: url(../img/cement_1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 50px 0;
+}
+.form-buy__bg-img,
+.labinfo__bg-img,
+.question__bg-img{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.question__title-item{
+	background: rgba(0, 90, 167, 0.59);;
+	padding: 40px;
+	margin-top: 45px;
+	color: #fff;
+}
+.question__title-item p{
+	font-size: 31px;
+    text-align: center;
+}
+.question__items-box{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	    color: #fff;
+}
+.question__text-item{
+	background: rgba(0, 90, 167, 0.59);
+	padding: 15px;
+	margin-top: 50px;
+}
+.question__text-item-title{
+	margin-bottom: 10px;
+    font-size: 23px;
+}
+/*Cooperation_________________________*/
+.cooperation{
+	padding: 30px 0;
+}
+.cooperation__title{
+	text-align: center;
+	font-size: 40px;
+}
+.cooperation__item-box{
+	margin-top: 40px;
+}
+.cooperation__pagination,
+.cooperation__pagination ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+.cooperation__pagination a{
+	background: #0368B3;
+	padding: 7px 15px;
+	margin-left: 3px;
+}
+.cooperation__link-more{
+	margin-left: 20px !important;
+}
+/*Labinfo_____________________*/
+.labinfo{
+	background-image: url(../img/image-lab.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	padding: 30px 0 60px;
+}
+.labinfo__title{
+	font-size: 40px;
+	margin: 20px 0px;
+}
+.labinfo__link-box{
+	background: #eaeaea;
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: rgba(234, 234, 234, 0.69);
+}
+.labinfo__link-box a{
+	font-size: 20px;
+    color: #000;
+    padding: 13px 25px;
+    border: 1px solid #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+}
+.labinfo__link-box a:hover{
+	background: #0368b3;
+	color: #fff;
+}
+.labinfo__link-box i{
+	margin-right: 25px;
+	font-size: 60px;
+	color: #81c9ff;
+}
+.labinfo__descript{
+	font-size: 22px;
+}
+/*Сonsultation____________________*/
+.consultation{
+	padding: 30px 0;
+}
+.consultation p{
+	font-size: 30px;
+	text-align: center;
+}
+.consultation a{
+	color: #000;
+	color: #000;
+    border-bottom: dashed 4px #0368b3;
+}
+.consultation a:hover{
+	color: #005aa7;
+}
+
+/*Form Buy__________________________*/
+.form-buy{
+	background-image: url(../img/nash_zavod.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 30px 0;
+	position: relative;
+	color: #fff;
+}
+.form-buy__title{
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+    margin: 20px 0px;
+}
+.form-buy__bg-img{
+	-webkit-filter: contrast(0.3) grayscale(0.5);
+}
+.form-buy_title-items{
+	font-size: 26px;
+	margin-bottom: 70px;
+	color: #e2e2e2;
+	font-weight: 900;
+}
+.form-buy_descript-items{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    font-size: 25px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.form-buy_descript-items i{
+	font-size: 65px;
+	margin-right: 15px;
+	color: #81c9ff;
+}
+.form-buy form{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 95px;
+}
+.form-buy input{
+	text-align: center;
+    font-size: 21px;
+    background: rgba(199, 199, 199, 0.71);
+    border: 2px solid #fff;
+    margin-bottom: 12px;
+    padding: 15px 0;
+}
+.form-buy__button-link{
+	font-size: 21px;
+    padding: 17px 0;
+    cursor: pointer;
+    border: none;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    background: #eaeaea;
+    color: #000;
+    text-align: center;
+}
+.form-buy__button-link:hover{
+	background: #0368b3;
+    color: #fff;
+}
+.form-popap{
+	background: rgba(0, 0, 0, 0.84);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    z-index: 99;
+}
+.form-popap-active{
+	display: flex;
+}
+.form-popap button{
+	font-size: 31px;
+    background: #005aa7;
+	color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.form-popap button:hover{
+	background: #003b6d;
+}
+.cap{
+	margin-bottom: 25px;
+	width: 200px;
+	height: 50px;
+	background: #eaeaea;
+	color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cap-title{
+	margin-bottom: 25px;
+}
+/*Footer_________________________*/
+footer{
+	height: 200px;
+	background: #eaeaea;
+	padding: 25px 0;
+}
+.logo-footer{
+	height: 100px;
+	width: 125px;
+
+}
+.footer__nav-title{
+	padding: 0 10px;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 15px
+}
+.nav-footer ul{
+	flex-direction: column;
+}
+.nav-footer a:hover{
+	color: #0368B3;
+	padding-left: 15px;
+}
+.footer__img-box{
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 1670px){
+	.about__title, 
+	.question__title{
+		font-size: 33px;
+	}
+	.about__descript{
+		font-size: 17px;
+	}
+	.about__cont-img{
+		height: 420px;
+	}
+	.labinfo__title{
+		font-size: 36px;
+	}
+	.labinfo__descript {
+	    font-size: 19px;
+	}
+	.labinfo__link-box a{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 1100px){
+	.about__title, 
+	.question__title{
+		font-size: 27px;
+	}
+	.about__descript{
+		font-size: 14px;
+	}
+	.about__link-more{
+		font-size: 16px;
+	}
+	.question__title-item p{
+		font-size: 20px;
+	}
+	.question__text-item-title{
+		font-size: 18px;
+	}
+	.question__text-item-desc{
+		font-size: 13px;
+	}
+	.cooperation__title{
+		font-size: 23px;
+	}
+	.labinfo__descript{
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 999px){
+	.preview__box-text{
+		align-items: end;
+	}
+	.consultation p{
+		font-size: 20px;
+	}
+	.form-buy__title{
+		font-size: 25px;
+	}
+	.form-buy_title-items{
+		font-size: 20px;
+	}
+	.form-buy_descript-items{
+		font-size: 17px;
+	}
+	.form-buy form{
+		margin-top: 76px;
+	}
+}
+
+
+@media screen and (max-width: 830px){
+	.slideout-menu {
+	  position: fixed;
+	  top: 0;
+	  bottom: 0;
+	  width: 256px;
+	  min-height: 100vh;
+	  overflow-y: scroll;
+	  -webkit-overflow-scrolling: touch;
+	  z-index: 0;
+	  display: none;
+	}
+
+	.slideout-menu-left {
+	  left: 0;
+	}
+
+	.slideout-menu-right {
+	  right: 0;
+	}
+
+	.slideout-panel {
+	  position: relative;
+	  z-index: 1;
+	  background-color: #FFF; /* A background-color is required */
+	  min-height: 100vh;
+	}
+
+	.slideout-open,
+	.slideout-open body,
+	.slideout-open .slideout-panel {
+	  overflow: hidden;
+	}
+
+	.slideout-open .slideout-menu {
+	  display: block;
+	}
+	.panel-open-menu{
+		display: flex;
+	    align-items: center;
+	    background: rgba(234, 234, 234, 0.8);
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    height: 50px;
+	}
+	.panel-open-menu i{
+		font-size: 40px;
+		margin-left: 20px;
+		color: #505050;
+		cursor: pointer;
+	}
+	.header__contacts{
+		position: initial;
+		height: auto;
+	}
+	.header__menu{
+		position: initial;
+		background: none;
+	}
+	.cont-pos{
+		flex-direction: column;
+		padding: 25px 0;
+	}
+	.header__contacts-info{
+		flex-direction: column;
+	}
+	.header__contacts-sale{
+		font-size: 10px;
+    	margin: 7px 0;
+	}
+	.header__contacts-email{
+		margin-bottom: 7px;
+	}
+	.header__link-buy{
+		margin-top: 7px;
+	}
+	.header__menu nav{
+		margin-right: 0;
+		margin-top: 27px;
+	}
+	.header__menu nav ul{
+		flex-direction: column;
+    	align-items: center;
+	}
+	.header__menu nav li{
+		margin: 5px 0;
+	}
+	.header__menu nav a{
+		font-size: 19px;
+	}
+
+}
+@media screen and (max-width: 767px){
+	.about__info-text{
+		margin-bottom: 63px;
+	}
+	.about__link-more{
+		float: right;
+	}
+	.about__descript{
+		margin-bottom: 15px;
+	}
+	.about__cont-img{
+		height: 330px;
+	}
+	.about__title, 
+	.question__title{
+		text-align: center;
+	}
+	.labinfo__descript{
+		margin-bottom: 40px;
+	}
+	.form-buy form{
+		margin-top: 20px;
+	}
+	.form-buy_descript-items{
+		display: flex;
+		justify-content: center;
+	}
+	.form-buy_title-items{
+		margin-bottom: 49px;
+    	margin-top: 40px;
+    	text-align: center;
+	}
+	.form-buy_descript-items i{
+		font-size: 30px;
+	}
+	.cap-title{
+		text-align: center;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+	.preview__title{
+		font-size: 38px;
+	}
+	.preview__desc{
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.preview__title{
+		font-size: 25px;
+	}
+	.preview__desc{
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 350px){
+	.form-popap button{
+		font-size: 21px;
+	}
+	.cap-title{
+		padding: 0 41px;
+	}
+	.about__title, 
+	.question__title,
+	.labinfo__title,
+	.form-buy__title{
+		font-size: 22px;
+	}
+	.about__descript{
+		font-size: 13px;
+	}
+	.about__link-more,
+	.labinfo__descript{
+		font-size: 13px;
+	}
+	.labinfo__link-box i{
+		font-size: 33px;
+	}
+	
+	.labinfo__link-box a{
+		font-size: 13px;
+	}
+}
