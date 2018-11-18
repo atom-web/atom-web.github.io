@@ -38,6 +38,9 @@ header{
 	width: 100%;
 	margin-top: 10px;
 }
+.logo:hover{
+	animation: pulse 1s steps(30);
+}
 .header__items-box{
 	display: flex;
 	flex-direction: column;
