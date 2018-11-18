@@ -26,4 +26,11 @@ $(document).ready(function(){
     //         }
     //     }
     // });
+    $('.company-slide').slick({
+      infinite: true,
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+  });
 });

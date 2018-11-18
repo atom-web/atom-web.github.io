@@ -117,7 +117,7 @@ header{
 .slide__title{
 	font-size: 19px;
 	color: #fff;
-	margin-top: 10px;
+	margin-top: 18px;
 }
 .slide-descrpt{
 	font-size: 13px;
@@ -125,7 +125,7 @@ header{
 	color: #dcdcdc;
 }
 .slide__text form{
-	background: #eaeaea;
+	background: #cecece;
 	display: flex;
 	flex-direction: column;
 	padding: 6px 7px;
@@ -134,7 +134,7 @@ header{
 .slide__text input,
 .slide__text button{
 	margin:  7px 0;
-	height: 40px;
+	height: 35px;
 	padding: 0 10px;
 	text-align: center;
 	border: none;
@@ -147,4 +147,22 @@ header{
 }
 .slide__text button:hover{
 	background: #a9000c;
+}
+
+/*Company________________________*/
+.company{
+
+}
+.conpany__img-box{
+	height: 62px;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+}
+.conpany__img-box img{
+	width: 70%;
+    height: 100%;
+    object-fit: contain;
+
 }
