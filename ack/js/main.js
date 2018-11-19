@@ -9,6 +9,14 @@ $(document).ready(function(){
       arrows: true,
       nextArrow: '<div class="next-arrows"><i class="fas fa-chevron-right"></i></div>',
       prevArrow: '<div class="prev-arrows"><i class="fas fa-chevron-left"></i></div>',
+      responsive: [
+    {
+      breakpoint: 1040,
+      settings: {
+        arrows: false,
+      }
+    }
+  ]
   });
 
 });
