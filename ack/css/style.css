@@ -131,6 +131,9 @@ header{
 .feature__cont{
 	border: none !important;
 }
+.feature__row{
+	padding: 0 15px;
+}
 .slide-descrpt{
 	font-size: 13px;
 	margin-top: 10px;
@@ -202,7 +205,7 @@ header{
 
 /*Features___________________________*/
 .feature{
-	margin-top: 5px;
+	margin-top: 22px;
 }
 .feature__cont{
 	background: #1a5283;
@@ -211,7 +214,16 @@ header{
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding: 50px 20px;
-	border: 15px solid #fff
+	border-left: 15px solid #fff !important;
+    border-right: 15px solid #fff !important;
+}
+.feature__cont:first-child{
+	border-right: 25px solid #fff !important;
+	border-left: 0 !important;
+}
+.feature__cont:last-child{
+	border-left: 25px solid #fff !important;
+	border-right: 0 !important;
 }
 .feature__title{
 	color: #fff;
@@ -538,5 +550,16 @@ header{
 	}
 	.slide__text button{
 		font-size: 12px;
+	}
+	.feature__cont{
+		border-left: none !important;
+		border-right: none !important;
+		margin-bottom: 15px;
+	}
+	.feature__cont:first-child{
+		border-right: none !important;
+	}
+	.feature__cont:last-child{
+		border-left: none !important;
 	}
 }
