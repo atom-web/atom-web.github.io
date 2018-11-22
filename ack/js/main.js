@@ -19,4 +19,15 @@ $(document).ready(function(){
   ]
   });
 
+
+// Открытие меню_____________________________________________
+    $('.burger-open').click( function() {
+      $('.header__menu-box').addClass('menu-box-active')
+    });
+    $('.header__nav').click( function() {
+      $('.header__menu-box').removeClass('menu-box-active')
+    });
+
+
+
 });

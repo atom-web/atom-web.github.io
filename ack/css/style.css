@@ -103,6 +103,13 @@ header{
 	font-size: 20px;
 	color: #fff;
 }
+.burger-open{
+	font-size: 29px;
+	color: #5a5a5a;
+	cursor: pointer;
+	padding: 0px 10px;
+	display: none;
+}
 
 
 /*Slide_____________________________*/
@@ -215,7 +222,7 @@ header{
 	background-size: cover;
 	padding: 50px 20px;
 	border-left: 15px solid #fff !important;
-    border-right: 15px solid #fff !important;
+	border-right: 15px solid #fff !important;
 }
 .feature__cont:first-child{
 	border-right: 25px solid #fff !important;
@@ -386,7 +393,55 @@ header{
 
 }
 
-
+/*Footer_______________________________*/
+footer{
+	margin-top: 50px;
+	height: 500px;
+	color: #fff;
+	font-size: 13px;
+}
+.footer-row{
+	background: #1A5283;
+	padding: 25px 0;
+	margin: 0 -1px 0px 0;
+}
+.footer__logo-img{
+	width: 195px;
+	height: 59px;
+}
+.footer__logo-title{
+	margin: 18px 0 48px;
+}
+.footer__nav-title{
+	font-size: 15px;
+	margin-bottom: 15px;
+	text-shadow: 1px 1px 1px #000;
+}
+.footer__nav-box a{
+	color: #fff;
+	padding: 5px 5px;
+}
+.footer__nav-box a:hover{
+	color: #e21c2a;
+}
+.footer__nav-box li{
+	transition: 0.2s;
+}
+.footer__nav-box li:hover{
+	transform: translateX(10px);
+}
+.footer__nav-box ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 151px;
+}
+.nav-two{
+	text-align: right;
+}
+.footer__location{
+	margin-top: 85px;
+}
 
 
 
@@ -535,9 +590,54 @@ header{
 	}
 	.header__menu-box{
 		display: none;
+		position: fixed;
+		background: rgba(27, 27, 27, 0.9);
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 99999999;
+		align-items: center;
+		justify-content: center;
+	}
+	.menu-box-active{
+		display: flex;
+	}
+	.header__menu-box nav{
+		height: 100%;
+		width: 100%;
+	}
+	.header__menu-box ul{
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+	}
+	.header__menu-box li{
+		border: none;
+		background: none;
+		margin: 6px 0;
+	}
+	.header__menu-box a{
+		font-size: 24px;
+		color: #fff;
 	}
 	.logo{
 		margin-top: 10px;s
+	}
+	.footer-row{
+		margin: 0 -6px 0px 0;
+	}
+	.footer__nav-box{
+		margin-top: 30px;
+	}
+	.nav-two{
+		text-align: left;
+	}
+	.burger-open{
+		display: block;
+	}
+	.footer__location{
+		margin-top: 25px;
 	}
 }
 @media screen and (max-width: 767px){
@@ -561,5 +661,11 @@ header{
 	}
 	.feature__cont:last-child{
 		border-left: none !important;
+	}
+	footer .container{
+		padding: 0;
+	}
+	.footer-row{
+		margin: 0;
 	}
 }
