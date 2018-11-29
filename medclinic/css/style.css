@@ -1,0 +1,138 @@
+/*! normalize.css */button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}details,main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	transition: 0.2s;
+}
+/*Fonts_______________________________*/
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*Style________________________________*/
+body{
+	font-family: 'montserratregular';
+	background: #eaeaea;
+}
+header{
+	position: relative;
+}
+.header__top-items{
+	height: 185px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: relative;
+    z-index: 9;
+    background: #fff;
+}
+.header__nav, 
+.header__info-box{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.header__info-nav a, 
+.header__info-nav p,
+.header__callback-lbutton p,
+.header__search-button p{
+	color: #32418c;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    transition: 0.2s;
+    position: relative;
+}
+.header__info-box a, 
+.header__info-box p{
+	color: #413cab;
+    font-size: 17px;
+}
+.header__info-nav a:after{
+	content: "";
+    left: 10px;
+    border-bottom: 3px solid #32418c;
+    height: 1px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: 0.2s;
+}
+.header__info-nav a:hover{
+	color: #000;
+}
+.header__info-nav a:hover:after{
+	right: 10px;
+	-webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.header__nav>nav{
+
+}
+.header__nav>nav>ul{
+	display: flex;
+}
+.header__nav>nav>ul>li>ul{
+	display: none;
+}
+.header__callback-lbutton{
+	border-bottom: 3px solid #32418c;
+}
+.header__callback-lbutton,
+.header__search-button{
+	margin: 35px 0;
+	border-bottom: 3px solid #32418c;
+	cursor: pointer;
+}
+.header__callback-lbutton p,
+.header__search-button p{
+	padding: 0 10px;
+}
+
+.header__form-search{
+	background: #373F65;
+    padding: 20px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 70px;
+    z-index: 2;
+}
+.form-search-active{
+}
+.search-animate-add{
+	-webkit-animation-name: fadeInDownBig;
+    animation-name: fadeInDownBig;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.search-animate-remove{
+	-webkit-animation-name: fadeOutUpBig;
+    animation-name: fadeOutUpBig;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
