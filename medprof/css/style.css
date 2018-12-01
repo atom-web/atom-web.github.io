@@ -94,7 +94,7 @@ img{
 .header__info-nav a:after{
 	content: "";
     left: 10px;
-    border-bottom: 3px solid #32418c;
+    border-bottom: 1px solid #32418c;
     height: 1px;
     display: block;
     position: absolute;
@@ -138,6 +138,9 @@ img{
     top: -17px;
     left: 23px;
 }
+.header__nav li>ul>li>a{
+    font-size: 14px;
+}
 .header__callback-lbutton{
 	border-bottom: 3px solid #32418c;
 }
@@ -164,7 +167,7 @@ img{
 .hexagon{
     position: absolute;
     left: -33px;
-    bottom: -21px;
+    bottom: -20px;
     width: 35px;
 }
 .hexagon-search{
@@ -174,13 +177,17 @@ img{
     width: 35px;
 }
 .hexagon-search-bg, 
-.hexagon-search-icon{
+.hexagon-search-icon,
+.hexagon-bg,
+.hexagon-icon{
     transition: 0.2s;
 }
-.header__search-button:hover .hexagon-search-icon{
+.header__search-button:hover .hexagon-search-icon, 
+.header__callback-lbutton:hover .hexagon-bg{
     fill: #373F65;
 }
-.header__search-button:hover .hexagon-search-bg{
+.header__search-button:hover .hexagon-search-bg,
+.header__callback-lbutton:hover .hexagon-icon{
     fill: white;
 }
 .header__search-button:hover, 
