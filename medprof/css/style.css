@@ -295,7 +295,7 @@ img{
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    left: -11px;
+    left: -10px;
     background-size: contain;
 }
 .input-item:before{
