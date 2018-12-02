@@ -1,26 +1,21 @@
 $(document).ready(function(){
 
-    $('img[src$=".svg"]').each(function() { 
-      var $img = jQuery(this); 
-      var imgURL = $img.attr('src'); 
-      var attributes = $img.prop("attributes"); 
+  $('img[src$=".svg"]').each(function() { 
+    var $img = jQuery(this); 
+    var imgURL = $img.attr('src'); 
+    var attributes = $img.prop("attributes"); 
 
-      $.get(imgURL, function(data) { 
-      // Get the SVG tag, ignore the rest 
-      var $svg = jQuery(data).find('svg'); 
+    $.get(imgURL, function(data) { 
+        var $svg = jQuery(data).find('svg'); // Get the SVG tag, ignore the rest 
+        $svg = $svg.removeAttr('xmlns:a'); // Remove any invalid XML tags 
+        $.each(attributes, function() { // Loop through IMG attributes and apply on SVG 
+          $svg.attr(this.name, this.value); 
+        }); 
 
-      // Remove any invalid XML tags 
-      $svg = $svg.removeAttr('xmlns:a'); 
-
-      // Loop through IMG attributes and apply on SVG 
-      $.each(attributes, function() { 
-        $svg.attr(this.name, this.value); 
-      }); 
-
-      // Replace IMG with SVG 
-      $img.replaceWith($svg); 
+        $img.replaceWith($svg); // Replace IMG with SVG 
       }, 'xml'); 
-    });
+
+  });
 
 // Открытие и закрытие Формы поиска_________________________________
 
@@ -33,25 +28,67 @@ $(document).ready(function(){
     var formBottom = ('-70px'); // Padding формы появления
 
     hsb.click(function(){
-        hfs.toggleClass(fsa);
-        hfs.css('bottom', formBottom);
-        if (hfs.hasClass(fsa)) {
-                hfs.addClass(animAdd);
-                hfs.removeClass(animRemove);
-        } else {
-                hfs.removeClass(animAdd);
-                hfs.addClass(animRemove);
-        }
-        $(document).mouseup(function (e){
-            if (!fClose.is(e.target)
-                && fClose.has(e.target).length === 0) {
-                hfs.removeClass(fsa);
-                hfs.removeClass(animAdd);
-                hfs.addClass(animRemove);
-            }
-        });
+      hfs.toggleClass(fsa);
+      hfs.css('bottom', formBottom);
+      if (hfs.hasClass(fsa)) {
+        hfs.addClass(animAdd);
+        hfs.removeClass(animRemove);
+      } else {
+        hfs.removeClass(animAdd);
+        hfs.addClass(animRemove);
+      }
+      $(document).mouseup(function (e){
+        if (!fClose.is(e.target)
+          && fClose.has(e.target).length === 0) {
+          hfs.removeClass(fsa);
+        hfs.removeClass(animAdd);
+        hfs.addClass(animRemove);
+      }
+    });
     });
 
+// Инициализация слайдера и дата атрибут для переключения___________________
+    $('.features-slider').slick({
+      arrows: false,
+      accessibility: false,
+      draggable: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      fade: true,
+      cssEase: 'linear'
+    });
+      $('.slider-nav li[data-slide]').click(function(e) {
+        e.preventDefault();
+        $('.slider-nav li').removeClass('features__active');
+        $(this).addClass('features__active');
+        var slideno = $(this).data('slide');
+        $('.features-slider').slick('slickGoTo', slideno - 1);
+
+        if ($('.info-company li').hasClass('features__active')) {
+          $('.frame-bg').removeClass('features__active');
+          $(this).find('.frame-bg').addClass('features__active');
+        } else {
+        }
+
+      });
+
+    });
+
+
+// Инициализация анимации при скроле_______________
+  var wow = new WOW(
+  {
+    boxClass:     'ani',
+    animateClass: 'animated',
+    offset:       1,
+    mobile:       true,
+    live:         true,
+    scrollContainer: null,
+    resetAnimation: true,
+  }
+  );
+  wow.init();
 // Инициализация слайдера___________________________________
 
     $('.main-slider').slick({
@@ -64,8 +101,3 @@ $(document).ready(function(){
       cssEase: 'linear',
       draggable: false,
     });
-
-
-
-
-});
