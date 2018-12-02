@@ -469,6 +469,10 @@ img{
 }
 .frame-descript-title{
     margin-bottom: 24px;
+    font-size: 20px;
+}
+.frame-descript-story{
+    font-size: 16px;
 }
 .features-slider .slick-track{
     height: 400px;
