@@ -30,7 +30,7 @@ h3{
 }
 body{
 	font-family: 'montserratregular';
-	background: #eaeaea;
+	/*background: #eaeaea;*/
     height: 500vh;
 }
 body::-webkit-scrollbar{
@@ -477,16 +477,93 @@ img{
 .features-slider .slick-track{
     height: 400px;
 }
-
-
-
-
-
-
-
-
-
-
+.direction-title{
+    text-align: center;
+    width: 100%;
+    padding: 50px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #373F65;
+}
+.direction-slider-img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.direction-slider .slick-track{
+    height: 200px;
+}
+.direction-slider-items{
+    outline: none;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.next-arrows, 
+.prev-arrows{
+    position: absolute;
+    right: -65px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.prev-arrows{
+    right: auto;
+    left: -65px;
+    transform: rotate(180deg);
+}
+.next-arrows img, 
+.prev-arrows img{
+    width: 60px;
+    height: 104px;
+    transition: 0.2s;
+}
+.next-arrows img:hover, 
+.prev-arrows img:hover{
+    transform: scale(1.1);
+}
+.direction-med-mpre{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0 50px;
+}
+.direction-med-mpre div{
+    position: relative;
+}
+.direction-med-mpre a{
+    background: #303d66;
+    color: #fff;
+    padding: 15px 5px;
+}
+.direction-med-mpre a:before{
+    content: "";
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAABYCAMAAABS3l7nAAABMlBMVEUwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYnumz8AAAAZXRSTlMAAQIDBAYJCgsMDQ8QERMUFRYZGh4gIiQnKiwtMDIzNDk8PUFCQ0RJTk9RVFZYW2NmamxucHp7fH+AgoeKk5WWl5ufpKutrrGyub7AwsPFyc3P0dPW2eDh4+nq6+/w8fP29/r7/GxHkx0AAAEuSURBVHjalcpVQgIBAEXRNw4DioEiiGKB3WI3qGB3Yvfb/xZcwz3fR8T4jwVM/Zr8uT+TX7LJXzb6K0Z/y+QHOyY/3Df5sUOTH52Y/MSFyU/emPzWB5PfUTf5nc8mP/tm8rs/TX6vTf6g0S8a/TGjP2H0Z43+vNFfMvprRn/b5AcVk99QNfnhscmPTk1+/MrkN9nkNxv9lNFPG/2M0c8Z/R6j32/0CyY0bERG+L+Gv/jOvvIv7CtbZ1/td+wrec6+ogP2Fe6yL23ArwX4Nf3Nvka+2NfAB/vKvbKv9CP7arllX/Ez9hXW2FdQZl9ahV8l+DUJv4bgVx5+ZeBX2xP7arxnX9El+wqO2Jf24Ncm/FqEXzPwaxR+9cGvLviVgl8J+BWDX6JfNfhVhl/r/gfkcmB7T74I+AAAAABJRU5ErkJggg==);
+    width: 46px;
+    height: 46px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -14px;
+    right: -24px;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+.direction-med-mpre a:after{
+    content: "";
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAABYCAMAAABS3l7nAAABMlBMVEUwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYwPWYnumz8AAAAZXRSTlMAAQIDBAYJCgsMDQ8QERMUFRYZGh4gIiQnKiwtMDIzNDk8PUFCQ0RJTk9RVFZYW2NmamxucHp7fH+AgoeKk5WWl5ufpKutrrGyub7AwsPFyc3P0dPW2eDh4+nq6+/w8fP29/r7/GxHkx0AAAEuSURBVHjalcpVQgIBAEXRNw4DioEiiGKB3WI3qGB3Yvfb/xZcwz3fR8T4jwVM/Zr8uT+TX7LJXzb6K0Z/y+QHOyY/3Df5sUOTH52Y/MSFyU/emPzWB5PfUTf5nc8mP/tm8rs/TX6vTf6g0S8a/TGjP2H0Z43+vNFfMvprRn/b5AcVk99QNfnhscmPTk1+/MrkN9nkNxv9lNFPG/2M0c8Z/R6j32/0CyY0bERG+L+Gv/jOvvIv7CtbZ1/td+wrec6+ogP2Fe6yL23ArwX4Nf3Nvka+2NfAB/vKvbKv9CP7arllX/Ez9hXW2FdQZl9ahV8l+DUJv4bgVx5+ZeBX2xP7arxnX9El+wqO2Jf24Ncm/FqEXzPwaxR+9cGvLviVgl8J+BWDX6JfNfhVhl/r/gfkcmB7T74I+AAAAABJRU5ErkJggg==);
+    width: 46px;
+    height: 46px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -14px;
+    left: -24px;
+    background-size: contain;
+}
 
 
 

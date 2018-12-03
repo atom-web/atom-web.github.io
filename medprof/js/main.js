@@ -56,7 +56,7 @@ $(document).ready(function(){
       speed: 300,
       slidesToShow: 1,
       fade: true,
-      cssEase: 'linear'
+      cssEase: 'linear',
     });
       $('.slider-nav li[data-slide]').click(function(e) {
         e.preventDefault();
@@ -73,7 +73,32 @@ $(document).ready(function(){
 
       });
 
-    });
+      $('.main-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        fade: true,
+        cssEase: 'linear',
+        draggable: false,
+      });
+
+      $('.direction-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        nextArrow: '<div class="next-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
+        prevArrow: '<div class="prev-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
+      });
+
+
+
+
+
+});
 
 
 // Инициализация анимации при скроле_______________
@@ -91,13 +116,3 @@ $(document).ready(function(){
   wow.init();
 // Инициализация слайдера___________________________________
 
-    $('.main-slider').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      fade: true,
-      cssEase: 'linear',
-      draggable: false,
-    });
