@@ -93,7 +93,17 @@ $(document).ready(function(){
         nextArrow: '<div class="next-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
         prevArrow: '<div class="prev-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
       });
-
+      $('.sale-slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        nextArrow: '<div class="next-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
+        prevArrow: '<div class="prev-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
+        customPaging: (function(slider, i) {return '<div class="sale__slick-dot"></div>';}),
+      });
 
 
 
