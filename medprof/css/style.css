@@ -458,7 +458,7 @@ img{
     top: 124px;
 }
 .frame-descript-box{
-    background: #373F65;
+    background: #373f65d6;
     color: #fff;
     display: flex;
     align-items: center;
@@ -678,7 +678,7 @@ img{
 }
 .sale__sidebar-directions, 
 .sale__sidebar-time{
-    background: #373f65;
+    background: #373f65d6;
     padding-bottom: 1px;
 }
 .sale__items-wrap{
