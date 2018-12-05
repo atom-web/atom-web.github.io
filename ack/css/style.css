@@ -612,10 +612,38 @@ footer{
 .about-viget-saturday{
 	margin-bottom: 15px;
 }
-
-
-
-
+.brends{
+	margin-top: 25px;
+}
+.brends__items-wrap img{
+	object-fit: contain;
+}
+.brends__items-wrap a{
+	font-size: 16px;
+    border: 1px solid #e21c2a;
+    color: #e21c2a;
+    padding: 5px 20px;
+}
+.brends__items-wrap a:hover{
+	background: #e21c2a;
+	color: #fff;
+}
+.brends__items-wrap{
+	transition: 0.2s;
+}
+.brends__items-wrap:hover{
+	transform: scale(1.2);
+}
+.brends__items-button{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11px;
+    margin-bottom: 20px;
+}
+.brends__items-img{
+	height: 77px;
+}
 
 
 
