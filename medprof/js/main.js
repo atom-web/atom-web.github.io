@@ -104,7 +104,17 @@ $(document).ready(function(){
         prevArrow: '<div class="prev-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
         customPaging: (function(slider, i) {return '<div class="sale__slick-dot"></div>';}),
       });
-
+      $('.reviews__vertical-slide').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
+        vertical:  true,
+        verticalSwiping: true,
+       centerMode: true,
+       centerPadding: '0px',
+      });
 
 
 

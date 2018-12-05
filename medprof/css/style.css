@@ -22,6 +22,7 @@ li{
 a{
     text-decoration: none;
     transition: 0.2s;
+    outline: none;
 }
 h1,
 h2,
@@ -55,6 +56,9 @@ img{
 }
 .logo{
     width: 270px;
+}
+.slick-initialized .slick-slide{
+    outline: none;
 }
 .header__top-items{
 	height: 140px;
@@ -524,6 +528,12 @@ img{
 .prev-arrows img:hover{
     transform: scale(1.1);
 }
+.direction-med .direction-slider-items{
+    transition: 0.2s;
+}
+.direction-med .direction-slider-items:hover{
+    transform: scale(0.9);
+}
 .direction-med-mpre{
     width: 100%;
     display: flex;
@@ -647,7 +657,8 @@ img{
     align-items: center;
     padding: 20px 0;
     border-bottom: 1px solid #000;
-    font-size: 18px;
+    font-size: 14px;
+
 }
 .sale__programs-wrap:last-child{
     border-bottom: none;
@@ -700,7 +711,7 @@ img{
     padding-bottom: 4px;
 }
 .sale__sidebar-time{
-    margin-top: 50px;
+    margin-top: 104px;
     padding: 0 30px;
 }
 .sale__sidebar-time .sale__programs-wrap{
@@ -711,15 +722,68 @@ img{
     text-align: right;
     width: 100px;
 }
+.reviews{
+    background: #373F65;
 
+}
+.reviews .container{
+    padding: 50px 25px;
+}
+.reviews__title{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.reviews__slide-img{
+    width: 150px;
+    height: 150px;
+}
+.reviews__slide-img img{
+    object-fit: contain;
+}
+.reviews__slide-items{
+    background: #fff;
+    display: flex !important;
+    align-items: center;
+    padding: 25px 30px;
+    transform: scale(0.8);
+    margin: -30px 0;
+}
+.reviews__user{
+    font-size: 23px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-align: center;
+}
+.reviews__user-item{
+    margin-left: 25px;
+}
+.reviews .slick-center{
+    transform: scale(1);
+    transition: 0.2s;
+    box-shadow: 0px 0px 22px -5px #000000;
+    position: relative;
+    z-index: 9;
+}
 
+.reviews .slick-track{
 
-
-
-
-
-
-
+}
+.reviews__button a{
+    color: #fff;
+    padding: 3px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.reviews__button a:hover{
+    color: #00b7f8;
+    border-bottom: 1px solid #00b7f8;
+}
+.reviews__button{
+    text-align: center;
+    margin: 40px 0 0;
+}
 
 
 
