@@ -612,40 +612,79 @@ footer{
 .about-viget-saturday{
 	margin-bottom: 15px;
 }
-.brends{
+.brands{
 	margin-top: 25px;
 }
-.brends__items-wrap img{
+.brands__items-wrap img{
 	object-fit: contain;
 }
-.brends__items-wrap a{
+.brands__items-wrap a{
 	font-size: 16px;
-    border: 1px solid #e21c2a;
-    color: #e21c2a;
-    padding: 5px 20px;
+	border: 1px solid #e21c2a;
+	color: #e21c2a;
+	padding: 5px 20px;
 }
-.brends__items-wrap a:hover{
+.brands__items-wrap a:hover{
 	background: #e21c2a;
 	color: #fff;
 }
-.brends__items-wrap{
+.brands__items-wrap{
 	transition: 0.2s;
 }
-.brends__items-wrap:hover{
-	transform: scale(1.2);
+.brands__items-wrap:hover{
+	transform: scale(1.2) ;
 }
-.brends__items-button{
+.brands__items-button{
 	display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 11px;
-    margin-bottom: 20px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 11px;
+	margin-bottom: 20px;
 }
-.brends__items-img{
+.brands__items-img{
 	height: 77px;
 }
-
-
+.brend h1, 
+.brend h2{
+	text-align: center;
+	margin: 20px 0;
+}
+.brend p{
+	margin: 20px 0;
+}
+.brend__img-frap{
+	position: relative;
+	text-align: center;
+}
+.brend__img-frap form{
+	/*width: 411px;*/
+	position: absolute;
+	bottom: 30px;
+	right: 0px;
+}
+.brend__img-frap form p{
+	font-size: 20px;
+}
+.brend__form-input{
+	display: flex;
+}
+.brend__form-input input{
+	font-size: 16px;
+	width: 70%;
+	padding: 10px 10px;
+}
+.brend__form-input button{
+	border: none;
+	margin-left: 15px;
+	padding: 0 10px;
+	background: #1a5283;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.brend__form-input button:hover{
+	background: #023969;
+}
 
 
 
@@ -886,5 +925,8 @@ footer{
 	.about-desc__label-desc{
 		margin-left: 0;
 		margin-bottom: 25px;
+	}
+	.brend__img-frap form{
+		display: none;
 	}
 }
