@@ -410,17 +410,17 @@ header{
 }
 .form-detal__input-wrap input{
 	width: 100%;
-    margin-bottom: 25px;
-    height: 45px;
-    padding: 0 15px;
-    border: 1px solid #8c8c8c;
+	margin-bottom: 25px;
+	height: 45px;
+	padding: 0 15px;
+	border: 1px solid #8c8c8c;
 }
 .form-detal form textarea{
 	width: 100%;
-    height: 100px;
-    resize: none;
-    border: 1px solid #8c8c8c;
-    padding: 15px 15px;
+	height: 100px;
+	resize: none;
+	border: 1px solid #8c8c8c;
+	padding: 15px 15px;
 }
 .form-detal form button{
 	border: none;
@@ -491,22 +491,127 @@ footer{
 .footer__location{
 	margin-top: 85px;
 }
+.about-desc{
+	margin-top: 20px;
+}
+.about-desc-box{
+	background: #c4c4c469;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 45px 20px;
+	margin-bottom: 25px;
+}
+.about-desc__title{
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 17px;
+}
+.about-desc__desc{
+	text-align: center;
+	font-size: 20px;
+	padding: 0 40px;
+}
+.about-desc__info{
+	background: #F5F3F3;
+	padding: 15px 20px;
+	margin: 24px 0;
+}
+.about-desc__viget-img{
+	height: 300px;
+	width: 100%;
+}
+.about-desc__viget-img{
 
+}
+.about-desc__viget-title{
+	background: #1A5283;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	padding: 0 20px;
+	font-size: 17px;
+	flex-direction: column;
+	justify-content: center;
+}
+.about-desc__viget-title p{
+	text-align: center;
+}
+.about-viget-box{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+}
+.about-desc-bg{
+	background: #1A5283;
+	color: #fff;
+}
+.about-desc__label-title{
+	font-size: 17px;
+}
+.about-desc__label-desc{
+	font-size: 17px;
+	background: #E31E24;
+	padding: 18px 20px;
+	margin-top: 35px;
+	margin-left: -20px;
+}
+.about-desc-img img{
+	width: 50%;
+	height: 100px;
+	object-fit: contain;
+	margin: 15px 0;
 
+}
+.about-desc__label-txt{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.about-viget-img{
+	width: 100px;
+	height: 100px;
+	margin: 20px 0;
+}
+.about-viget-office{
+	font-size: 12px;
+	color: #b7b7b7;
+	margin-bottom: 5px;
+	padding: 0 15px;
+}
+.about-viget-user{
+	padding: 0 15px;
+	margin-bottom: 25px;
+}
+.about-viget-button-call{
+	background: #e31e24;
+	padding: 9px 15px;
+	color: #fff;
+	transition: 0.2s;
+}
+.about-viget-button-call:hover{
+	background: #c70006;
+}
+.about-viget-time-work{
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 21px;
+}
+.about-viget-time-img{
+	width: 40px;
+	margin-right: 20px;
+}
+.about-viget-time-txt{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.about-viget-weekdays{
+	margin-bottom: 113px;
+}
+.about-viget-saturday{
+	margin-bottom: 15px;
+}
 
 
 
@@ -591,6 +696,10 @@ footer{
 	}
 	.slide__text form{
 		margin-top: 23px;
+	}
+	.about-viget-button-call{
+		padding: 9px 10px;
+		font-size: 13px;
 	}
 }
 @media screen and (max-width: 1040px){
@@ -688,6 +797,32 @@ footer{
 	.footer__location{
 		margin-top: 25px;
 	}
+	.about-desc__title{
+		font-size: 23px;
+	}
+	.about-desc__desc{
+		font-size: 15px;
+	}
+	.about-desc__info, 
+	.about-desc__viget-title,
+	.about-desc__label-title, 
+	.about-desc__label-desc{
+		font-size: 13px;
+	}
+	.about-desc-img img{
+		height: 75px;
+	}
+	.about-viget-button-call{
+		font-size: 10px;
+	}
+	.about-viget-img{
+		width: 50px;
+		height: 50px;
+	}
+	.about-viget-time-img{
+		width: 13px;
+	}
+
 }
 @media screen and (max-width: 767px){
 	.info-form__text, 
@@ -716,5 +851,12 @@ footer{
 	}
 	.footer-row{
 		margin: 0;
+	}
+	.about-desc__viget-title{
+		padding: 20px 20px;
+	}
+	.about-desc__label-desc{
+		margin-left: 0;
+		margin-bottom: 25px;
 	}
 }
