@@ -270,6 +270,9 @@ header{
 .news__img-box{
 	padding-left: 0;
 }
+.news-post-img{
+	margin-bottom: 25px;
+}
 .news__img-box a:hover img{
 	animation: pulse 1s steps(30);
 }
