@@ -688,18 +688,74 @@ footer{
 .brend__form-input button:hover{
 	background: #023969;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.contacts-feature .feature__cont{
+	background-image: none;
+}
+.contacts-feature-wrap{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.contacts-feature-img{
+	width: 60px;
+	margin-right: 20px;
+}
+.contacts-feature .feature__title{
+	font-size: 25px;
+	padding-top: 0;
+}
+.contacts-feature .feature-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.contacts-feature .feature__descript{
+	width: 100%;
+	text-align: right;
+}
+.our-store{
+	margin-top: 20px;
+}
+.our-store__title{
+	text-align: center;
+	padding: 20px 0;
+}
+.our-store__items-wrap{
+	background: #eaeaea;
+	padding: 0 15px;
+	padding-bottom: 25px;
+	height: 100%;
+}
+.our-store__gallery-big{
+	margin-bottom: 25px;
+}
+.our-store__items-desc{
+	display: flex;
+	justify-content: space-between;
+	margin: 12px 0;
+}
+.our-store__card-desc{
+	text-align: right;
+}
+.our-store__button-card{
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+}
+.our-store__button-card a{
+	font-size: 19px;
+	color: #fff;
+	background: #1A5283;
+	padding: 10px 20px;
+	transform: 0.2s;
+}
+.our-store__button-card a:hover{
+	background: #012a4e;
+}
+.contacts-maps{
+	margin-top: 40px;
+}
 
 
 
@@ -891,6 +947,15 @@ footer{
 	}
 	.about-viget-time-img{
 		width: 13px;
+	}
+	.contacts-feature .feature__title{
+		font-size: 15px;
+	}
+	.contacts-feature-img{
+		width: 30px;
+	}
+	.our-store__items-wrap{
+		font-size: 11px;
 	}
 
 }
