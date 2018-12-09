@@ -9,8 +9,8 @@ $(document).ready(function(){
 		autoplaySpeed: 2000,
 		arrows: true,
 		dots: true,
-		nextArrow: '<div class="next-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
-		prevArrow: '<div class="prev-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
+		nextArrow: '<div class="next-arrows"><img src="img/right-arrow.svg" alt=""></div>',
+		prevArrow: '<div class="prev-arrows"><img src="img/right-arrow.svg" alt=""></div>',
 		customPaging: (function(slider, i) {return '<div class="slider__slick-dots"></div>';}),
 	});
 
