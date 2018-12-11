@@ -12,6 +12,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="js/wow.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/mask-input-min.js"></script>
 </head>
 <body>
 	<header>
@@ -54,6 +55,7 @@
 					<p>Поиск по сайту</p>
 					<img class="hexagon-search" src="img/hexagon-search.svg" alt="">
 				</div>
+				<a class="header__search-tel" href="#">+7 (999) 999-99-99</a>
 			</div>
 		</div>
 		<div class="header__form-search">
@@ -74,10 +76,11 @@
 					<h1>Лабораторный центр под крылом Министерства здравоохранения Тульской области</h1>
 				</div>
 			</div>
-			<div class="company-features">
+		</div>
+		<div class="company-features">
 				<div class="container">
 					<div class="row justify-content-between">
-						<div class="col-md-3 company-features-box ani fadeIn" data-wow-delay = "0.3s">
+						<div class="col-lg-3 col-md-12 company-features-box ani fadeIn" data-wow-delay = "0.3s">
 							<p class="company-features-title">Часы работы</p>
 							<div class="clock-work-box">
 								<div class="clock-work-desc">
@@ -94,7 +97,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-5 company-features-box ani fadeIn" data-wow-delay = "0.4s">
+						<div class="col-lg-5 col-md-12 company-features-box ani fadeIn" data-wow-delay = "0.4s">
 							<p class="company-features-title">Быстрая запись на прием</p>
 							<form class="company-features-form">
 								<div class="row justify-content-around">
@@ -102,7 +105,7 @@
 										<input type="text" placeholder="Выберите анализ">
 									</div>
 									<div class="col-md-5 input-item">
-										<input type="tel" placeholder="Ваш телефон?">
+										<input class="phone_mask" type="tel" placeholder="Ваш телефон?">
 									</div>
 									<div class="col-md-5 input-item">
 										<input type="name" placeholder="Ваше имя">
@@ -113,7 +116,7 @@
 								</div>
 							</form>
 						</div>
-						<div class="col-md-3 company-features-box ani fadeIn" data-wow-delay = "0.4s">
+						<div class="col-lg-3 col-md-12 company-features-box ani fadeIn" data-wow-delay = "0.4s">
 							<p class="company-features-title">Онлайн консультация</p>
 							<div class="row justify-content-around company-consultation">
 								<div class="col-md-8 input-item">
@@ -124,7 +127,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
 		<div class="info-company">
 			<div class="container">
 				<div class="row">
@@ -193,7 +195,7 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<h3 class="direction-title ani fadeIn">Направления</h3>
-					<div class="col-md-9 direction-slider ani fadeIn" data-wow-delay = "0.1s">
+					<div class="col-xl-9 col-lg-10 direction-slider ani fadeIn" data-wow-delay = "0.1s">
 						<div class="direction-slider-items">
 							<a href="#"><img class="direction-slider-img" src="img/hexagon-slide.png" alt=""></a>
 						</div>
@@ -218,15 +220,17 @@
 		</div>
 		<div class="sale">
 			<div class="container">
-				<h3 class="sale__title">Акции нашего центра</h3>
-				<p class="sale__desc">Мы ценим Вас и Ваше здоровье, и всегда готовы предложить самые выгодные акции</p>
+				<h3 class="sale__title ani fadeIn">Акции нашего центра</h3>
+				<p class="sale__desc ani fadeIn" data-wow-delay = "0.2s">Мы ценим Вас и Ваше здоровье, и всегда готовы предложить самые выгодные акции</p>
 				<div class="row">
-					<div class="col-md-10">
-						<div class="sale-slide">
+					<div class="col-lg-10 col-md-12">
+						<div class="sale-slide ani fadeIn" data-wow-delay = "0.3s">
+							<img src="img/slide-sale.jpg" alt="Акции">
+							<img src="img/slide-sale.jpg" alt="Акции">
 							<img src="img/slide-sale.jpg" alt="Акции">
 							<img src="img/slide-sale.jpg" alt="Акции">
 						</div>
-						<div class="sale-programs-title"><p>Комплексные программы</p></div>
+						<div class="sale-programs-title ani fadeIn"><p>Комплексные программы</p></div>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="sale__programs-wrap">
@@ -275,7 +279,7 @@
 						</div>
 					</div>
 					<div class="col-md-2 sale__sidebar">
-						<div class="sale__sidebar-directions">
+						<div class="sale__sidebar-directions ani fadeIn" data-wow-delay = "0.3s">
 							<p class="sale__sidebar-title">Напрвления</p>
 							<a href="#">
 								<div class="sale__items-wrap">
@@ -340,41 +344,41 @@
 		<div class="reviews">
 			<div class="container">
 				<h3 class="reviews__title">Отзывы клиентов</h3>
-				<div class="reviews__vertical-slide">
+				<div class="reviews__vertical-slide ani fadeIn" data-wow-delay = "0.2s">
 					<div class="reviews__slide-items">
 						<div class="reviews__slide-img">
-							<img src="img/reviews-vertical.png" alt="">
+							<img src="img/images-user.jpg" alt="">
 						</div>
 						<div class="reviews__user-item">
-							<p class="reviews__user">Афоня Иванов</p>
-							<p class="reviews__user-messeng">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt tellus sed turpis tempor, eu pharetra odio tincidunt.</p>
+							<p class="reviews__user">Елена Михайлова</p>
+							<p class="reviews__user-messeng">В этой клинике проводили наш регулярный медосмотр от моей работы. врач гинеколог. Очень понравилась, такая милая и опытная! Я даже задала ей пару личных вопросов, на все ответила. Думаю, что на другой раз при надобности к ней пойду. Напомнила мне, что у гинеколога надо чаще наблюдаться.</p>
 						</div>
 					</div>
 					<div class="reviews__slide-items">
 						<div class="reviews__slide-img">
-							<img src="img/reviews-vertical.png" alt="">
+							<img src="img/img_vol.jpg" alt="">
 						</div>
 						<div class="reviews__user-item">
-							<p class="reviews__user">Афоня Иванов</p>
-							<p class="reviews__user-messeng">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt tellus sed turpis tempor, eu pharetra odio tincidunt.</p>
+							<p class="reviews__user">Сергей Синицын</p>
+							<p class="reviews__user-messeng">Прохожу тут профосмотр, причем уже не в первый раз. Работает электронная очередь вместо «живой», очень удобно. В итоге за час можно успеть полностью обойти всех нужных врачей. Вообще улучшения вижу раз от раза. И специалисты тут довольно приличные.</p>
 						</div>
 					</div>
 					<div class="reviews__slide-items">
 						<div class="reviews__slide-img">
-							<img src="img/reviews-vertical.png" alt="">
+							<img src="img/26071407.336645.726.jpeg" alt="">
 						</div>
 						<div class="reviews__user-item">
-							<p class="reviews__user">Афоня Иванов</p>
-							<p class="reviews__user-messeng">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt tellus sed turpis tempor, eu pharetra odio tincidunt.</p>
+							<p class="reviews__user">Елена Вилкова</p>
+							<p class="reviews__user-messeng">В Мед Профе делала себе медкнижку с нуля. Очень удивило, что ее не просто покупаешь, а действительно проходишь врачей. Это даже понравилось, я давно не проверялась, анализы не сдавала. В итоге здорова. Все врачи в клинике имеются и анализы делаются тут же.</p>
 						</div>
 					</div>
 					<div class="reviews__slide-items">
 						<div class="reviews__slide-img">
-							<img src="img/reviews-vertical.png" alt="">
+							<img src="img/kerzhakov-foto.jpg" alt="">
 						</div>
 						<div class="reviews__user-item">
-							<p class="reviews__user">Афоня Иванов</p>
-							<p class="reviews__user-messeng">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt tellus sed turpis tempor, eu pharetra odio tincidunt.</p>
+							<p class="reviews__user">Александра Бутакова</p>
+							<p class="reviews__user-messeng">Мне нравятся врачи здесь, пару раз бывала на профосмотрах. Даже потом сходила частным образом проконсультироваться по боли в спине. Все адекватные, вежливые и видно, что соображают в здоровье. А то таких врачей навидаешься, что боже мой.</p>
 						</div>
 					</div>
 				</div>
@@ -383,7 +387,268 @@
 				</div>
 			</div>
 		</div>
+		<div class="ourspecialists ani fadeIn">
+			<div class="container">
+				<div class="ourspecialists__title">
+					<p>Наши специалисты</p>
+					<a href="#">Все специалисты</a>
+				</div>
+				<div class="row">
+					<div class="col-md-12 ourspecialists-slider">
+						<div class="ourspecialists__slider-items-wrap">
+							<div class="ourspecialists__img-wrap">
+								<img src="img/image 3.1.jpg" alt="">
+							</div>
+							<div class="ourspecialists__info-wrap">
+								<p class="ourspecialists__name">Юлия Климова</p>
+								<p class="ourspecialists__position">Педиатор</p>
+								<div class="ourspecialists__link">
+									<a class="ourspecialists__link" href="#">Записаться</a>
+								</div>
+							</div>
+						</div>
+						<div class="ourspecialists__slider-items-wrap">
+							<div class="ourspecialists__img-wrap">
+								<img src="img/image 5.1.jpg" alt="">
+							</div>
+							<div class="ourspecialists__info-wrap">
+								<p class="ourspecialists__name">Юлия Климова</p>
+								<p class="ourspecialists__position">Лор</p>
+								<div class="ourspecialists__link">
+									<a class="ourspecialists__link" href="#">Записаться</a>
+								</div>
+							</div>
+						</div>
+						<div class="ourspecialists__slider-items-wrap">
+							<div class="ourspecialists__img-wrap">
+								<img src="img/image 6.1.jpg" alt="">
+							</div>
+							<div class="ourspecialists__info-wrap">
+								<p class="ourspecialists__name">Юлия Климова</p>
+								<p class="ourspecialists__position">Хирург</p>
+								<div class="ourspecialists__link">
+									<a class="ourspecialists__link" href="#">Записаться</a>
+								</div>
+							</div>
+						</div>
+						<div class="ourspecialists__slider-items-wrap">
+							<div class="ourspecialists__img-wrap">
+								<img src="img/image.jpg" alt="">
+							</div>
+							<div class="ourspecialists__info-wrap">
+								<p class="ourspecialists__name">Юлия Климова</p>
+								<p class="ourspecialists__position">Окулист</p>
+								<div class="ourspecialists__link">
+									<a class="ourspecialists__link" href="#">Записаться</a>
+								</div>
+							</div>
+						</div>
+						<div class="ourspecialists__slider-items-wrap">
+							<div class="ourspecialists__img-wrap">
+								<img src="img/image 3.1.jpg" alt="">
+							</div>
+							<div class="ourspecialists__info-wrap">
+								<p class="ourspecialists__name">Юлия Климова</p>
+								<p class="ourspecialists__position">Пстихиатр</p>
+								<div class="ourspecialists__link">
+									<a class="ourspecialists__link" href="#">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="news ani fadeIn">
+			<div class="container">
+				<div class="news__title-items">
+					<p>Последние новости</p>
+				</div>
+				<div class="row">
+					<div class="col-md-12 news__slider-init">
+						<a href="#" class="news__slider">
+							<div class="news__img">
+								<img src="img/images-news.jpg" alt="">
+							</div>
+							<div class="news__items-info">
+								<div class="news__info-wrap">
+									<div class="news__info-title-wrap">
+										<p class="news__info-title">Настройка центрифуги</p>
+										<p class="news__info-desc">Откалибруем Вашу центрифугу вместе с Вами</p>
+									</div>
+									<div class="news__info-cam">
+										<img class="news__info-cam-img" src="img/video-solid.svg" alt="">
+									</div>
+								</div>
+								<div class="news__tools">
+									<p>Декабрь, 12 2018</p>
+									<p>Комментариев: 3</p>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="news__slider">
+							<div class="news__img">
+								<img src="img/1536389529_ud_ki_004.jpg" alt="">
+							</div>
+							<div class="news__items-info">
+								<div class="news__info-wrap">
+									<div class="news__info-title-wrap">
+										<p class="news__info-title">Реакция на хлор - просто...</p>
+										<p class="news__info-desc">В домашних условия - минимум инструментов</p>
+									</div>
+									<div class="news__info-cam">
+										<img class="news__info-cam-img" src="" alt="">
+									</div>
+								</div>
+								<div class="news__tools">
+									<p>Декабрь, 12 2018</p>
+									<p>Комментариев: 3</p>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="news__slider">
+							<div class="news__img">
+								<img src="img/images-news.jpg" alt="">
+							</div>
+							<div class="news__items-info">
+								<div class="news__info-wrap">
+									<div class="news__info-title-wrap">
+										<p class="news__info-title">Настройка центрифуги</p>
+										<p class="news__info-desc">Откалибруем Вашу центрифугу вместе с Вами</p>
+									</div>
+									<div class="news__info-cam">
+										<img class="news__info-cam-img" src="img/video-solid.svg" alt="">
+									</div>
+								</div>
+								<div class="news__tools">
+									<p>Декабрь, 12 2018</p>
+									<p>Комментариев: 3</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="direction-med-mpre">
+						<div class="ani fadeIn"><a href="#">Перейти в блог</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="callback">
+			<div class="container">
+				<p class="callback__title">Не тратьте деньги на звонки! <br>Мы думаем о Вас и готовы перезвонить в течении 10 минут!</p>
+				<p class="callback__title-two">Просто заполните форму!</p>
+				<form class="company-features-form">
+					<div class="row justify-content-around">
+						<div class="col-md-3 input-item">
+							<input type="name" placeholder="Как Вас зовут?">
+						</div>
+						<div class="col-md-3 input-item">
+							<input class="phone_mask" type="tel" placeholder="Ваш телефон?">
+						</div>
+						<div class="col-md-3 input-item input-btn">
+							<button class="col-md-5">Записаться</button>
+						</div>
+					</div>
+				</form>
+				<div class="row">
+					<div class="col-md-4 callback__mark-wrap">
+						<img class="callback__mark-img" src="img/check-mark.svg" alt="">
+						<p>Подскажем стоимость</p>
+					</div>
+					<div class="col-md-4 callback__mark-wrap">
+						<img class="callback__mark-img" src="img/check-mark.svg" alt="">
+						<p>Запишем на прием</p>
+					</div>
+					<div class="col-md-4 callback__mark-wrap">
+						<img class="callback__mark-img" src="img/check-mark.svg" alt="">
+						<p>Расскажем об особенностях</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="maps">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 maps__info">
+						<p class="maps__info-title">Приезжайте и убедитесь сами!</p>
+						<div class="maps__items-wrap">
+							<div class="maps__items">
+								<img class="maps__items-img" src="img/phone-contact.svg" alt="">
+								<a class="maps__items-desc" href="tel:88005553535">8-800-555-35-35</a>
+							</div>
+						</div>
+						<div class="maps__items-wrap">
+							<div class="maps__items">
+								<img class="maps__items-img" src="img/clock-circular-outline.svg" alt="">
+								<div>
+									<p class="maps__items-desc">Пн — Сб: 07:30-19:00</p>
+									<p class="maps__items-desc">Вс: 07:30-17:00</p>
+								</div>
+							</div>
+						</div>
+						<div class="maps__items-wrap">
+							<div class="maps__items">
+								<img class="maps__items-img" src="img/placeholder.svg" alt="">
+								<p class="maps__items-desc">г. Тула, ул. Улица, д. 8</p>
+							</div>
+						</div>
+						<p class="maps__locat-desc">К нам очень легко добраться на обещственном и личном транспорте, самолете, поезде, корабле и т.д. Автобус №88, 99, 111 Трамвай №1, 2, 3</p>
+					</div>
+					<div class="col-md-8 maps__location">
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af94a5a2811710df905a313724840258bb68bbae82231bd88b5655a1ce974373b&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+	<footer>
+		<div class="footer__top-items">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-12 footer__info">
+						<nav>
+							<ul>
+								<li><a href="#">Анализы</a></li>
+								<li><a href="#">Специалисты</a></li>
+								<li><a href="#">УЗИ</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="footer__info-box">
+							<a href="tel: 89999999999">Тел: 8 (999) 999-99-99</a>
+							<a href="mailto:info@medprof.ru">e-mail: info@medprof.ru</a>
+							<p>ул.Первомайская, д.15, оф.2</p>
+						</div>
+						<p class="footer__info-company">ООО "ПроМед", ОГРН 1175074004962 Лицензия: ЛО-50-01-009840 от 03.07.2018</p>
+					</div>
+					<div class="col-xl-3 col-lg-12 footer__logo-wrap">
+						<img class="footer__logo" src="img/logo.png" alt="">
+					</div>
+					<div class="col-xl-2 col-lg-12 footer__form-callback">
+						<p class="footer__form-title">Заказать обратный звонок</p>
+						<form action="">
+							<input class="phone_mask" type="tel" placeholder="Телефон">
+							<button><img class="footer__form-img" src="img/phone-contact.svg" alt=""></button>
+						</form>
+						<div class="footer__social-wrap">
+							<p>Мы в социальных сетях:</p>
+							<a href="#">
+								<img class="footer__social-icon" src="img/vk.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom-items">
+			<div class="container">
+				<p>Все права защищены. Копирование материалов разрешено только с согласия правообладателя.</p>
+			</div>
+		</div>
+
+	</footer>
 	<script src="js/main.js"></script>
 </body>
 </html>

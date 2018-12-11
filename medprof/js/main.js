@@ -1,5 +1,36 @@
 $(document).ready(function(){
 
+  // Переменные для автоплея слайдеров - Значения (Auto - включить/выключить, Clock - время прокрутки в миллисекундах)
+  // Слайдер в хедере__________________Главная
+  var headerAuto = false;
+  var headerClock = 3000;
+  // Слайдер в направлениях
+  var dirAuto = true;
+  var dirClock = 3000;
+  // Слайдер в акциях
+  var saleAuto = true;
+  var saleClock = 3000;
+  // Слайдер в отзывах
+  var revAuto = true;
+  var revClock = 3000;
+  // Слайдер в специалистах
+  var ourAuto = false;
+  var ourClock = 3000;
+  // Слайдер в новостях
+  var newsAuto = true;
+  var newsClock = 3000;
+
+
+
+
+
+
+
+
+
+
+
+
   $('img[src$=".svg"]').each(function() { 
     var $img = jQuery(this); 
     var imgURL = $img.attr('src'); 
@@ -77,8 +108,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
+        autoplay: headerAuto,
+        autoplaySpeed: headerClock,
         fade: true,
         cssEase: 'linear',
         draggable: false,
@@ -88,38 +119,86 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        nextArrow: '<div class="next-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
-        prevArrow: '<div class="prev-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
+        autoplay: dirAuto,
+        autoplaySpeed: dirClock,
+        nextArrow: '<div class="next-arrows"><img src="img/right-arrow.svg" alt=""></div>',
+        prevArrow: '<div class="prev-arrows"><img src="img/right-arrow.svg" alt=""></div>',
+        responsive: [{
+          breakpoint: 477, settings: {
+           slidesToShow: 3
+          }
+        }]
       });
+
       $('.sale-slide').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
-        autoplay: true,
+        arrows: saleAuto,
+        autoplay: saleClock,
         autoplaySpeed: 3000,
         dots: true,
-        nextArrow: '<div class="next-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
-        prevArrow: '<div class="prev-arrows"><img src="../img/right-arrow.svg" alt=""></div>',
+        nextArrow: '<div class="next-arrows"><img src="img/right-arrow.svg" alt=""></div>',
+        prevArrow: '<div class="prev-arrows"><img src="img/right-arrow.svg" alt=""></div>',
         customPaging: (function(slider, i) {return '<div class="sale__slick-dot"></div>';}),
       });
+
       $('.reviews__vertical-slide').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
-        // autoplay: true,
-        // autoplaySpeed: 3000,
+        autoplay: false,
+        autoplaySpeed: revClock,
         vertical:  true,
         verticalSwiping: true,
-       centerMode: true,
-       centerPadding: '0px',
+        centerMode: true,
+        centerPadding: '0px',
+        responsive: [{
+          breakpoint: 767, settings: {
+            vertical:  false,
+            slidesToShow: 1,
+            verticalSwiping: false,
+            centerPadding: '60px',
+          }
+        }]
       });
 
+      $('.news__slider-init').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: newsAuto,
+        autoplaySpeed: newsClock,
+        nextArrow: '<div class="news__next-arrows"><i class="fas fa-angle-right"></i></div>',
+        prevArrow: '<div class="news__prev-arrows"><i class="fas fa-angle-left"></i></div>',
+        responsive: [{
+          breakpoint: 767, settings: {
+            slidesToShow: 1
+          }
+        }]
+      });
 
+      $('.ourspecialists-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: ourAuto,
+        autoplaySpeed: ourClock,
+        nextArrow: '<div class="ourspecialists__next-arrows"><i class="fas fa-angle-right"></i></div>',
+        prevArrow: '<div class="ourspecialists__prev-arrows"><i class="fas fa-angle-left"></i></div>',
+        responsive: [{
+          breakpoint: 1199, settings: {
+            slidesToShow: 3
+          },
+          breakpoint: 767, settings: {
+            slidesToShow: 2
+          }
+        }]
+      });
+
+      // Инициализация маски ввода телефона для формы_____________________
+      $(".phone_mask").mask("+7(999)999-99-99", {autoclear: false});
 
 });
-
 
 // Инициализация анимации при скроле_______________
   var wow = new WOW(
@@ -134,5 +213,5 @@ $(document).ready(function(){
   }
   );
   wow.init();
-// Инициализация слайдера___________________________________
+
 
