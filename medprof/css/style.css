@@ -1458,6 +1458,10 @@ footer{
     .slick-track{
         height: 500px;
     }
+    .ourspecialists__link a{
+        padding: 6px 15px;
+        width: 90%;
+    }
 }
 @media screen and (max-width: 450px){
     .info-company-img{
@@ -1475,6 +1479,22 @@ footer{
     .logo{
         width: 129px;
     }
+    .ourspecialists__name{
+        font-size: 13px;
+    }
+    .ourspecialists__position{
+        font-size: 10px;
+    }
+    .news__info-title{
+        font-size: 16px;
+    }
+    .news__info-desc{
+        font-size: 10px;
+    }
+    .news__title-items{
+        font-size: 17px;
+        margin-bottom: 11px;
+    }
 }
 @media screen and (max-width: 370px){
     .logo{
@@ -1482,5 +1502,8 @@ footer{
     }
     .header__search-tel{
         font-size: 14px;
+    }
+    .reviews__slide-img{
+        width: 120px;
     }
 }
