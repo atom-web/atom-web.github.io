@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MedClinic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#373F65">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="js/wow.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/mask-input-min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header__top-items">
+			<a href="/" class="logo ani fadeIn">
+				<img src="img/logo.png" alt="">
+			</a>
+			<div class="header__info-nav">
+				<div class="header__info-box ani fadeIn">
+					<a href="tel:89999999999">Тел: 8 (999) 999-99-99</a>
+					<a href="mailto:info@medprof.ru">e-mail: info@medprof.ru</a>
+					<p>ул.Первомайская, д.15, оф.2</p>
+				</div>
+				<div class="header__nav ani fadeIn" data-wow-delay = "0.1s">
+					<nav>
+						<ul>
+							<li><a href="#">Анализы</a></li>
+							<li><a href="doctor-page.html">Специалисты</a></li>
+							<li><a href="service.html">Исследования</a></li>
+							<li>
+								<a href="#">Акции</a>
+								<ul>
+									<li><a href="#">Новые</a></li>
+									<li><a href="#">Архив</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">О нас</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__search">
+				<div class="header__callback-lbutton ani fadeIn">
+					<img class="hexagon" src="img/hexagon.svg" alt="">
+					<p>Заказать звонок</p>
+				</div>
+				<div class="header__search-button ani fadeIn" data-wow-delay = "0.1s">
+					<p>Поиск по сайту</p>
+					<img class="hexagon-search" src="img/hexagon-search.svg" alt="">
+				</div>
+				<a class="header__search-tel" href="#">+7 (999) 999-99-99</a>
+			</div>
+		</div>
+		<div class="header__form-search">
+			<form>
+				<input type="search">
+				<button>Поиск</button>
+			</form>
+		</div>
+	</header>
+	<div class="main">
+		<div class="title-page">
+			<img src="img/image 2.jpg" alt="">
+			<div class="container">
+				<h2 class="title-page__title-dep">Первичный прием врача - терапевта</h2>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer__top-items">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-12 footer__info">
+						<nav>
+							<ul>
+								<li><a href="#">Анализы</a></li>
+								<li><a href="#">Специалисты</a></li>
+								<li><a href="#">УЗИ</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="footer__info-box">
+							<a href="tel: 89999999999">Тел: 8 (999) 999-99-99</a>
+							<a href="mailto:info@medprof.ru">e-mail: info@medprof.ru</a>
+							<p>ул.Первомайская, д.15, оф.2</p>
+						</div>
+						<p class="footer__info-company">ООО "ПроМед", ОГРН 1175074004962 Лицензия: ЛО-50-01-009840 от 03.07.2018</p>
+					</div>
+					<div class="col-xl-3 col-lg-12 footer__logo-wrap">
+						<img class="footer__logo" src="img/logo.png" alt="">
+					</div>
+					<div class="col-xl-2 col-lg-12 footer__form-callback">
+						<p class="footer__form-title">Заказать обратный звонок</p>
+						<form action="">
+							<input class="phone_mask" type="tel" placeholder="Телефон">
+							<button><img class="footer__form-img" src="img/phone-contact.svg" alt=""></button>
+						</form>
+						<div class="footer__social-wrap">
+							<p>Мы в социальных сетях:</p>
+							<a href="#">
+								<img class="footer__social-icon" src="img/vk.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom-items">
+			<div class="container">
+				<p>Все права защищены. Копирование материалов разрешено только с согласия правообладателя.</p>
+			</div>
+		</div>
+
+	</footer>
+	<div class="popup-callback ">
+		<form action="">
+			<p class="popup-callback-title">Укажите поля</p>
+			<input type="name" placeholder="Ваше имя" required>
+			<input class="phone_mask" type="tel" placeholder="+7(___)___-__-__" required>
+			<button>Отправить</button>
+			<p class="popup-callback-personal">Нажимая на кнопку «Отправить», я даю согласие <br>на обработку <a href="#">персональных данных</a></p>
+			<div class="form-close-button"></div>
+		</form>
+		<div class="popup-callback-mask"></div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>

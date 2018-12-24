@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>MedClinic</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#373F65">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -17,9 +18,9 @@
 <body>
 	<header>
 		<div class="header__top-items">
-			<div class="logo ani fadeIn">
+			<a href="/" class="logo ani fadeIn">
 				<img src="img/logo.png" alt="">
-			</div>
+			</a>
 			<div class="header__info-nav">
 				<div class="header__info-box ani fadeIn">
 					<a href="tel:89999999999">Тел: 8 (999) 999-99-99</a>
@@ -30,8 +31,8 @@
 					<nav>
 						<ul>
 							<li><a href="#">Анализы</a></li>
-							<li><a href="#">Специалисты</a></li>
-							<li><a href="#">Исследования</a></li>
+							<li><a href="doctor-page.html">Специалисты</a></li>
+							<li><a href="service.html">Исследования</a></li>
 							<li>
 								<a href="#">Акции</a>
 								<ul>
@@ -649,6 +650,17 @@
 		</div>
 
 	</footer>
+	<div class="popup-callback ">
+		<form action="">
+			<p class="popup-callback-title">Укажите поля</p>
+			<input type="name" placeholder="Ваше имя" required>
+			<input class="phone_mask" type="tel" placeholder="+7(___)___-__-__" required>
+			<button>Отправить</button>
+			<p class="popup-callback-personal">Нажимая на кнопку «Отправить», я даю согласие <br>на обработку <a href="#">персональных данных</a></p>
+			<div class="form-close-button"></div>
+		</form>
+		<div class="popup-callback-mask"></div>
+	</div>
 	<script src="js/main.js"></script>
 </body>
 </html>

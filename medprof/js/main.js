@@ -19,7 +19,9 @@ $(document).ready(function(){
   // Слайдер в новостях
   var newsAuto = true;
   var newsClock = 3000;
-
+  // Слайдер с серификатами
+  var certAuto = true;
+  var certClock = 3000;
 
 
 
@@ -146,7 +148,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
-        autoplay: false,
+        autoplay: revAuto,
         autoplaySpeed: revClock,
         vertical:  true,
         verticalSwiping: true,
@@ -195,8 +197,34 @@ $(document).ready(function(){
         }]
       });
 
+      $('.certificate-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: certAuto,
+        autoplaySpeed: certClock,
+        nextArrow: '<div class="next-arrows"><img src="img/right-arrow.svg" alt=""></div>',
+        prevArrow: '<div class="prev-arrows"><img src="img/right-arrow.svg" alt=""></div>',
+        responsive: [{
+          breakpoint: 477, settings: {
+           slidesToShow: 3
+          }
+        }]
+      });
+
       // Инициализация маски ввода телефона для формы_____________________
       $(".phone_mask").mask("+7(999)999-99-99", {autoclear: false});
+
+
+      // Открытие и закрытие попап окна______________________________________
+      $(".header__callback-lbutton").click(function(){
+        $(".popup-callback").addClass('popup-callback-active');
+        $(".popup-callback form").addClass('popup-form-active');
+      });
+      $(".popup-callback-mask, .form-close-button").click(function(){
+        $(".popup-callback").removeClass('popup-callback-active');
+        $(".popup-callback form").removeClass('popup-form-active');
+      });
 
 });
 
