@@ -149,5 +149,16 @@ $(document).ready(function(){
     });
     $(".selectize-input input").attr('readonly','readonly');
 
+    if ($('.catalog__numeral').html() > 0 ) {
+        $('.catalog__favorites-wrap').addClass('numeral__active');
+    } else{
+        $('.catalog__favorites-wrap').removeClass('numeral__active');
+    }
+
+     if ($('.libra__numeral').html() > 0 ) {
+        $('.catalog__libra').addClass('numeral__active');
+    } else{
+        $('.catalog__libra').removeClass('numeral__active');
+    }
 
 }); 

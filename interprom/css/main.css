@@ -1104,6 +1104,9 @@ footer{
 	color: #787d8c;
 	font-weight: 600;
 }
+.numeral__active{
+	color: #ee7f20;
+}
 .catalog__set-items{
 	display: flex;
 	align-items: center;
@@ -1160,6 +1163,8 @@ footer{
 	flex-direction: column;
 	margin-top: 25px;
 	justify-content: space-between;
+	position: relative;
+    z-index: -1;
 }
 .catalog__item-img{
 	padding: 0 15px;
@@ -1211,6 +1216,7 @@ footer{
 	justify-content: center;
 	padding: 15px 0;
 	transition: 0.2s;
+	z-index: 999;
 }
 .catalog__item-button:hover{
 	background: #ee7f20;
@@ -1339,7 +1345,9 @@ footer{
   right: 0;
 }
 
-
+.selectize-control{
+	z-index: 0;
+}
 
 
 
