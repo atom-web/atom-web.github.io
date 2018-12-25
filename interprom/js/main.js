@@ -141,4 +141,13 @@ $(document).ready(function(){
         stickyHeight = stickySidebar.height();
       }
     });
+
+
+
+    $('#select-beast').selectize({
+        create: true,
+    });
+    $(".selectize-input input").attr('readonly','readonly');
+
+
 }); 

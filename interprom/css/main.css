@@ -1038,7 +1038,7 @@ footer{
 .catalog__sorting{
 	margin-right :40px;
 }
-.catalog__sorting select{
+.selectize-input{
 	border: 1px solid #eaeaea;
 	padding: 7px;
 	font-size: 16px;
@@ -1046,6 +1046,38 @@ footer{
 	font-family: 'robotoregular';
 	width: 300px;
 	outline: none;
+	overflow: visible;
+}
+.catalog__sorting .selectize-input .item{
+
+}
+.catalog__sorting .option:hover, 
+.catalog__sorting .selectize-control .active{
+	color: #ee7f20;
+	background: #fff;
+	cursor: pointer;
+}
+.selectize-dropdown{
+	padding: 10px 0px;
+	z-index: 1;
+}
+.selectize-control.single .selectize-input:after{
+	transition: 0.2s;
+	border: none;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0OTIuMDA0IDQ5Mi4wMDQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5Mi4wMDQgNDkyLjAwNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+PGc+PGc+PHBhdGggZD0iTTM4Mi42NzgsMjI2LjgwNEwxNjMuNzMsNy44NkMxNTguNjY2LDIuNzkyLDE1MS45MDYsMCwxNDQuNjk4LDBzLTEzLjk2OCwyLjc5Mi0xOS4wMzIsNy44NmwtMTYuMTI0LDE2LjEyICAgIGMtMTAuNDkyLDEwLjUwNC0xMC40OTIsMjcuNTc2LDAsMzguMDY0TDI5My4zOTgsMjQ1LjlsLTE4NC4wNiwxODQuMDZjLTUuMDY0LDUuMDY4LTcuODYsMTEuODI0LTcuODYsMTkuMDI4ICAgIGMwLDcuMjEyLDIuNzk2LDEzLjk2OCw3Ljg2LDE5LjA0bDE2LjEyNCwxNi4xMTZjNS4wNjgsNS4wNjgsMTEuODI0LDcuODYsMTkuMDMyLDcuODZzMTMuOTY4LTIuNzkyLDE5LjAzMi03Ljg2TDM4Mi42NzgsMjY1ICAgIGM1LjA3Ni01LjA4NCw3Ljg2NC0xMS44NzIsNy44NDgtMTkuMDg4QzM5MC41NDIsMjM4LjY2OCwzODcuNzU0LDIzMS44ODQsMzgyLjY3OCwyMjYuODA0eiIgZmlsbD0iIzhlOTdhYiIvPjwvZz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PC9zdmc+);
+	width: 10px;
+	height: 10px;
+	background-size: 10px 10px;
+	background-repeat: no-repeat;
+	transform: rotate(90deg);
+	transition: 0.2s;
+	top: 15px;
+}
+.selectize-control.single .selectize-input.dropdown-active:after{
+	transform: rotate(180deg);
+}
+.selectize-control.single .selectize-input.dropdown-active{
+	cursor: pointer !important;
 }
 .catalog__sorting option{
 	outline: none;
@@ -1194,6 +1226,10 @@ footer{
 }
 .catalog__active-list .catalog__item-img{
 	width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
 .catalog__active-list .catalog__item-info p:first-child{
 	width: 300px;
@@ -1236,11 +1272,13 @@ footer{
 .catalog__widget-cat a:hover{
 	color: #ee7f20;
 }
+.features-company .catalog__title{
+	margin-top: 50px;
+}
 .features-company p{
 	font-size: 14px;
 	color: #222222;
 	line-height: 18px;
-	margin-top: 10px;
 }
 .video-feat__slider{
 	margin-top: 25px;
@@ -1356,6 +1394,21 @@ footer{
 	.catalog__item {
 		width: 336px;
 	}
+	.video-feat .slick-list{
+		margin-bottom: 20px;
+	}
+	.img-feat .slick-list{
+		margin-bottom: 20px;
+	}
+	.video-feat .slick-list,
+	.video-feat__slider iframe,
+	.img-feat .slick-list,
+	.img-feat .slick-track{
+		height: 500px;
+	}
+	.tora-link{
+		margin-right: 30px;
+	}
 }
 @media screen and (max-width: 1050px){
 	.container{
@@ -1425,6 +1478,15 @@ footer{
 	}
 	.catalog__active-list .catalog__item-info p:first-child {
 	    width: 115px;
+	}
+	.video-feat .slick-list,
+	.video-feat__slider iframe,
+	.img-feat .slick-list,
+	.img-feat .slick-track{
+		height: 400px;
+	}
+	.tora-link-wrap{
+		text-align: left;
 	}
 }
 @media screen and (max-width: 800px){
@@ -1559,6 +1621,15 @@ footer{
 	.catalog__item {
 	    width: 280px;
 	}
+	.video-feat .slick-list,
+	.video-feat__slider iframe,
+	.img-feat .slick-list,
+	.img-feat .slick-track{
+		height: 350px;
+	}
+	.selectize-control{
+		z-index: 0;
+	}
 
 }
 @media screen and (max-width: 606px){
@@ -1573,7 +1644,12 @@ footer{
 	.consultation, 
 	.leasing, 
 	.article,
-	footer{
+	footer,
+	.breadcrumbs, 
+	.catalog, 
+	.features-company,
+	.video-feat .catalog__title,
+	.img-feat .catalog__title{
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -1615,6 +1691,21 @@ footer{
 	.link-open-menu{
 		margin-right: 15px;
 	}
+	.catalog__item{
+		width: 100%;
+	}
+	.catalog__block-change{
+		display: none;
+	}
+	.catalog__sorting{
+		margin-right: 0
+	}
+	.video-feat .slick-list,
+	.video-feat__slider iframe,
+	.img-feat .slick-list,
+	.img-feat .slick-track{
+		height: 250px;
+	}
 }
 @media screen and (max-width: 400px){
 	.logo img{
@@ -1622,5 +1713,11 @@ footer{
 	}
 	.callback-number{
 		font-size: 18px;
+	}
+	.selectize-input{
+		width: 280px
+	}
+	.breadcrumbs ul{
+		display: none;
 	}
 }
