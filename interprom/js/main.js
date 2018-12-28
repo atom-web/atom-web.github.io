@@ -41,7 +41,22 @@ $(document).ready(function(){
         prevArrow: '<div class="prev-arrows"><i class="fas fa-angle-right"></i></div>',
         customPaging: (function(slider, i) {return '<div class="slider__slick-dots"></div>';}),
     });
-
+     $('.catalog__slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      asNavFor: '.catalog__slider-nav'
+    });
+    $('.catalog__slider-nav').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.catalog__slider-for',
+      centerMode: true,
+      focusOnSelect: true,
+      arrows: false,
+      centerPadding: '30px',
+    });
+    
 
 // Преобразование img в svg______________________________________
 	$('img[src$=".svg"]').each(function() { 
@@ -146,19 +161,24 @@ $(document).ready(function(){
 
     $('#select-beast').selectize({
         create: true,
+        placeholder: 'По умолчанию',
     });
     $(".selectize-input input").attr('readonly','readonly');
 
-    if ($('.catalog__numeral').html() > 0 ) {
-        $('.catalog__favorites-wrap').addClass('numeral__active');
+    if  ($('.catalog__numeral').length > 0){
+        if ($('.catalog__numeral').html() > 0 ) {
+            $('.catalog__favorites-wrap').addClass('numeral__active');
+        }
     } else{
         $('.catalog__favorites-wrap').removeClass('numeral__active');
     }
 
-     if ($('.libra__numeral').html() > 0 ) {
-        $('.catalog__libra').addClass('numeral__active');
+     if ($('.libra__numeral').length > 0) {
+        if ($('.libra__numeral').html() > 0 ) {
+            $('.catalog__libra').addClass('numeral__active');
+        }
     } else{
         $('.catalog__libra').removeClass('numeral__active');
     }
 
-}); 
+});
