@@ -110,7 +110,7 @@ img{
 }
 .header__info-box a, 
 .header__info-box p{
-    color: #00b6fc;
+    color: #373f6;
     font-size: 17px;
     font-weight: 100;
 }
@@ -1398,12 +1398,6 @@ footer{
     color: #fff;
     font-size: 13px;
 }
-
-
-
-
-
-
 /*______________________________*/
 .form-close-button {
     position: absolute;
@@ -1532,6 +1526,11 @@ footer{
 .doctor{
     padding: 50px 0;
 }
+.doctor__descript{
+    display: flex;
+    flex-direction: column;
+    line-height: 27px;
+}
 .doctor__descript h3, 
 .doctor__descript h2{
     font-size: 30px;
@@ -1635,6 +1634,83 @@ footer{
     left: 0px;
     right: auto;
 }
+.service-purchase_item{
+    margin: 30px 0;
+    font-size: 21px;
+    font-weight: 600;
+}
+.service-purchase_item .doctor__position-name{
+    font-weight: 100;
+    margin-right: 29px;
+}
+.service-purchase_price{
+    font-weight: 600 !important;
+    font-size: 29px;
+    color: #009dd4;
+}
+.service-purchase .direction-med-mpre{
+    padding: 0 0 40px;
+    justify-content: flex-end;
+}
+.service-purchase .direction-med-mpre div{
+    margin-right: 173px;
+}
+.service-purchase .row{
+    border-bottom: 2px solid #373F65;
+}
+.service-desc{
+    margin: 40px 0;
+}
+.service-desc h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.service-desc p{
+    line-height: 27px;
+}
+.service-desc img{
+    height: 420px;
+}
+.doctor__view-box{
+    display: flex;
+    justify-content: space-between;
+}
+.doctor__view-box .doctor__view-wrap{
+    width: 45%;
+    margin: 0 5px;
+}
+.doctor__view-box .doctor__view-wrap:first-child{
+    margin-right: 0;
+}
+.doctor__view-box .doctor__view-wrap:last-child{
+    margin-left: 0;
+}
+.doctor-spends h3{
+    font-size: 30px;
+    margin: 75px 0;
+    font-weight: 600;
+}
+.doctor-spends{
+    margin-bottom: 40px;
+    line-height: 27px;
+}
+.doctor__info-box{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1691,6 +1767,12 @@ footer{
     }
     .footer__social-wrap{
         font-size: 9px;
+    }
+    .service-purchase .direction-med-mpre{
+        justify-content: center;
+    }
+    .service-purchase .direction-med-mpre div{
+        margin-right: 0;
     }
 }
 @media screen and (max-width: 1200px){
@@ -1831,6 +1913,9 @@ footer{
     .header__form-search input{
         width: 300px;
     }
+    .doctor-spends{
+        display: none;
+    }
 }
 @media screen and (max-width: 767px){
     .site-descript h1{
@@ -1906,6 +1991,15 @@ footer{
     }
     .reviews__user-item{
         margin-left: 0;
+    }
+    .doctor__descript{
+        margin-top: 50px;
+    }
+    .title-page__title-dep{
+        font-size: 23px;
+    }
+    .service-purchase_item {
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 575px){

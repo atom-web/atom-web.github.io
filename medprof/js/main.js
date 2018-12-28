@@ -217,7 +217,7 @@ $(document).ready(function(){
 
 
       // Открытие и закрытие попап окна______________________________________
-      $(".header__callback-lbutton").click(function(){
+      $(".header__callback-lbutton, .callback-button").click(function(){
         $(".popup-callback").addClass('popup-callback-active');
         $(".popup-callback form").addClass('popup-form-active');
       });
