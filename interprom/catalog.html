@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>interprom</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/mask-input-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
+
+</head>
+<body>
+	<header>
+		<div class="header-top-feat">
+			<div class="container">
+				<div class="logo">
+					<a href="/"><img src="img/logo.png" alt=""></a>
+				</div>
+				<div class="header-info-company">
+					<p>Завод промышленного<br> оборудования</p>
+				</div>
+				<div class="header-info-company">
+					<p>Челябинск<br> ул. Сталеваров, дом 5 корпус Б</p>
+				</div>
+				<div class="header-info-company">
+					<p>Email<br> info@interprom74.ru</p>
+				</div>
+				<div class="header-callback-box">
+					<a href="tel:88002223708" class="callback-number">8 800 222 37 08</a>
+					<div class="callback-number-link">заказать звонок</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom-feat">
+			<div class="container">
+				<nav>
+					<ul>
+						<li>
+							<a href="#">О компании <span class="down-arrow"></span></a>
+							<ul class="header__sub-menu">
+								<li><a href="#">Производство</a></li>
+								<li><a href="#">Реализованные проекты</a></li>
+								<li><a href="#">Партнеры</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Реквизиты</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Каталог <span class="down-arrow"></span></a>
+							<ul class="header__sub-menu">
+								<li><a href="#">Производство</a></li>
+								<li><a href="#">Реализованные проекты</a></li>
+								<li><a href="#">Партнеры</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Реквизиты</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Услуги <span class="down-arrow"></span></a></li>
+						<li><a href="#">Сервис <span class="down-arrow"></span></a></li>
+						<li><a href="#">Документы <span class="down-arrow"></span></a></li>
+						<li><a href="#">Информация <span class="down-arrow"></span></a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="link-open-menu"></div>
+				<div class="header__menu-mask"></div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="breadcrumbs">
+			<div class="container">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Мусоросортировочные линии и станции ТКО</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="catalog">
+			<div class="container">
+				<div class="catalog__title"><h3>Каталог</h3></div>
+				<div class="catalog__set-items">
+					<div class="catalog__sorting-wrap">
+						<div class="catalog__sorting">
+							<form action="#" method="#">
+								<select id="select-beast">
+									<option></option>
+									<option>Цена по возрастанию</option>
+									<option>Цена по убыванию</option>
+									<option>По наименованию</option>
+								</select>
+							</form>
+						</div>
+						<a href="#" class="catalog__libra">
+							<i class="fas fa-balance-scale"></i>
+							<p>Сравнение товаров (<span class="libra__numeral">0</span>)</p>
+						</a>
+						<a href="#" class="catalog__favorites-wrap">
+							<i class="far fa-star"></i>
+							<p>Избранное (<span class="catalog__numeral">4</span>)</p>
+						</a>
+					</div>
+					<div class="catalog__block-change">
+						<div class="block-change__item block-change__active">
+							<i class="fas fa-grip-horizontal"></i>
+						</div>
+						<div class="list-change__item">
+							<i class="fas fa-bars"></i>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="catalog__items-wrap main-content">
+						<div class="catalog__item">
+							<div class="catalog__item-img">
+								<img src="img/catalog-item-img.jpg" alt="">
+							</div>
+							<div class="catalog__item-wrap">
+								<p>Мусоросортировочная линия  ТКО «ProSORT-бюджет»</p>
+								<div class="catalog__item-icon">
+									<a href="#" title="Добавить в сравнение"><i class="fas fa-balance-scale"></i></a>
+									<a href="#" title="Добавить в избранное"><i class="far fa-star"></i></a>
+									<a href="#" title="Распечатать"><i class="fas fa-print"></i></i></a>
+								</div>
+								<div class="catalog__item-info-wrap">
+									<div class="catalog__item-info">
+										<p>Производительность</p>
+										<p>от 40-70 тыс тн/г.</p>
+									</div>
+									<div class="catalog__item-info">
+										<p>Количество постов</p>
+										<p>от 4х</p>
+									</div>
+									<div class="catalog__item-info">
+										<p>Стоимость</p>
+										<p>от 2100000 <i class="fas fa-ruble-sign"></i></p>
+									</div>
+								</div>
+								<a class="catalog__item-button" href="#">Подробнее</a>
+							</div>
+						</div>
+						<div class="catalog__item">
+							<div class="catalog__item-img">
+								<img src="img/catalog-item-img2.jpg" alt="">
+							</div>
+							<div class="catalog__item-wrap">
+								<p>Мусоросортировочный комплекс  ТКО «ProSORT-mini» открытая платформа</p>
+								<div class="catalog__item-icon">
+									<a href="#" title="Добавить в сравнение"><i class="fas fa-balance-scale"></i></a>
+									<a href="#" title="Добавить в избранное"><i class="far fa-star"></i></a>
+									<a href="#" title="Распечатать"><i class="fas fa-print"></i></i></a>
+								</div>
+								<div class="catalog__item-info-wrap">
+									<div class="catalog__item-info">
+										<p>Производительность</p>
+										<p>от 5 тыс тн/г.</p>
+									</div>
+									<div class="catalog__item-info">
+										<p>Количество постов</p>
+										<p>от 4х</p>
+									</div>
+									<div class="catalog__item-info">
+										<p>Стоимость</p>
+										<p>от 2100000 <i class="fas fa-ruble-sign"></i></p>
+									</div>
+								</div>
+								<a class="catalog__item-button" href="#">Подробнее</a>
+							</div>
+						</div>
+						<div class="catalog__item">
+							<div class="catalog__item-img">
+								<img src="img/catalog-item-img3.jpg" alt="">
+							</div>
+							<div class="catalog__item-wrap">
+								<p>Мусоросортировочный комплекс  ТКО «ProSORT-mini» закрытая платформа</p>
+								<div class="catalog__item-icon">
+									<a href="#" title="Добавить в сравнение"><i class="fas fa-balance-scale"></i></a>
+									<a href="#" title="Добавить в избранное"><i class="far fa-star"></i></a>
+									<a href="#" title="Распечатать"><i class="fas fa-print"></i></i></a>
+								</div>
+								<div class="catalog__item-info-wrap">
+									<div class="catalog__item-info">
+										<p>Производительность</p>
+										<p>от 5 тыс тн/г.</p>
+									</div>
+									<div class="catalog__item-info">
+										<p>Количество постов</p>
+										<p>от 4х</p>
+									</div>
+									<div class="catalog__item-info">
+										<p>Стоимость</p>
+										<p>от 2100000 <i class="fas fa-ruble-sign"></i></p>
+									</div>
+								</div>
+								<a class="catalog__item-button" href="#">Подробнее</a>
+							</div>
+						</div>
+						<div class="catalog__item">
+							<div class="catalog__item-img">
+								<img src="img/catalog-item-img.jpg" alt="">
+							</div>
+							<div class="catalog__item-wrap">
+								<p>Мусоросортировочная линия  ТКО «ProSORT-бюджет»</p>
+								<div class="catalog__item-icon">
+									<a href="#" title="Добавить в сравнение"><i class="fas fa-balance-scale"></i></a>
+									<a href="#" title="Добавить в избранное"><i class="far fa-star"></i></a>
+									<a href="#" title="Распечатать"><i class="fas fa-print"></i></i></a>
+								</div>
+								<div class="catalog__item-info-wrap">
+									<div class="catalog__item-info">
+										<p>Производительность</p>
+										<p>от 5 тыс тн/г.</p>
+									</div>
+									<div class="catalog__item-info">
+										<p>Количество постов</p>
+										<p>от 4х</p>
+									</div>
+									<div class="catalog__item-info">
+										<p>Стоимость</p>
+										<p>от 2100000 <i class="fas fa-ruble-sign"></i></p>
+									</div>
+								</div>
+								<a class="catalog__item-button" href="#">Подробнее</a>
+							</div>
+						</div>
+						<div class="catalog__item">
+							<div class="catalog__item-img">
+								<img src="img/catalog-item-img2.jpg" alt="">
+							</div>
+							<div class="catalog__item-wrap">
+								<p>Мусоросортировочный комплекс  ТКО «ProSORT-mini» открытая платформа</p>
+								<div class="catalog__item-icon">
+									<a href="#" title="Добавить в сравнение"><i class="fas fa-balance-scale"></i></a>
+									<a href="#" title="Добавить в избранное"><i class="far fa-star"></i></a>
+									<a href="#" title="Распечатать"><i class="fas fa-print"></i></i></a>
+								</div>
+								<div class="catalog__item-info-wrap">
+									<div class="catalog__item-info">
+										<p>Производительность</p>
+										<p>от 5 тыс тн/г.</p>
+									</div>
+									<div class="catalog__item-info">
+										<p>Количество постов</p>
+										<p>от 4х</p>
+									</div>
+									<div class="catalog__item-info">
+										<p>Стоимость</p>
+										<p>от 2100000 <i class="fas fa-ruble-sign"></i></p>
+									</div>
+								</div>
+								<a class="catalog__item-button" href="#">Подробнее</a>
+							</div>
+						</div>
+						<div class="catalog__item">
+							<div class="catalog__item-img">
+								<img src="img/catalog-item-img3.jpg" alt="">
+							</div>
+							<div class="catalog__item-wrap">
+								<p>Мусоросортировочный комплекс  ТКО «ProSORT-mini» закрытая платформа</p>
+								<div class="catalog__item-icon">
+									<a href="#" title="Добавить в сравнение"><i class="fas fa-balance-scale"></i></a>
+									<a href="#" title="Добавить в избранное"><i class="far fa-star"></i></a>
+									<a href="#" title="Распечатать"><i class="fas fa-print"></i></i></a>
+								</div>
+								<div class="catalog__item-info-wrap">
+									<div class="catalog__item-info">
+										<p>Производительность</p>
+										<p>от 5 тыс тн/г.</p>
+									</div>
+									<div class="catalog__item-info">
+										<p>Количество постов</p>
+										<p>от 4х</p>
+									</div>
+									<div class="catalog__item-info">
+										<p>Стоимость</p>
+										<p>от 2100000 <i class="fas fa-ruble-sign"></i></p>
+									</div>
+								</div>
+								<a class="catalog__item-button" href="#">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__widget-wrap sticky">
+						<div class="catalog__widget">
+							<p class="catalog__widget-title">Мусоросортировочные линии и станции ТКО</p>
+							<div class="catalog__widget-cat">
+								<a href="#">Печи утилизаторов отходов</a>
+								<a href="#">Питатели</a>
+								<a href="#">Виброгрохоты</a>
+								<a href="#">Ковшевые элеваторы – нория</a>
+								<a href="#">Сушильные установки</a>
+								<a href="#">Оборудование для производства строительных смесей</a>
+								<a href="#">Конвейеры в ассортименте</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="consultation">
+			<div class="container">
+				<h3 class="consultation__title">Остались вопросы?</h3>
+				<p class="consultation__descript">Напишите нам и мы спроектируем для вас</p>
+				<form>
+					<div class="consultation__input-items">
+						<div class="consultation__input-wrap">
+							<p>Ваше имя</p>
+							<input type="name">
+						</div>
+						<div class="consultation__input-wrap">
+							<p>Телефон</p>
+							<input class="phone_mask" type="tel">
+						</div>
+					</div>
+					<div class="consultation__input-wrap">
+						<p>Сообщение</p>
+						<textarea></textarea>
+					</div>
+					<div class="cap"></div>
+					<button class="consultation__form-button">Отправить</button>
+					<p class="consultation__person-information">Нажимая кнопку  «отправить заявку», я даю согласие на обработку <a href="#">персональных данных</a></p>
+				</form>
+				<img class="consultation-img" src="img/Layer-9.png" alt="">
+			</div>
+		</div>
+		<div class="features-company">
+			<div class="container">
+				<div class="catalog__title"><h3>Проектирование и производство</h3></div>
+				<p>Завод производитель промышленного и мусоросортировочного оборудования "Интерпром" осуществляет проектирование, производство и комплексную поставку оборудования для сортировки твердых коммунальных отходов (мусороросортировочные линии и комплексы ProSORT различной площади и производительности), а также оборудование для переработки ТКО ( сепараторы - магнитные, барабанные и дисковые, пресса, разрыватели пакетов, перфораторы-прокалыватели).  <br><br>Компания осуществляет строительство мусоросортировочных комплексов "под ключ".<br><br>Производимые нами мусоросортировочные комплексы отличаются высокой производительностью, легкостью в монтаже и надежностью в работе.<br><br>Наше мусоросортировочное оборудование производится в соответствии с разработанными техническими условиями, имеет необходимые сертификаты соответствия, подтвержденные протоколами испытаний.<br><br>Приобретая оборудование для сортировки мусора от завода "Интерпром", каждый клиент получает полную гарантию на оборудование, сервис и техническую поддержку. <br><br>Компания "Интерпром" оказывает также помощь в получении необходимой лицензии для Вашего бизнеса.</p>
+				<div class="catalog__title"><h3>Преимущества</h3></div>
+				<p>1. Проектирование линий и комплексов по техническому заданию заказчика : увеличение или уменьшение длины конвейеров, комбинирование открытых и закрытых сортировочных платформ,  изменение количества постов сортировки, установка необходимого дополнительного оборудования для переработки ТКО.<br><br> 2. Низкая цена линий при сравнительно высокой производительности.<br><br> 3. Высокая надежность  мусоросортировочных линий и комплексов.<br><br> 4. Простота в обслуживании, комплектующие надежных и проверенных российских производителей, которые легко приобрести в любом регионе России.<br><br> 5. Сжатые сроки монтажных и пусконаладочных работ мусоросортировочного оборудования.<br><br> 6. Комплектация линий и комплексов дизельными и электрическими станциями для работы в любых условиях.<br><br> 7. Сортировочная платформа комплексов состоит из отдельных сегментов, что позволяет в кротчайшие сроки произвести демонтаж и перемещение на другую площадку.<br><br> 8. Конструкция цельного цепного подающего конвейера в комплексах – позволяет выдерживать нагрузки свыше 300 кг на 1 м2 без деформации и провисания  ленты,  исключая прогибание конвейера. Тип цепи- усиленная, самоочищающаяся, не требующая смазки.<br><br> 9. При проектировании мусоросортировочных линий и комплексов были учтены не только собственные наработки, а также опыт и отзывы наших клиентов.</p>
+			</div>
+		</div>
+		<div class="leasing">
+			<div class="container">
+				<div class="leasing__title">
+					<h3>Оборудование в лизинг</h3>
+					<p>Наши компании-партёры предоставляют оборудование в лизинг по доступным ценам</p>
+				</div>
+				<div class="row">
+					<a href="#" class="leasing__items">
+						<div class="leasing__img-wrap">
+							<img src="img/leasingimg.jpg" alt="">
+						</div>
+						<div class="leasing__link">
+							<p>узнать стоимость</p>
+							<img class="leasing__share" src="img/share.svg" alt="">
+						</div>
+					</a>
+					<a href="#" class="leasing__items">
+						<div class="leasing__img-wrap">
+							<img src="img/leasingimg-2.jpg" alt="">
+						</div>
+						<div class="leasing__link">
+							<p>узнать стоимость</p>
+							<img class="leasing__share" src="img/share.svg" alt="">
+						</div>
+					</a>
+					<a href="#" class="leasing__items">
+						<div class="leasing__img-wrap">
+							<img src="img/leasingimg-3.jpg" alt="">
+						</div>
+						<div class="leasing__link">
+							<p>узнать стоимость</p>
+							<img class="leasing__share" src="img/share.svg" alt="">
+						</div>
+					</a>
+					<a href="#" class="leasing__items">
+						<div class="leasing__img-wrap">
+							<img src="img/leasingimg-4.jpg" alt="">
+						</div>
+						<div class="leasing__link">
+							<p>узнать стоимость</p>
+							<img class="leasing__share" src="img/share.svg" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="video-feat">
+			<div class="container">
+				<div class="catalog__title"><h3>Видео</h3></div>
+				<div class="video-feat__slider">
+					<iframe width="100%" height="400" src="https://www.youtube.com/embed/WaKrhuh6_mw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/IwlEDb11mC4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="img-feat">
+			<div class="container">
+				<div class="catalog__title"><h3>Выполненные проекты</h3></div>
+				<div class="img-feat__slider">
+					<img src="img/slider-prew.jpg" alt="">
+					<img src="img/slider-prew.jpg" alt="">
+					<img src="img/slider-prew.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="footer__logo-wrap">
+					<img src="img/logo-footer.png" alt="">
+					<p class="footer__logo-title">Завод промышленного  оборудования</p>
+					<p class="footer__confidencial">© 2018 INTERPROM74.ru <a href="#">политика обработки персональных данных</a></p>
+				</div>
+				<div class="footer__menu-wrap">
+					<nav class="footer__nav">
+						<ul class="row">
+							<li>
+								<a href="#">Каталог</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#">Мусоросортировочные линии и станции ТКО</a></li>
+									<li><a href="#">Печи утилизатор</a></li>
+									<li><a href="#">Питатели</a></li>
+									<li><a href="#">Виброгрохоты</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Каталог</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#"> Ковшевые элеваторы – нория</a></li>
+									<li><a href="#">Сушильные установки</a></li>
+									<li><a href="#">Оборудование для строительных смесей</a></li>
+									<li><a href="#">Конвейеры в ассортименте</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">О компании</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#">Производство</a></li>
+									<li><a href="#">Реализованные проекты</a></li>
+									<li><a href="#">Партнеры</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">Реквизиты</a></li>
+								</ul>
+							</li>
+							<li class="footer__contacts">
+								<P class="footer__contacts-link" href="#">Контакты для связи</p>
+									<ul class="footer__sub-menu">
+										<li>
+											<img class="footer__icon-phone" src="img/icon-phone.svg" alt="">
+											<div class="footer__phone-numbers">
+												<a href="#">8 800 222 37 08</a>
+												<a href="#">+7 351 247 37 08</a>
+											</div>
+										</li>
+										<li>
+											<img class="footer__icon-mail" src="img/envelope.svg" alt="">
+											<a href="#">info@interprom74.ru</a>
+										</li>
+										<li class="footer__social-wrap">
+											<a href="#">
+												<div class="footer__faceboock-wrap">
+													<img class="footer__faceboock" src="img/facebook-logo.svg" alt="">
+												</div>
+											</a>
+											<a href="#">
+												<div class="footer__youtube-wrap">
+													<img class="footer__youtube" src="img/youtube.svg" alt="">
+												</div>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Услуги</a>
+									<ul class="footer__sub-menu">
+										<li><a href="#">Проектирование металлоконструкций</a></li>
+										<li><a href="#">Плазменная резка металла</a></li>
+										<li><a href="#">Демонтаж и монтаж</a></li>
+										<li><a href="#">Нестандартное оборудование </a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Информация</a>
+									<ul class="footer__sub-menu">
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Акции</a></li>
+										<li><a href="#">Статьи</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Сервис</a>
+									<ul class="footer__sub-menu">
+										<li><a href="#">Гарантия и ремонт</a></li>
+										<li><a href="#">Запасные части</a></li>
+										<li><a href="#">Доставка</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Документы</a>
+									<ul class="footer__sub-menu">
+										<li><a href="#">Сертификаты</a></li>
+										<li><a href="#">Запасные части</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="tora-link-wrap">
+						<a href="#" class="tora-link">Сделано в TORA</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="popup-callback-wrap">
+			<div class="popup-callback-mask"></div>
+			<div class="popup-callback">
+				<p>Оставьте свой телефон и мы с вами свяжемся</p>
+				<form action="">
+					<input class="popup-tel-mask" type="tel">
+					<button>Жду звонка</button>
+				</form>
+				<p>Нажимая кнопку  «отправить заявку», я даю согласие на обработку  <a href="#">персональных данных</a></p>
+				<div class="form-close-button"></div>
+			</div>
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
+	</html>
