@@ -55,6 +55,16 @@ $(document).ready(function(){
       focusOnSelect: true,
       arrows: false,
       centerPadding: '30px',
+      responsive: [
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        }
+      ]
     });
     
 
