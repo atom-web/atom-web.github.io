@@ -1,0 +1,8 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+		{"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [55.15295441010063, 61.42443749040058]}, "properties": {"balloonContentHeader": "<a href='#' target='_blank' class='balloon-item'><img src='img/slider-prew.jpg' height='150' width='200'></a>", "balloonContentBody": "<div class='balloon-header'><span class='balloon-header-txt'>Мусоросортировочная линия ТКО «ProSORT-бюджет»</span> </div>","hintContent": "Мусоросортировочная линия"}},
+		{"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [55.18139891, 61.35774672]}, "properties": {"balloonContentHeader": "<a href='#' target='_blank' class='balloon-item'><img src='img/slider-prew.jpg' height='150' width='200'></a>", "balloonContentBody": "<div class='balloon-header'><span class='balloon-header-txt'>Мусоросортировочная линия ТКО «ProSORT-бюджет»</span> </div>","hintContent": "Мусоросортировочная линия"}},
+		{"type": "Feature", "id": 3, "geometry": {"type": "Point", "coordinates": [55.18110486, 61.35345519]}, "properties": {"balloonContentHeader": "<a href='#' target='_blank' class='balloon-item'><img src='img/slider-prew.jpg' height='150' width='200'></a>", "balloonContentBody": "<div class='balloon-header'><span class='balloon-header-txt'>Мусоросортировочная линия ТКО «ProSORT-бюджет»</span> </div>","hintContent": "Мусоросортировочная линия"}}
+	]
+}

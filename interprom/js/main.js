@@ -173,6 +173,14 @@ $(document).ready(function(){
         create: true,
         placeholder: 'По умолчанию',
     });
+    $('#select-city').selectize({
+        create: true,
+        placeholder: 'Регион и город',
+    });
+    $('#select-object').selectize({
+        create: true,
+        placeholder: 'Оборудование и объекты',
+    });
     $(".selectize-input input").attr('readonly','readonly');
 
     if  ($('.catalog__numeral').length > 0){
@@ -189,6 +197,142 @@ $(document).ready(function(){
         }
     } else{
         $('.catalog__libra').removeClass('numeral__active');
+    }
+
+//Объекты на ЯКарте
+    if ($('.object-map-single #map-single').length > 0) {
+        var mapSingle; // карта на странице объекта
+        ymaps.ready(init);
+
+        function init () {
+            $('.object-map-single #map-single').each(function() {
+                var obj = $(this).attr('data-coord');
+                obj = JSON.parse(obj);
+
+                var caption = $(this).attr('data-caption');
+
+                mapSingle = new ymaps.Map('map-single', {
+                    center: obj,
+                    zoom: 18,
+                    controls: ['zoomControl']
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }), 
+
+                mapSingle.geoObjects
+                .add(new ymaps.Placemark(obj, {
+                    hintContent: caption
+                    //hintContent: "Хинт метки"
+                }, {
+                    // Опции.
+                    // тип макета.
+                    iconLayout: 'default#imageWithContent',
+                    // Своё изображение иконки метки.
+                    iconImageHref: 'http://sch5.minsk.edu.by/be/sm.aspx?guid=6223',
+                    // Размеры метки.
+                    iconImageSize: [51, 58],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-29, -63],
+                    // Смещение слоя с содержимым относительно слоя с картинкой.
+                    iconContentOffset: [-20, -10],
+                }));
+
+            }); //each
+            mapSingle.behaviors.disable('scrollZoom'); // отключение зума по скроллу
+        }
+    };
+
+    if ($('#map').length > 0) {
+
+        ymaps.ready(init);
+
+        function init () {
+            // Создаем собственный макет с информацией о выбранном геообъекте.
+            var customBalloonContentLayout = ymaps.templateLayoutFactory.createClass([
+                '<div class=balloon-items>',
+                // Выводим в цикле список всех геообъектов.
+                '{% for geoObject in properties.geoObjects %}',
+                    '{{ geoObject.properties.balloonContentBody|raw }}',
+                '{% endfor %}',
+                '</div>'
+            ].join(''));
+            var myMap = new ymaps.Map('map', {
+                    center: [55.15295441010063, 61.42443749040058],
+                    zoom: 12,
+                    controls: ['zoomControl']
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+                objectManager = new ymaps.ObjectManager({
+                    // Чтобы метки начали кластеризоваться, выставляем опцию
+                    clusterize: true,
+                    // ObjectManager принимает те же опции, что и кластеризатор
+                    gridSize: 32,
+                    // false - приближение к меткам в баллуне
+                    clusterDisableClickZoom: true, 
+                    clusterOpenBalloonOnClick: true,
+                    // Устанавливаем режим открытия балуна
+                    // В данном примере балун никогда не будет открываться в режиме панели
+                    clusterBalloonPanelMaxMapArea: 0,
+                    // По умолчанию опции балуна balloonMaxWidth и balloonMaxHeight не установлены для кластеризатора,
+                    // так как все стандартные макеты имеют определенные размеры.
+                    clusterBalloonMaxHeight: 300,
+                    clusterBalloonContentLayout: customBalloonContentLayout
+                });
+
+                // Чтобы задать опции одиночным объектам и кластерам,
+                // обратимся к дочерним коллекциям ObjectManager.
+                objectManager.objects.options.set({
+                    // тип макета.
+                    iconLayout: 'default#imageWithContent',
+                    // Своё изображение иконки метки.
+                    iconImageHref: 'http://pluspng.com/img-png/png-location-location-pin-png-366.png',
+                    // Размеры метки.
+                    iconImageSize: [30, 50],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-29, -63],
+                    // Смещение слоя с содержимым относительно слоя с картинкой.
+                    iconContentOffset: [-20, -10],
+                });
+
+                var clusterIcons = [
+                   {
+                    href: 'http://pluspng.com/img-png/png-location-location-pin-png-366.png',
+                    size: [44, 70],
+                    offset: [-25, -25]
+                    },
+                    {
+                     // Созадаем активную область в круг
+                     shape: {
+                        type: 'Circle',
+                        coordinates: [0, 0],
+                      radius: 30
+                    }
+                 }];
+
+                objectManager.clusters.options.set({
+                    clusterDisableClickZoom: true,
+                    clusterOpenBalloonOnClick: true,
+                    // Устанавливаем режим открытия балуна. 
+                    // В данном примере балун никогда не будет открываться в режиме панели.
+                    clusterBalloonPanelMaxMapArea: 0,
+                    // По умолчанию опции балуна balloonMaxWidth и balloonMaxHeight не установлены для кластеризатора,
+                    // так как все стандартные макеты имеют определенные размеры.
+                    clusterBalloonMaxHeight: 200,
+                    clusterBalloonContentLayout: customBalloonContentLayout,
+                    clusterIcons: clusterIcons
+                });
+
+                myMap.geoObjects.add(objectManager);
+
+                $.ajax({
+                    url: "js/data.json"
+                }).done(function(data) {
+                    objectManager.add(data);
+                });
+        }
     }
 
 });
