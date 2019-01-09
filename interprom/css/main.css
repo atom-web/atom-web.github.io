@@ -1055,7 +1055,10 @@ footer{
 	overflow: visible;
 }
 .catalog__sorting .selectize-input .item{
-
+	font-size: 15px;
+}
+.catalog__sorting .has-items input{
+	width: 0 !important;
 }
 .catalog__sorting .option:hover, 
 .catalog__sorting .selectize-control .active{
