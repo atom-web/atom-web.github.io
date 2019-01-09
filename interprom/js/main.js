@@ -287,7 +287,7 @@ $(document).ready(function(){
                     // тип макета.
                     iconLayout: 'default#imageWithContent',
                     // Своё изображение иконки метки.
-                    iconImageHref: 'http://pluspng.com/img-png/png-location-location-pin-png-366.png',
+                    iconImageHref: 'https://cdn.discordapp.com/attachments/366846227372834817/532258178038235147/png-location-location-pin-png-366.png',
                     // Размеры метки.
                     iconImageSize: [30, 50],
                     // Смещение левого верхнего угла иконки относительно
@@ -299,7 +299,7 @@ $(document).ready(function(){
 
                 var clusterIcons = [
                    {
-                    href: 'http://pluspng.com/img-png/png-location-location-pin-png-366.png',
+                    href: 'https://cdn.discordapp.com/attachments/366846227372834817/532258178038235147/png-location-location-pin-png-366.png',
                     size: [44, 70],
                     offset: [-25, -25]
                     },

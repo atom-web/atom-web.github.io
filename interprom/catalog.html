@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/mask-input-min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
-
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </head>
 <body>
 	<header>
@@ -29,7 +29,7 @@
 						<p>Челябинск<br> ул. Сталеваров, дом 5 корпус Б</p>
 					</div>
 					<div class="header-info-company">
-						<p>Email<br> info@interprom74.ru</p>
+						<p>Email<br> <a href="mailto:info@interprom74.ru">info@interprom74.ru</a></p>
 					</div>
 				</div>
 				<div class="header-callback-box">
@@ -405,7 +405,6 @@
 			</div>
 		</div>
 	</main>
-
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -447,86 +446,86 @@
 							</li>
 							<li class="footer__contacts">
 								<P class="footer__contacts-link" href="#">Контакты для связи</p>
-									<ul class="footer__sub-menu">
-										<li>
-											<img class="footer__icon-phone" src="img/icon-phone.svg" alt="">
-											<div class="footer__phone-numbers">
-												<a href="#">8 800 222 37 08</a>
-												<a href="#">+7 351 247 37 08</a>
+								<ul class="footer__sub-menu">
+									<li>
+										<img class="footer__icon-phone" src="img/icon-phone.svg" alt="">
+										<div class="footer__phone-numbers">
+											<a href="#">8 800 222 37 08</a>
+											<a href="#">+7 351 247 37 08</a>
+										</div>
+									</li>
+									<li>
+										<img class="footer__icon-mail" src="img/envelope.svg" alt="">
+										<a href="#">info@interprom74.ru</a>
+									</li>
+									<li class="footer__social-wrap">
+										<a href="#">
+											<div class="footer__faceboock-wrap">
+												<img class="footer__faceboock" src="img/facebook-logo.svg" alt="">
 											</div>
-										</li>
-										<li>
-											<img class="footer__icon-mail" src="img/envelope.svg" alt="">
-											<a href="#">info@interprom74.ru</a>
-										</li>
-										<li class="footer__social-wrap">
-											<a href="#">
-												<div class="footer__faceboock-wrap">
-													<img class="footer__faceboock" src="img/facebook-logo.svg" alt="">
-												</div>
-											</a>
-											<a href="#">
-												<div class="footer__youtube-wrap">
-													<img class="footer__youtube" src="img/youtube.svg" alt="">
-												</div>
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Услуги</a>
-									<ul class="footer__sub-menu">
-										<li><a href="#">Проектирование металлоконструкций</a></li>
-										<li><a href="#">Плазменная резка металла</a></li>
-										<li><a href="#">Демонтаж и монтаж</a></li>
-										<li><a href="#">Нестандартное оборудование </a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Информация</a>
-									<ul class="footer__sub-menu">
-										<li><a href="#">Новости</a></li>
-										<li><a href="#">Акции</a></li>
-										<li><a href="#">Статьи</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Сервис</a>
-									<ul class="footer__sub-menu">
-										<li><a href="#">Гарантия и ремонт</a></li>
-										<li><a href="#">Запасные части</a></li>
-										<li><a href="#">Доставка</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Документы</a>
-									<ul class="footer__sub-menu">
-										<li><a href="#">Сертификаты</a></li>
-										<li><a href="#">Запасные части</a></li>
-									</ul>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="tora-link-wrap">
+										</a>
+										<a href="#">
+											<div class="footer__youtube-wrap">
+												<img class="footer__youtube" src="img/youtube.svg" alt="">
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Услуги</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#">Проектирование металлоконструкций</a></li>
+									<li><a href="#">Плазменная резка металла</a></li>
+									<li><a href="#">Демонтаж и монтаж</a></li>
+									<li><a href="#">Нестандартное оборудование </a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Информация</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Акции</a></li>
+									<li><a href="#">Статьи</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Сервис</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#">Гарантия и ремонт</a></li>
+									<li><a href="#">Запасные части</a></li>
+									<li><a href="#">Доставка</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Документы</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#">Сертификаты</a></li>
+									<li><a href="#">Запасные части</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="tora-link-wrap">
 						<a href="#" class="tora-link">Сделано в TORA</a>
 					</div>
-				</div>
-			</div>
-		</footer>
-		<div class="popup-callback-wrap">
-			<div class="popup-callback-mask"></div>
-			<div class="popup-callback">
-				<p>Оставьте свой телефон и мы с вами свяжемся</p>
-				<form action="">
-					<input class="popup-tel-mask" type="tel">
-					<button>Жду звонка</button>
-				</form>
-				<p>Нажимая кнопку  «отправить заявку», я даю согласие на обработку  <a href="#">персональных данных</a></p>
-				<div class="form-close-button"></div>
 			</div>
 		</div>
+	</footer>
+	<div class="popup-callback-wrap">
+		<div class="popup-callback-mask"></div>
+		<div class="popup-callback">
+			<p>Оставьте свой телефон и мы с вами свяжемся</p>
+			<form action="">
+				<input class="popup-tel-mask" type="tel">
+				<button>Жду звонка</button>
+			</form>
+			<p>Нажимая кнопку  «отправить заявку», я даю согласие на обработку  <a href="#">персональных данных</a></p>
+			<div class="form-close-button"></div>
+		</div>
+	</div>
 
-		<script src="js/main.js"></script>
-	</body>
-	</html>
+	<script src="js/main.js"></script>
+</body>
+</html>
