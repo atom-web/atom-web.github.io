@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>interprom</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/mask-input-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="header-top-feat">
+			<div class="container">
+				<div class="logo">
+					<a href="/"><img src="img/logo.png" alt=""></a>
+				</div>
+				<div class="header-info-company-wrap">
+					<div class="header-info-company">
+						<p>Завод промышленного<br> оборудования</p>
+					</div>
+					<div class="header-info-company">
+						<p>Челябинск<br> ул. Сталеваров, дом 5 корпус Б</p>
+					</div>
+					<div class="header-info-company">
+						<p>Email<br> <a href="mailto:info@interprom74.ru">info@interprom74.ru</a></p>
+					</div>
+				</div>
+				<div class="header-callback-box">
+					<a href="tel:88002223708" class="callback-number">8 800 222 37 08</a>
+					<div class="callback-number-link">заказать звонок</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom-feat">
+			<div class="container">
+				<nav>
+					<ul>
+						<li>
+							<a href="#">О компании <span class="down-arrow"></span></a>
+							<ul class="header__sub-menu">
+								<li><a href="#">Производство</a></li>
+								<li><a href="#">Реализованные проекты</a></li>
+								<li><a href="#">Партнеры</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Реквизиты</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Каталог <span class="down-arrow"></span></a>
+							<ul class="header__sub-menu">
+								<li><a href="#">Производство</a></li>
+								<li><a href="#">Реализованные проекты</a></li>
+								<li><a href="#">Партнеры</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Реквизиты</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Услуги <span class="down-arrow"></span></a></li>
+						<li><a href="#">Сервис <span class="down-arrow"></span></a></li>
+						<li><a href="#">Документы <span class="down-arrow"></span></a></li>
+						<li><a href="#">Информация <span class="down-arrow"></span></a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="link-open-menu"></div>
+				<div class="header__menu-mask"></div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="breadcrumbs">
+			<div class="container">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Мусоросортировочные линии и станции ТКО</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="catalog-geo">
+				<div class="container">
+					<div class="catalog__title"><h3>География проектов</h3></div>
+					<div class="catalog__sorting">
+						<form action="#" method="#">
+							<select id="select-city">
+								<option></option>
+								<option>Цена по возрастанию</option>
+								<option>Цена по убыванию</option>
+								<option>По наименованию</option>
+							</select>
+							<select id="select-object">
+								<option></option>
+								<option>Цена по возрастанию</option>
+								<option>Цена по убыванию</option>
+								<option>По наименованию</option>
+							</select>
+						</form>
+						<a href="#">Проекты интерпром</a>
+					</div>
+					<div class="row">
+						<div class="catalog__items-wrap main-content">
+							<div id="map"></div>
+						</div>
+
+						<div class="catalog__widget-wrap sticky">
+							<div class="catalog__widget">
+								<ul class="catalog__widget-cat">
+									<li><a href="#">О Компании</a></li>
+									<li><a href="#">Производство</a></li>
+									<li>
+										<a class="catalog__widget-drop" href="#">Реальзованные проеты</a>
+										<ul class="sub-widget-cat">
+											<li><a href="#">Проекты интерпром</a></li>
+											<li class="sub-widget__active"><a href="#">География проектов</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Партнеры</a></li>
+									<li><a href="#">Отзывы</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="consultation">
+			<div class="container">
+				<h3 class="consultation__title">Остались вопросы?</h3>
+				<p class="consultation__descript">Напишите нам и мы спроектируем для вас</p>
+				<form>
+					<div class="consultation__input-items">
+						<div class="consultation__input-wrap">
+							<p>Ваше имя</p>
+							<input type="name">
+						</div>
+						<div class="consultation__input-wrap">
+							<p>Телефон</p>
+							<input class="phone_mask" type="tel">
+						</div>
+					</div>
+					<div class="consultation__input-wrap">
+						<p>Сообщение</p>
+						<textarea></textarea>
+					</div>
+					<div class="cap"></div>
+					<button class="consultation__form-button">Отправить</button>
+					<p class="consultation__person-information">Нажимая кнопку  «отправить заявку», я даю согласие на обработку <a href="#">персональных данных</a></p>
+				</form>
+				<img class="consultation-img" src="img/Layer-9.png" alt="">
+			</div>
+		</div>
+		<div class="leasing">
+				<div class="container">
+					<div class="leasing__title">
+						<h3>Оборудование в лизинг</h3>
+						<p>Наши компании-партёры предоставляют оборудование в лизинг по доступным ценам</p>
+					</div>
+					<div class="row">
+						<a href="#" class="leasing__items">
+							<div class="leasing__img-wrap">
+								<img src="img/leasingimg.jpg" alt="">
+							</div>
+							<div class="leasing__link">
+								<p>узнать стоимость</p>
+								<img class="leasing__share" src="img/share.svg" alt="">
+							</div>
+						</a>
+						<a href="#" class="leasing__items">
+							<div class="leasing__img-wrap">
+								<img src="img/leasingimg-2.jpg" alt="">
+							</div>
+							<div class="leasing__link">
+								<p>узнать стоимость</p>
+								<img class="leasing__share" src="img/share.svg" alt="">
+							</div>
+						</a>
+						<a href="#" class="leasing__items">
+							<div class="leasing__img-wrap">
+								<img src="img/leasingimg-3.jpg" alt="">
+							</div>
+							<div class="leasing__link">
+								<p>узнать стоимость</p>
+								<img class="leasing__share" src="img/share.svg" alt="">
+							</div>
+						</a>
+						<a href="#" class="leasing__items">
+							<div class="leasing__img-wrap">
+								<img src="img/leasingimg-4.jpg" alt="">
+							</div>
+							<div class="leasing__link">
+								<p>узнать стоимость</p>
+								<img class="leasing__share" src="img/share.svg" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="footer__logo-wrap">
+					<img src="img/logo-footer.png" alt="">
+					<p class="footer__logo-title">Завод промышленного  оборудования</p>
+					<p class="footer__confidencial">© 2018 INTERPROM74.ru <a href="#">политика обработки персональных данных</a></p>
+				</div>
+				<div class="footer__menu-wrap">
+					<nav class="footer__nav">
+						<ul class="row">
+							<li>
+								<a href="#">Каталог</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#">Мусоросортировочные линии и станции ТКО</a></li>
+									<li><a href="#">Печи утилизатор</a></li>
+									<li><a href="#">Питатели</a></li>
+									<li><a href="#">Виброгрохоты</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Каталог</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#"> Ковшевые элеваторы – нория</a></li>
+									<li><a href="#">Сушильные установки</a></li>
+									<li><a href="#">Оборудование для строительных смесей</a></li>
+									<li><a href="#">Конвейеры в ассортименте</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">О компании</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#">Производство</a></li>
+									<li><a href="#">Реализованные проекты</a></li>
+									<li><a href="#">Партнеры</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">Реквизиты</a></li>
+								</ul>
+							</li>
+							<li class="footer__contacts">
+								<P class="footer__contacts-link" href="#">Контакты для связи</p>
+								<ul class="footer__sub-menu">
+									<li>
+										<img class="footer__icon-phone" src="img/icon-phone.svg" alt="">
+										<div class="footer__phone-numbers">
+											<a href="#">8 800 222 37 08</a>
+											<a href="#">+7 351 247 37 08</a>
+										</div>
+									</li>
+									<li>
+										<img class="footer__icon-mail" src="img/envelope.svg" alt="">
+										<a href="#">info@interprom74.ru</a>
+									</li>
+									<li class="footer__social-wrap">
+										<a href="#">
+											<div class="footer__faceboock-wrap">
+												<img class="footer__faceboock" src="img/facebook-logo.svg" alt="">
+											</div>
+										</a>
+										<a href="#">
+											<div class="footer__youtube-wrap">
+												<img class="footer__youtube" src="img/youtube.svg" alt="">
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Услуги</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#">Проектирование металлоконструкций</a></li>
+									<li><a href="#">Плазменная резка металла</a></li>
+									<li><a href="#">Демонтаж и монтаж</a></li>
+									<li><a href="#">Нестандартное оборудование </a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Информация</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Акции</a></li>
+									<li><a href="#">Статьи</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Сервис</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#">Гарантия и ремонт</a></li>
+									<li><a href="#">Запасные части</a></li>
+									<li><a href="#">Доставка</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Документы</a>
+								<ul class="footer__sub-menu">
+									<li><a href="#">Сертификаты</a></li>
+									<li><a href="#">Запасные части</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="tora-link-wrap">
+						<a href="#" class="tora-link">Сделано в TORA</a>
+					</div>
+			</div>
+		</div>
+	</footer>
+	<div class="popup-callback-wrap">
+		<div class="popup-callback-mask"></div>
+		<div class="popup-callback">
+			<p>Оставьте свой телефон и мы с вами свяжемся</p>
+			<form action="">
+				<input class="popup-tel-mask" type="tel">
+				<button>Жду звонка</button>
+			</form>
+			<p>Нажимая кнопку  «отправить заявку», я даю согласие на обработку  <a href="#">персональных данных</a></p>
+			<div class="form-close-button"></div>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
