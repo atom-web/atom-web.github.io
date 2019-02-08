@@ -385,7 +385,7 @@ $(document).ready(function(){
 	                myMap.geoObjects.add(objectManager);
 
 	                $.ajax({
-	                    url: "/js/data.json"
+	                    url: "js/data.json"
 	                }).done(function(data) {
 	                    objectManager.add(data);
 	                });
