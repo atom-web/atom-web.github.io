@@ -344,7 +344,7 @@ $(document).ready(function(){
 	                    // тип макета.
 	                    iconLayout: 'default#imageWithContent',
 	                    // Своё изображение иконки метки.
-	                    iconImageHref: '../img/gps.png',
+	                    iconImageHref: 'img/gps.png',
 	                    // Размеры метки.
 	                    iconImageSize: [30, 50],
 	                    // Смещение левого верхнего угла иконки относительно
@@ -356,7 +356,7 @@ $(document).ready(function(){
 
 	                var clusterIcons = [
 	                   {
-	                    href: '../img/gps.png',
+	                    href: 'img/gps.png',
 	                    size: [44, 70],
 	                    offset: [-25, -25]
 	                    },
