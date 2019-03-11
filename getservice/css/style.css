@@ -192,6 +192,9 @@ a{
 .prev-item-img{
 	margin-right: 25px;
 }
+.prev-item-img img{
+	width: 100%;
+}
 .prev-write{
 	background: #2C3748;
 	font-size: 16px;
@@ -282,6 +285,85 @@ a{
 
 
 
+.price{
+    padding: 120px 0;
+}
+.price__text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.price__text h2{
+	font-size: 30px;
+	font-family: "PFDin-l";
+	margin-bottom: 15px;
+}
+.price__text p{
+	font-size: 16px;
+	color: #555555;
+}
+.price__text a{
+	font-size: 16px;
+    color: #fff;
+    background: #2C3748;
+    padding: 7px 23px;
+    display: flex;
+    width: max-content;
+    margin-top: 30px;
+    transition: background 0.2s;
+}
+.price__text a:hover{
+	background: #f38600;
+}
+.price__box{
+	display: flex;
+	justify-content: flex-end;
+}
+.price__box-item{
+	height: 400px;
+    width: 250px;
+    background: #EFEFEF;
+    border: 1px solid #D6D6D6;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 -92px 0 0;
+    transition: 0.2s;
+}
+.price__box-item:last-child{
+	margin: 0;
+}
+.price__box-item:hover {
+    transform: translate(0,-1rem);
+    border: 1px solid #909090
+}
+.price__box-item:hover ~ .price__box-item {
+    transform: translateX(60px);
+}
+.price__box-title{
+	font-size: 29px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	color: #000;
+}
+.price__box-desc{
+	font-size: 14px;
+	color: #5a5a5a;
+}
+.price__box-img{
+	background: #F7F7F7;
+    margin: -15px -15px;
+    width: calc(100% + 30px);
+    height: 180px;
+    padding: 15px;
+}
+.price__box-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
 
 
 
@@ -305,6 +387,24 @@ a{
 	}
 }
 @media (max-width: 991px){
+	.price__box-item:hover, 
+	.price__box-item:hover ~ .price__box-item{
+		transform: none;
+	}
+	.price__box{
+		flex-wrap: wrap;
+		justify-content: inherit;
+	}
+	.price__box{
+		margin-top: 25px;
+	}
+	.price__box-item{
+		margin: 0;
+		width: 50%;
+	}
+	.price__text{
+		margin-bottom: 35px;
+	}
 	.prev-item-img{
 	    margin: 20px 0;
 	}
@@ -390,6 +490,27 @@ a{
 	.prev{
 	    padding: 60px 0;
 	    height: auto;
+	}
+}
+@media (max-width: 575px){
+	.price__box-item{
+	    width: 100%;
+	    height: auto;
+	    margin-bottom: 15px;
+	    flex-direction: row;
+	}
+	.price__box-img{
+		margin: -15px -15px -15px 15px;
+		width: calc(100% + 90px);
+		height: calc(100% + 30px);
+	}
+	.price__box-title{
+		font-size: 21px;
+	    margin-top: 0;
+	    margin-bottom: 10px;
+	}
+	.price{
+	    padding: 40px 0;
 	}
 }
 @media (max-width: 400px){
