@@ -421,7 +421,6 @@ a{
 	margin: 0;
 }
 .price__box-item:hover {
-    transform: translate(0,-1rem);
     border: 1px solid #909090
 }
 .price__box-item:hover ~ .price__box-item {
