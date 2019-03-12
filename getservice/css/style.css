@@ -206,6 +206,28 @@ a{
 .prev-write:hover{
 	background: #f38600;
 }
+@keyframes animFigureR-1 { 
+	0%{ 
+		transform: rotate(-142deg) translateY(0px);
+	}
+	40%{
+		transform: rotate(-160deg) translateY(-10px);
+	}
+	100% { 
+		transform: rotate(-150deg) translateY(-20px);
+		}  
+}
+@keyframes animFigureR-2 { 
+	0%{ 
+		transform: rotate(-190deg) translateY(0px);
+	}
+	60%{
+		transform: rotate(-180deg) translate(30px, -10px);
+	}
+	100% { 
+		transform: rotate(-200deg) translate(20px, -20px);
+		}  
+}
 .figure-right{
 	border: 220px solid transparent;
     border-right: 207px solid #eaeaea;
@@ -225,6 +247,7 @@ a{
     top: -225px;
     left: 94px;
     transform: rotate(-142deg);
+    animation: 25s linear 0s infinite alternate animFigureR-1;
 }
 .figure-right-2{
 	border: 41px solid transparent;
@@ -234,7 +257,65 @@ a{
     top: -165px;
     left: 55px;
     transform: rotate(-190deg);
+    animation: 25s linear 0s infinite alternate animFigureR-2;
 }
+
+@keyframes animFigureL { 
+	0%{ 
+		transform:   rotate(-190deg) translateY(0px);
+	}
+	50%{
+		transform: scale(0.9) rotate(-200deg) translateY(-20px);
+	}
+	100% { 
+		transform: scale(1.1) rotate(-195deg) translateY(-40px);
+		}  
+}
+@keyframes animFigureL-1 { 
+	0%{ 
+		transform:translateY(0px) rotate(-315deg) translateX(0px) scale(1);
+	}
+	30%{
+		transform:translateY(-10px) rotate(-320deg) translateX(-20px) scale(0.7);
+	}
+	100% { 
+		transform:translateY(-20px) rotate(-260deg) translateX(-10px) scale(0.9);
+		}  
+}
+@keyframes animFigureL-2 { 
+	0%{ 
+		transform:translateY(0px) rotate(-186deg) translateX(0px);
+	}
+	60%{
+		transform:translateY(-10px) rotate(-200deg) translateX(-20px);
+	}
+	100% { 
+		transform:translateY(20px) rotate(-190deg) translateX(-10px);
+		}  
+}
+@keyframes animFigureL-3 { 
+	0%{ 
+		transform:translateY(0px) rotate(34deg) translateX(0px);
+	}
+	40%{
+		transform:translateY(-10px) rotate(90deg) translateX(-20px);
+	}
+	100% { 
+		transform:translate(20px, -0px) scale(0.5) rotate(34deg);
+		}  
+}
+@keyframes animFigureL-4 { 
+	0%{ 
+		transform:rotate(178deg);
+	}
+	50%{
+		transform:rotate(190deg);
+	}
+	100% { 
+		transform:rotate(160deg);
+		}  
+}
+
 .figure-left{
 	border: 64px solid transparent;
     border-right: 67px solid #eaeaea;
@@ -244,6 +325,7 @@ a{
     left: 137px;
     transform: rotate(-190deg);
 	z-index: -1;
+	animation: 25s linear 0s infinite alternate animFigureL;
 }
 .figure-left-1{
 	border: 35px solid transparent;
@@ -253,6 +335,7 @@ a{
     top: -59px;
     left: -111px;
     transform: rotate(-315deg);
+    animation: 25s linear 0s infinite alternate animFigureL-1;
 }
 .figure-left-2{
 	border: 27px solid transparent;
@@ -262,6 +345,7 @@ a{
     top: -127px;
     left: 26px;
     transform: rotate(-186deg);
+    animation: 25s linear 0s infinite alternate animFigureL-2;
 }
 .figure-left-3{
 	border: 21px solid transparent;
@@ -271,6 +355,7 @@ a{
     top: -97px;
     left: -60px;
     transform: rotate(34deg);
+    animation: 25s linear 0s infinite alternate animFigureL-3;
 }
 .figure-left-4{
 	border: 19px solid transparent;
@@ -280,6 +365,7 @@ a{
     top: -56px;
     left: 100px;
     transform: rotate(178deg);
+    animation: 25s linear 0s infinite alternate animFigureL-4;
 }
 
 
@@ -349,7 +435,7 @@ a{
 }
 .price__box-desc{
 	font-size: 14px;
-	color: #5a5a5a;
+	color: #9e9e9e;
 }
 .price__box-img{
 	background: #F7F7F7;
