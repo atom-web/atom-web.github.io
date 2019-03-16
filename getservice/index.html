@@ -121,6 +121,36 @@
 			</div>
 		</div>
 	</div>
+	<div class="form-callback">
+		<div class="container">
+			<div class="row row-rev">
+				<div class="col-md-7 callback">
+					<form action="">
+						<div class="callback__item">
+							<p class="callback__title">Ваше имя</p>
+							<input class="callback__inp" type="name" placeholder="Иван" required>
+						</div>
+						<div class="callback__item">
+							<p class="callback__title">Номер телефона</p>
+							<input class="callback__inp" type="tel" placeholder="+7 (000) 000-00-00" required>
+						</div>
+						<div class="callback__item callback__checkbox-wrap">
+							<input class="callback__checkbox" id="checkbox" type="checkbox" onchange="document.getElementById('callback__submit').disabled = !this.checked;">
+							<label for="checkbox"></label>
+							<p>Я даю свое согласие на обработку персональных данных</p>
+						</div>
+						<div class="callback__item">
+							<input type="submit" disabled="disabled" name="submit" id="callback__submit" value="Отправить" />
+						</div>
+					</form>
+				</div>
+				<div class="col-md-5 callback-text">
+					<h3 class="callback-text__title">Бесплатная консультация всего в пару шагов.</h3>
+					<p class="callback-text__desc">Для консультации просто заполните поля формы и мы вам перезвоним в течении 15 минут</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 

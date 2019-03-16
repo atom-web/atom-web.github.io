@@ -15,6 +15,7 @@ body{
 	font-family: "PFDin-r";
 	margin: 0;
 	padding: 0;
+	height: 500vh
 }
 p{
 	margin: 0;
@@ -448,6 +449,131 @@ a{
 	height: 100%;
 	object-fit: contain;
 }
+.form-callback{
+	height: 300px;
+	background: #eaeaea;
+	border-radius: 0 0 180px 0;
+	padding: 40px;
+	display: flex;
+	align-items: center;
+}
+.callback{
+	margin-bottom: 20px;
+}
+.callback form{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.callback__item{
+    width: calc(50% - 15px);
+    margin: 10px 0;
+}
+.callback__title{
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 7px;
+}
+.callback__inp{
+	border: none;
+	padding: 0 15px;
+	width: 100%;
+	height: 40px;
+	outline: none;
+}
+.callback__checkbox-wrap{
+	display: flex;
+	align-items: center;
+}
+.callback__checkbox-wrap p{
+	color: #555555;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-left: 15px;
+}
+.callback__checkbox{
+	display: none;
+}
+.callback__checkbox-wrap label{
+	cursor: pointer;
+	padding-left: -10px !important;
+}
+#callback__submit{
+	border: none;
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #2C3748;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#callback__submit:hover {
+    background: #f38600;
+}
+.callback__checkbox-wrap input[type=checkbox] + label:before {
+    content: '';
+    font-size: 5px;
+    width: 22px;
+    height: 22px;
+    background: #2C3748;
+    color: #2C3748;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    transition: 0.4s;
+}
+.callback__checkbox-wrap input[type=checkbox]:checked + label:before{
+    content: '\2714';
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding-right: 0px;
+    width: 22px;
+    height: 22px;
+}
+#callback__submit[disabled] {
+	opacity: .9;
+	cursor: unset !important;
+}
+#callback__submit[disabled]:hover{
+	background: #2C3748;
+}
+.callback-text{
+	padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.callback-text__title{
+	font-size: 24px;
+	color: #000;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.callback-text__desc{
+	color: #555555;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -576,6 +702,24 @@ a{
 	    padding: 60px 0;
 	    height: auto;
 	}
+	.form-callback{
+		height: auto;
+		padding: 80px 0px;
+	}
+	.row-rev{
+		flex-direction: column-reverse;
+	}
+	.callback-text__title{
+		font-size: 20px;
+	}
+	.callback-text__desc{
+		font-size: 14px;
+		max-width: 400px;
+	}
+	.callback-text{
+		margin-bottom: 30px;
+		padding-left: 15px;
+	}
 }
 @media (max-width: 575px){
 	.price__box-item{
@@ -596,6 +740,13 @@ a{
 	}
 	.price{
 	    padding: 40px 0;
+	}
+	.callback__item{
+		width: 100%;
+	}
+	.form-callback{
+		border-radius: 0 0 63px 0;
+		padding: 38px 0px;
 	}
 }
 @media (max-width: 400px){
