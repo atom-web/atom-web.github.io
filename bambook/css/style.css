@@ -1068,8 +1068,14 @@ footer{
 }
 
 @media (max-width: 767px){
+	.price-grid__feat{
+		display: none;
+	}
 	.price-grid__box{
-		width: 100%;
+		box-shadow: none;
+		border-radius: 0;
+	    width: calc(50% - 5px);
+	    margin-bottom: 10px;
 	}
 }
 @media (max-width: 575px){
@@ -1111,5 +1117,28 @@ footer{
 	}
 	.price-content{
 		padding: 40px 0;
+	}
+	.price-grid__box{
+		padding: 15px;
+	}
+}
+@media (max-width: 450px){
+	.price-grid__box h3{
+	    font-size: 16px;
+	    width: 100%;
+	}
+	.price-grid__desc{
+		font-family: "SFUI-l";
+	}
+	.price-grid__link-text{
+		width: 100%;
+    	background: #211e2b;
+    	padding: 5px 10px;
+	}
+	.price-grid__link-text p:first-child{
+		font-size: 12px;
+	}
+	.price-grid__link-text p{
+		font-size: 14px;
 	}
 }
