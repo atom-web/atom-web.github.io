@@ -1426,9 +1426,13 @@ footer{
 	.popup-callback {
 	    bottom: auto;
 	    height: 100vh;
-	    overflow: scroll;
 	    display: block;
+	    overflow: scroll;
 	    margin: 0 auto;
+	}
+	.popup-callback__wrap{
+		overflow: scroll;
+		height: 100vh;
 	}
 }
 @media (max-width: 400px){
