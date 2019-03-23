@@ -1000,6 +1000,9 @@ footer{
 	.footer__items-nav{
 		margin-bottom: 50px;
 	}
+	.callback__title{
+		color: #2C3748;
+	}
 }
 @media (max-width: 767px){
 	.top-head_callback-btn{
