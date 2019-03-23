@@ -44,6 +44,7 @@ document.addEventListener( "DOMContentLoaded", () => {
 //___________________________________________________________________________________________________________________________
 
 $('.callback__inp[type="tel"]').mask('+7 (000) 000-00-00', {placeholder: "+7 (000) 000-00-00"});
+$('.popup-callback__tel').mask('+7 (000) 000-00-00');
 
 
 //Header Меню
@@ -51,11 +52,26 @@ if ($(window).width() < 991) {
   	$(".menu-open").click(function() {
 		$(this).addClass("hamburger--open");
 		$('.bottom-head nav').addClass('open');
-		$('body').css('overflow', 'hidden');
+		$('body, html').css('overflow', 'hidden');
 	});
 	$(".bottom-head nav").click(function() {
 		$('.menu-open').removeClass("hamburger--open");
 		$('.bottom-head nav').removeClass('open');
-		$('body').css('overflow', '');
+		$('body, html').css('overflow', '');
 	});
 }
+
+//Попап окно обратного звонка
+$('.btn-popup').click(function(){
+	$('.popup-callback').addClass('popup-callback-active');
+	$('.popup-callback').mouseup(function (e){
+		var div = $(".popup-callback__wrap"); 
+		if (!div.is(e.target)
+		    && div.has(e.target).length === 0) { 
+			$('.popup-callback').removeClass('popup-callback-active');
+		}
+	});
+	$('.popup-callback__close').click(function(){
+		$('.popup-callback').removeClass('popup-callback-active');
+	});
+});
