@@ -1,5 +1,6 @@
 @font-face {
 	font-family: 'Proxima Nova';
+	font-display: swap;
 	src: url('../fonts/proximanova/ProximaNova-Regular.eot');
 	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
 		url('../fonts/proximanova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
@@ -12,6 +13,7 @@
 
 @font-face {
 	font-family: 'Proxima Nova';
+	font-display: swap;
 	src: url('ProximaNova-Extrabld.eot');
 	src: local('Proxima Nova Extrabold'), local('ProximaNova-Extrabld'),
 		url('../fonts/proximanova/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
@@ -24,6 +26,7 @@
 
 @font-face {
 	font-family: 'Proxima Nova';
+	font-display: swap;
 	src: url('ProximaNova-Extrabld.eot');
 	src: local('Proxima Nova Extrabold'), local('ProximaNova-Extrabld'),
 		url('../fonts/proximanova/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
@@ -36,6 +39,7 @@
 
 @font-face {
 	font-family: 'Proxima Nova';
+	font-display: swap;
 	src: url('ProximaNova-Semibold.eot');
 	src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'),
 		url('../fonts/proximanova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
@@ -48,6 +52,7 @@
 
 @font-face {
 	font-family: 'Proxima Nova Condensed';
+	font-display: swap;
 	src: url('../fonts/proximanova/ProximaNovaCond-Regular.eot');
 	src: local('Proxima Nova Condensed Regular'), local('ProximaNovaCond-Regular'),
 		url('../fonts/proximanova/ProximaNovaCond-Regular.eot?#iefix') format('embedded-opentype'),
@@ -60,6 +65,7 @@
 
 @font-face {
 	font-family: 'Proxima Nova Condensed';
+	font-display: swap;
 	src: url('ProximaNovaCond-Semibold.eot');
 	src: local('Proxima Nova Condensed Semibold'), local('ProximaNovaCond-Semibold'),
 		url('../fonts/proximanova/ProximaNovaCond-Semibold.eot?#iefix') format('embedded-opentype'),
