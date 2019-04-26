@@ -415,3 +415,6 @@
 
 	
 })
+if ($('.lazy').length) {
+   $(".lazy").Lazy(); 
+}
