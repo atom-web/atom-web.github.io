@@ -1,0 +1,22 @@
+.rpic {
+    float: right;
+    margin: 0 0 20px 30px;
+}
+
+.tovar__color_1 { background-color:#acacac;}.tovar__color_2 { background-color:#2e4668;}.tovar__color_3 { background-color:#56453e;}.tovar__color_4 { background-color:#a83537;}.tovar__color_5 { background-color:#F5F5DC;}
+strong.tovar__color_1 { background-color:#acacac !important;} strong.tovar__color_2 { background-color:#2e4668 !important;} strong.tovar__color_3 { background-color:#56453e !important;} strong.tovar__color_4 { background-color:#a83537 !important;} strong.tovar__color_5 { background-color: #F5F5DC !important;}
+
+.white-popup-block {
+background: #FFF;
+    padding: 20px 30px;
+    text-align: left;
+    max-width: 650px;
+    margin: 40px auto;
+    position: relative;
+}
+
+header.scroll {
+	position: fixed;
+	width: 100%;
+	z-index:10000;
+}
