@@ -1,3 +1,4 @@
+$(document).ready(function(){
 if (typeof(ymaps)!=='undefined')
 {
 	ymaps.ready(function()
@@ -564,6 +565,8 @@ $(function(){
 	var elemTop = $(elem).offset().top;
 	return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
 }
+
+});
 $(document).ready(function(){
 	$('.gallery-wrap').slick({
 		infinite: true,
