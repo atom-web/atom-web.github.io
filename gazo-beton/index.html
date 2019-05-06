@@ -49,7 +49,8 @@
        loadCSS("assets/source/helpers/jquery.fancybox-buttons.css");
        loadCSS("css/gallery/style.css");
     </script>
-    <link rel='stylesheet' type='text/css' href='assets/css/style.css?1545219442' media='screen'/>
+    <link rel='stylesheet' type='text/css' href='assets/css/style.css' media='screen'/>
+    <link rel='stylesheet' href='assets/css/media.css' media="screen and (max-width:1200px)">
 
     <!-- Add Thumbnail helper (this is optional) -->
     <!-- href='/assets/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7' -->
@@ -334,7 +335,7 @@
     <div class="importantBlockTop">
         <div class="importantBlockTop_close" onclick="$('.importantBlockTop').hide(); var date = new Date(new Date().getTime() + 1000*60*60*90); document.cookie='showTopBanner=1; path=/; expires='+date.toUTCString();">Закрыть</div>
         <a href="/about/news/2017/03/24/ostorozhno-falsifikat-spisok-antidilerov-zavoda-avtoklavnogo-gazobetona.html">
-            <img src="https://www.gazo-beton.ru/netcat_files/657/640/top_banner.png">
+            <img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/657/640/top_banner.png">
         </a>
     </div>
     <!-- выбор города -->
@@ -402,7 +403,7 @@
     <header>
         <div class="wrapper">
             <a href="/" class="logo">
-                <img src="https://www.gazo-beton.ru/assets/images/logo.jpg">
+                <img class="lazy" data-src="https://www.gazo-beton.ru/assets/images/logo.jpg">
             </a>
 
             <div class="social">
@@ -505,7 +506,7 @@
     <a href="/about/actions/" class="action"><img src="https://www.gazo-beton.ru/assets/images/action.png" alt=""/></a>
 
     <!-- блок заказа -->
-    <div class="bgr">
+    <div class="bgr lazy" data-src="assets/images/bgr.jpg">
         <div class="wrapper">
             <div class="name_plant">
                 <b>ИНСИ-БЛОК</b> от Завода Автоклавного Газобетона<br/>
@@ -514,7 +515,7 @@
             </div>
             <div class="top_goods">
                 <div class="item_top">
-                    <a href="/production/nomenclature/"><img src="https://www.gazo-beton.ru/netcat_files/657/619/items_block_st.jpg" class="item_top_img" alt="/"></a>
+                    <a href="/production/nomenclature/"><img data-src="https://www.gazo-beton.ru/netcat_files/657/619/items_block_st.jpg" class="item_top_img lazy" alt=""></a>
 
                     <div class="item_top_txt">
                         <div class="item_top_name">Блоки стеновые</div>
@@ -523,7 +524,7 @@
                 </div>
 
                 <div class="item_top">
-                    <a href="/production/fasadnyy-insi-blok/"><img src="https://www.gazo-beton.ru/netcat_files/657/619/items_block_facade.jpg" class="item_top_img" alt="/"></a>
+                    <a href="/production/fasadnyy-insi-blok/"><img data-src="https://www.gazo-beton.ru/netcat_files/657/619/items_block_facade.jpg" class="item_top_img lazy" alt=""></a>
 
                     <div class="item_top_txt">
                         <div class="item_top_name">Блоки фасадные</div>
@@ -532,7 +533,7 @@
                 </div>
 
                 <div class="item_top">
-                    <a href="/production/blok-peregorodochnyy/"><img src="https://www.gazo-beton.ru/netcat_files/657/619/items_block_pe.jpg" class="item_top_img" alt="/"></a>
+                    <a href="/production/blok-peregorodochnyy/"><img data-src="https://www.gazo-beton.ru/netcat_files/657/619/items_block_pe.jpg" class="item_top_img lazy" alt=""></a>
 
                     <div class="item_top_txt">
                         <div class="item_top_name">Блоки перегородочные</div>
@@ -541,7 +542,7 @@
                 </div>
 
                 <div class="item_top">
-                    <a href="/soputstvuyuschie-tovary/"><img src="https://www.gazo-beton.ru/netcat_files/657/619/items_addit.jpg" class="item_top_img" alt="/"></a>
+                    <a href="/soputstvuyuschie-tovary/"><img data-src="https://www.gazo-beton.ru/netcat_files/657/619/items_addit.jpg" class="item_top_img lazy" alt=""></a>
 
                     <div class="item_top_txt">
                         <div class="item_top_name">Сопутствующие материалы</div>
@@ -647,7 +648,7 @@
                 <a href="/documentation/make/#i1">
                     <div class="properties_wrapper">
                         <div class="properties_item">
-                            <div class="properties_img"><img src="https://www.gazo-beton.ru/assets/images/i1.png" alt=""/></div>
+                            <div class="properties_img"><img class="lazy" data-src="https://www.gazo-beton.ru/assets/images/i1.png" alt=""/></div>
                             <div class="properties_text">Прочность</div>
                         </div>
                     </div>
@@ -655,7 +656,7 @@
                 <a href="/documentation/make/#i2">
                     <div class="properties_wrapper">
                         <div class="properties_item">
-                            <div class="properties_img"><img src="https://www.gazo-beton.ru/assets/images/i2.png" alt=""/></div>
+                            <div class="properties_img"><img class="lazy" data-src="https://www.gazo-beton.ru/assets/images/i2.png" alt=""/></div>
                             <div class="properties_text">Технологичность</div>
                         </div>
                     </div>
@@ -663,7 +664,7 @@
                 <a href="/documentation/make/#i3">
                     <div class="properties_wrapper">
                         <div class="properties_item">
-                            <div class="properties_img"><img src="https://www.gazo-beton.ru/assets/images/i3.png" alt=""/></div>
+                            <div class="properties_img"><img class="lazy" data-src="https://www.gazo-beton.ru/assets/images/i3.png" alt=""/></div>
                             <div class="properties_text">Сейсмостойкость</div>
                         </div>
                     </div>
@@ -671,7 +672,7 @@
                 <a href="/documentation/make/#i4">
                     <div class="properties_wrapper">
                         <div class="properties_item">
-                            <div class="properties_img"><img src="https://www.gazo-beton.ru/assets/images/i4.png" alt=""/></div>
+                            <div class="properties_img"><img class="lazy" data-src="https://www.gazo-beton.ru/assets/images/i4.png" alt=""/></div>
                             <div class="properties_text">Огнестойкость</div>
                         </div>
                     </div>
@@ -681,7 +682,7 @@
                 <a href="/documentation/make/#i5">
                     <div class="properties_wrapper">
                         <div class="properties_item">
-                            <div class="properties_img"><img src="https://www.gazo-beton.ru/assets/images/i5.png" alt=""/></div>
+                            <div class="properties_img"><img class="lazy" data-src="https://www.gazo-beton.ru/assets/images/i5.png" alt=""/></div>
                             <div class="properties_text">Экологичность</div>
                         </div>
                     </div>
@@ -689,7 +690,7 @@
                 <a href="/documentation/make/#i6">
                     <div class="properties_wrapper">
                         <div class="properties_item">
-                            <div class="properties_img"><img src="https://www.gazo-beton.ru/assets/images/i6.png" alt=""/></div>
+                            <div class="properties_img"><img class="lazy" data-src="https://www.gazo-beton.ru/assets/images/i6.png" alt=""/></div>
                             <div class="properties_text">Комфорт</div>
                         </div>
                     </div>
@@ -697,7 +698,7 @@
                 <a href="/documentation/make/#i7">
                     <div class="properties_wrapper">
                         <div class="properties_item">
-                            <div class="properties_img"><img src="https://www.gazo-beton.ru/assets/images/i7.png" alt=""/></div>
+                            <div class="properties_img"><img class="lazy" data-src="https://www.gazo-beton.ru/assets/images/i7.png" alt=""/></div>
                             <div class="properties_text">Качество и экономичность</div>
                         </div>
                     </div>
@@ -852,35 +853,35 @@
         <div class="object_name">Готовые Объекты:</div>
         <div class="item_object-container">
             <a href="/objects/?type=1" class="item_object">
-                <div class="item_object_img"><img src="https://www.gazo-beton.ru/netcat_files/multifile/1300/preview_Zavod_po_proizvodstvu_energostroitel_nyh_konstruktsiy_ESKON__zdanie_ABK___1_.jpg" alt=""/></div>
+                <div class="item_object_img"><img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/multifile/1300/preview_Zavod_po_proizvodstvu_energostroitel_nyh_konstruktsiy_ESKON__zdanie_ABK___1_.jpg" alt=""/></div>
                 <div class="item_object_txt_wrapper">
                     <div class="item_object_txt">Коммерческие</div>
                 </div>
             </a>
 
             <a href="/objects/?type=2" class="item_object">
-                <div class="item_object_img"><img src="https://www.gazo-beton.ru/netcat_files/multifile/1300/preview_Chastnyy_dom__primene_fasadnyy_INSI_BLOK__g.Chelyabinsk__1_.jpg" alt=""/></div>
+                <div class="item_object_img"><img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/multifile/1300/preview_Chastnyy_dom__primene_fasadnyy_INSI_BLOK__g.Chelyabinsk__1_.jpg" alt=""/></div>
                 <div class="item_object_txt_wrapper">
                     <div class="item_object_txt">Частные</div>
                 </div>
             </a>
 
             <a href="/objects/?type=3" class="item_object">
-                <div class="item_object_img"><img src="https://www.gazo-beton.ru/netcat_files/multifile/1300/preview_ZhK_IN_SITI__g.Chelyabinsk__1_.jpg" alt=""/></div>
+                <div class="item_object_img"><img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/multifile/1300/preview_ZhK_IN_SITI__g.Chelyabinsk__1_.jpg" alt=""/></div>
                 <div class="item_object_txt_wrapper">
                     <div class="item_object_txt">Многоэтажные дома</div>
                 </div>
             </a>
 
             <a href="/objects/?type=4" class="item_object">
-                <div class="item_object_img"><img src="https://www.gazo-beton.ru/netcat_files/multifile/1300/preview_Oblastnoy_perinatal_nyy_tsentr__g.Chelyabinsk__3_.jpg" alt=""/></div>
+                <div class="item_object_img"><img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/multifile/1300/preview_Oblastnoy_perinatal_nyy_tsentr__g.Chelyabinsk__3_.jpg" alt=""/></div>
                 <div class="item_object_txt_wrapper">
                     <div class="item_object_txt">Инфраструктурные</div>
                 </div>
             </a>
 
             <a href="/objects/?type=5" class="item_object">
-                <div class="item_object_img"><img src="https://www.gazo-beton.ru/netcat_files/multifile/1300/preview_Kottedzhnyy_poselok__Malinki__g._Chelyabinsk__3_.jpg" alt=""/></div>
+                <div class="item_object_img"><img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/multifile/1300/preview_Kottedzhnyy_poselok__Malinki__g._Chelyabinsk__3_.jpg" alt=""/></div>
                 <div class="item_object_txt_wrapper">
                     <div class="item_object_txt">Коттеджные поселки</div>
                 </div>
@@ -934,7 +935,7 @@
                     <div class="old_article_marker"></div>
                     <div class="article_item">
                         <div class="article_item_img">
-                            <img src="https://www.gazo-beton.ru/netcat_files/691/583/preview_ZAGB_Banner__kley_v_podarok__Libknehta.png" alt=""/>
+                            <img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/691/583/preview_ZAGB_Banner__kley_v_podarok__Libknehta.png" alt=""/>
                         </div>
                         <div class="article_item_name">Клеевая смесь в подарок при покупке ИНСИ-БЛОКа</div>
                         <div class="article_item_date"><span>28.01.2019</span></div>
@@ -949,7 +950,7 @@
                     <div class="old_article_marker"></div>
                     <div class="article_item">
                         <div class="article_item_img">
-                            <img src="https://www.gazo-beton.ru/netcat_files/691/583/preview_Aktsiya_blok_0.jpg" alt=""/>
+                            <img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/691/583/preview_Aktsiya_blok_0.jpg" alt=""/>
                         </div>
                         <div class="article_item_name">Акция на ИНСИ-БЛОК до 25 января 2019 года</div>
                         <div class="article_item_date"><span>01.10.2018</span></div>
@@ -964,7 +965,7 @@
                     <div class="old_article_marker"></div>
                     <div class="article_item">
                         <div class="article_item_img">
-                            <img src="https://www.gazo-beton.ru/netcat_files/691/583/preview_krupnyy_slon.jpg" alt=""/>
+                            <img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/691/583/preview_krupnyy_slon.jpg" alt=""/>
                         </div>
                         <div class="article_item_name">Газобетон повышенной прочности - надежная основа вашего дома</div>
                         <div class="article_item_date"><span>18.06.2018</span></div>
@@ -985,7 +986,7 @@
                     <!-- <div class="old_article_marker"></div> -->
                     <div class="article_item">
                         <div class="article_item_img">
-                            <img src="https://www.gazo-beton.ru/netcat_files/660/571/otkrytka23fevralya_2_thumb1.jpg" alt=""/>
+                            <img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/660/571/otkrytka23fevralya_2_thumb1.jpg" alt=""/>
                         </div>
                         <div class="article_item_name">Поздравляем с Днем Защитника Отечества!</div>
                         <div class="article_item_date"><span>22.02.2019</span></div>
@@ -1001,7 +1002,7 @@
                     <!-- <div class="old_article_marker"></div> -->
                     <div class="article_item">
                         <div class="article_item_img">
-                            <img src="https://www.gazo-beton.ru/netcat_files/660/571/otkrytka_ZAGB_thumb1.jpg" alt=""/>
+                            <img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/660/571/otkrytka_ZAGB_thumb1.jpg" alt=""/>
                         </div>
                         <div class="article_item_name">Поздравляем С Новым Годом и Рождеством!</div>
                         <div class="article_item_date"><span>31.12.2018</span></div>
@@ -1017,7 +1018,7 @@
                     <!-- <div class="old_article_marker"></div> -->
                     <div class="article_item">
                         <div class="article_item_img">
-                            <img src="https://www.gazo-beton.ru/netcat_files/660/571/S_dnem_stroitelya_thumb1.jpg" alt=""/>
+                            <img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/660/571/S_dnem_stroitelya_thumb1.jpg" alt=""/>
                         </div>
                         <div class="article_item_name">Поздравляем Вас с Днём Строителя!</div>
                         <div class="article_item_date"><span>10.08.2018</span></div>
@@ -1090,22 +1091,22 @@
     <div class="wrapper_mini">
 
         <a href="/about/articles/tipy-sten-i-sravnitelnaya-stoimost-razlichnyh-variantov.html" class="area_item">
-            <div class="area_img"><img src="https://www.gazo-beton.ru/netcat_files/657/578/preview_gazobeton_uteplitel_1.jpg" alt=""/></div>
+            <div class="area_img"><img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/657/578/preview_gazobeton_uteplitel_1.jpg" alt=""/></div>
             <div class="area_txt"><span>Стена из газобетона с утеплением</span></div>
         </a>
 
         <a href="/about/articles/tipy-sten-i-sravnitelnaya-stoimost-razlichnyh-variantov.html" class="area_item">
-            <div class="area_img"><img src="https://www.gazo-beton.ru/netcat_files/657/578/preview_gazobeton_shtukaturka_1.jpg" alt=""/></div>
+            <div class="area_img"><img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/657/578/preview_gazobeton_shtukaturka_1.jpg" alt=""/></div>
             <div class="area_txt"><span>Стена из газобетона + штукатурка</span></div>
         </a>
 
         <a href="/about/articles/tipy-sten-i-sravnitelnaya-stoimost-razlichnyh-variantov.html" class="area_item">
-            <div class="area_img"><img src="https://www.gazo-beton.ru/netcat_files/657/578/preview_gazobeton_kirpich_1.jpg" alt=""/></div>
+            <div class="area_img"><img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/657/578/preview_gazobeton_kirpich_1.jpg" alt=""/></div>
             <div class="area_txt"><span>Стена из газобетона + облицовка кирпичом</span></div>
         </a>
 
         <a href="/about/articles/tipy-sten-i-sravnitelnaya-stoimost-razlichnyh-variantov.html" class="area_item">
-            <div class="area_img"><img src="https://www.gazo-beton.ru/netcat_files/657/578/preview_gazobeton_fcp_1.jpg" alt=""/></div>
+            <div class="area_img"><img class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/657/578/preview_gazobeton_fcp_1.jpg" alt=""/></div>
             <div class="area_txt"><span>Стена из газобетона энергокомфорт</span></div>
         </a>
         <div class="clear"></div>
@@ -1120,28 +1121,28 @@
 
         <a href="/netcat_files/682/573/2pozharnii20172022.pdf" class="sert_item" target="_blank">
             <div class="sert_item_img">
-                <img style="width:149px;" src="https://www.gazo-beton.ru/netcat_files/682/573/2pozharnii20172022.jpg" alt=""/>
+                <img style="width:149px;" class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/682/573/2pozharnii20172022.jpg" alt=""/>
             </div>
             <div class="sert_item_name"><span>Сертификат пожарный 2017-2022</span></div>
         </a>
 
         <a href="/netcat_files/682/573/Expertnoe_zaklyuchenie_18_06_2013_12.pdf" class="sert_item" target="_blank">
             <div class="sert_item_img">
-                <img style="width:149px;" src="https://www.gazo-beton.ru/netcat_files/682/573/Expertnoe_zaklyuchenie_18_06_2013_12.jpg" alt=""/>
+                <img style="width:149px;" class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/682/573/Expertnoe_zaklyuchenie_18_06_2013_12.jpg" alt=""/>
             </div>
             <div class="sert_item_name"><span>Экспертное заключение</span></div>
         </a>
 
         <a href="/netcat_files/682/573/sert_soot2017_2.pdf" class="sert_item" target="_blank">
             <div class="sert_item_img">
-                <img style="width:149px;" src="https://www.gazo-beton.ru/netcat_files/682/573/sert_soot2017_2.jpg" alt=""/>
+                <img style="width:149px;" class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/682/573/sert_soot2017_2.jpg" alt=""/>
             </div>
             <div class="sert_item_name"><span>Сертификат соответствия</span></div>
         </a>
 
         <a href="/netcat_files/682/573/Akt_ispytaniya_ankernogo_krepleniya_HILTI_dlya_stroitel_nyh_ob_ektov_1.pdf" class="sert_item" target="_blank">
             <div class="sert_item_img">
-                <img style="width:149px;" src="https://www.gazo-beton.ru/netcat_files/682/573/Akt_ispytaniya_ankernogo_krepleniya_HILTI_dlya_stroitel_nyh_ob_ektov_1.jpg" alt=""/>
+                <img style="width:149px;" class="lazy" data-src="https://www.gazo-beton.ru/netcat_files/682/573/Akt_ispytaniya_ankernogo_krepleniya_HILTI_dlya_stroitel_nyh_ob_ektov_1.jpg" alt=""/>
             </div>
             <div class="sert_item_name"><span>Акт испытания анкерного крепления HILTI для строительных объектов</span></div>
         </a>
@@ -1842,6 +1843,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.2/parsley.min.js"></script>
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-fullscreen-plugin/1.1.4/jquery.fullscreen-min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/eisbehr-/jquery.lazy@1.7.10/jquery.lazy.min.js"></script>
     <script src="assets/js/main.js?1517222497"></script>
     <script src="assets/js/custom.js?1498730333"></script>
     <script src="assets/js/jquery-migrate-1.2.1.js"></script>

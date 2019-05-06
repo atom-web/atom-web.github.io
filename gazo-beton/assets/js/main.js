@@ -509,3 +509,7 @@ $(window).scroll(function(){
         fixMenu.removeClass('stat_gray');
     }
 });
+
+if ($('.lazy').length) {
+   $(".lazy").Lazy(); 
+}
