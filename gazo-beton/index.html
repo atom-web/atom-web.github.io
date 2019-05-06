@@ -25,19 +25,31 @@
 
     <!-- href='/assets/css/reset.css' -->
     <style>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,dl,dt,dd,ul,li,fieldset,form,label,legend,caption,tbody,tfoot,thead{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}:focus{outline:0}body{line-height:1;color:black;background:white}ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,th,td{text-align:left;font-weight:normal}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:"" ""}</style>
+
+    <script>
+      (function(w){"use strict";var loadCSS=function(href,before,media,attributes){var doc=w.document;var ss=doc.createElement("link");var ref;if(before){ref=before}
+        else{var refs=(doc.body||doc.getElementsByTagName("head")[0]).childNodes;ref=refs[refs.length-1]}
+        var sheets=doc.styleSheets;if(attributes){for(var attributeName in attributes){if(attributes.hasOwnProperty(attributeName)){ss.setAttribute(attributeName,attributes[attributeName])}}}
+        ss.rel="stylesheet";ss.href=href;ss.media="only x";function ready(cb){if(doc.body){return cb()}
+        setTimeout(function(){ready(cb)})}
+        ready(function(){ref.parentNode.insertBefore(ss,(before?ref:ref.nextSibling))});var onloadcssdefined=function(cb){var resolvedHref=ss.href;var i=sheets.length;while(i--){if(sheets[i].href===resolvedHref){return cb()}}
+        setTimeout(function(){onloadcssdefined(cb)})};function loadCB(){if(ss.addEventListener){ss.removeEventListener("load",loadCB)}
+        ss.media=media||"all"}
+        if(ss.addEventListener){ss.addEventListener("load",loadCB)}
+        ss.onloadcssdefined=onloadcssdefined;onloadcssdefined(loadCB);return ss};if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+        else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))      
+    </script>
+    <script>
+       loadCSS("assets/css/font-awesome.min.css");
+       loadCSS("assets/css/feature-carousel.css");
+       loadCSS("assets/css/anythingslider.css");
+       loadCSS("assets/css/custom.css");
+       loadCSS("assets/css/default.css");
+       loadCSS("assets/source/jquery.fancybox.css");
+       loadCSS("assets/source/helpers/jquery.fancybox-buttons.css");
+       loadCSS("css/gallery/style.css");
+    </script>
     <link rel='stylesheet' type='text/css' href='assets/css/style.css?1545219442' media='screen'/>
-    <link rel='stylesheet' type='text/css' href='assets/css/font-awesome.min.css' media='screen'/>
-    <link rel='stylesheet' type='text/css' href='assets/css/feature-carousel.css' media='screen'/>
-    <link rel="stylesheet" href="assets/css/anythingslider.css">
-    <link rel="stylesheet" href="assets/css/custom.css?1543391749">
-    <link rel="stylesheet" href="assets/css/default.css">
-
-    <!-- Add fancyBox main JS and CSS files -->
-    <link rel='stylesheet' type='text/css' href='assets/source/jquery.fancybox.css?v=2.1.4' media='screen'/>
-
-    <!-- Add Button helper (this is optional) -->
-    <link rel='stylesheet' type='text/css' href='assets/source/helpers/jquery.fancybox-buttons.css?v=1.0.5'/>
-    <link rel="stylesheet" href="css/gallery/style.css" />
 
     <!-- Add Thumbnail helper (this is optional) -->
     <!-- href='/assets/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7' -->
