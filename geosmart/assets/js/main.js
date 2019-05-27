@@ -1193,36 +1193,6 @@ $('.contacts-city__map-open').click(function(){
 	                });
 
 	                myMap.geoObjects.add(objectManager);
-
-	                // var by_cityVal = $('#map-contact').closest('.contacts-city__items').attr('data-type');
-	                //     by_categoryVal = $('#map-contact').closest('.contacts-city__items').attr('data-cat');
-
-	                // // console.log(by_cityVal + by_categoryVal);
-	                // by_cityVal = JSON.parse(by_cityVal);
-	                // by_categoryVal = JSON.parse(by_categoryVal);
-
-	                // var params = {isNaked:1, ajax:1, filter_city: by_cityVal, filter_type: by_categoryVal};
-
-	                // $.ajax({
-	                // 	method: 'GET',
-	                //     // url: "js/data.json",
-	                //     url: "http://geosmart.io/assets/js/map.json",
-	                //     data: params
-	                // }).done(function(data) {
-	                //     objectManager.removeAll();
-	                //     console.log(data);
-                 //        if (data.features !== null) {
-                 //        	objectManager.add(data);
-                 //        	myMap.setBounds(objectManager.getBounds(), {checkZoomRange: true, zoomMargin: 50});
-                 //        } else {
-                 //        	return false;
-                 //        };
-	                // });
-
-						// by_cityVal = $('#map-contact').closest('.contacts-city__items').attr('data-type');
-	                    // by_categoryVal = $('#map-contact').closest('.contacts-city__items').attr('data-cat');
-
-	                // $('.contacts-map__form').on('change', function() {
 	                    var by_cityVal = $('#map-contact').closest('.contacts-city__items').attr('data-type');
 	                    by_categoryVal = $('#map-contact').closest('.contacts-city__items').attr('data-cat');
 
@@ -1245,16 +1215,7 @@ $('.contacts-city__map-open').click(function(){
 	                        	return false;
 	                        };
 	                    }); 
-                	// }); 
+        			}
+        		}
 
-    //         	if ($('.cont-map-2').hasClass('cont-map-active')) {
-				// 	$('#map-contact').removeClass('map-active');
-				// } else {
-				// 	$('#map-contact').addClass('map-active');
-				// };
-        	}
-	    }
-
-
-
-	    });
+	});
