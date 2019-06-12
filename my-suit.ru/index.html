@@ -755,12 +755,16 @@
       <!-- //Rating@Mail.ru counter -->
       <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=CgNbFl5WIxNOzrdBKz58UxJ*cDoa0PxCv8XD5pJ3AaQYRx7z/Ky8rvc3hCwaBvSyRWqIcnHg2nP0j5aji/FL*uonYphgA2GavUhSwV3bWsQfqXvwAAvV/ZgzCV/yErMYVvM2WFNlctyEutDhl3G4lo9Crt4ttDl5GBQrH72sHbU-&pixel_id=1000019576';</script>
       <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-103278-auwdL';</script>
-      <!-- BEGIN JIVOSITE CODE {literal} -->
-      <script type='text/javascript'>
-         (function(){ var widget_id = 'GvFBeGx9MW';var d=document;var w=window;function l(){
-         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+
+      <script>
+         grecaptcha.ready(function() {
+             grecaptcha.execute('6LcJCpkUAAAAAEG6ri_THwPjCshZaz9aPtg6_jxo', {action: 'verify'})
+             .then(function(token) {
+                 // Verify the token on the server.                
+                 $('form').find('.token').attr('value', token);
+             });
+         });
       </script>
-      
       <!-- Pixel -->
       <script type="text/javascript">
          (function (d, w) {
