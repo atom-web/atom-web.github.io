@@ -1,0 +1,8 @@
+@media (max-width: 991px){
+	.main-preview__img{
+		display: none;
+	}
+	header nav{
+		display: none;
+	}
+}
