@@ -23,12 +23,18 @@ $( document ).ready(function() {
 
     });
 
+    //Слайдер прайс-листа
     if ($('.slide-box__init').length) {
         $('.slide-box__init').slick({
+            autoplay: false,
+            speed: 500,
             infinite: true,
             arrows: true,
             slidesToShow: 1,
             slidesToScroll: 1,
+            adaptiveHeight: true,
+            centerPadding: '0px',
+            cssEase: 'ease-in-out',
             nextArrow: '<div class="next-arrows"><div class="next-arrows-img"></div></div>',
             prevArrow: '<div class="prev-arrows"><div class="prev-arrows-img"></div></div>',
         
