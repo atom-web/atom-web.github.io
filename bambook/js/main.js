@@ -26,8 +26,12 @@ $( document ).ready(function() {
     if ($('.slide-box__init').length) {
         $('.slide-box__init').slick({
             infinite: true,
-            slidesToShow: 2,
-            slidesToScroll: 1
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            nextArrow: '<div class="next-arrows"><div class="next-arrows-img"></div></div>',
+            prevArrow: '<div class="prev-arrows"><div class="prev-arrows-img"></div></div>',
+        
         });
     }
     

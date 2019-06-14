@@ -232,13 +232,74 @@ header nav li:last-child a{
 	color: #F9F9F9;
     margin: 5px 0 50px;
 }
+.txt-grad{
+	padding-left: 100px !important;
+}
+.slide-box{
+	padding-top: 30px !important;
+	display: flex;
+    align-items: center;
+}
+.slide-box__init{
+	width: 550px;
+	position: relative;
+}
 .slide-box__item{
 	background: #fff;
-	width: 420px;
-	height: 230px;
-	padding: 25px;
+	padding: 35px;
+	box-sizing: border-box;
 }
-
+.slide-box__item img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.slide-box__title{
+	font-family: "Monts-B";
+	font-size: 20px;
+	color: #373737;
+	margin: 0 0 20px;
+}
+.slide-box__desc{
+	color: #5E5E5E;
+	margin: 0 0 30px;
+}
+.slide-box__price-wrap{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.slide-box__price{
+	font-family: "Monts-B";
+	margin: 0;
+	padding: 7px 25px;
+	border-radius: 30px;
+	color: #fff;
+}
+.next-arrows, 
+.prev-arrows{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	position: absolute;
+   	top: 0;
+    right: -60px;
+}
+.prev-arrows{
+	transform: rotate(180deg);
+	right: auto;
+	left: -60px;
+}
+.next-arrows-img, 
+.prev-arrows-img{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAMAAABd273TAAAAKlBMVEUAAAD///////////////////////////////////////////////////+Gu8ovAAAADXRSTlMAEB8/QF9/gI+QoM/fHiK1OAAAADtJREFUeAHlyjsCQGAMBOH5kXjE3v+6Sg3Znq+d4cGqoLXJHKN+eJxqLW4IxvyqpKRxfLzvppOmw8TtAieYBqrcUSN+AAAAAElFTkSuQmCC);
+	background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 32px;
+    height: 23px;
+    cursor: pointer;
+}
 
 /*GRID______________________*/
 .container{
