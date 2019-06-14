@@ -27,7 +27,7 @@ $( document ).ready(function() {
     if ($('.slide-box__init').length) {
         $('.slide-box__init').slick({
             autoplay: false,
-            speed: 500,
+            speed: 900,
             infinite: true,
             arrows: true,
             slidesToShow: 1,

@@ -44,10 +44,11 @@ h3{
 	font-family: "Monts-M";
 	font-size: 35px;
 	margin: 20px 0;
-	color: #292929;
+	color: #464646
 }
 a{
 	text-decoration: none;
+	outline: none;
 	transition: 0.2s;
 	color: #3A398E;
 	font-family: "Monts-B";
@@ -105,9 +106,13 @@ header nav li:last-child a{
 .bg-grad{
 	background: linear-gradient(142.52deg, #373990 -1.46%, rgba(242, 82, 50, 0.94) 116.59%);
 }
+.gb-gray{
+	background-color: #F8F8F8;
+}
 .price, 
 .main-feat, 
-.finished-projects{
+.finished-projects, 
+.news{
 	padding: 100px 0;
 }
 .btn-white{
@@ -124,6 +129,9 @@ header nav li:last-child a{
 	padding: 12px 50px;
 	display: flex;
 	width: max-content
+}
+.slick-slide{
+	outline: none;
 }
 /*End______________________________*/
 .main-preview{
@@ -148,6 +156,7 @@ header nav li:last-child a{
 .main-preview__txt, 
 .main-preview__img{
     max-width: 700px;
+    margin-right: 50px;
 	position: relative;
 	z-index: 1;
 }
@@ -241,9 +250,7 @@ header nav li:last-child a{
 	color: #F9F9F9;
     margin: 5px 0 50px;
 }
-.price .txt-grad{
-	padding-left: 100px !important;
-}
+
 .slide-box{
 	padding-top: 30px !important;
 }
@@ -321,6 +328,88 @@ header nav li:last-child a{
 .project-img-wrap img{
 	width: 100%;
 }
+.ttl-center{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.news-cont{
+	display: flex;
+    margin-bottom: 25px;
+}
+.news-cont__wrap{
+	position: relative;
+	background: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	padding: 25px 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-self: stretch;
+}
+.news-cont__img{
+	width: 65px;
+	height: 65px;
+	overflow: hidden;
+	border-radius: 100%;
+	position: absolute;
+	right: -10px;
+    top: -10px;
+}
+.news-cont__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.news-cont__title{
+	font-family: "Monts-B";
+	color: #000;
+	margin: 0 0 15px;
+	width: calc(100% - 85px);
+	font-size: 17px;
+}
+.news-cont__desc{
+	color: #838383;
+	margin: 0 0 25px;
+}
+.news-cont__more{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.news-cont__date{
+	color: #838383;
+	font-size: 13px;
+}
+.news-cont__more a{
+	font-family: "Monts-R";
+	border: 1px solid #373990;
+	border-radius: 30px;
+	font-size: 12px;
+	color: #373990;
+    padding: 7px 41px 7px 20px;
+	position: relative;
+}
+.news-cont__more a:after{
+	content: "";
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAARCAMAAADub6yxAAAATlBMVEUAAABAQI84OI84OI85OY82OJE1OI84OI81N5E3N483OY82OJE4OJE2Oo84Oo81OZA3OZA3Oo82OpA2OY82OZA3OZA3OpA3OZA2OZA3OZDNY3VxAAAAGXRSTlMAECBAUF9gYG9wcH9/gICPj5CfoK+/z9/vohbVOgAAAFFJREFUeAFt0MsCQCAYROHhp8g9lHn/F7WyUHOW3/Lgl88tREbtnqlRPvOG9ih95yb95AKYKwsPR1AG68sGckLdJfWQujJKTUIDs3jS6YPu0xe+dQZSkNItuAAAAABJRU5ErkJggg==);
+	background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 12px;
+    height: 11px;
+    position: absolute;
+    top: 10px;
+    right: 21px;
+}
+
+
+
+
+
+
+
+
+
 
 /*GRID______________________*/
 .container{
