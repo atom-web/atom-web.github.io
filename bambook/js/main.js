@@ -40,5 +40,20 @@ $( document ).ready(function() {
         
         });
     }
+    if ($('.partners__wrap').length) {
+        $('.partners__wrap').slick({
+            autoplay: true,
+            speed: 900,
+            autoplaySpeed: 1000,
+            infinite: true,
+            arrows: false,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+            centerPadding: '0px',
+            cssEase: 'ease-in-out',
+        
+        });
+    }
     
 });
