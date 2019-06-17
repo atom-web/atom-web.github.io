@@ -91,6 +91,9 @@
 	.txt-white__btn{
 		margin-bottom: 35px;
 	}
+	.main-feat-box__item{
+		margin-bottom: 35px;
+	}
 }
 @media (max-width: 400px){
 	.main-preview__txt h1 {

@@ -44,6 +44,7 @@ $( document ).ready(function() {
                         settings: {
                         arrows: false,
                         autoplay: false,
+                        speed: 100,
                     }
                 }
             ]
