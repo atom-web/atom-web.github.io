@@ -49,9 +49,12 @@ h3{
 a{
 	text-decoration: none;
 	outline: none;
-	transition: 0.2s;
+	transition: 0.1s;
 	color: #3A398E;
 	font-family: "Monts-B";
+}
+a:hover{
+	color: #d5574c;
 }
 p{
 	font-size: 16px;
@@ -121,7 +124,10 @@ header nav li:last-child a{
 	border-radius: 30px;
 	padding: 12px 35px;
 	display: flex;
-	width: max-content
+	width: max-content;
+}
+.btn-white:hover{
+	transform: scale(1.05);
 }
 .btn-grad{
 	background: linear-gradient(142.52deg, #373990 -1.46%, rgba(242, 82, 50, 0.94) 116.59%);
@@ -131,8 +137,21 @@ header nav li:last-child a{
 	display: flex;
 	width: max-content
 }
+.btn-grad:hover{
+	-webkit-filter: hue-rotate(30deg);
+	transform: scale(1.05);
+	color: #fff;
+}
 .slick-slide{
 	outline: none;
+}
+.next-arrows div, 
+.prev-arrows div{
+	transition: 0.2s;
+}
+.next-arrows div:hover, 
+.prev-arrows div:hover{
+	transform: scale(1.1);
 }
 /*End______________________________*/
 .main-preview{
@@ -401,6 +420,10 @@ header nav li:last-child a{
     position: absolute;
     top: 10px;
     right: 21px;
+    transition: 0.3s;
+}
+.news-cont__more a:hover:after{
+    right: 9px;
 }
 .btn-more-post{
 	font-size: 14px;
@@ -410,6 +433,11 @@ header nav li:last-child a{
 	border-radius: 30px;
 	font-family: "Monts-R";
     float: right;
+    border: 1px solid #fff;
+}
+.btn-more-post:hover{
+	border: 1px solid #d5574c;
+	transform: scale(1.05);
 }
 .reviews-cont{
 	margin: 35px 0;
@@ -458,6 +486,10 @@ header nav li:last-child a{
 .partners__item{
 	height: 50px;
 	-webkit-filter: grayscale(1);
+	transition: 0.2s;
+}
+.partners__item:hover{
+	-webkit-filter: grayscale(0);
 }
 .partners__item img{
 	width: 100%;
@@ -465,7 +497,50 @@ header nav li:last-child a{
     object-fit: contain;
 }
 
-
+footer{
+	padding: 45px 0;
+	background: #252525;
+}
+.footer__logo img{
+	width: 200px;
+}
+.footer__logo{
+	margin-bottom: 15px;
+}
+.footer__soc{
+	display: flex;
+}
+.footer__soc a{
+	width: 30px;
+	height: 30px;
+	display: flex;
+	margin-right: 10px;
+}
+.footer__soc img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.footer__soc a:hover{
+	transform: scale(1.1);
+}
+.footer__nav-title{
+	font-family: "Monts-B";
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.footer__nav-lnk, 
+.footer__nav-support{
+	color: #BABABA;
+    font-family: "Monts-R";
+    font-size: 14px;
+    padding: 5px 0;
+    display: flex;
+}
+.footer__nav-support{
+	color: #d4564c;
+}
 
 
 
