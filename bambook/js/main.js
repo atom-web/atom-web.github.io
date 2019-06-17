@@ -26,8 +26,9 @@ $( document ).ready(function() {
     //Слайдер прайс-листа
     if ($('.slide-box__init').length) {
         $('.slide-box__init').slick({
-            autoplay: false,
+            autoplay: true,
             speed: 900,
+            autoplaySpeed: 3000,
             infinite: true,
             arrows: true,
             slidesToShow: 1,
@@ -37,9 +38,19 @@ $( document ).ready(function() {
             cssEase: 'ease-in-out',
             nextArrow: '<div class="next-arrows"><div class="next-arrows-img"></div></div>',
             prevArrow: '<div class="prev-arrows"><div class="prev-arrows-img"></div></div>',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                        settings: {
+                        arrows: false,
+                        autoplay: false,
+                    }
+                }
+            ]
         
         });
     }
+    //Слайдер сотрудничество
     if ($('.partners__wrap').length) {
         $('.partners__wrap').slick({
             autoplay: true,
@@ -52,8 +63,16 @@ $( document ).ready(function() {
             adaptiveHeight: true,
             centerPadding: '0px',
             cssEase: 'ease-in-out',
-        
         });
     }
+    //Прилипающий хедер
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 0) {
+            $('header').addClass('stickytop');
+        }
+        else{
+            $('header').removeClass('stickytop');
+        }
+    });
     
 });
