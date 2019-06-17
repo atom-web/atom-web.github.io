@@ -33,7 +33,7 @@ $( document ).ready(function() {
             arrows: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            adaptiveHeight: true,
+            // adaptiveHeight: true,
             centerPadding: '0px',
             cssEase: 'ease-in-out',
             nextArrow: '<div class="next-arrows"><div class="next-arrows-img"></div></div>',
