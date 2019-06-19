@@ -35,12 +35,8 @@ $( document ).ready(function() {
             arrows: true,
             slidesToShow: 2,
             slidesToScroll: 1,
-            // adaptiveHeight: true,
-            verticalSwiping: true,
             swipe: false, 
             vertical: true,
-            // centerPadding: '-200px',
-            // centerMode: true,
             cssEase: 'ease-in-out',
             nextArrow: '<div class="next-arrows"><div class="next-arrows-img"></div></div>',
             prevArrow: '<div class="prev-arrows"><div class="prev-arrows-img"></div></div>',
@@ -49,8 +45,9 @@ $( document ).ready(function() {
                     breakpoint: 1200,
                         settings: {
                         arrows: false,
-                        autoplay: false,
-                        speed: 100,
+                        slidesToShow: 1,
+                        swipe: true,
+                        vertical: false,
                     }
                 }
             ]

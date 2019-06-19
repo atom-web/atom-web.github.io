@@ -56,6 +56,12 @@
 	.price-box__title{
 		font-size: 30px;
 	}
+	.slide-box__item{
+		transform: unset !important;
+	}
+	.slide-box__item-wrap{
+		margin-right: 0;
+	}
 }
 @media (max-width: 991px){
 
