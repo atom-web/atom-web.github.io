@@ -53,11 +53,6 @@ $( document ).ready(function() {
             ]
         
         });
-        //  $('.slide-box__init').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        //     $('.slide-box__init .slick-slide').removeClass('test');
-        //     $('.slide-box__init .slick-current').next().addClass('test');
-        //     console.log();
-        // });
     }
     //Слайдер сотрудничество
     if ($('.partners__wrap').length) {
@@ -102,5 +97,44 @@ $( document ).ready(function() {
             }
         });
     }
+
+    //Форма обратного звонка
+    $('.calback-btn').click(function() {
+        var winWidth = $(window).width();
+        $('header, .main, footer').css('transform', 'translateX(-' + winWidth +'px)');
+        $('.popup-calback').addClass('popup-calback-active');
+        $('.popup-calback__wrap').addClass('popup-calback__wrap-active');
+        //Добавление кругов на фон
+        if ($('.highlight').length) {
+            var hgl = $('.highlight').html();
+            $('.popup-calback').append('<div class="highlight">'+ hgl +'</div>');
+        }
+    });
+    $('.popup-calback').click(function(e){
+        var childBlock = $(".popup-calback__wrap");
+        if (!childBlock .is(e.target) && childBlock .has(e.target).length === 0) { 
+            $('header, .main, footer').css('transform', 'translateX(0)');
+            $('.popup-calback__wrap').removeClass('popup-calback__wrap-active');
+            function funcRemove() {
+                $('.popup-calback').removeClass('popup-calback-active');
+                if ($('.popup-calback .highlight').length) {
+                    $('.popup-calback .highlight').remove();
+                }
+            }
+            setTimeout(funcRemove, 600);
+        }
+    });
+    $('.popup-calback__close').click(function(){
+        $('header, .main, footer').css('transform', 'translateX(0)');
+        $('.popup-calback__wrap').removeClass('popup-calback__wrap-active');
+        function funcRemove() {
+            $('.popup-calback').removeClass('popup-calback-active');
+            if ($('.popup-calback .highlight').length) {
+                $('.popup-calback .highlight').remove();
+            }
+        }
+        setTimeout(funcRemove, 600);
+    });
+    //Конец формы обратного звонка
     
 });
