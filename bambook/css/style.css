@@ -679,7 +679,7 @@ footer{
 .popup-calback__title{
 	color: #292929;
 	font-family: "Monts-B";
-	font-size: 18px;
+	font-size: 20px;
 	text-transform: uppercase;
 }
 .popup-calback__desc{
@@ -690,11 +690,13 @@ footer{
 	font-size: 14px;
 	color: #9e9e9e;
 }
+.popup-calback__input{
+	margin-bottom: 10px;
+}
 .popup-calback__input input, 
 .popup-calback__input textarea{
 	height: 40px;
     width: 100%;
-    margin-bottom: 10px;
     border: 1px solid #c1c1c1;
     padding: 0 15px;
     font-size: 16px;
@@ -712,4 +714,14 @@ footer{
 	cursor: pointer;
 	transition: 0.2s;
 	margin: 10px 0;
+}
+.popup-calback__agr, 
+.popup-calback__agr a{
+	margin: 5px 0 20px;
+    font-size: 12px !important;
+    color: #777777 !important;
+    font-family: "Monts-R";
+}
+.popup-calback__agr a{
+	text-decoration: underline;
 }
