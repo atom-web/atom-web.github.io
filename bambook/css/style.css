@@ -376,14 +376,16 @@ header nav li:last-child a{
 	display: flex;
     align-items: center;
     position: absolute;
-    right: 100px;
-    bottom: 43px;
+    right: 101px;
+    bottom: 61px;
     transform: rotate(90deg);
     z-index: 9;
 }
 .prev-arrows{
 	transform: rotate(270deg);
-	bottom: 78px;
+    bottom: 291px;
+    right: auto;
+    left: 87px;
 }
 .next-arrows-img, 
 .prev-arrows-img{
@@ -391,8 +393,8 @@ header nav li:last-child a{
 	background-repeat: no-repeat;
     background-size: 100%;
     display: block;
-    width: 17px;
-    height: 12px;
+   	width: 23px;
+    height: 17px;
     cursor: pointer;
 }
 .txt-white{
