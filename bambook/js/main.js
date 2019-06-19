@@ -24,33 +24,44 @@ $( document ).ready(function() {
     });
 
     //Слайдер прайс-листа
-    // if ($('.slide-box__init').length) {
-    //     $('.slide-box__init').slick({
-    //         autoplay: true,
-    //         speed: 900,
-    //         autoplaySpeed: 3000,
-    //         infinite: true,
-    //         arrows: true,
-    //         slidesToShow: 1,
-    //         slidesToScroll: 1,
-    //         // adaptiveHeight: true,
-    //         centerPadding: '0px',
-    //         cssEase: 'ease-in-out',
-    //         nextArrow: '<div class="next-arrows"><div class="next-arrows-img"></div></div>',
-    //         prevArrow: '<div class="prev-arrows"><div class="prev-arrows-img"></div></div>',
-    //         responsive: [
-    //             {
-    //                 breakpoint: 1200,
-    //                     settings: {
-    //                     arrows: false,
-    //                     autoplay: false,
-    //                     speed: 100,
-    //                 }
-    //             }
-    //         ]
+    if ($('.slide-box__init').length) {
+
+
+        $('.slide-box__init').slick({
+            autoplay: false,
+            speed: 400,
+            autoplaySpeed: 3000,
+            infinite: false,
+            arrows: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            // adaptiveHeight: true,
+            verticalSwiping: true,
+            swipe: false, 
+            vertical: true,
+            // centerPadding: '-200px',
+            // centerMode: true,
+            cssEase: 'ease-in-out',
+            nextArrow: '<div class="next-arrows"><div class="next-arrows-img"></div></div>',
+            prevArrow: '<div class="prev-arrows"><div class="prev-arrows-img"></div></div>',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                        settings: {
+                        arrows: false,
+                        autoplay: false,
+                        speed: 100,
+                    }
+                }
+            ]
         
-    //     });
-    // }
+        });
+        //  $('.slide-box__init').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        //     $('.slide-box__init .slick-slide').removeClass('test');
+        //     $('.slide-box__init .slick-current').next().addClass('test');
+        //     console.log();
+        // });
+    }
     //Слайдер сотрудничество
     if ($('.partners__wrap').length) {
         $('.partners__wrap').slick({
