@@ -74,7 +74,11 @@ header{
 }
 header > .container{
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
+}
+.nav-hamb{
+	display: none;
 }
 header nav{
 	display: flex;
@@ -167,9 +171,16 @@ header nav li:last-child a{
 	transform: scale(1.1);
 }
 /*End______________________________*/
+.main{
+	transition: 0.2s;
+	position: relative;
+	z-index: 1;
+	background: #fff;
+}
 .main-preview{
 	height: 100vh;
 	display: flex;
+	position: relative;
 }
 .main-preview .container{
 	display: flex;
@@ -513,6 +524,7 @@ header nav li:last-child a{
 footer{
 	padding: 45px 0;
 	background: #252525;
+	transition: 0.2s;
 }
 .footer__logo img{
 	width: 200px;

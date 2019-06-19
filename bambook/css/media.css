@@ -76,6 +76,66 @@
 	.footer__nav-support{
 		border-bottom: 1px solid #3c3c3c;
 	}
+
+	/*Мобильное меню*/
+	.nav-hamb{
+		display: block;
+	    padding: 10px 0px;
+	    position: relative;
+	    width: 35px;
+	}
+	.nav-hamb__item{
+		height: 3px;
+		background: #fff;
+		cursor: pointer;
+		width: 100%;
+		transition: 0.2s;
+	}
+	.nav-hamb:after, 
+	.nav-hamb:before{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 3px;
+		background: #fff;
+		transition: 0.2s;
+	}
+	.nav-hamb:before{
+		top: auto;
+		bottom: 0;
+	}
+	.nav-hamb__active .nav-hamb__item{
+		width: 80%;
+	}
+	.nav-hamb__active:before{
+		width: 55%;
+	}
+	.main-active{
+		transform: translateX(-250px);
+	}
+	.mob-nav-active{
+		position: fixed;
+	    right: 0;
+	    bottom: 0;
+	    top: 0;
+	    background: #fff;
+	    width: 250px;
+	    z-index: 0;
+	}
+	.mob-nav-active ul{
+		list-style-type: none;
+		padding: 5px 20px;
+		margin: 0;
+	}
+	.mob-nav-active a{
+		padding: 15px 0;
+	    display: flex;
+	    border-bottom: 1px solid #f5f5f5;
+	    color: #4c4c4c;
+	}
+	/*Конец стилей для меню*/
 }
 @media (max-width: 767px){
 	.txt-grad,
@@ -93,6 +153,9 @@
 	}
 	.main-feat-box__item{
 		margin-bottom: 35px;
+	}
+	p{
+		font-size: 14px;
 	}
 }
 @media (max-width: 400px){

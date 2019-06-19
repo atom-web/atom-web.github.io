@@ -24,33 +24,33 @@ $( document ).ready(function() {
     });
 
     //Слайдер прайс-листа
-    if ($('.slide-box__init').length) {
-        $('.slide-box__init').slick({
-            autoplay: true,
-            speed: 900,
-            autoplaySpeed: 3000,
-            infinite: true,
-            arrows: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            // adaptiveHeight: true,
-            centerPadding: '0px',
-            cssEase: 'ease-in-out',
-            nextArrow: '<div class="next-arrows"><div class="next-arrows-img"></div></div>',
-            prevArrow: '<div class="prev-arrows"><div class="prev-arrows-img"></div></div>',
-            responsive: [
-                {
-                    breakpoint: 1200,
-                        settings: {
-                        arrows: false,
-                        autoplay: false,
-                        speed: 100,
-                    }
-                }
-            ]
+    // if ($('.slide-box__init').length) {
+    //     $('.slide-box__init').slick({
+    //         autoplay: true,
+    //         speed: 900,
+    //         autoplaySpeed: 3000,
+    //         infinite: true,
+    //         arrows: true,
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1,
+    //         // adaptiveHeight: true,
+    //         centerPadding: '0px',
+    //         cssEase: 'ease-in-out',
+    //         nextArrow: '<div class="next-arrows"><div class="next-arrows-img"></div></div>',
+    //         prevArrow: '<div class="prev-arrows"><div class="prev-arrows-img"></div></div>',
+    //         responsive: [
+    //             {
+    //                 breakpoint: 1200,
+    //                     settings: {
+    //                     arrows: false,
+    //                     autoplay: false,
+    //                     speed: 100,
+    //                 }
+    //             }
+    //         ]
         
-        });
-    }
+    //     });
+    // }
     //Слайдер сотрудничество
     if ($('.partners__wrap').length) {
         $('.partners__wrap').slick({
@@ -75,5 +75,24 @@ $( document ).ready(function() {
             $('header').removeClass('stickytop');
         }
     });
+
+    //Мобильное меню
+    if ($(window).width() < 991){
+        $('body').append('<div class="mob-nav"></div>');
+
+        $('.nav-hamb').click(function() {
+            var navCont = $("header nav").html();
+            $('.nav-hamb').toggleClass('nav-hamb__active');
+            if ($('.nav-hamb').hasClass('nav-hamb__active')) {
+                $('header, .main, footer').addClass('main-active');
+                $('.mob-nav').addClass('mob-nav-active');
+                $('.mob-nav').html(navCont)
+            } else {
+                $('header, .main, footer').removeClass('main-active');
+                $('.mob-nav').removeClass('mob-nav-active');
+                $('.mob-nav').html('');
+            }
+        });
+    }
     
 });
