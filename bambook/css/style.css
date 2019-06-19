@@ -713,7 +713,7 @@ footer{
 	border: none;
 	cursor: pointer;
 	transition: 0.2s;
-	margin: 10px 0;
+	margin: 10px 0 3px;
 }
 .popup-calback__agr, 
 .popup-calback__agr a{
