@@ -112,9 +112,10 @@ $( document ).ready(function() {
         });
     }
 
-    //добавление градиента хедеру
+    //Проверка на наличите блока
     if ($('.in-head').length == 0) {
         $('header').addClass('bg-grad');
+        $('.main').addClass('unpage');
     }
 
 

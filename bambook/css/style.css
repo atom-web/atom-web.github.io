@@ -179,7 +179,7 @@ nav a:hover{
 }
 /*End______________________________*/
 .main{
-	transition: 0.6s;
+	transition: transform 0.6s;
 	position: relative;
 	z-index: 1;
 	background: #fff;
@@ -755,4 +755,55 @@ footer{
 }
 .popup-calback__agr a{
 	text-decoration: underline;
+}
+/*End Form_________________________*/
+
+.unpage{
+	margin-top: 130px;
+}
+.info-pnl .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.info-pnl{
+	background: #F6F6F6;
+	padding: 7px 0;
+}
+.info-pnl-title{
+	font-family: "Monts-M";
+	margin: 0;
+    font-size: 24px;
+    color: #333333;
+}
+.bread-crumbs ul{
+	display: flex;
+	padding: 0;
+}
+.bread-crumbs li{
+	list-style-type: none;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+}
+.bread-crumbs li:after{
+	content: "";
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAqFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs30iGAAAAOHRSTlMAAgMEBQYHCBojJysuMTI0Nzg5RUxTVFVWV1laXF1eX5SVl5qdnqKmp6usrbm6u7y9vsDDxMfJylX/sfQAAACLSURBVHjafdLJEoIwEEVR0JCoiLOCyqA4DwSI0///mVXZerGX7yy6kn6OnfA6FQ5N5/aZeQRu9/xaSJJW7/hcorT9g1krlP6ujlFEkJcpy2CrM5bhpmDx/olOWSanatwEo4YlicL8TiuEzfGBBeZBrhOFn1jFlPt7s5J4qEck+bRziWV4cxnCy099vi9/DA/wWKc5AAAAAElFTkSuQmCC);
+	background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px
+}
+.bread-crumbs li:last-child:after{
+	display: none;
+}
+.bread-crumbs a{
+	color: #333333;
+	font-size: 14px;
+	font-family: "Monts-R";
+}
+.bread-crumbs a:hover{
+	color: #F25232;
 }
