@@ -25,8 +25,6 @@ $( document ).ready(function() {
 
     //Слайдер прайс-листа
     if ($('.slide-box__init').length) {
-
-
         $('.slide-box__init').slick({
             autoplay: false,
             speed: 400,
@@ -70,12 +68,18 @@ $( document ).ready(function() {
         });
     }
     //Прилипающий хедер
-    $(window).scroll(function() {
-        if($(this).scrollTop() > 0) {
+    $(window).scroll(function(e) {
+        var hWindow = $('.main-preview').height();
+        var hHead = $(window).scrollTop();
+        if($(this).scrollTop() > hWindow) {
             $('header').addClass('stickytop');
+            $('header').css("top", + hHead + "px");
+            console.log(hHead);
         }
         else{
             $('header').removeClass('stickytop');
+            $('header').removeAttr( 'style' );
+            // $('header').css('animation', 'animMenuUnAct 0.5s ease');
         }
     });
 

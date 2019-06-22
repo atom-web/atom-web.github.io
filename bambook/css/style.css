@@ -17,6 +17,30 @@
 @keyframes fadingtwo {0% {opacity: 0;}40% {transform: scale(1.1);opacity: 1;}80% {opacity: 0;}100% {opacity: 0;}}
 @keyframes fadingthree {0% {opacity: 0;}60% {transform: scale(1.05);opacity: 0.6;}95% {opacity: 0;}100% {opacity: 0;}}
 @keyframes fadingtfour {0% {opacity: 0;}40% {transform: scale(1.2);opacity: 0.6;}70% {opacity: 0;}100% {opacity: 0;}}
+@keyframes animMenuAct {
+	0% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+
+	}
+}
+@keyframes animMenuUnAct {
+	0% {
+		opacity: 0;
+		transform: translateY(0px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(-100px);
+
+	}
+}
+
+
 
 
 body{
@@ -65,12 +89,11 @@ header{
 	height: 130px;
 	display: flex;
 	align-items: center;
-	position: fixed;
+	position: absolute;
 	z-index: 9;
     left: 0;
     right: 0;
     top: 0;
-    transition: 0.6s;
 }
 header > .container{
 	display: flex;
@@ -79,6 +102,10 @@ header > .container{
 }
 .nav-hamb{
 	display: none;
+}
+.menu{
+	display: flex;
+	align-items: center;
 }
 header nav{
 	display: flex;
@@ -91,18 +118,17 @@ nav li{
 	list-style-type: none;
 }
 nav a{
-	font-size: 18px;
+	font-size: 13px;
 	color: #fff;
 	font-family: "Monts-R";
-	padding: 10px 20px;
+	padding: 10px 10px;
+    text-transform: uppercase;
 	transition: 0.2s;
 }
 nav a:hover{
 	color: #F25232;
 }
-header nav li:last-child a{
-	margin-right: -20px;
-}
+
 .logo{
 	width: 200px;
 	transition: 0.2s;
@@ -115,12 +141,13 @@ header nav li:last-child a{
 .stickytop {
     background: linear-gradient(142.52deg, #373990 -1.46%, rgba(242, 82, 50, 0.94) 116.59%);
     height: 60px;
+    animation: animMenuAct 0.5s ease;
 }
 .stickytop .logo {
     width: 110px;
 }
 .stickytop nav a {
-    font-size: 14px;
+    font-size: 13px;
 }
 /*Общие стили для классов______________________*/
 .bg-grad{
@@ -560,6 +587,14 @@ header nav li:last-child a{
 }
 .calback-btn{
 	cursor: pointer;
+    border: 1px solid #fff;
+    padding: 8px 15px;
+    font-size: 14px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
 }
 footer{
 	padding: 45px 0;
