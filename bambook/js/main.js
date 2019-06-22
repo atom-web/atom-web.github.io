@@ -38,6 +38,7 @@ $( document ).ready(function() {
             cssEase: 'ease-in-out',
             nextArrow: '<div class="next-arrows"><div class="next-arrows-img"></div></div>',
             prevArrow: '<div class="prev-arrows"><div class="prev-arrows-img"></div></div>',
+            customPaging: (function(slider, i) {return '<div class="slide-box__slick-dot"></div>';}),
             responsive: [
                 {
                     breakpoint: 1200,
@@ -46,6 +47,10 @@ $( document ).ready(function() {
                         slidesToShow: 1,
                         swipe: true,
                         vertical: false,
+                        dots: true,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        infinite: true,
                     }
                 }
             ]
@@ -70,7 +75,7 @@ $( document ).ready(function() {
     //Прилипающий хедер
     if ($(window).width() > 991){
         $(window).scroll(function(e) {
-            var hPrev = $('.main-preview').height();
+            var hPrev = $('.in-head').height();
             var hWindow = $(window).scrollTop();
             var clMenu = 'header';
 
@@ -107,6 +112,12 @@ $( document ).ready(function() {
         });
     }
 
+    //добавление градиента хедеру
+    if ($('.in-head').length == 0) {
+        $('header').addClass('bg-grad');
+    }
+
+
     //Форма обратного звонка
     $('.calback-btn').click(function() {
         var winWidth = $(window).width();
@@ -124,7 +135,7 @@ $( document ).ready(function() {
     $('.popup-calback').click(function(e){
         var childBlock = $(".popup-calback__wrap");
         if (!childBlock .is(e.target) && childBlock .has(e.target).length === 0) { 
-            $('header, .main, footer').removeAttr('style');
+            $('header, .main, footer').css('transform', '');
             $('.popup-calback__wrap').removeClass('popup-calback__wrap-active');
             function funcRemove() {
                 $('.popup-calback').removeClass('popup-calback-active');
@@ -136,7 +147,7 @@ $( document ).ready(function() {
         }
     });
     $('.popup-calback__close').click(function(){
-        $('header, .main, footer').removeAttr('style');
+        $('header, .main, footer').css('transform', '');
         $('.popup-calback__wrap').removeClass('popup-calback__wrap-active');
         function funcRemove() {
             $('.popup-calback').removeClass('popup-calback-active');

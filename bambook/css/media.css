@@ -40,7 +40,7 @@
 		margin: 5px 0 25px;
 	}
 	.price-box__btn{
-	    margin-bottom: 25px;
+	    margin-bottom: 40px;
 	}
 	.price, 
 	.main-feat, 
@@ -57,6 +57,9 @@
 	}
 	.slide-box__item-wrap{
 		margin-right: 0;
+	}
+	.slide-box__init .slick-list{
+		height: auto !important;
 	}
 }
 @media (max-width: 991px){
