@@ -808,3 +808,48 @@ footer{
 .bread-crumbs a:hover{
 	color: #F25232;
 }
+.price-box h3{
+	margin: 0 0 30px;
+}
+.price-item{
+	margin-bottom: 30px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.price-item:hover{
+	background: #d5574b;
+}
+.price-item p{
+	transition: 0.2s;
+}
+.price-item:hover p{
+	color: #fff;
+}
+.price-item__wrap{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 10px;
+}
+.price-item__info{
+	display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+.price-item__title{
+	width: 200px;
+    font-size: 16px;
+    font-family: "Monts-B";
+    color: #464646;
+    text-transform: uppercase;
+}
+.price-item__desc{
+	font-size: 14px;
+	color: #292929;
+}
+.price-item__price{
+	font-size: 18px;
+	font-family: "Monts-B";
+	color: #292929;
+}
