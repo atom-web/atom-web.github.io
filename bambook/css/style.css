@@ -18,8 +18,8 @@
 @keyframes fadingthree {0% {opacity: 0;}60% {transform: scale(1.05);opacity: 0.6;}95% {opacity: 0;}100% {opacity: 0;}}
 @keyframes fadingtfour {0% {opacity: 0;}40% {transform: scale(1.2);opacity: 0.6;}70% {opacity: 0;}100% {opacity: 0;}}
 @keyframes animMenuAct {0% {opacity: 0;transform: translateY(-100px);}100% {opacity: 1;transform: translateY(0px);}}
-
-
+@keyframes formAct {0%{opacity: 0;}100%{opacity: 1;}}
+@keyframes formActWrap {0%{transform: scale(0.5) translateY(-300px);}50%{transform: scale(0.8) translateY(0px);}100%{transform: scale(1) translateY(0);}}
 
 
 body{
@@ -648,11 +648,13 @@ footer{
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	background: linear-gradient(142.52deg, #373990 -1.46%, rgba(242, 82, 50, 0.94) 116.59%);
+	background: #000000c7;
 	display: none;
+	z-index: 10;
 }
-.popup-calback-active{
+.popup-calback__active{
 	display: flex;
+	animation: formAct 0.3s ease;
 }
 .popup-calback__wrap{
 	width: 600px;
@@ -662,13 +664,12 @@ footer{
     position: relative;
     padding: 30px 169px 30px 30px;
     cursor: default;
-    z-index: 9;
-    transform: scale(0.7);
+    z-index: 11;
     transition: 0.9s;
     margin: 0 20px;
 }
-.popup-calback__wrap-active{
-	transform: unset;
+.popup-calback__active .popup-calback__wrap{
+	animation: formActWrap 0.3s ease;
 }
 .popup-calback__close{
 	position: absolute;
@@ -756,6 +757,17 @@ footer{
 }
 .popup-calback__agr a{
 	text-decoration: underline;
+}
+.form-mask{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.pop-fix{
+	overflow: hidden;
 }
 /*End Form_________________________*/
 
@@ -855,11 +867,6 @@ footer{
 	font-family: "Monts-B";
 	color: #292929;
 }
-/*.price-item__info-ctrl{
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-}*/
 .price-item__add-card{
 	width: 25px;
     height: 25px;
@@ -888,4 +895,7 @@ footer{
 }
 .price-item__add-card:before{
 	transform: rotate(90deg);
+}
+.calculator{
+	margin-top: 70px;
 }

@@ -130,46 +130,23 @@ $( document ).ready(function() {
         $('.main').addClass('unpage');
     }
 
-
     //Форма обратного звонка
-    $('.calback-btn').click(function() {
-        var winWidth = $(window).width();
-        if ($('header').hasClass('main-active') == false) {
-            $('header, .main, footer').css('transform', 'translateX(-' + winWidth +'px)');
-            $('.popup-calback').addClass('popup-calback-active');
-            $('.popup-calback__wrap').addClass('popup-calback__wrap-active');
-            //Добавление кругов на фон
-            if ($('.highlight').length) {
-                var hgl = $('.highlight').html();
-                $('.popup-calback').append('<div class="highlight">'+ hgl +'</div>');
+    (function(){
+        var mainBlock = '.popup-calback'; //Главный блок формы
+        var mainClose = '.popup-calback__close'; //Кнопка закрытия формы (в форме)
+        var mainBtn = '.calback-btn'; //Кнопка открытия формы
+
+        $(mainBtn + ', .form-mask, ' + mainClose).click(function(e) {
+            $(mainBtn).toggleClass('btn-active');
+
+            if ($(mainBtn).hasClass('btn-active')) {
+                $(mainBlock).addClass('popup-calback__active');
+                $('body, html').addClass('pop-fix');
+            } else {
+                $(mainBlock).removeClass('popup-calback__active');
+                $('body, html').removeClass('pop-fix');
             }
-        }
-    });
-    $('.popup-calback').click(function(e){
-        var childBlock = $(".popup-calback__wrap");
-        if (!childBlock .is(e.target) && childBlock .has(e.target).length === 0) { 
-            $('header, .main, footer').css('transform', '');
-            $('.popup-calback__wrap').removeClass('popup-calback__wrap-active');
-            function funcRemove() {
-                $('.popup-calback').removeClass('popup-calback-active');
-                if ($('.popup-calback .highlight').length) {
-                    $('.popup-calback .highlight').remove();
-                }
-            }
-            setTimeout(funcRemove, 600);
-        }
-    });
-    $('.popup-calback__close').click(function(){
-        $('header, .main, footer').css('transform', '');
-        $('.popup-calback__wrap').removeClass('popup-calback__wrap-active');
-        function funcRemove() {
-            $('.popup-calback').removeClass('popup-calback-active');
-            if ($('.popup-calback .highlight').length) {
-                $('.popup-calback .highlight').remove();
-            }
-        }
-        setTimeout(funcRemove, 600);
-    });
+        });
+    })();
     //Конец формы обратного звонка
-    
 });
