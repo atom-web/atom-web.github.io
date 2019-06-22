@@ -76,11 +76,23 @@ $( document ).ready(function() {
     if ($(window).width() > 991){
         $(window).scroll(function(e) {
             var hPrev = $('.in-head').height();
+            var hPrevPage = $('.info-pnl').height();
             var hWindow = $(window).scrollTop();
             var clMenu = 'header';
 
             if ($('.main-preview').length){
                 if($(this).scrollTop() > hPrev) {
+                    $(clMenu).addClass('stickytop');
+                    $(clMenu).css("top", + hWindow + "px");
+                    // console.log(hWindow);
+                }
+                else{
+                    $(clMenu).removeClass('stickytop');
+                    $(clMenu).removeAttr('style');
+                }
+            }
+            if ($('.info-pnl').length){
+                if($(this).scrollTop() > hPrevPage) {
                     $(clMenu).addClass('stickytop');
                     $(clMenu).css("top", + hWindow + "px");
                     // console.log(hWindow);

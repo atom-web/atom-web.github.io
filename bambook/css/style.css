@@ -809,7 +809,10 @@ footer{
 	color: #F25232;
 }
 .price-box h3{
-	margin: 0 0 30px;
+	margin: 50px 0 30px;
+}
+.price-box h3:first-child{
+	margin: 0px 0 30px;
 }
 .price-item{
 	margin-bottom: 30px;
@@ -838,7 +841,6 @@ footer{
     width: 85%;
 }
 .price-item__title{
-	width: 200px;
     font-size: 16px;
     font-family: "Monts-B";
     color: #464646;
@@ -852,4 +854,38 @@ footer{
 	font-size: 18px;
 	font-family: "Monts-B";
 	color: #292929;
+}
+/*.price-item__info-ctrl{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+.price-item__add-card{
+	width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 5px solid #ffffff;
+    border-radius: 100%;
+    opacity: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: 0.2s;
+}
+.price-item:hover .price-item__add-card{
+	opacity: 1;
+}
+.price-item__add-card:after, 
+.price-item__add-card:before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 5px;
+	background: #d5574b;
+	position: absolute;
+}
+.price-item__add-card:before{
+	transform: rotate(90deg);
 }
