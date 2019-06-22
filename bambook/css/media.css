@@ -14,10 +14,6 @@
 	.main-preview__txt h1{
 	    margin: 15px 0;
 	}
-	nav a{
-		font-size: 16px;
-	    padding: 10px 10px;
-	}
 	.main-feat-box__title{
 		font-size: 16px;
 	}
@@ -89,6 +85,7 @@
 	    padding: 10px 0px;
 	    position: relative;
 	    width: 35px;
+	    margin-left: 25px
 	}
 	.nav-hamb__item{
 		height: 3px;
@@ -141,7 +138,18 @@
 	    border-bottom: 1px solid #f5f5f5;
 	    color: #4c4c4c;
 	}
+
 	/*Конец стилей для меню*/
+	.calback-btn{
+		font-size: 13px;
+		padding: 0px 10px;
+		height: 28px;
+	}
+	.popup-calback__img{
+		width: 123px;
+	    right: 23px;
+	    top: 147px;
+	}
 }
 @media (max-width: 767px){
 	.txt-grad,
@@ -162,6 +170,15 @@
 	}
 	p{
 		font-size: 14px;
+	}
+	.logo{
+		width: 130px;
+	}
+	.popup-calback__img{
+		display: none;
+	}
+	.popup-calback__wrap{
+		padding: 20px
 	}
 }
 @media (max-width: 400px){
@@ -195,7 +212,7 @@
 	    margin-bottom: 30px;
 	    margin-top: 0;
 	}
-	.logo{
-		width: 130px;
+	.calback-btn{
+		display: none;
 	}
 }

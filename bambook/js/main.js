@@ -68,20 +68,25 @@ $( document ).ready(function() {
         });
     }
     //Прилипающий хедер
-    $(window).scroll(function(e) {
-        var hWindow = $('.main-preview').height();
-        var hHead = $(window).scrollTop();
-        if($(this).scrollTop() > hWindow) {
-            $('header').addClass('stickytop');
-            $('header').css("top", + hHead + "px");
-            console.log(hHead);
-        }
-        else{
-            $('header').removeClass('stickytop');
-            $('header').removeAttr( 'style' );
-            // $('header').css('animation', 'animMenuUnAct 0.5s ease');
-        }
-    });
+    if ($(window).width() > 991){
+        $(window).scroll(function(e) {
+            var hPrev = $('.main-preview').height();
+            var hWindow = $(window).scrollTop();
+            var clMenu = 'header';
+
+            if ($('.main-preview').length){
+                if($(this).scrollTop() > hPrev) {
+                    $(clMenu).addClass('stickytop');
+                    $(clMenu).css("top", + hWindow + "px");
+                    // console.log(hWindow);
+                }
+                else{
+                    $(clMenu).removeClass('stickytop');
+                    $(clMenu).removeAttr('style');
+                }
+            }
+        });
+    }
 
     //Мобильное меню
     if ($(window).width() < 991){
@@ -105,19 +110,21 @@ $( document ).ready(function() {
     //Форма обратного звонка
     $('.calback-btn').click(function() {
         var winWidth = $(window).width();
-        $('header, .main, footer').css('transform', 'translateX(-' + winWidth +'px)');
-        $('.popup-calback').addClass('popup-calback-active');
-        $('.popup-calback__wrap').addClass('popup-calback__wrap-active');
-        //Добавление кругов на фон
-        if ($('.highlight').length) {
-            var hgl = $('.highlight').html();
-            $('.popup-calback').append('<div class="highlight">'+ hgl +'</div>');
+        if ($('header').hasClass('main-active') == false) {
+            $('header, .main, footer').css('transform', 'translateX(-' + winWidth +'px)');
+            $('.popup-calback').addClass('popup-calback-active');
+            $('.popup-calback__wrap').addClass('popup-calback__wrap-active');
+            //Добавление кругов на фон
+            if ($('.highlight').length) {
+                var hgl = $('.highlight').html();
+                $('.popup-calback').append('<div class="highlight">'+ hgl +'</div>');
+            }
         }
     });
     $('.popup-calback').click(function(e){
         var childBlock = $(".popup-calback__wrap");
         if (!childBlock .is(e.target) && childBlock .has(e.target).length === 0) { 
-            $('header, .main, footer').css('transform', 'translateX(0)');
+            $('header, .main, footer').removeAttr('style');
             $('.popup-calback__wrap').removeClass('popup-calback__wrap-active');
             function funcRemove() {
                 $('.popup-calback').removeClass('popup-calback-active');
@@ -129,7 +136,7 @@ $( document ).ready(function() {
         }
     });
     $('.popup-calback__close').click(function(){
-        $('header, .main, footer').css('transform', 'translateX(0)');
+        $('header, .main, footer').removeAttr('style');
         $('.popup-calback__wrap').removeClass('popup-calback__wrap-active');
         function funcRemove() {
             $('.popup-calback').removeClass('popup-calback-active');

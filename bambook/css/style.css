@@ -94,6 +94,7 @@ header{
     left: 0;
     right: 0;
     top: 0;
+    transition: transform 0.6s;
 }
 header > .container{
 	display: flex;
@@ -669,6 +670,7 @@ footer{
     z-index: 9;
     transform: scale(0.7);
     transition: 0.9s;
+    margin: 0 20px;
 }
 .popup-calback__wrap-active{
 	transform: unset;
