@@ -83,23 +83,17 @@ $( document ).ready(function() {
             if ($('.main-preview').length){
                 if($(this).scrollTop() > hPrev) {
                     $(clMenu).addClass('stickytop');
-                    $(clMenu).css("top", + hWindow + "px");
-                    // console.log(hWindow);
                 }
                 else{
                     $(clMenu).removeClass('stickytop');
-                    $(clMenu).removeAttr('style');
                 }
             }
             if ($('.info-pnl').length){
                 if($(this).scrollTop() > hPrevPage) {
                     $(clMenu).addClass('stickytop');
-                    $(clMenu).css("top", + hWindow + "px");
-                    // console.log(hWindow);
                 }
                 else{
                     $(clMenu).removeClass('stickytop');
-                    $(clMenu).removeAttr('style');
                 }
             }
         });
@@ -149,4 +143,48 @@ $( document ).ready(function() {
         });
     })();
     //Конец формы обратного звонка
+
+    //Калькулятор
+    $(window).scroll(function() {
+        if ($('.price-box').length) {
+            var hm = $(document).height() - $('footer').height() - 10;
+            var hn = $(window).scrollTop() + $(window).height();
+
+            if(hm < hn) {
+                $('.calculator').addClass('calc-sticky');
+            }
+            else {
+                $('.calculator').removeClass('calc-sticky');
+            }
+        }
+    });
+    $('.price-item').click(function(){
+        var titleProd = $(this).find('.price-item__title').html();
+        var priceProd = $(this).find('.price-item__price span').html();
+        var dataVal = $(this).attr('add-basket');
+
+
+        if ($('.calculator__item[data-basket="'+ dataVal +'"]').length != 1) {
+            $(this).addClass('add-basket');
+            $('.calculator__items').append('<div data-basket="'+ dataVal +'" class="calculator__item"><p>'+ titleProd +' от <span>'+ priceProd +'</span> ₽</p><div class="calculator__item-remove"></div></div>')
+
+        } else {
+            $(this).removeClass('add-basket');
+            $('.calculator__item[data-basket="'+ dataVal +'"]').remove();
+        }
+
+        if ($('.calculator__item').length > 0) {
+            var zer = 0;
+            $(".calculator__item p span").each(function(){
+                var summ = zer += parseInt($(this).html(), 10)
+                $('.calculator__sum span').html(summ);
+            })
+            $('.calculator').addClass('calculator-active');
+        } else {
+            $('.calculator__sum span').html('0');
+            $('.calculator').removeClass('calculator-active');
+        }
+    });
+
+
 });
