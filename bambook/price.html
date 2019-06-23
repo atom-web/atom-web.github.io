@@ -84,7 +84,7 @@
 								<p class="price-item__desc">Одностраничный продающий сайт, направленный на выполнение кркретного действия сайт, направленный на выполнение направленный на выполнение продающий сайт</p>
 							</div>
 							<div class="price-item__info-ctrl">
-								<p class="price-item__price">от <span>30000</span> ₽</p>
+								<p class="price-item__price">от <span>1000</span> ₽</p>
 								<div class="price-item__add-card" title="Добавить в калькулятор"></div>
 							</div>
 						</div>
@@ -96,7 +96,7 @@
 								<p class="price-item__desc">Одностраничный продающий сайт, направленный на выполнение кркретного действия</p>
 							</div>
 							<div class="price-item__info-ctrl">
-								<p class="price-item__price">от <span>70000</span> ₽</p>
+								<p class="price-item__price">от <span>7522</span> ₽</p>
 								<div class="price-item__add-card" title="Добавить в калькулятор"></div>
 							</div>
 						</div>
@@ -108,7 +108,7 @@
 								<p class="price-item__desc">Одностраничный продающий сайт, направленный на выполнение кркретного действия, направленный на выполнение кркретного продающий сайт, направленн сайт, направленный на выполнение кркретно</p>
 							</div>
 							<div class="price-item__info-ctrl">
-								<p class="price-item__price">от <span>150000</span> ₽</p>
+								<p class="price-item__price">от <span>52752</span> ₽</p>
 								<div class="price-item__add-card" title="Добавить в калькулятор"></div>
 							</div>
 						</div>
@@ -120,7 +120,7 @@
 								<p class="price-item__desc">Одностраничный продающий сайт, направленный на выполнение кркретного действия сайт, направленный на выполнение направленный на выполнение продающий сайт</p>
 							</div>
 							<div class="price-item__info-ctrl">
-								<p class="price-item__price">от <span>10000</span> ₽</p>
+								<p class="price-item__price">от <span>752</span> ₽</p>
 								<div class="price-item__add-card" title="Добавить в калькулятор"></div>
 							</div>
 						</div>
@@ -133,7 +133,7 @@
 								<p class="price-item__desc">Одностраничный продающий сайт, направленный на выполнение кркретного действия сайт, направленный на выполнение направленный на выполнение продающий сайт</p>
 							</div>
 							<div class="price-item__info-ctrl">
-								<p class="price-item__price">от <span>5000</span> ₽</p>
+								<p class="price-item__price">от <span>767</span> ₽</p>
 								<div class="price-item__add-card" title="Добавить в калькулятор"></div>
 							</div>
 						</div>
@@ -145,7 +145,7 @@
 								<p class="price-item__desc">Одностраничный продающий сайт, направленный на выполнение кркретного действия</p>
 							</div>
 							<div class="price-item__info-ctrl">
-								<p class="price-item__price">от <span>70000</span> ₽</p>
+								<p class="price-item__price">от <span>7867</span> ₽</p>
 								<div class="price-item__add-card" title="Добавить в калькулятор"></div>
 							</div>
 						</div>
@@ -157,7 +157,7 @@
 								<p class="price-item__desc">Одностраничный продающий сайт, направленный на выполнение кркретного действия, направленный на выполнение кркретного продающий сайт, направленн сайт, направленный на выполнение кркретно</p>
 							</div>
 							<div class="price-item__info-ctrl">
-								<p class="price-item__price">от <span>150000</span> ₽</p>
+								<p class="price-item__price">от <span>1278</span> ₽</p>
 								<div class="price-item__add-card" title="Добавить в калькулятор"></div>
 							</div>
 						</div>
@@ -170,12 +170,12 @@
 		<div class="calculator">
 			<div class="calculator-wrap container">
 				<div class="row">
-					<div class="col-md-10">
+					<div class="col-md-9">
 						<p class="calculator__sum">Сумма заказа от: <span>0</span> ₽</p>
 						<div class="calculator__items"></div>
 					</div>
-					<div class="calculator__btn-wrap col-md-2">
-						<div class="calculator__btn">Отправить</div>
+					<div class="calculator__btn-wrap col-md-3">
+						<div class="calculator__btn">Оформить заказ</div>
 					</div>
 				</div>
 			</div>
@@ -232,7 +232,7 @@
 			<form class="popup-calback__form">
 				<div class="popup-calback__input">
 					<p>Номер телефона</p>
-					<input type="tel">
+					<input class="tel-mask" type="tel" required>
 				</div>
 				<div class="popup-calback__input">
 					<p>Суть вопроса</p>
@@ -246,7 +246,33 @@
 			</div>
 			<div class="popup-calback__close"></div>
 		</div>
-		<div class="form-mask"></div>
+		<div class="popup-calback__mask"></div>
+	</div>
+	<div class="popup-calc">
+		<div class="popup-calc__wrap">
+			<p class="popup-calc__title">Детали заказа</p>
+			<p class="popup-calc__desc">Ниже приведены примерные цены на заказываемые услуги. После отправки, в течении 15 минут, с вами свяжится наш менеджер для уточнения деталей заказа</p>
+			<form class="popup-calc__form">
+				<div class="popup-calc__input">
+					<div class="popup-calc__template"></div>
+				</div>
+				<div class="popup-calback__input">
+					<p>Номер телефона</p>
+					<input class="tel-mask" type="tel" required>
+				</div>
+				<div class="popup-calc__input">
+					<p>Комментарий к заказу (необязательно)</p>
+					<textarea></textarea>
+					<p class="popup-calc__agr">Нажимая эту кнопку, вы соглашаетесь с <a href="#">условиями обработки персональных данных</a></p>
+				</div>
+				<div class="popup-calc__btn-box">
+					<button class="btn-grad">Отправить</button>
+					<div class="popup-calc__price">Цена от <span></span></div>
+				</div>
+			</form>
+			<div class="popup-calc__close"></div>
+		</div>
+		<div class="popup-calc__mask"></div>
 	</div>
 	<script src="js/jq.min.js"></script>
 	<script src="js/slick.min.js"></script>

@@ -640,7 +640,8 @@ nav a:hover{
 }
 
 /*Form______________________*/
-.popup-calback{
+.popup-calback, 
+.popup-calc{
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -653,11 +654,12 @@ nav a:hover{
 	display: none;
 	z-index: 10;
 }
-.popup-calback__active{
+.popup-active{
 	display: flex;
 	animation: formAct 0.3s ease;
 }
-.popup-calback__wrap{
+.popup-calback__wrap, 
+.popup-calc__wrap{
 	width: 600px;
     max-width: 600px;
     min-height: 400px;
@@ -669,10 +671,15 @@ nav a:hover{
     transition: 0.9s;
     margin: 0 20px;
 }
-.popup-calback__active .popup-calback__wrap{
+.popup-calc__wrap{
+	padding: 30px;
+}
+.popup-active .popup-calback__wrap, 
+.popup-active  .popup-calc__wrap{
 	animation: formActWrap 0.3s ease;
 }
-.popup-calback__close{
+.popup-calback__close, 
+.popup-calc__close{
 	position: absolute;
     top: 7px;
     right: 7px;
@@ -686,7 +693,9 @@ nav a:hover{
     z-index: 999;
 }
 .popup-calback__close:before, 
-.popup-calback__close:after{
+.popup-calback__close:after, 
+.popup-calc__close:before, 
+.popup-calc__close:after{
 	content: "";
     display: block;
     width: 15px;
@@ -695,40 +704,49 @@ nav a:hover{
     transform: rotate(45deg);
     position: absolute;
 }
-.popup-calback__close:after{
+.popup-calback__close:after, 
+.popup-calc__close:after{
 	transform: rotate(-45deg);
     left: 3px;
 }
-.popup-calback__img{
+.popup-calback__img, 
+.popup-calc__img{
 	width: 220px;
 	position: absolute;
     right: -100px;
     top: 30px;
 }
-.popup-calback__img img{
+.popup-calback__img img, 
+.popup-calc__img img{
 	width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.popup-calback__title{
+.popup-calback__title, 
+.popup-calc__title{
 	color: #292929;
 	font-family: "Monts-B";
 	font-size: 20px;
 	text-transform: uppercase;
 }
-.popup-calback__desc{
+.popup-calback__desc, 
+.popup-calc__desc{
 	margin-bottom: 25px;
 	color: #000000;
 }
-.popup-calback__input p{
+.popup-calback__input p, 
+.popup-calc__input p{
 	font-size: 14px;
 	color: #9e9e9e;
 }
-.popup-calback__input{
+.popup-calback__input, 
+.popup-calc__input{
 	margin-bottom: 10px;
 }
 .popup-calback__input input, 
-.popup-calback__input textarea{
+.popup-calback__input textarea, 
+.popup-calc__input input, 
+.popup-calc__input textarea{
 	height: 40px;
     width: 100%;
     border: 1px solid #c1c1c1;
@@ -736,30 +754,38 @@ nav a:hover{
     font-size: 16px;
     outline: none;
 }
-.popup-calback__input textarea{
+.popup-calback__input textarea, 
+.popup-calc__input textarea{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	resize: none;
 	height: 65px;
 	font-family: "Monts-R";
 }
-.popup-calback__form button{
+.popup-calback__form button, 
+.popup-calc__form button{
 	border: none;
 	cursor: pointer;
 	transition: 0.2s;
-	margin: 10px 0 3px;
+	margin: 3px 0 3px;
+    font-size: 16px;
+    padding: 9px 28px;
 }
 .popup-calback__agr, 
-.popup-calback__agr a{
+.popup-calback__agr a, 
+.popup-calc__agr, 
+.popup-calc__agr a{
 	margin: 5px 0 20px;
     font-size: 12px !important;
     color: #777777 !important;
     font-family: "Monts-R";
 }
-.popup-calback__agr a{
+.popup-calback__agr a, 
+.popup-calc__agr a{
 	text-decoration: underline;
 }
-.form-mask{
+.popup-calback__mask, 
+.popup-calc__mask{
 	position: absolute;
     top: 0;
     left: 0;
@@ -769,6 +795,28 @@ nav a:hover{
 }
 .pop-fix{
 	overflow: hidden;
+}
+.popup-calc__template{
+	background: #eaeaea;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+.popup-calc__template input{
+	border: none;
+    height: auto;
+    color: #9e9e9e;
+    background: none;
+    padding: 5px 15px;
+}
+.popup-calc__btn-box{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popup-calc__price{
+	color: #e48379;
+    font-family: "Monts-B";
+    font-size: 18px;
 }
 /*End Form_________________________*/
 
