@@ -231,16 +231,20 @@
 			<p class="popup-calback__desc">Заполните поля формы и мы перезвоним вам в течении 15 минут</p>
 			<form class="popup-calback__form">
 				<div class="popup-calback__input">
-					<p>Номер телефона</p>
+				<label class="popup-calback__tel">
 					<input class="tel-mask" type="tel" required>
+				</label>
 					<div class="tel-remove" title="Удалить номер"></div>
 				</div>
 				<div class="popup-calback__input">
-					<p>Суть вопроса</p>
-					<textarea></textarea>
-					<p class="popup-calback__agr">Нажимая эту кнопку, вы соглашаетесь с <a href="#">условиями обработки персональных данных</a></p>
+					<label class="popup-calback__txtarea">
+						<textarea placeholder="Суть вопроса"></textarea>
+					</label>
 				</div>
-				<button class="btn-grad">Отправить</button>
+				<div class="btn-box">
+					<button>Отправить</button>
+					<p class="popup-calback__agr">Я согласен с <a href="#">условиями обработки персональных данных</a></p>
+				</div>
 			</form>
 			<div class="popup-calback__img">
 				<img src="img/9e9a94836152b6e3298ffeb3fe6531052.png" alt="">
@@ -258,18 +262,20 @@
 					<div class="popup-calc__template"></div>
 				</div>
 				<div class="popup-calback__input">
-					<p>Номер телефона</p>
-					<input class="tel-mask" type="tel" required>
+					<label class="popup-calback__tel">
+						<input class="tel-mask" type="tel" required>
+					</label>
 					<div class="tel-remove" title="Удалить номер"></div>
 				</div>
 				<div class="popup-calc__input">
-					<p>Комментарий к заказу (необязательно)</p>
-					<textarea></textarea>
-					<p class="popup-calc__agr">Нажимая эту кнопку, вы соглашаетесь с <a href="#">условиями обработки персональных данных</a></p>
-				</div>
-				<div class="popup-calc__btn-box">
-					<button class="btn-grad">Отправить</button>
+					<label class="popup-calback__txtarea">
+						<textarea placeholder="Комментарий к заказу (необязательно)"></textarea>
+					</label>
 					<div class="popup-calc__price">Цена от <span></span></div>
+				</div>
+				<div class="btn-box">
+					<button>Отправить</button>
+					<p class="popup-calback__agr">Я согласен с <a href="#">условиями обработки персональных данных</a></p>
 				</div>
 			</form>
 			<div class="popup-calc__close"></div>

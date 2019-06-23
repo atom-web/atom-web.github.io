@@ -662,7 +662,7 @@ nav a:hover{
 .popup-calc__wrap{
 	width: 600px;
     max-width: 600px;
-    min-height: 400px;
+    min-height: 355px;
     background: #fff;
     position: relative;
     padding: 30px 169px 30px 30px;
@@ -711,9 +711,9 @@ nav a:hover{
 }
 .popup-calback__img, 
 .popup-calc__img{
-	width: 220px;
+	width: 190px;
 	position: absolute;
-    right: -100px;
+    right: -53px;
     top: 30px;
 }
 .popup-calback__img img, 
@@ -724,15 +724,22 @@ nav a:hover{
 }
 .popup-calback__title, 
 .popup-calc__title{
-	color: #292929;
+    color: #c75552;
 	font-family: "Monts-B";
 	font-size: 20px;
+    margin-bottom: 15px;
 	text-transform: uppercase;
 }
 .popup-calback__desc, 
 .popup-calc__desc{
-	margin-bottom: 25px;
+    padding-bottom: 13px;
 	color: #000000;
+	font-family: "Monts-M";
+    font-size: 14px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.popup-calback__desc{
+	border: none;
 }
 .popup-calback__input p, 
 .popup-calc__input p{
@@ -741,7 +748,7 @@ nav a:hover{
 }
 .popup-calback__input, 
 .popup-calc__input{
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	position: relative;
 }
 .popup-calback__input input, 
@@ -750,40 +757,88 @@ nav a:hover{
 .popup-calc__input textarea{
 	height: 40px;
     width: 100%;
-    border: 1px solid #c1c1c1;
-    padding: 0 15px;
+    border: none;
+    background: #f3f3f3;
+    padding: 0 15px 0 48px;
     font-size: 16px;
     outline: none;
+    font-family: "Monts-R";
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 50px;
 }
 .popup-calback__input textarea, 
 .popup-calc__input textarea{
-	padding-top: 10px;
+	padding-top: 13px;
 	padding-bottom: 10px;
 	resize: none;
-	height: 65px;
-	font-family: "Monts-R";
+	font-size: 12px;
 }
 .popup-calback__form button, 
 .popup-calc__form button{
 	border: none;
-	cursor: pointer;
-	transition: 0.2s;
-	margin: 3px 0 3px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0;
     font-size: 16px;
-    padding: 9px 28px;
+    padding: 13px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background: #c75552;
+    transition: 0.2s;
+}
+.popup-calback__form button:hover, 
+.popup-calc__form button:hover{
+	background: #ea8986;
+}
+.popup-calback__tel:after{
+	content: "";
+    background: url(../img/phone.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    z-index: 9;
+}
+.popup-calback__txtarea:after{
+	content: "";
+    background: url(../img/chat.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    z-index: 9;
 }
 .popup-calback__agr, 
 .popup-calback__agr a, 
 .popup-calc__agr, 
 .popup-calc__agr a{
-	margin: 5px 0 20px;
+	margin: 0;
     font-size: 12px !important;
     color: #777777 !important;
     font-family: "Monts-R";
 }
+
+.popup-calback__agr, 
+.popup-calc__agr{
+	margin-left: 15px;
+}
 .popup-calback__agr a, 
 .popup-calc__agr a{
 	text-decoration: underline;
+	transition: 0.2s;
+}
+.popup-calback__agr a:hover, 
+.popup-calc__agr a:hover{
+	color: #d5574c !important;
 }
 .popup-calback__mask, 
 .popup-calc__mask{
@@ -798,26 +853,27 @@ nav a:hover{
 	overflow: hidden;
 }
 .popup-calc__template{
-	background: #eaeaea;
-	padding: 10px 0;
-	margin-bottom: 20px;
+	background: #ffffff;
+    padding-top: 5px;
+    margin-bottom: 20px;
 }
 .popup-calc__template input{
 	border: none;
     height: auto;
     color: #9e9e9e;
     background: none;
-    padding: 5px 15px;
+    color: #c75552;
+    padding: 5px 0;
 }
-.popup-calc__btn-box{
+.btn-box{
 	display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .popup-calc__price{
 	color: #e48379;
     font-family: "Monts-B";
     font-size: 18px;
+    margin: 15px 0 35px;
 }
 .tel-remove{
 	width: 20px;

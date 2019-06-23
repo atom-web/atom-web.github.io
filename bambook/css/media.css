@@ -183,6 +183,20 @@
 	.popup-calback__wrap{
 		padding: 20px
 	}
+	.btn-box{
+		align-items: end;
+    	flex-direction: column;
+	}
+	.popup-calback__agr, .popup-calc__agr{
+		order: -1;
+	    margin-bottom: 20px;
+	    margin-top: -15px;
+	    margin-left: 0;
+	}
+	.popup-calback__wrap, 
+	.popup-calc__wrap{
+	    min-height: 325px;
+	}
 }
 @media (max-width: 400px){
 	.main-preview__txt h1 {
