@@ -185,6 +185,21 @@ $( document ).ready(function() {
             $('.calculator').removeClass('calculator-active');
         }
     });
+    var remSumm = function(){
+        var attrSumm = $(this).closest('.calculator__item').attr('data-basket');
+        var summCalc = $('.calculator__sum span').html();
+        var summNum = $(this).closest('.calculator__item').find('span').html();
 
+        $('.calculator__sum span').html(summCalc - summNum);
+        $(this).closest('.calculator__item').remove();
+        $('.price-item[add-basket="'+ attrSumm +'"]').removeClass('add-basket');
+        if ($('.calculator__item').length == 0){
+            $('.calculator').removeClass('calculator-active');
+        }
+
+
+
+    };
+    $(".calculator__items").on("click", ".calculator__item-remove", remSumm);
 
 });
