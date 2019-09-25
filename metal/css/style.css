@@ -9134,19 +9134,19 @@ nav {
 }
 
 .sam {
-    background-image: url("/img/top-sam-banner.jpg");
+    background-image: url("http://atom-web.github.io/metal/img/top-sam-banner.jpg");
     position: relative;
     text-transform: uppercase
 }
 
 .dem {
-    background-image: url("/img/top-dem-banner.jpg");
+    background-image: url("http://atom-web.github.io/metal/img/top-dem-banner.jpg");
     position: relative;
     text-transform: uppercase
 }
 
 .pro {
-    background-image: url("/img/pro.jpg");
+    background-image: url("http://atom-web.github.io/metal/img/pro.jpg");
     position: relative;
     text-transform: uppercase
 }
@@ -9162,7 +9162,7 @@ a:hover.dem .arrow {
 }
 
 .opt {
-    background-image: url("/img/top-opt-banner.jpg");
+    background-image: url("http://atom-web.github.io/metal/img/top-opt-banner.jpg");
     position: relative;
     text-transform: uppercase
 }
@@ -9301,7 +9301,7 @@ main {
 }
 
 .geography {
-    background: url("/img/gograf-fon.jpg") no-repeat fixed 50% 50% / cover;
+    background: url("http://atom-web.github.io/metal/img/gograf-fon.jpg") no-repeat fixed 50% 50% / cover;
     padding-top: 0;
     padding-bottom: 40px
 }
@@ -9357,7 +9357,7 @@ main {
 }
 
 .trust {
-    background-image: url("/img/top-tr.jpg");
+    background-image: url("http://atom-web.github.io/metal/img/top-tr.jpg");
     padding-top: 40px;
     padding-bottom: 40px
 }
@@ -9381,11 +9381,11 @@ footer p {
     margin: 0 auto;
     height: 25px;
     width: 600px;
-    background-image: url("/img/razdel.png")
+    background-image: url("http://atom-web.github.io/metal/img/razdel.png")
 }
 
 .contact_banner {
-    background-image: url("/img/contact-banner.jpg");
+    background-image: url("http://atom-web.github.io/metal/img/contact-banner.jpg");
     height: 400px;
     width: 100%
 }
