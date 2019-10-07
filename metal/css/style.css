@@ -9473,7 +9473,7 @@ a.bord-zak {
 }
 .location__info{
     width: 300px;
-    height: 150px;
+    height: 200px;
     background: #eeeeee;
     position: absolute;
     top: 109px;
@@ -9482,6 +9482,9 @@ a.bord-zak {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.location__info-item:last-child{
+    margin-bottom: 0;
 }
 .location__info h3{
     color: #3e3e3e;
@@ -9508,3 +9511,56 @@ a.bord-zak {
 .zanyat{
     padding-top: 30px;
 }
+.location__info-item-img{
+    width: 40px;
+}
+@media (max-width: 991px){
+    .uk-text-header{
+        font-size: 13px;
+    }
+    .top_banner h1{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .uk-text-large{
+        font-size: 16px;
+    }
+    .top_banner .uk-grid{
+        display: none !important;
+    }
+    .location__info{
+        width: 100%;
+        position: static;
+    }
+    .location__info{
+        padding: 0;
+    }
+    .location__info h3, 
+    .location__info-item{
+        margin-left: 15px;
+    }
+    .uk-width-1-2{
+        width: 100%;
+    }
+    .prew-text{
+        display: none;
+    }
+    .footer-item{
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: end;
+    }
+    .uk-align-center{
+        padding: 0 15px;
+        line-height: 27px;
+        font-size: 22px;
+    }
+    footer{
+        padding: 15px 0;
+    }
+}
+ @media (max-width: 750px){
+    .header{
+        display: none;
+    }
+ }
