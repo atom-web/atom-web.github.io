@@ -237,7 +237,10 @@ header{
 	border: 1px solid #bfbfbf;
 	transition: 0.2s;
 }
-.cat-project__item-btn:hover{
+.cat-project__item{
+	text-decoration: none;
+}
+.cat-project__item:hover .cat-project__item-btn{
 	color: #fff;
 	background: #007150;
 }
@@ -652,7 +655,11 @@ footer{
 		min-height: auto;
 	}
 	.banner__stamp{
-		display: none;
+	    top: 45px;
+	}
+	.banner__stamp img{
+		width: 200px;
+    	height: 90px;
 	}
 	.header__logo{
 		margin-bottom: 5px;
@@ -717,6 +724,11 @@ footer{
 	}
 	.cat-project__item-btn{
 		text-align: center;
+	}
+}
+@media (max-width: 450px){
+	.cat-project__item-img{
+		height: 160px;
 	}
 }
 @media (max-width: 367px){

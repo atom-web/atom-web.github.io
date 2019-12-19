@@ -3,7 +3,7 @@ $(document).ready(function(){
     function openStamp() {
     	$('.banner__stamp').addClass('open-stamp');
 	}
-	setTimeout(openStamp, 3000);
+	setTimeout(openStamp, 5000); //Время в милисекундах до появления штампа
 });
 
 //преобразование img.svg в svg объект
@@ -21,5 +21,4 @@ $('img[src$=".svg"]').each(function() {
 
         $img.replaceWith($svg);
     }, 'xml'); 
-
 });
