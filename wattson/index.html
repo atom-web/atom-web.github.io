@@ -6,20 +6,186 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
-		
+	<header class="head-login">
+		<div class="head-login__top">
+			<div class="container">
+				<div class="row">
+					<div class="head-login__top-nav col-md-6">
+						<a href="#">Каталог</a>
+						<a href="#">Новости</a>
+						<a href="#">Акции</a>
+						<a href="#">Новинки</a>
+						<a href="#">Распродажа</a>
+						<a href="#">Тех. решения</a>
+					</div>
+					<div class="head-login__top-cont col-md-6">
+						<div class="head-login__top-phone">
+							<p>ОБСЛУЖИВАНИЕ КЛИЕНТОВ:</p>
+							<a href="tel: 88009999999" title="Позвонить 8 (800) 999-99-99"> 8 (800) 999-99-99</a>
+						</div>
+						<div class="head-login__top-locat">
+							<p>ВАШ ГОРОД:</p>
+							<a data-fancybox data-src="#popup-locat" href="javascript:;" class="head-login__top-city">Орел</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="head-login__bottom">
+			<div class="container">
+				
+			</div>
+		</div>
 	</header>
 	
 	<footer>
 	
 	</footer>
+	
+	<div id="popup-locat">
+		<p class="popup-locat__title">Выбор города</p>
+		<p class="popup-locat__desc">Выбор города обеспечит вывод товаров по вашему местоположению.</p>
+		<div class="popup-locat__items">
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Белгород</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Брянск</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Владимир</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Вологда</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Воронеж</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Иваново</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Калуга</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Кострома</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Курск</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Липецк</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Москва</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Нижний Новгород</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Орел</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Пенза</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Рязань</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Саранск</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Смоленск</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Тамбов</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Тверь</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Тула</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Чебоксары</span>
+					<img class="popup-locat__item-img" src="img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+		</div>
+		<p class="popup-locat__selected">Выбран город: <span class="popup-locat__select-city"></span></p>
+	</div>
 
-	<script src="js/jq.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/slick.min.js"></script>
+
+
+
+	<script src="js/plugins/jq.min.js"></script>
+	<script src="js/plugins/jquery.fancybox.min.js"></script>
+	<script src="js/plugins/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
