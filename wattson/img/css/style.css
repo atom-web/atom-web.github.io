@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "Raleway-r";
+  src: url("../fonts/Raleway-Regular.woff");
+}
+@font-face {
+  font-family: "Raleway-m";
+  src: url("../fonts/Raleway-Medium.woff");
+}
+@font-face {
+  font-family: "Raleway-sb";
+  src: url("../fonts/Raleway-SemiBold.woff");
+}
+@font-face {
+  font-family: "Raleway-b";
+  src: url("../fonts/Raleway-Bold.woff");
+}
+
+
+*{
+	font-family: "Raleway-m";
+	margin: 0;
+	padding: 0;
+	font-variant-numeric: lining-nums;
+}
+h1{
+	
+}
+h2{
+	
+}
+h3{
+	
+}
+a{
+	color: #fff;
+}
+
+/*СТИЛИ ДЛЯ ХЕДЕРА _________________________________*/
+header{
+	
+}
+.head-login__top{
+	background-color: #252525; 
+}
+.head-login__top-nav{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 5px 0;
+}
+.head-login__top-nav a{
+	font-size: 14px;
+	text-decoration: none;
+	margin-right: 11px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-transform: uppercase;
+	transition: 0.2s;
+}
+.head-login__top-nav a:hover{
+	color: #009A2B;
+}
+.head-login__top-cont{
+	font-size: 12px;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.head-login__top-phone, 
+.head-login__top-locat{
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+.head-login__top-phone p, 
+.head-login__top-locat p{
+	margin-right: 5px;
+}
+.head-login__top-phone{
+	margin-right: 25px;
+}
+.head-login__top-phone a{
+	color: #009A2B;
+	text-decoration: none;
+	transition: 0.2s;
+}
+.head-login__top-phone a:hover{
+	text-decoration: underline;
+}
+.head-login__top-city{
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #009A2B;
+	transition: 0.2s;
+}
+.head-login__top-city:hover{
+	text-decoration: underline;
+}
+.head-login__bottom{
+	background-color: #252525;
+}
+
+
+
+
+
+
+
+/*ПОПАП ОКНО С ВЫБОРОМ ГОРОДА _________________________________*/
+#popup-locat{
+	display: none;
+	width: 700px;
+	max-width: 700px;
+	padding: 25px;
+}
+.popup-locat__title{
+	font-size: 20px;
+    text-transform: uppercase;
+    color: #009028;
+    font-family: "Raleway-sb";
+    margin-bottom: 7px;
+}
+.popup-locat__desc{
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+.popup-locat__item-img{
+	width: 9px;
+    height: 12px;
+}
+.popup-locat__items{
+	display: flex;
+	flex-wrap: wrap;
+}
+.popup-locat__item{
+	display: flex;
+    align-items: center;
+    width: 33.33333%;
+    margin-bottom: 15px;
+}
+.popup-locat__item-link{
+    border: 1px solid #009A2B;
+    color: #272727;
+    text-decoration: none;
+    padding: 6px 15px;
+    width: 100%;
+    margin-right: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+    border-radius: 30px;
+}
+.popup-locat__item-link:hover{
+	background: #009A2B;
+    color: #fff;
+    padding-left: 18px;
+}
+.popup-locat__item-link:after{
+	content: "";
+	background: url(../img/svg/locat.svg);
+	background-size: 9px 12px;
+	width: 9px;
+	height: 12px;
+}
+.popup-locat__selected{
+	font-size: 12px;
+	font-family: Raleway-sb;
+	margin: 10px 0;
+}
+.popup-locat__selected span{
+	color: #009A2B;
+	font-family: Raleway-sb;
+}
+.locat-active{
+    color: #029029;
+    cursor: default;
+}
+.locat-active:hover{
+	background: none;
+	color: #029029;
+    padding-left: 15px;
+}
+.locat-active:after{
+	display: none;
+}
