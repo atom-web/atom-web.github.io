@@ -22,6 +22,9 @@
 	padding: 0;
 	font-variant-numeric: lining-nums;
 }
+body{
+	height: 3000px;
+}
 h1{
 	
 }
@@ -132,6 +135,7 @@ header{
 }
 .head-login__bottom-cart>a>div{
 	position: relative;
+	height: 35px;
 }
 .head-login__bottom-lk-wrap p{
 	font-size: 15px;
@@ -181,6 +185,16 @@ header{
 	color: #fff;
 	border-radius: 100%;
 }
+.sticky {
+    position: fixed;
+    z-index: 1;
+}
+
+.stop {
+    position: relative;
+    z-index: 1;
+}
+
 
 
 
@@ -224,11 +238,139 @@ header{
 
 
 /*КОНТЕНТ ЛИЧНОГО КАБИНЕТА______________________________________*/
-.lk-content{
+.lk{
 	padding-top: 20px;
 }
 
 
+
+/*SIDEBAR__________________________________________*/
+/*.sidebar{
+	border-right: 2px solid #DDDDDD;
+}*/
+.lk-sidebar{
+	border-right: 2px solid #dddddd;
+}
+.lk-sidebar__title{
+	color: #009028;
+    font-size: 20px;
+    font-family: "Raleway-sb";
+    text-transform: uppercase;
+    position: relative;
+    padding: 7px 0 15px;
+    margin-bottom: 15px;
+    /*border-right: 2px solid #DDDDDD;*/
+}
+.lk-sidebar__title:after{
+	content: "";
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% + 15px);
+    left: -15px;
+    height: 2px;
+    background: #DDDDDD;
+}
+.lk-sidebar__links{
+	display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding-bottom: 60px;
+    position: relative;
+}
+.lk-sidebar__links:after {
+    content: "";
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% + 15px);
+    left: -15px;
+    height: 2px;
+    background: #DDDDDD;
+}
+.lk-sidebar__links:last-child{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.lk-sidebar__links:last-child:after{
+	display: none;
+}
+.lk-sidebar__links a{
+	padding: 12px 0;
+    text-decoration: none;
+    color: #171717;
+    margin-bottom: 5px;
+    position: relative;
+    font-family: "Raleway-m";
+    width: calc(100% - 15px);
+}
+.lk-sidebar__links a:hover{
+	color: #009a2b;
+	text-decoration: underline;
+}
+.lk-sidebar__links a:before {
+    content: "";
+    width: 15px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+.link-active{
+	background: #009a2b;
+	color: #fff !important;
+	cursor: default;
+}
+.link-active:before{
+	background: #009a2b;
+	/*border-left: 5px solid #00671d;*/
+}
+.link-active:hover{
+	text-decoration: none !important;
+}
+
+
+
+
+/*КОНТЕНТ ЛИЧНОГО КАБИНЕТА__________________________________*/
+.lk-content__item{
+	margin-bottom: 30px;
+}
+.lk-content__item-wrap{
+	/*background: #eaeaea;*/
+	width: 100%;
+    min-height: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #DDDDDD;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.2s;
+}
+.lk-content__item-wrap:hover{
+	border: 2px solid #009a2b;
+	background: #f9f9f9;
+}
+.lk-content__item-img{
+	margin-bottom: 7px;
+}
+.lk-content__item-wrap p{
+	color: #262626;
+}
+.lk-content__title{
+	color: #009028;
+    font-family: "Raleway-m";
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.lk-content__desc{
+	margin-bottom: 50px;
+}
 
 
 

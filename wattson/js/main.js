@@ -1,4 +1,4 @@
-//преобразование img.svg в svg объект
+// преобразование img.svg в svg объект
 $('img[src$=".svg"]').each(function() { 
     var $img = jQuery(this); 
     var imgURL = $img.attr('src'); 
@@ -16,7 +16,7 @@ $('img[src$=".svg"]').each(function() {
 });
 
 
-//Присваивание города в попап окно "popup-locat__select-city"
+// Присваивание города в попап окно "popup-locat__select-city"
 var locPopup = $('.popup-locat__select-city'); //место вставки города
 var topCity = $('.head-login__top-city'); //город который нужно вставить
 var titleLoc = $('.popup-locat__item-title'); //список городов в попап окне
@@ -31,3 +31,96 @@ titleLoc.each(function(i, e){
         $(this).parent().attr('onclick', 'return false'); //запрет стандартного поведения кнопки
     }
 });
+
+
+// Прилипающий сайдбар
+var a = document.querySelector('.lk-sidebar'), 
+b = null, 
+K = null, 
+Z = 0, 
+P = 20, // если у P ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента
+N = 0;  // если у N — нижний край дойдёт до нижнего края элемента. Может быть отрицательным числом
+
+window.addEventListener('load', Ascroll, false);
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false);
+function Ascroll() {
+    var Ra = a.getBoundingClientRect(),
+    R1bottom = document.querySelector('.sidebar').getBoundingClientRect().bottom;
+    if (Ra.bottom < R1bottom) {
+        if (b == null) {
+            var Sa = getComputedStyle(a, ''), s = '';
+            for (var i = 0; i < Sa.length; i++) {
+                if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+                    s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+                }
+            }
+            b = document.createElement('div');
+            b.className = "stop";
+            b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+            a.insertBefore(b, a.firstChild);
+            var l = a.childNodes.length;
+            for (var i = 1; i < l; i++) {
+                b.appendChild(a.childNodes[1]);
+            }
+            a.style.height = b.getBoundingClientRect().height + 'px';
+            a.style.padding = '0';
+            a.style.border = '0';
+        }
+        var Rb = b.getBoundingClientRect(),
+            Rh = Ra.top + Rb.height,
+            W = document.documentElement.clientHeight,
+            R1 = Math.round(Rh - R1bottom),
+            R2 = Math.round(Rh - W);
+        if (Rb.height > W) {
+            if (Ra.top < K) {  // скролл вниз
+                if (R2 + N > R1) {  // не дойти до низа
+                    if (Rb.bottom - W + N <= 100) {  // подцепиться
+                        b.className = 'sticky';
+                        b.style.top = W - Rb.height - N + 'px';
+                        Z = N + Ra.top + Rb.height - W;
+                    } else {
+                        b.className = 'stop';
+                        b.style.top = - Z + 'px';
+                    }
+                } else {
+                    b.className = 'stop';
+                    b.style.top = - R1 +'px';
+                    Z = R1;
+                }
+            } else {  // скролл вверх
+                if (Ra.top - P < 0) {  // не дойти до верха
+                    if (Rb.top - P >= 0) {  // подцепиться
+                        b.className = 'sticky';
+                        b.style.top = P + 'px';
+                        Z = Ra.top - P;
+                    } else {
+                        b.className = 'stop';
+                        b.style.top = - Z + 'px';
+                    }
+                } else {
+                    b.className = '';
+                    b.style.top = '';
+                    Z = 0;
+                }
+            }
+            K = Ra.top;
+        } else {
+            if ((Ra.top - P) <= 0) {
+                if ((Ra.top - P) <= R1) {
+                    b.className = 'stop';
+                    b.style.top = - R1 +'px';
+                } else {
+                    b.className = 'sticky';
+                    b.style.top = P + 'px';
+                }
+            } else {
+                b.className = '';
+                b.style.top = '';
+            }
+        }
+        window.addEventListener('resize', function() {
+            a.children[0].style.width = getComputedStyle(a, '').width
+        }, false);
+    }
+};
