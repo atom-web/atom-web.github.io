@@ -684,16 +684,19 @@ footer p{
 .footer__pseudo-call input::-ms-input-placeholder { color: #FFFFFF; font-size: 16px;}
 .footer__pseudo-call input::placeholder { color: #FFFFFF; font-size: 16px;}
 .footer__pseudo-call button {
-    background: url(../img/svg/arrow-right.svg);
+   	background: url(../img/svg/arrow-right-white.svg);
     background-repeat: no-repeat;
-    background-size: 15px;
-    width: 15px;
-    height: 15px;
+    background-size: 11px;
+    width: 22px;
+    height: 22px;
     border: none;
     position: absolute;
     right: 10px;
     cursor: pointer;
     outline: none;
+    background-color: #0e6726;
+    background-position: center;
+    border-radius: 100%;
 }
 
 
