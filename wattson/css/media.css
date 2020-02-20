@@ -1,0 +1,151 @@
+@media (max-width: 991px){
+	.head-login__top-cont{
+		margin-bottom: 15px;
+		justify-content: end;
+	}
+	.head-login__top-nav{
+		
+	}
+	.head-login__bottom{
+		width: 265px;
+	    position: fixed;
+	    left: -300px;
+	    bottom: 0;
+	    top: 0;
+	    z-index: 100;
+	    padding: 15px 0;
+	}
+	.menu-active{
+		left: 0px;
+	}
+	.head-login__top-nav{
+		display: none;
+	}
+	.head-login__top{
+		padding-top: 0;
+	}
+	.head-login__top-cont{
+		margin: 15px 0;
+	}
+	.burger{
+		display: flex;
+	}
+	.head-login__row{
+		position: relative;
+		align-items: center;
+	} 
+	.lk-sidebar__links:after, 
+	.lk-sidebar__links a:before{
+		display: none;
+	}
+	.lk-sidebar{
+		border: none;
+	    height: 35px;
+	    overflow: hidden;
+	    margin-bottom: 10px;
+	}
+	.account-slide{
+		height: auto;
+	}
+	.link-active{
+		background: none;
+		color: #009028 !important;
+		text-decoration: underline !important;
+	}
+	.lk-sidebar__title{
+		font-size: 16px;
+	}
+	.lk-sidebar__title{
+		padding: 0px 15px;
+		height: 35px;
+		background: #009028;
+		color: #fff;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.lk-sidebar__title:after{
+		position: static;
+		width: 15px;
+		height: 17px;
+		background: url(../img/svg/arrow-right-white.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.lk-sidebar__links{
+		padding-bottom: 0;
+		background: #f5f5f5;
+		padding: 0 15px;
+	}
+	.lk{
+		padding-top: 0;
+		margin-bottom: 50px;
+	}
+	.head-login__top-phone{
+		padding-bottom: 7px;
+	}
+	.lk-content__title{
+		text-transform: uppercase;
+		font-family: "Raleway-sb";
+	}
+	.lk-content__desc{
+	    margin-bottom: 40px
+	}
+	.lk-content__item-img{
+		height: 35px
+	}
+	.lk-content__item-wrap p{
+		font-size: 14px;
+	}
+	.lk-content__item-wrap{
+		min-height: 120px;
+	}
+	.footer__item{
+		margin-bottom: 50px;
+	}
+	.sale-prew__item-title{
+		font-size: 16px;
+	}
+	.popup-locat__item{
+		width: 50%;
+	}
+	.head-login__bottom-logo a{
+		width: 100px;
+	}
+	.head-login__bottom-logo{
+		margin-bottom: 15px;
+	}
+	.head-login__bottom-form{
+		margin-bottom: 15px;
+	}
+	.head-login__bottom-form form{
+		margin-left: 0;
+	}
+	.head-login__bottom-lk, 
+	.head-login__bottom-cart{
+	     justify-content: end; 
+	     margin-bottom: 15px;
+	}
+	.head-login__bottom-lk-img, 
+	.head-login__bottom-cart-img{
+		width: 17px;
+    	height: 37px;
+	}
+
+}
+@media (max-width: 767px){
+	.head-login__top-cont{
+		flex-direction: column;
+	}
+}
+@media (max-width: 575px){
+	.popup-locat__item{
+		width: 100%;
+	}
+}
+@media (max-width: 350px){
+	.head-login__top-phone, 
+	.head-login__top-locat{
+		display: block;
+	}
+}

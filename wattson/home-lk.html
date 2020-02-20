@@ -8,13 +8,14 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header class="head-login">
 		<div class="head-login__top">
 			<div class="container">
-				<div class="row">
-					<div class="head-login__top-nav col-md-6">
+				<div class="row head-login__row">
+					<div class="head-login__top-nav col-lg-6 col-md-12">
 						<a href="#">Каталог</a>
 						<a href="#">Новости</a>
 						<a href="#">Акции</a>
@@ -22,7 +23,7 @@
 						<a href="#">Распродажа</a>
 						<a href="#">Тех. решения</a>
 					</div>
-					<div class="head-login__top-cont col-md-6">
+					<div class="head-login__top-cont col-lg-6">
 						<div class="head-login__top-phone">
 							<p>ОБСЛУЖИВАНИЕ КЛИЕНТОВ:</p>
 							<a href="tel: 88009999999" title="Позвонить 8 (800) 999-99-99"> 8 (800) 999-99-99</a>
@@ -32,24 +33,27 @@
 							<a data-fancybox data-src="#popup-locat" href="javascript:;" class="head-login__top-city">Орел</a>
 						</div>
 					</div>
+					<div class="burger">
+						<div class="burger-item"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="head-login__bottom">
 			<div class="container">
 				<div class="row">
-					<div class="head-login__bottom-logo col-md-2">
+					<div class="head-login__bottom-logo col-lg-2 col-md-12">
 						<a href="#">
 							<img src="img/logo-1.png" alt="Логотип">
 						</a>
 					</div>
-					<div class="head-login__bottom-form col-md-5">
+					<div class="head-login__bottom-form col-lg-5 col-md-12">
 						<form action="" method="get">
 							<input name="s" placeholder="Наименование товара" type="search">
 						  	<button type="submit"></button>
 						</form>
 					</div>
-					<div class="head-login__bottom-lk col-md-3">
+					<div class="head-login__bottom-lk col-lg-3 col-md-12">
 						<img class="head-login__bottom-lk-img" src="img/svg/user.svg" alt="Личный кабинет">
 						<div class="head-login__bottom-lk-wrap">
 							<p>ООО “Метафактор”</p>
@@ -59,7 +63,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="head-login__bottom-cart col-md-2">
+					<div class="head-login__bottom-cart col-lg-2 col-md-12">
 						<a href="#">
 							<div>
 								<span class="head-login__bottom-cart-num">2</span>
@@ -93,12 +97,12 @@
 	<div class="lk">
 		<div class="container">
 			<div class="row">
-				<div class="sidebar col-md-3">
+				<div class="sidebar col-lg-3">
 					<div class="lk-sidebar">
 						<p class="lk-sidebar__title">Мой аккаунт</p>
 						<div class="lk-sidebar__links">
-							<a class="link-active" href="#">Мои коммерческие предложения</a>
-							<a href="#">Мои заказы и счета</a>
+							<a href="#">Мои коммерческие предложения</a>
+							<a class="link-active" href="#">Мои заказы и счета</a>
 							<a href="#">Каталог товара</a>
 							<a href="#">Накладные и задолженность</a>
 							<a href="#">Мой доход</a>
@@ -110,43 +114,43 @@
 						</div>
 					</div>
 				</div>
-				<div class="lk-content col-md-9">
+				<div class="lk-content col-lg-9">
 					<div class="row">
 						<div class="col-md-12">
 							<h1 class="lk-content__title">Добрый день ООО “Метафактор” (id клиента: 777888)</h1>
-							<p class="lk-content__desc">В случае возникновения проблем или неполадок в работе личного кабинета пишите на servicedesk@wattson.ru</p>
+							<p class="lk-content__desc">В случае возникновения проблем или неполадок в работе личного кабинета пишите на <a href="mailto:servicedesk@wattson.ru">servicedesk@wattson.ru</a></p>
 						</div>
-						<div class="lk-content__item col-md-4">
+						<div class="lk-content__item col-md-4 col-sm-6 col-6">
 							<a href="#" class="lk-content__item-wrap">
 								<img class="lk-content__item-img" src="img/svg/lk-content-1.svg" alt="Каталог товаров">
 								<p>Каталог товара</p>
 							</a>
 						</div>
-						<div class="lk-content__item col-md-4">
+						<div class="lk-content__item col-md-4 col-sm-6 col-6">
 							<a href="#" class="lk-content__item-wrap">
 								<img class="lk-content__item-img" src="img/svg/lk-content-2.svg" alt="Каталог товаров">
 								<p>Коммерческие предложения</p>
 							</a>
 						</div>
-						<div class="lk-content__item col-md-4">
+						<div class="lk-content__item col-md-4 col-sm-6 col-6">
 							<a href="#" class="lk-content__item-wrap">
 								<img class="lk-content__item-img" src="img/svg/lk-content-3.svg" alt="Каталог товаров">
 								<p>Мои заказы и счета</p>
 							</a>
 						</div>
-						<div class="lk-content__item col-md-4">
+						<div class="lk-content__item col-md-4 col-sm-6 col-6">
 							<a href="#" class="lk-content__item-wrap">
 								<img class="lk-content__item-img" src="img/svg/lk-content-4.svg" alt="Каталог товаров">
 								<p>Накладные и задолженность</p>
 							</a>
 						</div>
-						<div class="lk-content__item col-md-4">
+						<div class="lk-content__item col-md-4 col-sm-6 col-6">
 							<a href="#" class="lk-content__item-wrap">
 								<img class="lk-content__item-img" src="img/svg/lk-content-5.svg" alt="Каталог товаров">
 								<p>Мой доход</p>
 							</a>
 						</div>
-						<div class="lk-content__item col-md-4">
+						<div class="lk-content__item col-md-4 col-sm-6 col-6">
 							<a href="#" class="lk-content__item-wrap">
 								<img class="lk-content__item-img" src="img/svg/lk-content-6.svg" alt="Каталог товаров">
 								<p>Мои сметы на монтаж</p>
@@ -157,8 +161,101 @@
 			</div>
 		</div>
 	</div>
+	<div class="sale-prew">
+		<div class="container">
+			<h2>Наши акции</h2>
+			<div class="row">
+				<div class="sale-prew__item col-md-4">
+					<a href="#" class="sale-prew__item__wrap">
+						<img src="img/sale-prew.jpg" alt="Акции" class="sale-prew__item-img">
+						<div class="sale-prew__item-text">
+							<p class="sale-prew__item-title">De Dietrich: выгодные цены на комплекты</p>
+							<span class="sale-prew__item-date">до 31.12.2021</span>
+						</div>
+					</a>
+				</div>
+				<div class="sale-prew__item col-md-4">
+					<a href="#" class="sale-prew__item__wrap">
+						<img src="img/sale-prew2.jpg" alt="Акции" class="sale-prew__item-img">
+						<div class="sale-prew__item-text">
+							<p class="sale-prew__item-title">Получи бесплатно проект отопления!</p>
+							<span class="sale-prew__item-date">до 31.12.2021</span>
+						</div>
+					</a>
+				</div>
+				<div class="sale-prew__item col-md-4">
+					<a href="#" class="sale-prew__item__wrap">
+						<img src="img/sale-prew3.jpg" alt="Акции" class="sale-prew__item-img">
+						<div class="sale-prew__item-text">
+							<p class="sale-prew__item-title">Продукция ТермоБрест: скидка от объема</p>
+							<span class="sale-prew__item-date">до 31.12.2021</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<footer>
-	
+		<div class="container">
+			<div class="row">
+				<div class=" footer__item col-lg-6 col-md-12">
+					<div class="footer__logo">
+						<img src="img/logo-footer.png" alt="Логотип">
+					</div>
+					<div class="footer__contacts">
+						<div class="footer__contacts-item">
+							<img class="footer__contacts-img" src="img/svg/locat-white.svg" alt="Локация">
+							<p>Тула г , Щегловская засека ул, 31, ворота № 22-23</p>
+						</div>
+						<div class="footer__contacts-item">
+							<img class="footer__contacts-img" src="img/svg/time.svg" alt="Время">
+							<p>Пн-Пт 8:00 - 17:00; Сб 9:00 - 14:00</p>
+						</div>
+						<div class="footer__contacts-item">
+							<img class="footer__contacts-img" src="img/svg/call.svg" alt="Телефон">
+							<a href="tel:+7 (4872) 71 74 20">+7 (4872) 71 74 20</a>
+						</div>
+					</div>
+					<div class="footer__soc">
+						<a href="#" class="footer__soc-item footer__facebook">
+							<img class="footer__soc-img" src="img/svg/facebook.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__twitter">
+							<img class="footer__soc-img" src="img/svg/twitter.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__google">
+							<img class="footer__soc-img" src="img/svg/google-hangouts.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__insta">
+							<img class="footer__soc-img" src="img/svg/instagram.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__pinterest">
+							<img class="footer__soc-img" src="img/svg/pinterest.svg" alt="">
+						</a>
+					</div>
+					<p>Copyright © 2019 Wattson</p>
+				</div>
+				<div class="footer__item col-lg-3 col-md-12">
+					<p class="footer__item-title">Информация</p>
+					<div class="footer__item-link">
+						<a href="#">Как заказать и оплатить</a>
+						<a href="#">Проект и монтаж</a>
+						<a href="#">Ремонт и сервис</a>
+						<a href="#">Доставка</a>
+						<a href="#">Бонусы за покупки</a>
+						<a href="#">Отсрочка платежа</a>
+					</div>
+				</div>
+				<div class="footer__item col-lg-3 col-md-12">
+					<p class="footer__item-title">Информация</p>
+					<p class="footer__item-desc">Введите ваш номер телефона и мы перезвоним вам в течении 15 минут</p>
+					<form class="footer__pseudo-call">
+						<input type="phone" >
+						<button></button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</footer>
 	
 	<div id="popup-locat">
@@ -301,6 +398,7 @@
 	<script src="js/plugins/jq.min.js"></script>
 	<script src="js/plugins/jquery.fancybox.min.js"></script>
 	<script src="js/plugins/slick.min.js"></script>
+	<script src="js/plugins/jquery.mask.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

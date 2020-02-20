@@ -22,13 +22,14 @@
 	padding: 0;
 	font-variant-numeric: lining-nums;
 }
-body{
-	height: 3000px;
-}
 h1{
 	
 }
 h2{
+	font-size: 20px;
+	color: #009028;
+	text-transform: uppercase;
+	margin-bottom: 15px;
 	
 }
 h3{
@@ -38,11 +39,16 @@ a{
 	color: #009028;
 	text-decoration: underline;
 }
+p{
+	color: #000;
+	margin-bottom: 10px;
+}
 
 /*СТИЛИ ДЛЯ ХЕДЕРА _________________________________*/
 header{
 	margin-bottom: 20px;
 }
+
 .head-login__top{
 	background-color: #252525;
     padding-top: 11px;
@@ -81,6 +87,8 @@ header{
 .head-login__top-phone p, 
 .head-login__top-locat p{
 	margin-right: 5px;
+	margin-bottom: 0;
+	color: #fff;
 }
 .head-login__top-phone{
 	margin-right: 25px;
@@ -106,6 +114,7 @@ header{
 .head-login__bottom{
 	background-color: #252525;
     padding-bottom: 16px;
+    transition: 0.5s;
 }
 .head-login__bottom-logo{
 	display: flex;
@@ -187,7 +196,7 @@ header{
 }
 .sticky {
     position: fixed;
-    z-index: 1;
+    z-index: -1;
 }
 
 .stop {
@@ -240,6 +249,7 @@ header{
 /*КОНТЕНТ ЛИЧНОГО КАБИНЕТА______________________________________*/
 .lk{
 	padding-top: 20px;
+	margin-bottom: 100px;
 }
 
 
@@ -270,6 +280,7 @@ header{
     left: -15px;
     height: 2px;
     background: #DDDDDD;
+    transition: transform 0.2s;
 }
 .lk-sidebar__links{
 	display: flex;
@@ -356,9 +367,11 @@ header{
 }
 .lk-content__item-img{
 	margin-bottom: 7px;
+    width: 50px;
 }
 .lk-content__item-wrap p{
 	color: #262626;
+	margin-bottom: 0;
 }
 .lk-content__title{
 	color: #009028;
@@ -370,6 +383,10 @@ header{
 }
 .lk-content__desc{
 	margin-bottom: 50px;
+	color: #000;
+}
+.account-slide .lk-sidebar__title:after{
+	transform: rotate(90deg);
 }
 
 
@@ -379,7 +396,6 @@ header{
 /*ПОПАП ОКНО С ВЫБОРОМ ГОРОДА _________________________________*/
 #popup-locat{
 	display: none;
-	width: 700px;
 	max-width: 700px;
 	padding: 25px;
 }
@@ -432,6 +448,7 @@ header{
 	font-size: 12px;
 	font-family: Raleway-sb;
 	margin: 10px 0;
+	color: #000;
 }
 .popup-locat__selected span{
 	color: #009A2B;
@@ -449,6 +466,7 @@ header{
 .locat-active .popup-locat__item-img{
 	display: none;
 }
+
 
 
 /*Форма поиска___________________________________________*/
@@ -494,4 +512,220 @@ header{
     width: 17px;
     height: 20px;
     display: block;
+}
+
+
+
+/*Акции________________*/
+.sale-prew{
+	background: rgba(0, 0, 0, 0.10);
+	padding: 30px 0 30px;
+}
+.sale-prew h2{
+	margin-bottom: 25px;
+}
+.sale-prew__item{
+	margin-bottom: 20px;
+}
+.sale-prew__item__wrap{
+	position: relative;
+	height: 100%;
+	display: flex;
+	overflow: hidden;
+	text-decoration: none;
+}
+.sale-prew__item-img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	z-index: -1;
+	transition: 0.2s;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.sale-prew__item__wrap:hover .sale-prew__item-img{
+	transform: scale(1.05);
+}
+.sale-prew__item-text{
+	background: linear-gradient(90.47deg, #000000 0.17%, rgba(0, 0, 0, 0.58) 65.83%, rgba(196, 196, 196, 0.17) 99.84%);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 35px 20px;
+}
+.sale-prew__item-title{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: "Raleway-sb";
+	margin-bottom: 10px;
+}
+.sale-prew__item-date{
+	color: #009028;
+	font-size: 16px;
+	font-family: "Raleway-sb";
+}
+
+
+
+
+
+
+/*Футер страницы__________________________*/
+footer{
+	background: #212121;
+	padding: 40px 0 50px;
+}
+footer p{
+	color: #fff;
+}
+.footer__logo{
+	width: 170px;
+	margin-bottom: 45px;
+}
+.footer__logo img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.footer__contacts{
+	margin-bottom: 65px;
+}
+.footer__contacts-img{
+	margin-right: 10px;
+}
+.footer__contacts-item{
+	color: #fff;
+	display: flex;
+	margin-bottom: 15px;
+}
+.footer__contacts-item p{
+	margin-bottom: 0;
+}
+.footer__soc{
+	display: flex;
+	margin-bottom: 40px;
+}
+.footer__soc-item{
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.2s;
+}
+.footer__soc-item:hover{
+	transform: scale(1.07);
+}
+.footer__facebook{
+	background: #3B5A9A;
+}
+.footer__twitter{
+	background: #28A9E2;
+}
+.footer__google{
+	background: #E04A39;
+}
+.footer__insta{
+	background: #567D9C;
+}
+.footer__pinterest{
+	background: #CC2129
+}
+.footer__soc-img{
+	width: 18px;
+	height: 18px;
+}
+.footer__item-title{
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #009028;
+	font-family: "Raleway-sb";
+}
+.footer__item-link a{
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 5px;
+	padding: 5px 0;
+	display: flex;
+	width: max-content;
+	transition: 0.2s;
+}
+.footer__item-link a:hover{
+	color: #009028;
+	text-decoration: underline;
+}
+.footer__item-desc{
+	margin-bottom: 30px;
+}
+.footer__pseudo-call{
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.footer__pseudo-call input{
+	width: 100%;
+	height: 38px;
+	border-radius: 30px;
+	border: 1px solid #DDDDDD;
+	color: #fff;
+	background: none;
+	padding: 0 15px;
+	outline: none;
+	font-size: 16px;
+}
+.footer__pseudo-call input::-webkit-input-placeholder { color: #FFFFFF; font-size: 16px;}
+.footer__pseudo-call input:-ms-input-placeholder { color: #FFFFFF; font-size: 16px;}
+.footer__pseudo-call input::-ms-input-placeholder { color: #FFFFFF; font-size: 16px;}
+.footer__pseudo-call input::placeholder { color: #FFFFFF; font-size: 16px;}
+.footer__pseudo-call button {
+    background: url(../img/svg/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.burger{
+	display: none;
+	align-items: center;
+    position: absolute;
+    right: 15px;
+}
+.burger-item{
+	width: 25px;
+	height: 23px;
+	border-top: 3px solid #fff;
+}
+.burger-item:before, 
+.burger-item:after{
+	content: "";
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	position: absolute;
+	bottom: 10px;
+}
+.burger-item:after{
+	bottom: 0;
 }
