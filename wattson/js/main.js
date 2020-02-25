@@ -143,7 +143,21 @@ if ($('.footer__pseudo-call input').length) {
 
 //Открытие мобильного меню
 if ($(window).width() < 991) {
-    $('.burger').click(function(){
+    $('.burger, .close-nav').click(function(){
         $('.head-login__bottom').toggleClass('menu-active');
     });
 }
+
+//Добавление иконки вопроса в форму
+$('.selection-question').each(function() { 
+    $(this).parent().append('<img class="order-selection__icon" src="img/svg/question-mark.svg" alt="">');
+});
+$('.order-selection__icon').hover(function(){
+    $(this).parent().find('.selection-question').toggleClass('view');
+});
+
+
+//Автоотправка форм при смене чекбокса
+$('.order-selection').on('change', function() {
+    $(this).submit();
+});

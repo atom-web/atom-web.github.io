@@ -79,6 +79,24 @@
 			</div>
 		</div>
 	</header>
+	<!-- <div class="bread-crumbs">    
+        <div class="container">
+        	<ul itemscope="" itemtype="https://schema.org/BreadcrumbList">
+	            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		            <a itemtype="https://schema.org/Thing" itemscope="" itemprop="item" href="/">
+		                <span itemprop="name">Главная</span>
+		            </a>
+		            <meta itemprop="position" content="1">
+		        </li>
+	            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+	                <a itemtype="https://schema.org/Thing" itemscope="" itemprop="item" href="#">
+	                    <span itemprop="name">Личный кабинет</span>
+	                </a>
+	                <meta itemprop="position" content="2">
+	            </li>               
+	        </ul>
+        </div>            
+   	</div> -->
 	<div class="lk">
 		<div class="container">
 			<div class="row">
@@ -94,88 +112,124 @@
 							<a href="#">Мои сметы на монтаж</a>
 						</div>
 						<div class="lk-sidebar__links">
-							<a href="#">Мои настройки</a>
+							<a  class="link-active" href="#">Мои настройки</a>
 							<a href="#">Выход из личного кабинета</a>
 						</div>
 					</div>
 				</div>
 				<div class="lk-content col-lg-9">
-					<div class="row">
-						<div class="col-md-12">
-							<h1 class="lk-content__title-green">Добрый день ООО “Метафактор” (id клиента: 777888)</h1>
-							<p class="lk-content__desc">В случае возникновения проблем или неполадок в работе личного кабинета пишите на <a href="mailto:servicedesk@wattson.ru">servicedesk@wattson.ru</a></p>
+					<h1 class="lk-content__title">Параметры работы клиента</h1>
+					<form class="order-selection">
+						<p class="order-selection__title">Оформление заказа:</p>
+						<div class="order-selection__item">
+							<input type="radio" name="order-selection" id="order-selection1" checked>
+							<label for="order-selection1">На имя ООО “Метафактор”
+								<div class="selection-question">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptas, sapiente! Adipisci eveniet nobis unde cumque, numquam expedita repellendus aut ullam voluptatem voluptates commodi vitae velit. Similique numquam minus amet.</p>
+								</div>
+							</label>
 						</div>
-						<div class="lk-content__item col-md-4 col-sm-6 col-6">
-							<a href="#" class="lk-content__item-wrap">
-								<img class="lk-content__item-img" src="img/svg/lk-content-1.svg" alt="Каталог товаров">
-								<p>Каталог товара</p>
-							</a>
+						<div class="order-selection__item">
+							<input type="radio" name="order-selection" id="order-selection2">
+							<label for="order-selection2">На карту WATTSON</label>
 						</div>
-						<div class="lk-content__item col-md-4 col-sm-6 col-6">
-							<a href="#" class="lk-content__item-wrap">
-								<img class="lk-content__item-img" src="img/svg/lk-content-2.svg" alt="Каталог товаров">
-								<p>Коммерческие предложения</p>
-							</a>
+					</form>
+					<form class="order-selection">
+						<p class="order-selection__title">Выберите соглашение::</p>
+						<div class="order-selection__item-table">
+							<table>
+							   	<tr>
+							    	<th>Соглашение</th>
+							    	<th>Уровень цен</th>
+							    	<th>Отсрочка</th>
+							   	</tr>
+							   	<tr>
+							    	<td>
+							    		<input type="radio" name="order-selection" id="order-selection3" checked>
+										<label for="order-selection3">Складские для Кандидатов в партнеры Цена ПРОФ+</label>
+							    	</td>
+							    	<td>Проф +</td>
+							    	<td>Нет</td>
+							  	</tr>
+							  	<tr>
+							    	<td>
+							    		<input type="radio" name="order-selection" id="order-selection4">
+										<label for="order-selection4">Складские для Кандидатов в партнеры Цена ПРОФ+</label>
+							    	</td>
+							    	<td>Проф +</td>
+							    	<td>Нет</td>
+							  	</tr>
+							</table>
 						</div>
-						<div class="lk-content__item col-md-4 col-sm-6 col-6">
-							<a href="#" class="lk-content__item-wrap">
-								<img class="lk-content__item-img" src="img/svg/lk-content-3.svg" alt="Каталог товаров">
-								<p>Мои заказы и счета</p>
-							</a>
+					</form>
+					<div class="manager">
+						<div class="question-view"> <!-- .question-view класс контейнер для иконки вопроса .selection-question -->
+							<p class="manager__title">Ваш персональный менеджер:</p>
+							<div class="selection-question">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptas, sapiente! Adipisci eveniet nobis unde cumque, numquam expedita repellendus aut ullam voluptatem voluptates commodi vitae velit. Similique numquam minus amet.</p>
+							</div>
 						</div>
-						<div class="lk-content__item col-md-4 col-sm-6 col-6">
-							<a href="#" class="lk-content__item-wrap">
-								<img class="lk-content__item-img" src="img/svg/lk-content-4.svg" alt="Каталог товаров">
-								<p>Накладные и задолженность</p>
-							</a>
+						<p>Не назначен</p>
+					</div>
+					<form class="border-box">
+						<p class="border-box__title">Смена пароля</p>
+						<div class="border-box__item">
+							<span>Текущий пароль</span>
+							<input type="password" required>
 						</div>
-						<div class="lk-content__item col-md-4 col-sm-6 col-6">
-							<a href="#" class="lk-content__item-wrap">
-								<img class="lk-content__item-img" src="img/svg/lk-content-5.svg" alt="Каталог товаров">
-								<p>Мой доход</p>
-							</a>
+						<div class="border-box__item">
+							<span>Новый пароль</span>
+							<input type="password" required>
 						</div>
-						<div class="lk-content__item col-md-4 col-sm-6 col-6">
-							<a href="#" class="lk-content__item-wrap">
-								<img class="lk-content__item-img" src="img/svg/lk-content-6.svg" alt="Каталог товаров">
-								<p>Мои сметы на монтаж</p>
-							</a>
+						<div class="border-box__item">
+							<span>Подтвердить пароль</span>
+							<input type="password" required>
+						</div>
+						<button class="form-btn">Сменить пароль</button>
+					</form>
+
+					<p class="set-title">Настройка уведомлений и контактных лиц.</p>
+					<p>Для настройки уведомления, выберите контактное лицо из списка</p>
+
+					<div class="border-box">
+						<p class="border-box__title">Пользователи организации</p>
+						<div class="row">
+							<p class="border-box__select col-md-12">Обрядина Ангелина Сергеевна</p>
+							<p class="border-box__select col-md-12">Обрядина Нина Сергеевна</p>
+							<p class="border-box__active border-box__select col-md-12">Обрядина Василиса Сергеевна</p>
+							<p class="border-box__select col-md-12">Обрядина Виктория Сергеевна</p>
+							<p class="border-box__select col-md-12">Обрядина Ольга Сергеевна</p>
+							<p class="border-box__select col-md-12">Обрядина Евгения Сергеевна</p>
+							<p class="border-box__select col-md-12">Обрядина Елена Сергеевна</p>
+							<p class="border-box__select col-md-12">Обрядина Виктория Сергеевна</p>
+							<p class="border-box__select col-md-12">Обрядина Ольга Сергеевна</p>
+							<p class="border-box__select col-md-12">Обрядина Евгения Сергеевна</p>
+							<p class="border-box__select col-md-12">Обрядина Елена Сергеевна</p>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="sale-prew">
-		<div class="container">
-			<h2>Наши акции</h2>
-			<div class="row">
-				<div class="sale-prew__item col-md-4">
-					<a href="#" class="sale-prew__item__wrap">
-						<img src="img/sale-prew.jpg" alt="Акции" class="sale-prew__item-img">
-						<div class="sale-prew__item-text">
-							<p class="sale-prew__item-title">De Dietrich: выгодные цены на комплекты</p>
-							<span class="sale-prew__item-date">до 31.12.2021</span>
-						</div>
-					</a>
-				</div>
-				<div class="sale-prew__item col-md-4">
-					<a href="#" class="sale-prew__item__wrap">
-						<img src="img/sale-prew2.jpg" alt="Акции" class="sale-prew__item-img">
-						<div class="sale-prew__item-text">
-							<p class="sale-prew__item-title">Получи бесплатно проект отопления!</p>
-							<span class="sale-prew__item-date">до 31.12.2021</span>
-						</div>
-					</a>
-				</div>
-				<div class="sale-prew__item col-md-4">
-					<a href="#" class="sale-prew__item__wrap">
-						<img src="img/sale-prew3.jpg" alt="Акции" class="sale-prew__item-img">
-						<div class="sale-prew__item-text">
-							<p class="sale-prew__item-title">Продукция ТермоБрест: скидка от объема</p>
-							<span class="sale-prew__item-date">до 31.12.2021</span>
-						</div>
-					</a>
+					<div class="download">
+						<p>Сохранить прайс-лист</p>
+						<a href="#" target="_blank" class="download__item">
+							<img class="download__item-icon" src="img/svg/download-list.svg" alt="Загрузка каталога">
+							<span>Сохранить прайс лист в формате Excel</span>
+						</a>
+					</div>
+					<div class="download">
+						<p>Выгрузить каталог товаров</p>
+						<a href="#" target="_blank" class="download__item">
+							<img class="download__item-icon" src="img/svg/download-list.svg" alt="Загрузка каталога">
+							<span>Цены и остатки в формате xml</span>
+						</a>
+						<a href="#" target="_blank" class="download__item">
+							<img class="download__item-icon" src="img/svg/download-list.svg" alt="Загрузка каталога">
+							<span>Цены и остатки в формате xml (расширенный)</span>
+						</a>
+						<a href="#" target="_blank" class="download__item">
+							<img class="download__item-icon" src="img/svg/download-list.svg" alt="Загрузка каталога">
+							<span>Полный каталог в формате YML (для интернет-магазинов)</span>
+						</a>
+					</div>
+					<a href="#">Узнать подробнее о выгрузках каталога и прайс листа</a>
 				</div>
 			</div>
 		</div>
@@ -376,8 +430,6 @@
 		</div>
 		<p class="popup-locat__selected">Выбран город: <span class="popup-locat__select-city"></span></p>
 	</div>
-
-
 
 
 	<script src="js/plugins/jq.min.js"></script>

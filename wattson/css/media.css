@@ -84,7 +84,7 @@
 	.head-login__top-phone{
 		padding-bottom: 7px;
 	}
-	.lk-content__title{
+	.lk-content__title-green{
 		text-transform: uppercase;
 		font-family: "Raleway-sb";
 	}
@@ -131,11 +131,29 @@
 		width: 17px;
     	height: 37px;
 	}
+	.order-selection__item-table tr td:nth-child(1) {
+	    width: 60%;
+	}
+	.order-selection__item-table tr td:nth-child(2) {
+	    width: 25%;
+	}
+	.order-selection__item-table tr td:nth-child(3) {
+	    width: 15%;
+	}
+	.order-selection__item-table th{
+		font-size: 14px;
+	}
+	.close-nav{
+		display: block;
+	}
 
 }
 @media (max-width: 767px){
 	.head-login__top-cont{
 		flex-direction: column;
+	}
+	.selection-question{
+		right: 0;
 	}
 }
 @media (max-width: 575px){
