@@ -146,6 +146,11 @@
 	.close-nav{
 		display: block;
 	}
+	.lk-content__title-wrap{
+		flex-direction: column;
+		align-items: end;
+		margin-bottom: 25px;
+	}
 
 }
 @media (max-width: 767px){
@@ -155,6 +160,25 @@
 	.selection-question{
 		right: 0;
 	}
+
+	.table1 thead {
+        display: none;
+    }
+    .table1 tr {
+        display: flex;
+	    flex-direction: column;
+	    margin-bottom: 30px;
+	    padding: 15px;
+	    background: #f5f5f5;
+    }
+    .table1 td {
+        margin: 0 -1px -1px 0;
+	    padding: 10px 0;
+	    position: relative;
+    }
+    .table1 td span {
+        display: block;
+    }
 }
 @media (max-width: 575px){
 	.popup-locat__item{

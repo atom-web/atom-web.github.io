@@ -79,6 +79,24 @@
 			</div>
 		</div>
 	</header>
+	<!-- <div class="bread-crumbs">    
+        <div class="container">
+        	<ul itemscope="" itemtype="https://schema.org/BreadcrumbList">
+	            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		            <a itemtype="https://schema.org/Thing" itemscope="" itemprop="item" href="/">
+		                <span itemprop="name">Главная</span>
+		            </a>
+		            <meta itemprop="position" content="1">
+		        </li>
+	            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+	                <a itemtype="https://schema.org/Thing" itemscope="" itemprop="item" href="#">
+	                    <span itemprop="name">Личный кабинет</span>
+	                </a>
+	                <meta itemprop="position" content="2">
+	            </li>               
+	        </ul>
+        </div>            
+   	</div> -->
 	<div class="lk">
 		<div class="container">
 			<div class="row">
@@ -90,128 +108,78 @@
 							<a href="#">Мои заказы и счета</a>
 							<a href="#">Каталог товара</a>
 							<a href="#">Накладные и задолженность</a>
-							<a href="#">Мой доход</a>
+							<a class="link-active" href="#">Мой доход</a>
 							<a href="#">Мои сметы на монтаж</a>
 						</div>
 						<div class="lk-sidebar__links">
-							<a  class="link-active" href="#">Мои настройки</a>
+							<a  href="#">Мои настройки</a>
 							<a href="#">Выход из личного кабинета</a>
 						</div>
 					</div>
 				</div>
 				<div class="lk-content col-lg-9">
-					<h1 class="lk-content__title">Параметры работы клиента</h1>
-					<form class="order-selection">
-						<p class="order-selection__title">Оформление заказа:</p>
-						<div class="order-selection__item">
-							<input type="radio" name="order-selection" id="order-selection1" checked>
-							<label for="order-selection1">На имя ООО “Метафактор”
-								<div class="selection-question">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptas, sapiente! Adipisci eveniet nobis unde cumque, numquam expedita repellendus aut ullam voluptatem voluptates commodi vitae velit. Similique numquam minus amet.</p>
-								</div>
-							</label>
-						</div>
-						<div class="order-selection__item">
-							<input type="radio" name="order-selection" id="order-selection2">
-							<label for="order-selection2">На карту WATTSON</label>
-						</div>
-					</form>
-					<form class="order-selection">
-						<p class="order-selection__title">Выберите соглашение::</p>
-						<div class="order-selection__item-table">
-							<table>
-							   	<tr>
-							    	<th>Соглашение</th>
-							    	<th>Уровень цен</th>
-							    	<th>Отсрочка</th>
-							   	</tr>
-							   	<tr>
-							    	<td>
-							    		<input type="radio" name="order-selection" id="order-selection3" checked>
-										<label for="order-selection3">Складские для Кандидатов в партнеры Цена ПРОФ+</label>
-							    	</td>
-							    	<td>Проф +</td>
-							    	<td>Нет</td>
-							  	</tr>
-							  	<tr>
-							    	<td>
-							    		<input type="radio" name="order-selection" id="order-selection4">
-										<label for="order-selection4">Складские для Кандидатов в партнеры Цена ПРОФ+</label>
-							    	</td>
-							    	<td>Проф +</td>
-							    	<td>Нет</td>
-							  	</tr>
-							</table>
-						</div>
-					</form>
-					<div class="manager">
-						<div class="question-view"> <!-- .question-view класс контейнер для иконки вопроса .selection-question -->
-							<p class="manager__title">Ваш персональный менеджер:</p>
-							<div class="selection-question">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptas, sapiente! Adipisci eveniet nobis unde cumque, numquam expedita repellendus aut ullam voluptatem voluptates commodi vitae velit. Similique numquam minus amet.</p>
-							</div>
-						</div>
-						<p>Не назначен</p>
-					</div>
-					<form class="border-box">
-						<p class="border-box__title">Смена пароля</p>
-						<div class="border-box__item">
-							<span>Текущий пароль</span>
-							<input type="password" required>
-						</div>
-						<div class="border-box__item">
-							<span>Новый пароль</span>
-							<input type="password" required>
-						</div>
-						<div class="border-box__item">
-							<span>Подтвердить пароль</span>
-							<input type="password" required>
-						</div>
-						<button class="form-btn">Сменить пароль</button>
-					</form>
-
-					<p class="set-title">Настройка уведомлений и контактных лиц.</p>
-					<p>Для настройки уведомления, выберите контактное лицо из списка</p>
-
-					<div class="border-box">
-						<p class="border-box__title">Пользователи организации</p>
-						<div class="row">
-							<p class="border-box__select col-md-12">Обрядина Ангелина Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Нина Сергеевна</p>
-							<p class="border-box__active border-box__select col-md-12">Обрядина Василиса Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Виктория Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Ольга Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Евгения Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Елена Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Виктория Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Ольга Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Евгения Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Елена Сергеевна</p>
-						</div>
-					</div>
-					<div class="download">
-						<p>Сохранить прайс-лист</p>
-						<a href="#" target="_blank" class="download__item">
-							<img class="download__item-icon" src="img/svg/download-list.svg" alt="Загрузка каталога">
-							<span>Сохранить прайс лист в формате Excel</span>
-						</a>
-					</div>
-					<div class="download">
-						<p>Выгрузить каталог товаров</p>
-						<a href="#" target="_blank" class="download__item">
-							<img class="download__item-icon" src="img/svg/download-list.svg" alt="Загрузка каталога">
-							<span>Цены и остатки в формате xml</span>
-						</a>
-						<a href="#" target="_blank" class="download__item">
-							<img class="download__item-icon" src="img/svg/download-list.svg" alt="Загрузка каталога">
-							<span>Цены и остатки в формате xml (расширенный)</span>
-						</a>
-						<a href="#" target="_blank" class="download__item">
-							<img class="download__item-icon" src="img/svg/download-list.svg" alt="Загрузка каталога">
-							<span>Полный каталог в формате YML (для интернет-магазинов)</span>
-						</a>
-					</div>
-					<a href="#">Узнать подробнее о выгрузках каталога и прайс листа</a>
+					<table class="table2">
+					    <thead>
+					        <tr>
+					            <th>УПД</th>
+					            <th>Номер</th>
+					            <th>Дата</th>
+					            <th>Сумма</th>
+					            <th>Контрагент</th>
+					            <th>Примечание</th>
+					        </tr>
+					    </thead>
+					    <tbody>
+					        <tr>
+					            <td><img src="img/svg/print.svg" alt=""></td>
+					            <td>0000-200950</td>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>1 469,77</td>
+					            <td>Термострой-33 ООО 00 000000000000 000 00</td>
+					            <td></td>
+					        </tr>
+					        <tr>
+					            <td><img src="img/svg/print.svg" alt=""></td>
+					            <td>0000-200950</td>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>1 469,77</td>
+					            <td>Термострой-33 ООО</td>
+					            <td></td>
+					        </tr>
+					        <tr>
+					            <td><img src="img/svg/print.svg" alt=""></td>
+					            <td>0000-200950</td>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>1 469,77</td>
+					            <td>Термострой-33 ООО</td>
+					            <td></td>
+					        </tr>
+					        <tr>
+					            <td><img src="img/svg/print.svg" alt=""></td>
+					            <td>0000-200950</td>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>1 469,77</td>
+					            <td>Термострой-33 ООО</td>
+					            <td></td>
+					        </tr>
+					        <tr>
+					            <td><img src="img/svg/print.svg" alt=""></td>
+					            <td>0000-200950</td>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>1 469,77</td>
+					            <td>Термострой-33 ООО</td>
+					            <td></td>
+					        </tr>
+					        <tr>
+					            <td><img src="img/svg/print.svg" alt=""></td>
+					            <td>0000-200950</td>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>1 469,77</td>
+					            <td>Термострой-33 ООО</td>
+					            <td></td>
+					        </tr>
+					    </tbody>
+					</table>
 				</div>
 			</div>
 		</div>

@@ -44,6 +44,35 @@ p{
 	color: #000;
 	margin-bottom: 10px;
 }
+.style-txt{
+	color: #009028;
+	text-transform: uppercase;
+}
+.style-txt-green{
+	color: #009028;
+}
+.style-txt-2{
+	color: #009028;
+	font-family: "Raleway-b";
+}
+
+
+.btn{
+	background: #009028;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Raleway-m";
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 33px;
+    margin-bottom: 30px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.btn:hover{
+	border-radius: 0px;
+}
 
 /*СТИЛИ ДЛЯ ХЕДЕРА _________________________________*/
 header{
@@ -373,6 +402,14 @@ header{
 .lk-content__item-wrap p{
 	color: #262626;
 	margin-bottom: 0;
+}
+.lk-content__title-wrap{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.lk-content__title-wrap a{
+	font-size: 14px;
 }
 .lk-content__title-green{
 	color: #009028;
@@ -991,6 +1028,123 @@ footer p{
 
 
 
+.sum-points{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.sum-points span{
+	margin-left: 10px;
+}
 
 
 
+
+
+
+
+
+
+
+
+/*Таблицы_______________________________*/
+
+.table1 {
+    border-radius: 5px;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.table1 th, .table1 td {
+    border: none;   
+    border-bottom: 1px solid #E5E5E5;
+    vertical-align: top;
+    padding: 10px 5px;
+}
+.table1 th {
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px solid #E5E5E5;    
+    font-size: 18px;
+    font-family: "Raleway-m";
+    text-align: left;
+}
+.table1 tbody tr:last-child td{
+	border: none;
+}
+
+
+/*Вторая таблица*/
+.table2 {
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+}
+.table2 th{
+    border: none;   
+    border-bottom: 1px solid #E5E5E5;
+    vertical-align: top;
+    padding: 15px 0px;
+    text-align: left;
+}
+.table2 td{
+	padding: 8px 0;
+}
+.table2 tbody tr:first-child td{
+	padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table1 th:nth-child(1){
+	width: 15%;
+}
+.table1 th:nth-child(2){
+	width: 55%;
+}
+.table1 th:nth-child(3){
+	width: 15%;
+}
+.table1 th:nth-child(4){
+	width: 15%;
+}
+
+
+
+
+.table2 th:nth-child(1){
+	width: 8%;
+}
+.table2 th:nth-child(2){
+	width: 20%;
+}
+.table2 th:nth-child(3){
+	width: 22%;
+}
+.table2 th:nth-child(4){
+	width: 15%;
+}
+.table2 th:nth-child(5){
+	width: 20%;
+}
+.table2 th:nth-child(6){
+	width: 15%;
+}

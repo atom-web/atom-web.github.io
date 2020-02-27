@@ -90,128 +90,78 @@
 							<a href="#">Мои заказы и счета</a>
 							<a href="#">Каталог товара</a>
 							<a href="#">Накладные и задолженность</a>
-							<a href="#">Мой доход</a>
+							<a class="link-active" href="#">Мой доход</a>
 							<a href="#">Мои сметы на монтаж</a>
 						</div>
 						<div class="lk-sidebar__links">
-							<a  class="link-active" href="#">Мои настройки</a>
+							<a  href="#">Мои настройки</a>
 							<a href="#">Выход из личного кабинета</a>
 						</div>
 					</div>
 				</div>
 				<div class="lk-content col-lg-9">
-					<h1 class="lk-content__title">Параметры работы клиента</h1>
-					<form class="order-selection">
-						<p class="order-selection__title">Оформление заказа:</p>
-						<div class="order-selection__item">
-							<input type="radio" name="order-selection" id="order-selection1" checked>
-							<label for="order-selection1">На имя ООО “Метафактор”
-								<div class="selection-question">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptas, sapiente! Adipisci eveniet nobis unde cumque, numquam expedita repellendus aut ullam voluptatem voluptates commodi vitae velit. Similique numquam minus amet.</p>
-								</div>
-							</label>
-						</div>
-						<div class="order-selection__item">
-							<input type="radio" name="order-selection" id="order-selection2">
-							<label for="order-selection2">На карту WATTSON</label>
-						</div>
-					</form>
-					<form class="order-selection">
-						<p class="order-selection__title">Выберите соглашение::</p>
-						<div class="order-selection__item-table">
-							<table>
-							   	<tr>
-							    	<th>Соглашение</th>
-							    	<th>Уровень цен</th>
-							    	<th>Отсрочка</th>
-							   	</tr>
-							   	<tr>
-							    	<td>
-							    		<input type="radio" name="order-selection" id="order-selection3" checked>
-										<label for="order-selection3">Складские для Кандидатов в партнеры Цена ПРОФ+</label>
-							    	</td>
-							    	<td>Проф +</td>
-							    	<td>Нет</td>
-							  	</tr>
-							  	<tr>
-							    	<td>
-							    		<input type="radio" name="order-selection" id="order-selection4">
-										<label for="order-selection4">Складские для Кандидатов в партнеры Цена ПРОФ+</label>
-							    	</td>
-							    	<td>Проф +</td>
-							    	<td>Нет</td>
-							  	</tr>
-							</table>
-						</div>
-					</form>
-					<div class="manager">
-						<div class="question-view"> <!-- .question-view класс контейнер для иконки вопроса .selection-question -->
-							<p class="manager__title">Ваш персональный менеджер:</p>
-							<div class="selection-question">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptas, sapiente! Adipisci eveniet nobis unde cumque, numquam expedita repellendus aut ullam voluptatem voluptates commodi vitae velit. Similique numquam minus amet.</p>
-							</div>
-						</div>
-						<p>Не назначен</p>
+					<div class="lk-content__title-wrap">
+						<h1 class="lk-content__title">Бонусная программа</h1>
+						<a href="#">Привязать карту WATTSON</a>
 					</div>
-					<form class="border-box">
-						<p class="border-box__title">Смена пароля</p>
-						<div class="border-box__item">
-							<span>Текущий пароль</span>
-							<input type="password" required>
-						</div>
-						<div class="border-box__item">
-							<span>Новый пароль</span>
-							<input type="password" required>
-						</div>
-						<div class="border-box__item">
-							<span>Подтвердить пароль</span>
-							<input type="password" required>
-						</div>
-						<button class="form-btn">Сменить пароль</button>
-					</form>
-
-					<p class="set-title">Настройка уведомлений и контактных лиц.</p>
-					<p>Для настройки уведомления, выберите контактное лицо из списка</p>
-
-					<div class="border-box">
-						<p class="border-box__title">Пользователи организации</p>
-						<div class="row">
-							<p class="border-box__select col-md-12">Обрядина Ангелина Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Нина Сергеевна</p>
-							<p class="border-box__active border-box__select col-md-12">Обрядина Василиса Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Виктория Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Ольга Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Евгения Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Елена Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Виктория Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Ольга Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Евгения Сергеевна</p>
-							<p class="border-box__select col-md-12">Обрядина Елена Сергеевна</p>
-						</div>
-					</div>
-					<div class="download">
-						<p>Сохранить прайс-лист</p>
-						<a href="#" target="_blank" class="download__item">
-							<img class="download__item-icon" src="img/svg/download-list.svg" alt="Загрузка каталога">
-							<span>Сохранить прайс лист в формате Excel</span>
-						</a>
-					</div>
-					<div class="download">
-						<p>Выгрузить каталог товаров</p>
-						<a href="#" target="_blank" class="download__item">
-							<img class="download__item-icon" src="img/svg/download-list.svg" alt="Загрузка каталога">
-							<span>Цены и остатки в формате xml</span>
-						</a>
-						<a href="#" target="_blank" class="download__item">
-							<img class="download__item-icon" src="img/svg/download-list.svg" alt="Загрузка каталога">
-							<span>Цены и остатки в формате xml (расширенный)</span>
-						</a>
-						<a href="#" target="_blank" class="download__item">
-							<img class="download__item-icon" src="img/svg/download-list.svg" alt="Загрузка каталога">
-							<span>Полный каталог в формате YML (для интернет-магазинов)</span>
-						</a>
-					</div>
-					<a href="#">Узнать подробнее о выгрузках каталога и прайс листа</a>
+					<p>Бонусные баллы <span class="style-txt">Термострой-33 ООО</span> и <span class="style-txt">Термострой ООО</span></p>
+					<p class="sum-points">Сумма баллов: <span class="style-txt-2">3124,39</span></p>
+					<a href="#" class="btn">Вывести</a>
+					<table class="table1">
+					    <thead>
+					        <tr>
+					            <th>Период</th>
+					            <th>Регистратор</th>
+					            <th>Приход</th>
+					            <th>Расход</th>
+					        </tr>
+					    </thead>
+					    <tbody>
+					        <tr>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>Накладная 0000-200871717186 от 26.12.2019 (по заказу 0000-11747471716505 от 26.12.2019)	</td>
+					            <td>2 137,66</td>
+					            <td>2 137,66</td>
+					        </tr>     
+					        <tr>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>Накладная 0000-200886 от 26.12.2019 (по заказу 000000-1105 от 26.12.2019)	</td>
+					            <td>2 137,66</td>
+					            <td>2 137,66</td>
+					        </tr>
+					        <tr>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>Накладная 0000-200886 от 26.12.2019 (по заказу 000-116504275 от 26.12.2019)	</td>
+					            <td>2 137,66</td>
+					            <td>2 137,66</td>
+					        </tr>
+					        <tr>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>Накладная 0000-200886 от 26.12.2019 (по заказу 0000-116505 от 26.12.2019)	</td>
+					            <td>2 137,66</td>
+					            <td>2 137,66</td>
+					        </tr>
+					        <tr>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>Накладная 0000-200886 от 26.12.2019 (по заказу 00-116505 от 26.12.2019)	</td>
+					            <td>2 137,66</td>
+					            <td>2 137,66</td>
+					        </tr>
+					        <tr>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>Накладная 0000-2007147175474886 от 26.12.2019 (по заказу 0000-116505 от 26.12.2019)	</td>
+					            <td>2 137,66</td>
+					            <td>2 137,66</td>
+					        </tr>
+					        <tr>
+					            <td>26.12.2019 12:17:08	</td>
+					            <td>Накладная 0000-200886 от 26.12.2019 (по заказу 0000-116505 от 26.12.2019)	</td>
+					            <td>2 137,66</td>
+					            <td>2 137,66</td>
+					        </tr>
+					    </tbody>
+					</table>
+					<p class="style-txt-green">Показаны движения за последние 3 месяца</p>
 				</div>
 			</div>
 		</div>
