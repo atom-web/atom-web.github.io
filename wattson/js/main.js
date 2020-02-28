@@ -161,3 +161,22 @@ $('.order-selection__icon').hover(function(){
 $('.order-selection').on('change', function() {
     $(this).submit();
 });
+
+
+//Смена складок .lk-content__select______________
+if ($('.lk-content__info-select').length) {
+    $('.lk-content__select-btn').each(function(){
+        if ($(this).hasClass('select-active')) {
+            var downData = $(this).attr('data-select');
+            $('.lk-content__info-item[data-info="' + downData + '"]').addClass('lk-content__info-active');
+        }
+    });
+    $('.lk-content__select-btn').click(function(){
+        $('.lk-content__select-btn').removeClass('select-active');
+        $(this).addClass('select-active');
+
+        var selectData = $(this).attr('data-select');
+        $('.lk-content__info-item').removeClass('lk-content__info-active');
+        $('.lk-content__info-item[data-info="' + selectData + '"]').addClass('lk-content__info-active');   
+    });
+}

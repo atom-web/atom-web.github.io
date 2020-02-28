@@ -1,3 +1,18 @@
+@media (max-width: 1200px){
+	.lk-content__info-select{
+		flex-wrap: wrap;
+	}
+	.lk-content__select-btn{
+		min-width: auto;
+		width: 33.333333%;
+		border: 2px solid #DDDDDD;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+	.lk-content__info-select{
+		border: none;
+	}
+}
 @media (max-width: 991px){
 	.head-login__top-cont{
 		margin-bottom: 15px;
@@ -151,6 +166,7 @@
 		align-items: end;
 		margin-bottom: 25px;
 	}
+	
 
 }
 @media (max-width: 767px){
@@ -183,6 +199,46 @@
 @media (max-width: 575px){
 	.popup-locat__item{
 		width: 100%;
+	}
+	.lk-content__select-btn{
+		width: 100%;
+	}
+	.table2 thead tr{
+		display: none;
+	}
+	.table2 tbody{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.table2 tbody tr{
+		display: flex;
+    	flex-direction: column;
+        width: 50%;
+        background: #eaeaea;
+        padding: 7px 7px;
+        margin-bottom: 10px;
+	}
+	.table2 tbody tr:first-child td{
+		padding-top: 8px;
+	}
+	.table2 tbody tr:nth-child(odd){
+		border-right: 10px solid #fff;
+	}
+	.table2 tbody tr td{
+		text-decoration: underline;
+		    text-align: center;
+	}
+	.table2 tbody tr td a{
+		display: flex;
+	    justify-content: center;
+	    padding: 10px 0;
+	    background: #009028;
+	}
+	.table2 tbody a svg path{
+		fill: #fff;
+	}
+	.table2 tbody a:hover svg path{
+		fill: #000;
 	}
 }
 @media (max-width: 350px){
