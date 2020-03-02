@@ -1167,3 +1167,7 @@ footer p{
     max-width: 500px;
     margin: 15px auto 0;
 }
+#passreset-installer, 
+#passreset-entity{
+	display: none;
+}
