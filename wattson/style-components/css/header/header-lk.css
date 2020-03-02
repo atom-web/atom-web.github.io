@@ -1,0 +1,159 @@
+/*СТИЛИ ДЛЯ ХЕДЕРА _________________________________*/
+.head-login{
+	margin-bottom: 20px;
+}
+
+.head-login__top{
+	background-color: #252525;
+    padding-top: 11px;
+}
+.head-login__top-nav{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 5px 0;
+}
+.head-login__top-nav a{
+	font-size: 13px;
+	text-decoration: none;
+	color: #fff;
+	margin-right: 11px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-transform: uppercase;
+	transition: 0.2s;
+}
+.head-login__top-nav a:hover{
+	color: #009A2B;
+}
+.head-login__top-cont{
+	font-size: 12px;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.head-login__top-phone, 
+.head-login__top-locat{
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+.head-login__top-phone p, 
+.head-login__top-locat p{
+	margin-right: 5px;
+	margin-bottom: 0;
+	color: #fff;
+}
+.head-login__top-phone{
+	margin-right: 25px;
+}
+.head-login__top-phone a{
+	color: #009A2B;
+	text-decoration: none;
+	transition: 0.2s;
+}
+.head-login__top-phone a:hover{
+	text-decoration: underline;
+}
+.head-login__top-city{
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #009A2B;
+	transition: 0.2s;
+}
+.head-login__top-city:hover{
+	text-decoration: underline;
+}
+.head-login__bottom{
+	background-color: #252525;
+    padding-bottom: 16px;
+    transition: 0.5s;
+}
+.head-login__bottom-logo{
+	display: flex;
+	align-items: center;
+}
+.head-login__bottom-logo img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.head-login__bottom-logo a{
+	display: flex;
+	width: 186px;
+}
+.head-login__bottom-lk-img, 
+.head-login__bottom-cart-img{
+	margin-right: 10px;
+    width: 30px;
+    height: 37px;
+}
+.head-login__bottom-lk, 
+.head-login__bottom-cart{
+	display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 3px;
+}
+.head-login__bottom-cart>a>div{
+	position: relative;
+	height: 35px;
+}
+.head-login__bottom-lk-wrap p{
+	font-size: 15px;
+    color: #E2E2E2;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 200px;
+    margin-bottom: 3px;
+    font-family: "Raleway-m";
+}
+.head-login__bottom-cart p{
+	text-transform: uppercase;
+    color: #E2E2E2;
+    font-size: 15px;
+    font-family: "Raleway-m";
+}
+.head-login__bottom-lk-btn{
+	display: flex;
+	justify-content: space-between;
+}
+.head-login__bottom-lk-wrap a{
+	text-decoration: none;
+	color: #009A2B;
+	font-size: 14px;
+	margin-right: 10px;
+	font-family: "Raleway-m";
+}
+.head-login__bottom-lk-btn a:last-child{
+	margin-right: 0px;
+}
+.head-login__bottom-cart a{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+.head-login__bottom-cart-num{
+	top: -5px;
+	right: 2px;
+	position: absolute;
+	background: #8D0000;
+	height: 19px;
+	width: 19px;
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	border-radius: 100%;
+}
+.sticky {
+    position: fixed;
+    z-index: -1;
+}
+
+.stop {
+    position: relative;
+    z-index: 1;
+}
