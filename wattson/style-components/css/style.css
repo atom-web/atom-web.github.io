@@ -67,7 +67,9 @@ p{
     padding: 10px 33px;
     margin-bottom: 15px;
     display: inline-block;
+    border: none;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .btn:hover{
