@@ -45,27 +45,34 @@
 	</header>
 	<div class="authorization-content">
 		<div class="container">
-			<h1 class="authorization-content__title">Мой аккаунт WATTSON Бизнес / Восстановить пароль</h1>
-			<h2>Для восстановления пароля, пожалуйста, выберите тип вашей организации (тип работы)</h2>
-			<div class="authorization-content__selection row">
-				<a data-fancybox data-src="#login-form-entity" href="javascript:;" class="col-md-6">
-					<div class="authorization-content__selection-item">
-						<img class="authorization-content__selection-img" src="../style-components/img/authorization-content__selection-item3.jpg" alt="выбор дизайна кабинета">
-						<p class="authorization-content__selection-title">Юридическое лицо / ИП</p>
-						<p class="authorization-content__selection-desc">Специализированная организация</p>
-					</div>
-				</a>
-				<a data-fancybox data-src="#login-form-installer" href="javascript:;" class="col-md-6">
-					<div class="authorization-content__selection-item">
-						<img class="authorization-content__selection-img" src="../style-components/img/authorization-content__selection-item4.jpg" alt="выбор дизайна кабинета">
-						<p class="authorization-content__selection-title">Монтажник</p>
-						<p class="authorization-content__selection-desc">Держатель карты WATTSON</p>
-					</div>
-				</a>
-			</div>
-			<div class="authorization-content__support">
-				<p>Если вы столкнулись с проблемой при входе или в работе сайта, вы можете обратиться в службу технической поддержки: </p>
-				<a href="mailto:support@wattson.ru">support@wattson.ru</a>
+			<h1 class="authorization-content__title">Мой аккаунт WATTSON Бизнес</h1>
+			<div class="authorization-content__row row">
+				<div class="authorization-content__login col-lg-6 col-md-12">
+					<form class="login-form">
+						<p class="login-form__title">Вход в систему</p>
+						<div class="login-form__item">
+							<span class="login-form__item-title">Имя пользователя (логин)</span>
+							<input type="name" required>
+						</div>
+						<div class="login-form__item">
+							<span class="login-form__item-title">Пароль</span>
+							<input type="password" required>
+						</div>
+						<button class="btn-width">Войти в личный кабинет</button>
+						<div class="login-form__forgot">
+							<a href="#">Забыли пароль?</a>
+						</div>
+						<div class="authorization-content__support">
+							<p>Если вы столкнулись с проблемой при входе или в работе сайта, вы можете обратиться в службу технической поддержки: </p>
+							<a href="mailto:support@wattson.ru">support@wattson.ru</a>
+						</div>
+					</form>
+				</div>
+				<div class="authorization-content__reg col-lg-6 col-md-12">
+					<p class="authorization-content__reg-title">Регистрация</p>
+					<h2 class="authorization-content__reg-desc">Уже на протяжении 10 лет компания WATTSON радует своих постоянных клиентов . Мы придумали совершенно новый подход к работе. Оцените все возможности WATTSON Бизнес в своей работе. Станьте частью большой семьи WATTSON.</h2>
+					<a href="#" class="btn">Зарегистрироваться</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -131,44 +138,7 @@
 			</div>
 		</div>
 	</footer>
-	<div id="login-form-entity">
-		<form class="login-form">
-			<p class="login-form__title">Восстановление пароля</p>
-			<div class="login-form__item">
-				<span class="login-form__item-title">Имя пользователя</span>
-				<input type="name" placeholder="Ваше имя" required>
-			</div>
-			<div class="login-form__item">
-				<span class="login-form__item-title">Мобильный телефон</span>
-				<input class="login-form__item-tel" type="tel" required>
-			</div>
-			<div id="recap">
-				<!-- Удаляется картинка и сюда вставляется скрипт рекапчи -->
-				<img src="../style-components/img/recap.jpg" alt="Рекапча">
-			</div>
-			<button class="btn">Восстановить пароль</button>
-			<p class="login-form__info">Новый пароль будет выслан в SMS указаный при регистрации Вашей организации</p>
-		</form>
-	</div>
-	<div id="login-form-installer">
-		<form class="login-form">
-			<p class="login-form__title">Восстановление пароля</p>
-			<div class="login-form__item">
-				<span class="login-form__item-title">Мобильный телефон</span>
-				<input class="login-form__item-tel" type="tel" required>
-			</div>
-			<div class="login-form__item">
-				<span class="login-form__item-title">Номер карты watton</span>
-				<input class="login-form__item-card" type="text" placeholder="1234567890" required>
-			</div>
-			<div id="recap">
-				<!-- Удаляется картинка и сюда вставляется скрипт рекапчи -->
-				<img src="../style-components/img/recap.jpg" alt="Рекапча">
-			</div>
-			<button class="btn">Восстановить пароль</button>
-			<p class="login-form__info">Новый пароль будет выслан в SMS указаный при регистрации Вашей организации</p>
-		</form>
-	</div>
+
 
 	<script src="../style-components/js/plugins/jq.min.js"></script>
 	<script src="../style-components/js/plugins/jquery.fancybox.min.js"></script>

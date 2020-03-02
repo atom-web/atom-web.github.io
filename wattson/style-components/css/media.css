@@ -205,8 +205,17 @@
 		left: 0px;
     	right: 0px;
 	}
-	.passreset{
+	.login-form{
 		min-width: auto;
+	}
+	.authorization-content__reg{
+		border: none;
+	}
+	.authorization-content__login{
+		padding-right: 15px;
+	}
+	.login-form__title{
+		text-align: center;
 	}
 	
 

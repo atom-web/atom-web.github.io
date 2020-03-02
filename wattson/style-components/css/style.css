@@ -57,7 +57,8 @@ p{
 }
 
 
-.btn{
+.btn, 
+.btn-width{
 	background: #009028;
     text-decoration: none;
     font-size: 14px;
@@ -71,8 +72,12 @@ p{
     transition: 0.5s;
     cursor: pointer;
 }
+.btn-width{
+	width: 100%;
+}
 
-.btn:hover{
+.btn:hover, 
+.btn-width:hover{
 	border-radius: 0px;
 }
 
@@ -1133,24 +1138,24 @@ footer p{
 .authorization-content__support a{
 	text-decoration: none;
 }
-.passreset{
-	min-width: 550px;
+.login-form{
+	width: 100%;
 }
-.passreset__title{
+.login-form__title{
 	font-size: 24px;
 	margin-bottom: 25px;
 	font-family: "Raleway-m";
 }
-.passreset__item{
+.login-form__item{
 	margin-bottom: 25px;
 	display: flex;
 	flex-direction: column;
 }
-.passreset__item-title{
+.login-form__item-title{
 	font-family: "Raleway-m";
 	margin-bottom: 5px;
 }
-.passreset__item input{
+.login-form__item input{
 	height: 40px;
 	width: 100%;
 	border: 1px solid #000;
@@ -1161,13 +1166,46 @@ footer p{
 #recap{
 	margin-bottom: 25px;
 }
-.passreset__info{
+.login-form__info{
 	text-align: center;
     padding: 0 15px;
     max-width: 500px;
     margin: 15px auto 0;
 }
-#passreset-installer, 
-#passreset-entity{
+#login-form-installer, 
+#login-form-entity{
 	display: none;
+}
+.login-form__forgot{
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px 0 30px;
+}
+.login-form__forgot a{
+	font-family: "Raleway-m";
+	color: #009028;
+	text-decoration: underline;
+}
+.authorization-content__reg{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	border-left: 1px solid #C4C4C4;
+}
+.authorization-content__reg-title{
+	font-size: 24px;
+	font-family: "Raleway-m";
+	margin-bottom: 25px;
+}
+.authorization-content__reg-desc{
+	font-size: 18px !important;
+	margin-bottom: 60px !important;
+	max-width: 450px;
+}
+.authorization-content__login{
+    padding-right: 40px;
+}
+.authorization-content__row{
+	margin-bottom: 100px;
 }
