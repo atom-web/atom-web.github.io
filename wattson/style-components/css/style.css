@@ -1069,11 +1069,6 @@ footer p{
 
 /*_____________________________________________________________*/
 
-.promo-content .container{
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .promo-content h1{
 	color: #000000;
 	font-size: 24px;
@@ -1130,9 +1125,8 @@ footer p{
 }
 .promo-content__support{
 	max-width: 550px;
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 40px;
+    text-align: center;
+    margin: 10px auto 40px;
 }
 .promo-content__support a{
 	text-decoration: none;
