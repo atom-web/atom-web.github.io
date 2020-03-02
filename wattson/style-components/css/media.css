@@ -168,14 +168,14 @@
 	}
 
 	/*стили для промо страниц__________________________*/
-	.header-promo__logo img{
+	.header-authorization__logo img{
 		height: 35px;
     	width: 100px;
 	}
-	.header-promo{
+	.header-authorization{
 	    height: 60px
 	}
-	.header-promo__nav{
+	.header-authorization__nav{
 		width: 265px;
 	    position: fixed;
 	    left: -300px;
@@ -187,21 +187,21 @@
 	    padding: 15px 15px;
 	    transition: 0.2s;
 	}
-	.header-promo__nav ul{
+	.header-authorization__nav ul{
 	    flex-direction: column;
 	}
-	.header-promo__nav li {
+	.header-authorization__nav li {
 		border-bottom: 1px solid #4a4a4a;
 	    margin-right: 0px;
 	}
-	.header-promo__nav a{
+	.header-authorization__nav a{
 		font-size: 16px;
 		padding: 10px 8px;
 	}
-	.header-promo__brdr{
+	.header-authorization__brdr{
 		margin-top: 20px;
 	}
-	.header-promo__brdr:after{
+	.header-authorization__brdr:after{
 		left: 0px;
     	right: 0px;
 	}
@@ -240,7 +240,7 @@
 
 
     /*стили для промо страниц__________________________*/
-    .promo-content__selection-item{
+    .authorization-content__selection-item{
     	height: auto;
     	min-height: 180px;
     }

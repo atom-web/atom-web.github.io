@@ -159,10 +159,10 @@ if ($('.head-login').length) {
 }
 
 // Открытие мобильного меню в хедере промо страницы
-if ($('.header-promo').length) {
+if ($('.header-authorization').length) {
     if ($(window).width() < 991) {
         $('.burger, .close-nav').click(function(){
-            $('.header-promo__nav').toggleClass('menu-active');
+            $('.header-authorization__nav').toggleClass('menu-active');
         });
     }
 }

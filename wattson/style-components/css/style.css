@@ -1071,7 +1071,7 @@ footer p{
 
 /*_____________________________________________________________*/
 
-.promo-content h1{
+.authorization-content h1{
 	color: #000000;
 	font-size: 24px;
 	text-transform: uppercase;
@@ -1081,7 +1081,7 @@ footer p{
 	text-align: center;
 	padding: 0 15px;
 }
-.promo-content h2{
+.authorization-content h2{
 	color: #000000;
 	font-size: 18px;
 	text-align: center;
@@ -1090,10 +1090,10 @@ footer p{
 	text-transform: none;
 	font-weight: 100;
 }
-.promo-content__selection a{
+.authorization-content__selection a{
 	text-decoration: none;
 }
-.promo-content__selection-item{
+.authorization-content__selection-item{
 	margin-bottom: 30px;
 	position: relative;
 	padding: 15px;
@@ -1101,13 +1101,13 @@ footer p{
 	border: 5px solid #fff;
 	transition: border 0.2s;
 }
-.promo-content__selection a:hover .promo-content__selection-item{
+.authorization-content__selection a:hover .authorization-content__selection-item{
 	border: 5px solid #009028;
 }
-.promo-content__title{
+.authorization-content__title{
 	margin-top: 50px;
 }
-.promo-content__selection-img{
+.authorization-content__selection-img{
 	-webkit-filter: brightness(0.3) contrast(0.8);
 	position: absolute;
     top: 0;
@@ -1117,20 +1117,20 @@ footer p{
     width: 100%;
     z-index: -1;
 }
-.promo-content__selection-title{
+.authorization-content__selection-title{
 	font-size: 23px;
 	color: #fff;
 }
-.promo-content__selection-desc{
+.authorization-content__selection-desc{
 	font-size: 16px;
 	color: #fff;
 }
-.promo-content__support{
+.authorization-content__support{
 	max-width: 550px;
     text-align: center;
     margin: 10px auto 40px;
 }
-.promo-content__support a{
+.authorization-content__support a{
 	text-decoration: none;
 }
 .passreset{
