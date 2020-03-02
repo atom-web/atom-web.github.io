@@ -142,6 +142,12 @@ if ($('.lk-sidebar').length) {
 if ($('.footer__pseudo-call input').length) {
     $('.footer__pseudo-call input').mask('+7 (000) 000-00-00', {placeholder: "+7 ( 000 ) 000-00-00"});
 }
+if ($('.passreset__item-tel').length) {
+    $('.passreset__item-tel').mask('+7 (000) 000-00-00', {placeholder: "+7 ( 000 ) 000-00-00"});
+}
+if ($('.passreset__item-card').length) {
+    $('.passreset__item-card').mask('0000000000', {placeholder: "0000000000"});
+}
 
 //Открытие мобильного меню в хедере личного кабинета
 if ($('.head-login').length) {

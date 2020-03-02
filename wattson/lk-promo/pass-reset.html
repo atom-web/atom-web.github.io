@@ -48,14 +48,14 @@
 			<h1 class="promo-content__title">Мой аккаунт WATTSON Бизнес / Восстановить пароль</h1>
 			<h2>Для восстановления пароля, пожалуйста, выберите тип вашей организации (тип работы)</h2>
 			<div class="promo-content__selection row">
-				<a href="#" class="col-md-6">
+				<a data-fancybox data-src="#passreset-entity" href="javascript:;" class="col-md-6">
 					<div class="promo-content__selection-item">
 						<img class="promo-content__selection-img" src="../style-components/img/promo-content__selection-item3.jpg" alt="выбор дизайна кабинета">
 						<p class="promo-content__selection-title">Юридическое лицо / ИП</p>
 						<p class="promo-content__selection-desc">Специализированная организация</p>
 					</div>
 				</a>
-				<a href="#" class="col-md-6">
+				<a data-fancybox data-src="#passreset-installer" href="javascript:;" class="col-md-6">
 					<div class="promo-content__selection-item">
 						<img class="promo-content__selection-img" src="../style-components/img/promo-content__selection-item4.jpg" alt="выбор дизайна кабинета">
 						<p class="promo-content__selection-title">Монтажник</p>
@@ -131,7 +131,44 @@
 			</div>
 		</div>
 	</footer>
-
+	<div id="passreset-entity">
+		<form class="passreset">
+			<p class="passreset__title">Восстановление пароля</p>
+			<div class="passreset__item">
+				<span class="passreset__item-title">Имя пользователя</span>
+				<input type="name" placeholder="Ваше имя">
+			</div>
+			<div class="passreset__item">
+				<span class="passreset__item-title">Мобильный телефон</span>
+				<input class="passreset__item-tel" type="tel">
+			</div>
+			<div id="recap">
+				<!-- Удаляется картинка и сюда вставляется скрипт рекапчи -->
+				<img src="../style-components/img/recap.jpg" alt="Рекапча">
+			</div>
+			<a class="btn" href="#">Восстановить пароль</a>
+			<p class="passreset__info">Новый пароль будет выслан в SMS указаный при регистрации Вашей организации</p>
+		</form>
+	</div>
+	<div id="passreset-installer">
+		<form class="passreset">
+			<p class="passreset__title">Восстановление пароля</p>
+			<div class="passreset__item">
+				<span class="passreset__item-title">Мобильный телефон</span>
+				<input class="passreset__item-tel" type="tel">
+			</div>
+			<div class="passreset__item">
+				<span class="passreset__item-title">Номер карты watton</span>
+				<input class="passreset__item-card" type="text" placeholder="1234567890">
+			</div>
+			<div id="recap">
+				<!-- Удаляется картинка и сюда вставляется скрипт рекапчи -->
+				<img src="../style-components/img/recap.jpg" alt="Рекапча">
+			</div>
+			<a class="btn" href="#">Восстановить пароль</a>
+			<p class="passreset__info">Новый пароль будет выслан в SMS указаный при регистрации Вашей организации</p>
+		</form>
+	</div>
 
 	<script src="../style-components/js/plugins/jq.min.js"></script>
 	<script src="../style-components/js/plugins/jquery.fancybox.min.js"></script>

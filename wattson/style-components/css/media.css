@@ -205,6 +205,9 @@
 		left: 0px;
     	right: 0px;
 	}
+	.passreset{
+		min-width: auto;
+	}
 	
 
 }

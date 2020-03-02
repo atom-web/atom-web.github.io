@@ -1131,3 +1131,37 @@ footer p{
 .promo-content__support a{
 	text-decoration: none;
 }
+.passreset{
+	min-width: 550px;
+}
+.passreset__title{
+	font-size: 24px;
+	margin-bottom: 25px;
+	font-family: "Raleway-m";
+}
+.passreset__item{
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+}
+.passreset__item-title{
+	font-family: "Raleway-m";
+	margin-bottom: 5px;
+}
+.passreset__item input{
+	height: 40px;
+	width: 100%;
+	border: 1px solid #000;
+	outline: none;
+	padding: 0 15px;
+	font-size: 16px;
+}
+#recap{
+	margin-bottom: 25px;
+}
+.passreset__info{
+	text-align: center;
+    padding: 0 15px;
+    max-width: 500px;
+    margin: 15px auto 0;
+}
