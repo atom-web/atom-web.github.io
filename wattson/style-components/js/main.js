@@ -199,3 +199,130 @@ if ($('.lk-content__info-select').length) {
         $('.lk-content__info-item[data-info="' + selectData + '"]').addClass('lk-content__info-active');   
     });
 }
+
+
+//Функция скрытия кнопки "Удалить регион"
+ var removeAjax = function(){
+    if ($('.add-region__item').length > 1) {
+        $('.add-region__remove').addClass('remove-vis');
+    } else {
+        $('.add-region__remove').removeClass('remove-vis');
+    }
+ };
+ //Функция добавления регионов работы
+ var regionAjax = function(){
+     if ($('.add-region').length) {
+        $.ajax({
+            url: '/style-components/sity.json',
+            success: function(data){
+
+                if ($('.add-region__select option').text().length > 0) {
+                    //Загрузка после нажатия на "добавить регион"
+                    $('.add-region__items').append('<div class="add-region__item"><select class="add-region__select"></select><select class="add-region__select-city"></select></div>');
+                    
+                    $('.add-region__item:last-child select.add-region__select, .add-region__item:last-child select.add-region__select-city').append('<option></option>'); //Добавление прейсхолдера в города при клике на "Добавить регион"
+                    
+                    $(data.locat).each(function(r, d){ //Добавление регионов при клике на "Добавить регион"
+                        $('.add-region__item:last-child').find('select.add-region__select').append('<option value="' + d.id + '">' + d.region + '</option>');
+                    });
+                } else {
+                    //Первая загрузка страницы
+                    $('select.add-region__select, select.add-region__select-city').append('<option></option>'); // Добавление прейсхолдера в город при первой загрузке
+                    $(data.locat).each(function(r, d){ // Добавление регионов при первой загрузке
+                        $('select.add-region__select').append('<option value="' + d.id + '">' + d.region + '</option>');
+                    });
+                }  
+                $('.add-region__select').styler({selectPlaceholder: 'Выбрать регион',}); //Активация form-styler
+                $('.add-region__select-city').styler({selectPlaceholder: 'Выбрать город',}); //Активация form-styler
+
+                removeAjax();
+
+                $('select.add-region__select').on('change', function() { //Событие при выборе селекта
+                    var cityVal = $(this).val(); //Переменная со значением селекта
+                    
+                    $('select.add-region__select').removeAttr('region-focus');
+                    $(this).attr('region-focus', '');
+                    $('select.add-region__select[region-focus]').closest('.add-region__item').find('select.add-region__select-city').html('');
+                    $(data.locat).each(function(i, e){
+                        if (cityVal == e.id) {
+                            $(e.city).each(function(x, y){
+                                $('select.add-region__select[region-focus]').closest('.add-region__item').find('select.add-region__select-city').append('<option>'+ y +'</option'); // Добавление списка городов при выборе селекта
+                                $('input, select').trigger('refresh'); // Динамическая загрузка form-styler при выборе селекта
+                            });
+                        }
+                    });
+                 });
+            },
+        });
+    };
+};
+regionAjax();
+$(".add-region").on("click", ".add-region__btn", regionAjax); // Динамическая загрузка функции regionAjax(); при клике на "Добавить регион"
+//Функция при клике на "Удалить регион"
+$('.add-region__remove').click(function(){           
+    $(this).closest('.add-region__items').find('.add-region__item:last-child').remove();
+    removeAjax();
+});
+
+
+
+
+
+
+
+
+
+
+
+// $('.add-region__btn').click(function(){
+//     $('.add-region__remove').remove();
+//     $('.add-region__items').append('<div class="add-region__item"><select class="add-region__select"></select><div class="add-region__remove">Удалить регион </div></div>');
+// })
+// var regionAjax = function(e){
+//     if ($('.add-region').length) {
+//         $.ajax({
+//             url: '/style-components/sity.json',
+//             success: function(data){
+//                 var json = JSON.stringify(data)
+//                 var obj = JSON.parse(json);
+
+//                 $(obj.locat).each(function(r, d){
+//                     $('.add-region__item:last-child .add-region__select').append('<option value="' + d.id + '">' + d.region + '</option>'); //добавление списка в выбор области
+//                 });
+//                 $('.add-region__select').on('change', function() { //событие про выборе города
+//                     var cityVal = $(this).val();
+                    
+//                     if ($(this).closest('.add-region__item').find('.add-region__select-city').length) {
+//                         $(this).closest('.add-region__item').find('.add-region__select-city').remove();
+//                         $(this).closest('.add-region__item').append('<select class="add-region__select-city"></select>');
+//                         $(this).closest('.add-region__item').attr('region-trig', cityVal);
+                        
+//                     } else {
+//                         $(this).closest('.add-region__item').append('<select class="add-region__select-city"></select>');
+//                         $(this).closest('.add-region__item').attr('region-trig', cityVal);
+//                     }
+//                     $('.add-region__item[region-trig="' + cityVal + '"]').find('.add-region__select-city').html('');
+//                     $(obj.locat).each(function(i, e){
+//                         if (e.id == cityVal) {
+//                             $(e.city).each(function(x, y){
+//                                 $('.add-region__item[region-trig="' + e.id + '"]').find('.add-region__select-city').append('<option>'+ y +'</option>');
+
+//                             });
+//                         };
+//                     });    
+//                 });
+//             },
+//         });
+//     };
+// };
+// $(".add-region").on("click", ".add-region__btn", regionAjax);
+
+
+
+
+
+
+
+
+
+

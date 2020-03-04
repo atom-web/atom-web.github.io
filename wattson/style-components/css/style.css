@@ -55,6 +55,9 @@ p{
 	color: #009028;
 	font-family: "Raleway-b";
 }
+.style-txt-center{
+	text-align: center;
+}
 
 
 .btn, 
@@ -379,6 +382,16 @@ input[type="radio"]:not(:checked) + label:after {
 input[type="checkbox"]:checked + label:after, 
 input[type="radio"]:checked + label:after {
     opacity: 1;
+}
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before{
+    border: 1px solid #424242;
+}
+input[type="checkbox"]:checked + label:after{
+	left: 4px;
+    top: 4px;
+    width: 11px;
+    height: 7px;
 }
 .order-selection__icon{
 	position: absolute;
@@ -1209,3 +1222,186 @@ footer p{
 .authorization-content__row{
 	margin-bottom: 100px;
 }
+.crumbs-head{
+	background: #212121;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+.crumbs-head__title{
+	text-transform: uppercase;
+	font-family: "Raleway-b";
+	color: #FFFFFF;
+	font-size: 20px;
+	margin-bottom: 22px;
+	text-align: center;
+}
+.crumbs-head__item{
+	margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.crumbs-head__item p{
+	text-transform: uppercase;
+    font-family: "Raleway-b";
+    color: #FFFFFF;
+    font-size: 20px;
+    color: #C3C3C3;
+    padding: 7px 0;
+    margin-bottom: 0;
+}
+.crumbs-head__item:after{
+	content: "";
+    background: url(../img/svg/arrow-wi.svg);
+    width: 35px;
+    height: 20px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.crumbs-head__item:last-child:after {
+    display: none;
+}
+.crumbs-head__items{
+	display: flex;
+    justify-content: center;
+}
+.crumbs-head__active p{
+	color: #fff;
+	position: relative;
+}
+.crumbs-head__active p:after{
+	content: "";
+	background: #009028;
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.reg-form__title{
+	margin-top: 20px;
+	font-family: "Raleway-m";
+	font-size: 18px;
+}
+.add-region{
+	margin-bottom: 25px;
+}
+.add-region__title{
+	font-size: 18px;
+	font-family: "Raleway-m";
+}
+.add-region__items{
+	margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    position: relative;
+}
+.add-region__item{
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 25px;
+}
+.add-region__btn, 
+.add-region__remove{
+	font-size: 18px;
+	color: #009028;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+.add-region__btn{
+	width: max-content;
+}
+.add-region__remove{
+	color: #8D0000;
+    position: absolute;
+    right: -190px;
+    bottom: 35px;
+    z-index: 10;
+    display: none;
+}
+.remove-vis{
+	display: flex;
+}
+.add-region__btn:before, 
+.add-region__remove:before{
+	content: "";
+	background-image: url(../img/svg/plus.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 20px;
+	height: 20px;
+	display: block;
+	margin-right: 10px;
+}
+.add-region__remove:before{
+	background-image: url(../img/svg/remove.svg);
+	width: 20px;
+    height: 16px;
+}
+.add-region__select{
+	/*align-self: end;
+	margin-bottom: 30px;*/
+	margin-right: 30px;
+}
+.add-region__select:last-child{
+	margin-bottom: 10px;
+}
+.reg-form__btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/*Стили для селектов */
+.jq-selectbox__select{
+	height: 40px;
+	border: 1px solid #000;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	width: 300px;
+	cursor: pointer;
+}
+.jq-selectbox__select:after{
+	content: "";
+	background-image: url(../img/svg/arrow-right.svg);
+	display: block;
+	background-size: 100% 100%;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 10px;
+	transition: 0.2s;
+}
+.dropdown .jq-selectbox__select:after{
+	transform: rotate(90deg);
+}
+.jq-selectbox__dropdown{
+	background: #eaeaea;
+    width: 100%;
+    top: 40px;
+}
+.jq-selectbox__dropdown li{
+	padding: 7px 10px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.jq-selectbox__dropdown li:hover{
+	background: #009028;
+	color: #fff;
+}
+.jq-selectbox__select-text{
+	width: calc(100% - 30px) !important;
+}
+/*.add-region__item:last-child div.add-region__select .jq-selectbox__dropdown li:first-child{
+	display: none;
+}*/

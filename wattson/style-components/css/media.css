@@ -12,6 +12,15 @@
 	.lk-content__info-select{
 		border: none;
 	}
+	.crumbs-head{
+	    margin-bottom: 25px;
+	}
+	.reg-form{
+		margin-top: 25px;
+	}
+	.reg-form__title{
+		text-align: center;
+	}
 }
 @media (max-width: 991px){
 	.head-login__top-cont{
@@ -217,7 +226,49 @@
 	.login-form__title{
 		text-align: center;
 	}
-	
+	.add-region__item{
+	    flex-direction: column;
+	    align-items: end;
+	}
+	.add-region__item>div{
+		margin-bottom: 10px;
+	}
+	.add-region__remove{
+		bottom: 0;
+		right: auto;
+		left: 0;
+	}
+	.crumbs-head__title{
+		font-size: 18px;
+	}
+	.crumbs-head__items{
+		flex-direction: column;
+    	align-items: center;
+	}
+	.crumbs-head__item{
+		margin-bottom: 0px;
+	}
+	.crumbs-head__item:after{
+		display: none;
+	}
+	.crumbs-head{
+	    padding-bottom: 25px;
+	}
+	.crumbs-head__item p{
+		font-size: 16px;
+	}
+	.add-region__select{
+		margin-right: 0;
+	}
+	.jq-selectbox__select{
+		width: 250px;
+	}
+	.reg-form__btn{
+		justify-content: end;
+	}
+	.add-region{
+		margin-bottom: 40px;
+	}
 
 }
 @media (max-width: 767px){
