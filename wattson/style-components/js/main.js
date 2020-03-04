@@ -213,7 +213,7 @@ if ($('.lk-content__info-select').length) {
  var regionAjax = function(){
      if ($('.add-region').length) {
         $.ajax({
-            url: '/style-components/sity.json',
+            url: 'http://atom-web.github.io/wattson/style-components/sity.json',
             success: function(data){
 
                 if ($('.add-region__select option').text().length > 0) {
