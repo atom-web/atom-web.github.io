@@ -269,6 +269,13 @@
 	.add-region{
 		margin-bottom: 40px;
 	}
+	.spec-org .question-view{
+		width: auto;
+		margin-bottom: 25px;
+	}
+	.spec-org{
+		margin-bottom: 30px;
+	}
 
 }
 @media (max-width: 767px){

@@ -1402,6 +1402,57 @@ footer p{
 .jq-selectbox__select-text{
 	width: calc(100% - 30px) !important;
 }
-/*.add-region__item:last-child div.add-region__select .jq-selectbox__dropdown li:first-child{
-	display: none;
-}*/
+
+
+
+
+
+.reg-banner{
+	position: relative;
+	height: 230px;
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 20px;
+	display: flex;
+	align-items: flex-end;
+}
+.reg-banner__img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-webkit-filter: brightness(0.5);
+	z-index: -1;
+}
+.reg-banner__title{
+	font-family: "Raleway-b";
+	color: #fff;
+}
+.standart-form{
+	max-width: 400px;
+	margin-bottom: 30px;
+}
+.standart-form #cap{
+	margin-bottom: 25px;
+}
+.standart-form input{
+	height: 40px;
+	padding: 0 10px;
+	outline: none;
+	border: 1px solid #000;
+	font-size: 18px;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.standart-form__txt{
+	font-family: "Raleway-m";
+	font-size: 18px;
+}
+.spec-org__title{
+	margin-bottom: 40px;
+}
+.spec-org{
+	margin-bottom: 100px;
+}

@@ -148,6 +148,9 @@ if ($('.login-form__item-tel').length) {
 if ($('.login-form__item-card').length) {
     $('.login-form__item-card').mask('0000000000', {placeholder: "0000000000"});
 }
+if ($('.standart-form__tel').length) {
+    $('.standart-form__tel').mask('+7 (000) 000-00-00', {placeholder: "+7 ( 000 ) 000-00-00"});
+}
 
 //Открытие мобильного меню в хедере личного кабинета
 if ($('.head-login').length) {
