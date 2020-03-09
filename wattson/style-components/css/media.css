@@ -21,6 +21,16 @@
 	.reg-form__title{
 		text-align: center;
 	}
+	.standart-form__contract{
+	    justify-content: end;
+	    flex-direction: column;
+	}
+	.standart-form__contract-acept{
+		margin-bottom: 25px;
+	}
+	.standart-form__contract{
+		padding-right: 15px; 
+	}
 }
 @media (max-width: 991px){
 	.head-login__top-cont{
@@ -269,21 +279,27 @@
 	.add-region{
 		margin-bottom: 40px;
 	}
-	.spec-org .question-view{
+	.reg-cont .question-view{
 		width: auto;
 		margin-bottom: 25px;
 	}
-	.spec-org{
+	.reg-cont{
 		margin-bottom: 30px;
+	}
+	.standart-form__item{
+		max-width: 100%;
+	}
+	.standart-form input{
+		max-width: 100%;
+	}
+	.order-selection__icon{
+		right: 0px;
 	}
 
 }
 @media (max-width: 767px){
 	.head-login__top-cont{
 		flex-direction: column;
-	}
-	.selection-question{
-		right: 0;
 	}
 
 	.table1 thead {
@@ -310,6 +326,9 @@
     .authorization-content__selection-item{
     	height: auto;
     	min-height: 180px;
+    }
+    .check-content__wrap{
+    	width: auto;
     }
 }
 @media (max-width: 575px){

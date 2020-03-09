@@ -151,6 +151,36 @@ if ($('.login-form__item-card').length) {
 if ($('.standart-form__tel').length) {
     $('.standart-form__tel').mask('+7 (000) 000-00-00', {placeholder: "+7 ( 000 ) 000-00-00"});
 }
+if ($('.check-content__num').length) {
+    $('.check-content__num').mask('0000', {
+        placeholder: "0000",
+        // onComplete: function(cep) {  Функция после ввода кода проверки
+        //     alert('CEP Completed!:' + cep);
+        //   },
+    });
+}
+
+
+
+
+//Функция толкающая инфоблоки на мобильной версии    
+if ($('.selection-question').length) {
+    $('.selection-question').each(function() {
+        var winWidth = $(document).width();
+        var objPosLeft = Math.trunc($(this).offset().left);;
+        var objWidth = $(this).width();
+        var isEmpty = 100;
+
+        if (objPosLeft + objWidth + isEmpty >= winWidth) {
+           $(this).addClass('selection-question-left');
+        } else {
+            $(this).removeClass('selection-question-left');
+        }
+    });
+};
+    
+
+
 
 //Открытие мобильного меню в хедере личного кабинета
 if ($('.head-login').length) {
@@ -170,6 +200,10 @@ if ($('.header-authorization').length) {
     }
 }
 
+//Добавление иконки обязательного заполнения формы
+$('input[required]').each(function() {
+    $(this).parent().addClass('input-required');
+});
 //Добавление иконки вопроса в форму
 $('.selection-question').each(function() { 
     $(this).parent().append('<img class="order-selection__icon" src="../style-components/img/svg/question-mark.svg" alt="">');
@@ -221,7 +255,11 @@ if ($('.lk-content__info-select').length) {
 
                 if ($('.add-region__select option').text().length > 0) {
                     //Загрузка после нажатия на "добавить регион"
-                    $('.add-region__items').append('<div class="add-region__item"><select class="add-region__select"></select><select class="add-region__select-city"></select></div>');
+                    if ($('.add-region__item').find('.add-region__select-city').length) { //Если нет input-а города, то и при добавлении региона, город не будет показываться
+                        $('.add-region__items').append('<div class="add-region__item"><select class="add-region__select"></select><select class="add-region__select-city"></select></div>');
+                    } else {
+                        $('.add-region__items').append('<div class="add-region__item"><select class="add-region__select"></select></div>');
+                    }
                     
                     $('.add-region__item:last-child select.add-region__select, .add-region__item:last-child select.add-region__select-city').append('<option></option>'); //Добавление прейсхолдера в города при клике на "Добавить регион"
                     
@@ -268,64 +306,9 @@ $('.add-region__remove').click(function(){
 });
 
 
-
-
-
-
-
-
-
-
-
-// $('.add-region__btn').click(function(){
-//     $('.add-region__remove').remove();
-//     $('.add-region__items').append('<div class="add-region__item"><select class="add-region__select"></select><div class="add-region__remove">Удалить регион </div></div>');
-// })
-// var regionAjax = function(e){
-//     if ($('.add-region').length) {
-//         $.ajax({
-//             url: '/style-components/sity.json',
-//             success: function(data){
-//                 var json = JSON.stringify(data)
-//                 var obj = JSON.parse(json);
-
-//                 $(obj.locat).each(function(r, d){
-//                     $('.add-region__item:last-child .add-region__select').append('<option value="' + d.id + '">' + d.region + '</option>'); //добавление списка в выбор области
-//                 });
-//                 $('.add-region__select').on('change', function() { //событие про выборе города
-//                     var cityVal = $(this).val();
-                    
-//                     if ($(this).closest('.add-region__item').find('.add-region__select-city').length) {
-//                         $(this).closest('.add-region__item').find('.add-region__select-city').remove();
-//                         $(this).closest('.add-region__item').append('<select class="add-region__select-city"></select>');
-//                         $(this).closest('.add-region__item').attr('region-trig', cityVal);
-                        
-//                     } else {
-//                         $(this).closest('.add-region__item').append('<select class="add-region__select-city"></select>');
-//                         $(this).closest('.add-region__item').attr('region-trig', cityVal);
-//                     }
-//                     $('.add-region__item[region-trig="' + cityVal + '"]').find('.add-region__select-city').html('');
-//                     $(obj.locat).each(function(i, e){
-//                         if (e.id == cityVal) {
-//                             $(e.city).each(function(x, y){
-//                                 $('.add-region__item[region-trig="' + e.id + '"]').find('.add-region__select-city').append('<option>'+ y +'</option>');
-
-//                             });
-//                         };
-//                     });    
-//                 });
-//             },
-//         });
-//     };
-// };
-// $(".add-region").on("click", ".add-region__btn", regionAjax);
-
-
-
-
-
-
-
-
-
-
+//Датадропер
+if ($('.standart-form__item-data').length) {
+    $('.standart-form__item-data').datepicker({
+        language: 'ru'
+    });
+};

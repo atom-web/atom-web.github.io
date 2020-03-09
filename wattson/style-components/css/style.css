@@ -83,7 +83,22 @@ p{
 .btn-width:hover{
 	border-radius: 0px;
 }
-
+.btn-clear{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Raleway-m";
+    border-radius: 20px;
+    border: 1px solid #009028;
+    color: #009028;
+    padding: 10px 33px;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn-clear:hover{
+	border-radius: 0px;
+}
 
 
 /*ХЛЕБНЫЕ КРОШКИ___________________________________________*/
@@ -412,8 +427,11 @@ input[type="checkbox"]:checked + label:after{
     opacity: 0;
     transition: opacity 0.2s;
 }
+.selection-question-left{
+	right: 0;
+}
 .view{
-	z-index: 8;
+	z-index: 90;
 	opacity: 1;
 }
 .question-view{
@@ -471,6 +489,7 @@ input[type="checkbox"]:checked + label:after{
 	display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    position: relative;
 }
 .border-box__item span{
 	margin-bottom: 5px;
@@ -1163,6 +1182,7 @@ footer p{
 	margin-bottom: 25px;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 .login-form__item-title{
 	font-family: "Raleway-m";
@@ -1431,7 +1451,6 @@ footer p{
 	color: #fff;
 }
 .standart-form{
-	max-width: 400px;
 	margin-bottom: 30px;
 }
 .standart-form #cap{
@@ -1444,15 +1463,87 @@ footer p{
 	border: 1px solid #000;
 	font-size: 18px;
 	width: 100%;
-	margin-bottom: 25px;
+	max-width: 400px;
 }
 .standart-form__txt{
 	font-family: "Raleway-m";
 	font-size: 18px;
 }
-.spec-org__title{
+.reg-cont__title{
 	margin-bottom: 40px;
 }
-.spec-org{
+.reg-cont{
 	margin-bottom: 100px;
+}
+.input-required:after{
+	z-index: 15;
+    content: "*";
+    position: absolute;
+    right: 10px;
+    color: #ff2f2f;
+    font-size: 39px;
+    bottom: 0;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.standart-form__item{
+	max-width: 400px;
+	position: relative;
+	margin-bottom: 25px;
+}
+.datepicker--day-name, 
+.datepicker--nav-title, 
+.datepicker--nav-title i, 
+.datepicker--cell.-current-{
+	color: #009028;
+}
+.datepicker--cell.-selected-, 
+.datepicker--cell.-selected-.-current-, 
+.datepicker--cell.-selected-.-focus-{
+	background: #009028;
+}
+#check-content{
+	display: none;
+}
+.check-content__wrap{
+    width: 490px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.check-content__num{
+	font-size: 18px;
+	width: 180px;
+	text-align: center;
+	border: 1px solid #000;
+	height: 50px;
+	margin-bottom: 25px;
+	outline: none;
+	cursor: text;
+	padding: 0 10px;
+}
+.check-content__title{
+	margin-bottom: 25px;
+	font-size: 18px;
+	text-align: center;
+}
+.check-content__desc{
+	color: #464646;
+	font-size: 18px;
+	text-align: center;
+}
+.standart-form button[disabled]:hover {
+    opacity: .6;
+    cursor: not-allowed;
+}
+.standart-form__contract{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 61px;
 }
