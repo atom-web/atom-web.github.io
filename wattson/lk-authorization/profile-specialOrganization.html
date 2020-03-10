@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>wattson</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#009028">
+	<link rel="stylesheet" href="../style-components/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="../style-components/css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="../style-components/css/header/header-authorization.css">
+	<link rel="stylesheet" href="../style-components/css/jquery.formstyler.css">
+	<link rel="stylesheet" href="../style-components/css/style.css">
+	<link rel="stylesheet" href="../style-components/css/media.css">
+</head>
+<body>
+	<header class="header-authorization">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="header-authorization__logo col-md-3">
+					<a href="#">
+						<img src="../style-components/img/logo-authorization.png" alt="Логотип">
+					</a>
+				</div>
+				<div class="col-md-9">
+					<nav class="header-authorization__nav">
+						<ul>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Новинки</a></li>
+							<li><a href="#">Бренды</a></li>
+							<li><a href="#">Распродажа</a></li>
+							<li><a href="#">Тех. решения</a></li>
+							<li><a class="header-authorization__brdr" href="#">Вход/Регистрация</a></li>
+						</ul>
+						<div class="close-nav">
+							<img class="close-nav__icon" src="../style-components/img/svg/arrow-left.svg" alt="">
+						</div>
+					</nav>
+				</div>
+				<div class="burger">
+					<div class="burger-item"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="crumbs-head">
+		<div class="container">
+			<h1 class="crumbs-head__title">Анкета для регистрации Специальной организации</h1>
+			<div class="crumbs-head__items">
+				<div class="crumbs-head__item">
+					<p>Регистрация</p>
+				</div>
+				<div class="crumbs-head__item crumbs-head__active">
+					<p>Анкета</p>
+				</div>
+				<div class="crumbs-head__item">
+					<p>Проверка организации</p>
+				</div>
+				<div class="crumbs-head__item">
+					<p>Подтверждение</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="reg-cont">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-lg-10 col-md-12">
+					<p class="style-txt-center reg-cont__title">Уважаемый пользователь. Для участия в бонусной программе WATTSON-Бизнес необходимо заполнить анкету ниже. Данные из этой анкеты используются для выдачи самых выгодных предложений при получении заказов на монтаж. В случае возниковения проблем при регистрации - напишите нам на <a href="mailto:info@wattson.ru">info@wattson.ru</a></p>
+				</div>
+				<div class="col-md-10">
+					<form class="standart-form">
+						<div class="standart-form__checkbox">
+							<p class="standart-form__checkbox-title">Организационный тип</p>
+							<div class="standart-form__checkbox-item">
+								<input type="radio" name="order-selection" id="order-selection">
+								<label for="order-selection">Юридическое лицо (ООО, ЗАО, ОАО и т.д.)</label>
+							</div>
+							<div class="standart-form__checkbox-item">
+								<input type="radio" name="order-selection" id="order-selection2">
+								<label for="order-selection2">Индивидуальный предприниматель</label>
+							</div>
+						</div>
+						<p class="standart-form__title">Основная информация</p>
+						<div class="border-box">
+							<p class="border-box__title">Специализация</p>
+							<div class="row">
+								<p class="border-box__hidden-text">Пожалуйста, выберите одну, максимально подходящую специализацию из списка ниже</p>
+								<div class="border-box__radio col-md-6">
+									<input type="radio" name="order-selection2" id="order-selection10">
+									<label for="order-selection10">01. Монтажная организация</label>
+								</div>
+								<div class="border-box__radio col-md-6">
+									<input type="radio" name="order-selection2" id="order-selection11">
+									<label for="order-selection11">02. Монтажная бригада</label>
+								</div>
+								<div class="border-box__radio col-md-6">
+									<input type="radio" name="order-selection2" id="order-selection12">
+									<label for="order-selection12">03. Магазин с монтажом</label>
+								</div>
+								<div class="border-box__radio col-md-6">
+									<input type="radio" name="order-selection2" id="order-selection13">
+									<label for="order-selection13">04. Магазин</label>
+								</div>
+								<div class="border-box__radio col-md-6">
+									<input type="radio" name="order-selection2" id="order-selection14">
+									<label for="order-selection14">05. Строитель коттеджей и таунхаусов</label>
+								</div>
+								<div class="border-box__radio col-md-6">
+									<input type="radio" name="order-selection2" id="order-selection15">
+									<label for="order-selection15">06. Строитель многоквартирных домов</label>
+								</div>
+								<div class="border-box__radio col-md-6">
+									<input type="radio" name="order-selection2" id="order-selection16">
+									<label for="order-selection16">07. Строитель коммерческой недвижимости</label>
+								</div>
+								<div class="border-box__radio col-md-6">
+									<input type="radio" name="order-selection2" id="order-selection17">
+									<label for="order-selection17">08. ТСЖ, Управляющая компания</label>
+								</div>
+								<div class="border-box__radio col-md-6">
+									<input type="radio" name="order-selection2" id="order-selection18">
+									<label for="order-selection18">09. Проектировщик</label>
+								</div>
+								<div class="border-box__radio col-md-6">
+									<input type="radio" name="order-selection2" id="order-selection19">
+									<label for="order-selection19">10. Оптовая торговля</label>
+								</div>
+								<div class="border-box__radio col-md-6">
+									<input type="radio" name="order-selection2" id="order-selection20">
+									<label for="order-selection20">11. Промышленное или сельхоз предприятиея</label>
+								</div>
+
+							</div>
+						</div>
+						<div class="border-box">
+							<p class="border-box__title">Специализация</p>
+							<div class="row">
+								<div class="border-box__select col-md-6">
+									<input type="checkbox" id="reg-1" name="reg">
+									<label for="reg-1">Монтаж / замена радиаторов отопления</label>
+								</div>
+								<div class="border-box__select col-md-6">
+									<input type="checkbox" id="reg-2" name="reg">
+									<label for="reg-2">Монтаж и обвязка напольного котла</label>
+								</div>
+								<div class="border-box__select col-md-6">
+									<input type="checkbox" id="reg-3" name="reg">
+									<label for="reg-3">Монтаж и настройка автоматики</label>
+								</div>
+								<div class="border-box__select col-md-6">
+									<input type="checkbox" id="reg-4" name="reg">
+									<label for="reg-4">Монтаж / замена радиаторов отопления</label>
+								</div>
+								<div class="border-box__select col-md-6">
+									<input type="checkbox" id="reg-5" name="reg">
+									<label for="reg-5">Монтаж и обвязка напольного котла</label>
+								</div>
+								<div class="border-box__select col-md-6">
+									<input type="checkbox" id="reg-6" name="reg">
+									<label for="reg-6">Монтаж и настройка автоматики</label>
+								</div>
+							</div>
+						</div>
+						<div class="standart-form__text-box">
+							<p>Примерный годовой объем закупок</p>
+							<div class="selection-question">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptas, sapiente! Adipisci eveniet nobis unde cumque, numquam expedita repellendus aut ullam voluptatem voluptates commodi vitae velit. Similique numquam minus amet.</p>
+							</div>
+						</div>
+						<div class="standart-form__button">
+							<div class="standart-form__price">
+								<input type="text" required placeholder="750.000 Руб">
+							</div>
+							<button class="btn">Продолжить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class=" footer__item col-lg-6 col-md-12">
+					<div class="footer__logo">
+						<img src="../style-components/img/logo-footer.png" alt="Логотип">
+					</div>
+					<div class="footer__contacts">
+						<div class="footer__contacts-item">
+							<img class="footer__contacts-img" src="../style-components/img/svg/locat-white.svg" alt="Локация">
+							<p>Тула г , Щегловская засека ул, 31, ворота № 22-23</p>
+						</div>
+						<div class="footer__contacts-item">
+							<img class="footer__contacts-img" src="../style-components/img/svg/time.svg" alt="Время">
+							<p>Пн-Пт 8:00 - 17:00; Сб 9:00 - 14:00</p>
+						</div>
+						<div class="footer__contacts-item">
+							<img class="footer__contacts-img" src="../style-components/img/svg/call.svg" alt="Телефон">
+							<a href="tel:+7 (4872) 71 74 20">+7 (4872) 71 74 20</a>
+						</div>
+					</div>
+					<div class="footer__soc">
+						<a href="#" class="footer__soc-item footer__facebook">
+							<img class="footer__soc-img" src="../style-components/img/svg/facebook.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__twitter">
+							<img class="footer__soc-img" src="../style-components/img/svg/twitter.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__google">
+							<img class="footer__soc-img" src="../style-components/img/svg/google-hangouts.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__insta">
+							<img class="footer__soc-img" src="../style-components/img/svg/instagram.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__pinterest">
+							<img class="footer__soc-img" src="../style-components/img/svg/pinterest.svg" alt="">
+						</a>
+					</div>
+					<p>Copyright © 2019 Wattson</p>
+				</div>
+				<div class="footer__item col-lg-3 col-md-12">
+					<p class="footer__item-title">Информация</p>
+					<div class="footer__item-link">
+						<a href="#">Как заказать и оплатить</a>
+						<a href="#">Проект и монтаж</a>
+						<a href="#">Ремонт и сервис</a>
+						<a href="#">Доставка</a>
+						<a href="#">Бонусы за покупки</a>
+						<a href="#">Отсрочка платежа</a>
+					</div>
+				</div>
+				<div class="footer__item col-lg-3 col-md-12">
+					<p class="footer__item-title">Информация</p>
+					<p class="footer__item-desc">Введите ваш номер телефона и мы перезвоним вам в течении 15 минут</p>
+					<form class="footer__pseudo-call">
+						<input type="phone" >
+						<button></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="../style-components/js/plugins/jq.min.js"></script>
+	<script src="../style-components/js/plugins/jquery.fancybox.min.js"></script>
+	<script src="../style-components/js/plugins/jquery.mask.min.js"></script>
+	<script src="../style-components/js/plugins/jquery.formstyler.min.js"></script>
+	<script src="../style-components/js/main.js"></script>
+</body>
+</html>

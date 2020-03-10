@@ -339,7 +339,7 @@ input[type="radio"]:not(:checked) + label:before {
     top: 0px;
     width: 18px;
     height: 18px;
-    border: 1px solid #dddddd;
+    border: 1px solid #585858;
     background-color: #ffffff;
 }
 
@@ -520,8 +520,35 @@ input[type="checkbox"]:checked + label:after{
 .border-box__active{
 	color: #009028;
 }
-
-
+.border-box__radio{
+	margin-bottom: 25px;
+}
+.border-box__hidden-text{
+	color: #464646;
+	margin-bottom: 30px;
+	font-size: 14px;
+}
+.standart-form__text-box{
+	position: relative;
+	font-family: "Raleway-m";
+	font-size: 18px;
+	width: max-content;
+}
+.standart-form__text-box p{
+	font-family: "Raleway-m";
+}
+.standart-form__button{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.standart-form__button button{
+	margin-bottom: 0;
+}
+.standart-form__price{
+	position: relative;
+	width: 400px;
+}
 
 
 /*Блок загрузки_____________*/
@@ -1546,4 +1573,24 @@ footer p{
     align-items: center;
     justify-content: space-between;
     padding-right: 61px;
+}
+.standart-form__checkbox{
+	margin-bottom: 10px;
+    display: inline-block;
+}
+.standart-form__checkbox-title{
+	font-family: "Raleway-m";
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.standart-form__checkbox-item{
+	margin-bottom: 15px;
+}
+.standart-form__title {
+    font-family: "Raleway-m";
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.standart-form .border-box{
+	margin-top: 25px;
 }

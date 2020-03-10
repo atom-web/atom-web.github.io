@@ -152,12 +152,7 @@ if ($('.standart-form__tel').length) {
     $('.standart-form__tel').mask('+7 (000) 000-00-00', {placeholder: "+7 ( 000 ) 000-00-00"});
 }
 if ($('.check-content__num').length) {
-    $('.check-content__num').mask('0000', {
-        placeholder: "0000",
-        // onComplete: function(cep) {  Функция после ввода кода проверки
-        //     alert('CEP Completed!:' + cep);
-        //   },
-    });
+    $('.check-content__num').mask('0000', {placeholder: "0000",});
 }
 
 

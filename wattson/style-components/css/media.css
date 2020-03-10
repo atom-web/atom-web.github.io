@@ -295,6 +295,14 @@
 	.order-selection__icon{
 		right: 0px;
 	}
+	.standart-form__button{
+		flex-direction: column;
+		align-items: end
+	}
+	.standart-form__price{
+		width: 250px;
+		margin-bottom: 25px;
+	}
 
 }
 @media (max-width: 767px){
