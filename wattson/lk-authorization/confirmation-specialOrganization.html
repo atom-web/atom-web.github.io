@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="../style-components/css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="../style-components/css/header/header-authorization.css">
 	<link rel="stylesheet" href="../style-components/css/jquery.formstyler.css">
-	<link rel="stylesheet" href="../style-components/css/datepicker.min.css">
 	<link rel="stylesheet" href="../style-components/css/style.css">
 	<link rel="stylesheet" href="../style-components/css/media.css">
 </head>
@@ -47,13 +46,19 @@
 	</header>
 	<div class="crumbs-head">
 		<div class="container">
-			<h1 class="crumbs-head__title">Анкета для регистрации монтажника</h1>
+			<h1 class="crumbs-head__title">Анкета для регистрации Специальной организации</h1>
 			<div class="crumbs-head__items">
 				<div class="crumbs-head__item">
 					<p>Регистрация</p>
 				</div>
+				<div class="crumbs-head__item">
+					<p>Анкета</p>
+				</div>
+				<div class="crumbs-head__item">
+					<p>Проверка организации</p>
+				</div>
 				<div class="crumbs-head__item crumbs-head__active">
-					<p>Получение карты клуба</p>
+					<p>Подтверждение</p>
 				</div>
 			</div>
 		</div>
@@ -62,53 +67,23 @@
 		<div class="container">
 			<div class="row justify-content-md-center">
 				<div class="col-lg-10 col-md-12">
-					<p class="style-txt-center reg-cont__title">Остался последний шаг до регистрации в системе WATTSON. Введите, пожалуйста, ваши контактные данные для завершения регистрации и получения преимуществ.</p>
+					<p class="style-txt-center reg-cont__title">Уважаемый пользователь, проверьте данные о вашей организации</p>
 				</div>
 				<form class="standart-form col-xl-10 col-md-12">
-					<div class="row">
-						<div class="col-lg-6 col-md-12">
-							<div class="standart-form__item ">
-								<p class="standart-form__item-title">Ваша фамилия</p>
-								<input type="name" placeholder="Иванов" required>
-							</div>
-							<div class="standart-form__item">
-								<p class="standart-form__item-title">Имя</p>
-								<input type="name" placeholder="Иван" required>
-							</div>
-							<div class="standart-form__item">
-								<p class="standart-form__item-title">Отчество (при наличии)</p>
-								<input type="name" placeholder="Иванович" required>
-							</div>
-							<div class="standart-form__item">
-								<p class="standart-form__item-title">дата рождения</p>
-								<input class="standart-form__item-data" placeholder="01.01.2001" required>
-							</div>
+					<div class="standart-form__info col-md-12">
+						<p>Наименование краткое: <span class="style-txt-3">ЦГС ООО</span></p>
+						<p>Наименование для документов: <span class="style-txt-3">Общество с ограниченной ответственностью "ЦЕНТРГИДРОСТРОЙ"</span></p>
+						<p>Юридический адрес: <span class="style-txt-3">300041, Тульская обл, Тула г, Революции ул., дом № 17, квартира 27</span></p>
+					</div>
+					<div class="standart-form__contract col-xl-11 col-lg-12">
+						<div class="standart-form__contract-acept">
+							 <input id="checkbox" type="checkbox" name="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;">
+					    	<label for="checkbox">Ознакомлен и согласен с условиями <a href="#">оферты</a> и политикой конфиденциальности</label>   
 						</div>
-						<div class="col-lg-6 col-md-12">
-							<div class="question-view">
-								<p class="standart-form__txt">Мобильный телефон для получения заказов</p>
-								<div class="selection-question">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptas, sapiente! Adipisci eveniet nobis unde cumque, numquam expedita repellendus aut ullam voluptatem voluptates commodi vitae velit. Similique numquam minus amet.</p>
-								</div>
-							</div>
-							<div class="standart-form__item">
-								<input class="standart-form__tel" type="tel" required>
-							</div>
-							<div id="cap">
-								<img src="../style-components/img/recap.jpg" alt="">
-							</div>
-							<a data-fancybox data-src="#check-content" href="javascript:;" class="btn-clear standart-form__check-btn">Подтвердить номер телефона</a>
-						</div>
-						<div class="standart-form__contract col-xl-11 col-lg-12">
-							<div class="standart-form__contract-acept">
-								 <input id="checkbox" type="checkbox" name="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;" />
-						    	<label for="checkbox">Ознакомлен и согласен с условиями <a href="#">оферты</a> и политикой конфиденциальности</label>   
-							</div>
-					 		<div class="standart-form__contract-button">
-					 			<button disabled="disabled" name="submit" id="submit" class="btn">Зарегистрироваться</button>
-					 		</div>
-						    
-						</div>
+				 		<div class="standart-form__contract-button">
+				 			<button disabled="disabled" name="submit" id="submit" class="btn">Зарегистрироваться</button>
+				 		</div>
+					    
 					</div>
 				</form>
 			</div>
@@ -176,21 +151,12 @@
 			</div>
 		</div>
 	</footer>
-	
-	<div id="check-content">
-		<div class="check-content__wrap">
-			<p class="check-content__title">Пожалуйста, введите код, полученный в СМС сообщении на указанный номер.</p>
-			<input class="check-content__num" type="text">
-			<a class="btn" href="#">Подтвердить</a>
-			<p class="check-content__desc">Если SMS не поступило в течение 3-и мин, убедитесь, что телефон указан верно и на нем не заблокировано получение рассылок с коротких номеров.</p>
-		</div>
-	</div>
+
 
 	<script src="../style-components/js/plugins/jq.min.js"></script>
 	<script src="../style-components/js/plugins/jquery.fancybox.min.js"></script>
 	<script src="../style-components/js/plugins/jquery.mask.min.js"></script>
 	<script src="../style-components/js/plugins/jquery.formstyler.min.js"></script>
-	<script src="../style-components/js/plugins/datepicker.min.js"></script>
 	<script src="../style-components/js/main.js"></script>
 </body>
 </html>

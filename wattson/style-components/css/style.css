@@ -55,6 +55,9 @@ p{
 	color: #009028;
 	font-family: "Raleway-b";
 }
+.style-txt-3{
+	font-family: "Raleway-b";
+}
 .style-txt-center{
 	text-align: center;
 }
@@ -548,6 +551,13 @@ input[type="checkbox"]:checked + label:after{
 .standart-form__price{
 	position: relative;
 	width: 400px;
+}
+.standart-form__info{
+	margin-bottom: 35px;
+	display: inline-block;
+}
+.standart-form__info p{
+	margin-bottom: 25px;
 }
 
 

@@ -198,6 +198,7 @@ if ($('.header-authorization').length) {
 //Добавление иконки обязательного заполнения формы
 $('input[required]').each(function() {
     $(this).parent().addClass('input-required');
+    console.log('1')
 });
 //Добавление иконки вопроса в форму
 $('.selection-question').each(function() { 

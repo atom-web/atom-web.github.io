@@ -31,6 +31,9 @@
 	.standart-form__contract{
 		padding-right: 15px; 
 	}
+	.standart-form__info p{
+		text-align: center;
+	}
 }
 @media (max-width: 991px){
 	.head-login__top-cont{
