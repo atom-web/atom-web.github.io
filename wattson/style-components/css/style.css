@@ -44,7 +44,7 @@ p{
 	color: #000;
 	margin-bottom: 10px;
 }
-li{
+ul li{
 	list-style-type: none;
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@ li{
     padding-left: 30px;
     position: relative;
 }
-li:before{
+ul li:before{
     content: "";
     width: 10px;
     height: 10px;
