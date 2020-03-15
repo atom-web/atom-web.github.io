@@ -1,9 +1,9 @@
 /*СТИЛИ ДЛЯ ХЕДЕРА _________________________________*/
-header li{
+header ul li{
     margin: 0;
     padding-left: 0;
 }
-header li:before{
+header ul li:before{
 	display: none;
 }
 .head-login{
