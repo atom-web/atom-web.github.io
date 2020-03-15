@@ -1,4 +1,11 @@
 /*СТИЛИ ДЛЯ ХЕДЕРА _________________________________*/
+header li{
+    margin: 0;
+    padding-left: 0;
+}
+header li:before{
+	display: none;
+}
 .head-login{
 	margin-bottom: 20px;
 }

@@ -4,6 +4,13 @@
 	display: flex;
 	align-items: center;
 }
+header li{
+    margin: 0;
+    padding-left: 0;
+}
+header li:before{
+    display: none;
+}
 .header-authorization .container{
 	position: relative;
 }
@@ -49,4 +56,13 @@
 	height: 60px;
     width: 178px;
     object-fit: contain;
+}
+.promo-header{
+    background: #ffffff00;
+    background: #ffffff00;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
 }

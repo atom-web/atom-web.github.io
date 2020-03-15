@@ -306,6 +306,47 @@
 		width: 250px;
 		margin-bottom: 25px;
 	}
+	.promo-banner{
+	    min-height: 550px;
+	    padding: 80px 0;
+	}
+	.promo-banner__h1{
+		font-size: 26px;
+	}
+	.promo-banner__h2{
+		font-size: 16px;
+		text-transform: unset;
+	}
+	.promo-activities__col-1,
+	.promo-activities__col-2{
+		height: auto;
+		min-height: 210px;
+	}
+	.promo-activities__txt-title{
+		font-size: 20px;
+	}
+	.promo-activities__txt-desc{
+		font-size: 16px;
+		color: #d8d8d8;
+	}
+	.promo-activities__title{
+		font-size: 20px;
+	}
+	.promo-info__img{
+		display: none;
+	}
+	.promo-info__txt{
+		padding-right: 15px;
+	}
+	.promo-banner__item-title{
+		font-size: 18px;
+	}
+	.promo-banner__item-desc{
+		font-size: 14px;
+	}
+	.promo-info li{
+		font-size: 16px;
+	}
 
 }
 @media (max-width: 767px){
