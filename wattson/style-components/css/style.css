@@ -83,6 +83,7 @@ ul li:before{
 
 
 .btn, 
+.btn-h,
 .btn-width{
 	background: #009028;
     text-decoration: none;
@@ -100,12 +101,8 @@ ul li:before{
 .btn-width{
 	width: 100%;
 }
-
-.btn:hover, 
-.btn-width:hover{
-	border-radius: 0px;
-}
-.btn-clear{
+.btn-clear, 
+.btn-clear-h{
     text-decoration: none;
     font-size: 14px;
     font-family: "Raleway-m";
@@ -118,7 +115,15 @@ ul li:before{
     transition: 0.5s;
     cursor: pointer;
 }
-.btn-clear:hover{
+.btn-clear-h, 
+.btn-h{
+    padding: 5px 20px;
+}
+.btn:hover, 
+.btn-h:hover,
+.btn-width:hover, 
+.btn-clear:hover, 
+.btn-clear-h:hover{
 	border-radius: 0px;
 }
 
@@ -578,6 +583,232 @@ input[type="checkbox"]:checked + label:after{
 .standart-form__info p{
 	margin-bottom: 25px;
 }
+
+/*Список блоков______________*/
+.list__box-info{
+	border-bottom: 2px solid #E5E5E5;
+	display: flex;
+	margin-bottom: 25px;
+}
+.list__box-info p{
+	padding: 10px 0;
+	font-size: 18px;
+	font-family: "Raleway-m";
+}
+.list__box-info p:nth-child(1), 
+.list__item-position:nth-child(1){
+    width: 15%;	
+}
+.list__box-info p:nth-child(2),
+.list__item-position:nth-child(2){
+	width: 18%;
+}
+.list__box-info p:nth-child(3), 
+.list__item-position:nth-child(3){
+    width: 15%;
+}
+.list__box-info p:nth-child(4), 
+.list__item-position:nth-child(4){
+	width: 12%;
+}
+.list__box-info p:nth-child(5), 
+.list__item-position:nth-child(5){
+	width: 22%;
+}
+.list__box-info p:nth-child(6), 
+.list__item-position:nth-child(6){
+	width: 3%;
+}
+.list__box-info p:nth-child(7), 
+.list__item-position:nth-child(7){
+	width: 15%;
+}
+.list__box-items{
+	border-bottom: 2px solid #E5E5E5;
+	padding-bottom: 5px;
+	margin-bottom: 25px;
+}
+.list__box-item-basket{
+	display: flex;
+	justify-content: flex-end;
+}
+.list__box-item-checkbox{
+	display: flex;
+    align-items: end;
+    height: 16px;
+}
+.list__print-btn, 
+.list__box-item-basket a{
+	margin-bottom: 0;
+}
+.list__box-item{
+	display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.list__box-item-desc{
+	padding-right: 5px;
+}
+.list__box-item p{
+	margin-bottom: 0;
+}
+.list__box-item-title{
+	display: none;
+}
+.list__print-btn, 
+.list__box-item-basket a{
+	position: relative;
+    padding: 8px 0;
+    width: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list__print-drop{
+	position: absolute;
+    background: #000;
+    flex-direction: column;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 5px;
+    top: 32px;
+    left: 100px;
+    min-width: 260px;
+    width: max-content;
+    display: none;
+    transition: 0.2s;
+}
+.list__print-active{
+	display: flex;
+	z-index: 7;
+}
+.list__print-drop a{
+	color: #fff;
+	font-size: 14px;
+	font-family: "Raleway-m";
+	margin: 5px 0;
+	text-decoration: none;
+}
+.list__print-drop a:hover{
+	color: #009028;
+	text-decoration: underline;
+}
+.list__remove-checked{
+	text-align: right;
+}
+.list__remove-checked button{
+	color: #8D0000;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+}
+.list__remove-checked button:hover{
+	text-decoration: underline;
+}
+.list__box-control{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.list__box-control span{
+	margin-right: 15px;
+}
+.list__box-control>div{
+	border-right: 1px solid #000;
+	padding-right: 10px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.list__box-control>div:last-child{
+	padding-right: 0px;
+	border-right: 0;
+}
+.list__control{
+	margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.control-active svg{
+	fill: #009028;
+}
+.block .list__box-info{
+	display: none;
+}
+.block .list__box-item p{
+	display: block;
+}
+.block .list__box-items{
+	display: flex;
+    flex-wrap: wrap;
+}
+.block .list__box-item{
+    width: 33.3333333%;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    padding: 35px 30px 70px;
+    outline: 2px solid #DDDDDD;
+    outline-offset: -15px;
+}
+.block .list__item-position{
+	width: 100%;
+}
+.block .list__box-item-print{
+	position: absolute;
+    bottom: 35px;
+    left: 30px;
+    width: auto;
+}
+.block .list__box-item-basket{
+	position: absolute;
+    bottom: 35px;
+    right: 30px;
+    width: auto;
+}
+.block .list__box-item-checkbox{
+	position: absolute;
+    top: 13px;
+    right: 3px;
+    width: 20px;
+}
+.block .list__box-items{
+	border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.list__box-item-title{
+	text-transform: uppercase;
+	font-family: "Raleway-b";
+	margin-bottom: 5px !important;
+}
+.block .list__box-item-txt{
+	margin-bottom: 15px;
+}
+.block .list__box-item{
+	margin-bottom: 0px;
+}
+.list__print-btn-icon{
+	fill: #009028;
+	width: 15px;
+    margin-right: 5px;
+}
+.list__show{
+	margin-left: 30px;
+}
+
+
+
+
+
+
+
 
 
 /*Блок загрузки_____________*/

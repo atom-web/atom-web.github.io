@@ -308,3 +308,65 @@ if ($('.standart-form__item-data').length) {
         language: 'ru'
     });
 };
+
+
+// Выпадающее окно с выбором печати
+var drop = '.list__print-drop'; //Выпадающий блок
+var dropActive = 'list__print-active'; //Класс активного элемента
+var printBtn = '.list__print-btn'; // Кнопка вызова функции
+
+$(printBtn).click(function() {
+    if ($(this).find(drop).hasClass(dropActive)) { // если выпадающий блок уже имеет активный класс
+        $(this).find(drop).removeClass(dropActive); // удалить этот класс
+    } else {
+        $(drop).removeClass(dropActive); // удалить этот класс со всех выпадающих блоков
+        $(this).find(drop).addClass(dropActive); //добавить этот класс
+        $(document).mouseup(function (e){ // событие клика по веб-документу
+            var div = $(drop + ', ' + printBtn); // тут указываем класс элемента
+            if (!div.is(e.target) // если клик был не по нашему блоку
+                && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+                $(this).find(drop).removeClass(dropActive); // удалить этот класс
+            }
+        });
+    }
+});
+
+//Удаление чекбоксов
+var checkboxes = '.list__box-item-checkbox input';
+var checkInp = '#checkbox-all';
+
+$(checkInp).change(function() {
+    if (this.checked) {
+        $(checkboxes).each(function(i, e) {
+            $(checkboxes)[i].checked = true;
+        });
+    } else {
+        $(checkboxes).each(function(i, e) {
+            $(checkboxes)[i].checked = false;
+        });
+    }
+});
+$(checkboxes).change(function(){
+    if ($(checkboxes + ':checkbox:checked').length == $(checkboxes).length) {
+        $(checkInp).each(function(i, e) {
+            $(checkInp)[i].checked = true;
+        });
+    } else {
+        $(checkInp).each(function(i, e) {
+            $(checkInp)[i].checked = false;
+        });
+    }
+});
+
+
+//Смена блоков плитка/список
+$('.list__box-control>div').click(function() {
+    $('.list__box-control>div').removeClass('control-active');
+   $(this).addClass('control-active');
+
+   if ($(this).attr('control') == 'list') {
+    $('.list').removeClass('block');
+   } else {
+     $('.list').addClass('block');
+   }
+});

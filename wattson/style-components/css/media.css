@@ -34,6 +34,9 @@
 	.standart-form__info p{
 		text-align: center;
 	}
+	.block .list__box-item{
+		width: 50%;
+	}
 }
 @media (max-width: 991px){
 	.head-login__top-cont{
@@ -188,6 +191,9 @@
 	.menu-active{
 		left: 0px !important;
 	}
+	.list__box-control{
+		display: none;
+	}
 
 	/*стили для промо страниц__________________________*/
 	.header-authorization__logo img{
@@ -297,6 +303,7 @@
 	}
 	.order-selection__icon{
 		right: 0px;
+		top: -13px;
 	}
 	.standart-form__button{
 		flex-direction: column;
@@ -372,6 +379,23 @@
     .table1 td span {
         display: block;
     }
+    .list__control{
+		flex-direction: column;
+   		align-items: end;
+	}
+	.list__show{
+	    margin-left: 0;
+	}
+	.list__control>div{
+		margin-bottom: 20px;
+	}
+	.order-selection__icon {
+	    right: -23px;
+	    top: 1px;
+	}
+	.list__print-drop{
+		left: 7px;
+	}
 
 
     /*стили для промо страниц__________________________*/
@@ -382,6 +406,9 @@
     .check-content__wrap{
     	width: auto;
     }
+    .block .list__box-item{
+		width: 100%;
+	}
 }
 @media (max-width: 575px){
 	.popup-locat__item{
@@ -432,5 +459,9 @@
 	.head-login__top-phone, 
 	.head-login__top-locat{
 		display: block;
+	}
+	.head-login__top-phone p, 
+	.head-login__top-locat p{
+		margin-bottom: 5px;
 	}
 }
