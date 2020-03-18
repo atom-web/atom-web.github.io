@@ -396,6 +396,10 @@
 	.list__print-drop{
 		left: 7px;
 	}
+	.block .list__box-item-checkbox{
+	    top: 20px;
+    	right: 18px;
+	}
 
 
     /*стили для промо страниц__________________________*/
