@@ -88,8 +88,8 @@
 					<div class="lk-sidebar">
 						<p class="lk-sidebar__title">Мой аккаунт</p>
 						<div class="lk-sidebar__links">
-							<a class="link-active" href="#">Мои коммерческие предложения</a>
-							<a href="#">Мои заказы и счета</a>
+							<a href="#">Мои коммерческие предложения</a>
+							<a class="link-active" href="#">Мои заказы и счета</a>
 							<a href="#">Каталог товара</a>
 							<a href="#">Накладные и задолженность</a>
 							<a href="#">Мой доход</a>
@@ -102,7 +102,7 @@
 					</div>
 				</div>
 				<div class="lk-content col-lg-9">
-					<h1 class="lk-content__title">Коммерческие предложения</h1>
+					<h1 class="lk-content__title">Мои заказы и счета</h1>
 					<form>
 						<div class="list block">
 							<div class="list__control">
@@ -126,14 +126,15 @@
 								</div>
 							</div>
 							<div class="list__box">
-								<table class="table-col-7">
+								<table class="table-col-8">
 								    <thead>
 								        <tr>
-								            <th>Печать КП</th>
-								            <th>КП</th>
+								            <th>№ заказа</th>
+								            <th>Статус</th>
 								            <th>Уровень цен</th>
-								            <th>Сумма</th>
-								            <th>Доп. информация</th>
+								            <th>Сумма док-та</th>
+								            <th>Оплачено</th>
+								            <th>Отгружено</th>
 								            <th class="list__checkbox-all">
 								            	<input type="checkbox" id="checkbox-all" name="checkbox-all">
 												<label for="checkbox-all"></label>
@@ -141,34 +142,35 @@
 								            <th></th>
 								        </tr>
 								    </thead>
-									<tbody>
+								    <tbody>
 								        <tr>
-								        	<td class="list__print">
-								        		<div class="list__print-btn">
-								        			<img class="list__print-btn-icon" src="../style-components/img/svg/print.svg" alt="">
-													<span>Печать</span>
-													<div class="list__print-drop">
-														<a href="#">Для покупателя (XLS)</a>
-														<a href="#">Для покупателя без артикула (XLS)</a>
-														<a href="#">Для себя (PDF)</a>
-													</div>
-								        		</div>
-											</td>
 								            <td>
-								            	<p class="list__box-item-title">КП №:</p>
-								            	<span>0000-054522  от 30.08.2019</span>
+								            	<p class="list__box-item-title">заказ №:</p>
+								            	<a href="#">0000-116505 от 26.12.2019</a>
 								            </td>
 								            <td>
-								            	<p class="list__box-item-title">Уровень цен</p>
-								            	<span>Проф +</span>
+								            	<p class="list__box-item-title">Статус:</p>
+								            	<span>К выполнению в резерве</span>
 								            </td>
 								            <td>
-								            	<p class="list__box-item-title">Сумма</p>
-								            	<span>1 469,77</span>
+								            	<p class="list__box-item-title">Уровень цен:</p>
+								            	<span>Стратег</span>
+								            </td>
+								            <td class="list__item-hidden">
+								            	<p class="list__box-item-title">Примечание</p>
+								            	<span>Примечание</span>
 								            </td>
 								            <td>
-								            	<p class="list__box-item-title">Дополнительная информация</p>
-								            	<span>Тест функции</span>
+								            	<p class="list__box-item-title">Сумма документа:</p>
+								            	<span>11 000,92 ₽</span>
+								            </td>
+								            <td>
+								            	<p class="list__box-item-title">Оплачено:</p>
+								            	<span>99 478,92 ₽</span>
+								            </td>
+								            <td>
+								            	<p class="list__box-item-title">Отгружено:</p>
+								            	<span>19 398,92 ₽</span>
 								            </td>
 								            <td class="list__box-item-checkbox">
 								            	<input type="checkbox" id="list-1" name="list">
@@ -177,34 +179,38 @@
 								            <td class="list__box-item-basket">
 								            	<a class="btn" href="#">В корзину</a>
 								            </td>
+								            <td class="list__box-item-cancellation">
+								            	<a class="btn" href="#">Отменить заказ</a>
+								            </td>
 								        </tr>
 								        <tr>
-								        	<td class="list__print">
-								        		<div class="list__print-btn">
-								        			<img class="list__print-btn-icon" src="../style-components/img/svg/print.svg" alt="">
-													<span>Печать</span>
-													<div class="list__print-drop">
-														<a href="#">Для покупателя (XLS)</a>
-														<a href="#">Для покупателя без артикула (XLS)</a>
-														<a href="#">Для себя (PDF)</a>
-													</div>
-								        		</div>
-											</td>
 								            <td>
-								            	<p class="list__box-item-title">КП №:</p>
-								            	<span>0000-054522  от 30.08.2019</span>
+								            	<p class="list__box-item-title">заказ №:</p>
+								            	<a href="#">0000-116505 от 26.12.2019</a>
 								            </td>
 								            <td>
-								            	<p class="list__box-item-title">Уровень цен</p>
-								            	<span>Проф +</span>
+								            	<p class="list__box-item-title">Статус:</p>
+								            	<span>К выполнению в резерве</span>
 								            </td>
 								            <td>
-								            	<p class="list__box-item-title">Сумма</p>
-								            	<span>1 469,77</span>
+								            	<p class="list__box-item-title">Уровень цен:</p>
+								            	<span>Стратег</span>
+								            </td>
+								            <td class="list__item-hidden">
+								            	<p class="list__box-item-title">Примечание</p>
+								            	<span>Примечание</span>
 								            </td>
 								            <td>
-								            	<p class="list__box-item-title">Дополнительная информация</p>
-								            	<span>Тест функции</span>
+								            	<p class="list__box-item-title">Сумма документа:</p>
+								            	<span>11 000,92 ₽</span>
+								            </td>
+								            <td>
+								            	<p class="list__box-item-title">Оплачено:</p>
+								            	<span>99 478,92 ₽</span>
+								            </td>
+								            <td>
+								            	<p class="list__box-item-title">Отгружено:</p>
+								            	<span>19 398,92 ₽</span>
 								            </td>
 								            <td class="list__box-item-checkbox">
 								            	<input type="checkbox" id="list-2" name="list">
@@ -213,34 +219,38 @@
 								            <td class="list__box-item-basket">
 								            	<a class="btn" href="#">В корзину</a>
 								            </td>
+								            <td class="list__box-item-cancellation">
+								            	<a class="btn" href="#">Отменить заказ</a>
+								            </td>
 								        </tr>
 								        <tr>
-								        	<td class="list__print">
-								        		<div class="list__print-btn">
-								        			<img class="list__print-btn-icon" src="../style-components/img/svg/print.svg" alt="">
-													<span>Печать</span>
-													<div class="list__print-drop">
-														<a href="#">Для покупателя (XLS)</a>
-														<a href="#">Для покупателя без артикула (XLS)</a>
-														<a href="#">Для себя (PDF)</a>
-													</div>
-								        		</div>
-											</td>
 								            <td>
-								            	<p class="list__box-item-title">КП №:</p>
-								            	<span>0000-054522  от 30.08.2019</span>
+								            	<p class="list__box-item-title">заказ №:</p>
+								            	<a href="#">0000-116505 от 26.12.2019</a>
 								            </td>
 								            <td>
-								            	<p class="list__box-item-title">Уровень цен</p>
-								            	<span>Проф +</span>
+								            	<p class="list__box-item-title">Статус:</p>
+								            	<span>К выполнению в резерве</span>
 								            </td>
 								            <td>
-								            	<p class="list__box-item-title">Сумма</p>
-								            	<span>1 469,77</span>
+								            	<p class="list__box-item-title">Уровень цен:</p>
+								            	<span>Стратег</span>
+								            </td>
+								            <td class="list__item-hidden">
+								            	<p class="list__box-item-title">Примечание</p>
+								            	<span>Примечание</span>
 								            </td>
 								            <td>
-								            	<p class="list__box-item-title">Дополнительная информация</p>
-								            	<span>Тест функции</span>
+								            	<p class="list__box-item-title">Сумма документа:</p>
+								            	<span>11 000,92 ₽</span>
+								            </td>
+								            <td>
+								            	<p class="list__box-item-title">Оплачено:</p>
+								            	<span>99 478,92 ₽</span>
+								            </td>
+								            <td>
+								            	<p class="list__box-item-title">Отгружено:</p>
+								            	<span>19 398,92 ₽</span>
 								            </td>
 								            <td class="list__box-item-checkbox">
 								            	<input type="checkbox" id="list-3" name="list">
@@ -249,34 +259,38 @@
 								            <td class="list__box-item-basket">
 								            	<a class="btn" href="#">В корзину</a>
 								            </td>
+								            <td class="list__box-item-cancellation">
+								            	<a class="btn" href="#">Отменить заказ</a>
+								            </td>
 								        </tr>
 								        <tr>
-								        	<td class="list__print">
-								        		<div class="list__print-btn">
-								        			<img class="list__print-btn-icon" src="../style-components/img/svg/print.svg" alt="">
-													<span>Печать</span>
-													<div class="list__print-drop">
-														<a href="#">Для покупателя (XLS)</a>
-														<a href="#">Для покупателя без артикула (XLS)</a>
-														<a href="#">Для себя (PDF)</a>
-													</div>
-								        		</div>
-											</td>
 								            <td>
-								            	<p class="list__box-item-title">КП №:</p>
-								            	<span>0000-054522  от 30.08.2019</span>
+								            	<p class="list__box-item-title">заказ №:</p>
+								            	<a href="#">0000-116505 от 26.12.2019</a>
 								            </td>
 								            <td>
-								            	<p class="list__box-item-title">Уровень цен</p>
-								            	<span>Проф +</span>
+								            	<p class="list__box-item-title">Статус:</p>
+								            	<span>К выполнению в резерве</span>
 								            </td>
 								            <td>
-								            	<p class="list__box-item-title">Сумма</p>
-								            	<span>1 469,77</span>
+								            	<p class="list__box-item-title">Уровень цен:</p>
+								            	<span>Стратег</span>
+								            </td>
+								            <td class="list__item-hidden">
+								            	<p class="list__box-item-title">Примечание</p>
+								            	<span>Примечание</span>
 								            </td>
 								            <td>
-								            	<p class="list__box-item-title">Дополнительная информация</p>
-								            	<span>Тест функции</span>
+								            	<p class="list__box-item-title">Сумма документа:</p>
+								            	<span>11 000,92 ₽</span>
+								            </td>
+								            <td>
+								            	<p class="list__box-item-title">Оплачено:</p>
+								            	<span>99 478,92 ₽</span>
+								            </td>
+								            <td>
+								            	<p class="list__box-item-title">Отгружено:</p>
+								            	<span>19 398,92 ₽</span>
 								            </td>
 								            <td class="list__box-item-checkbox">
 								            	<input type="checkbox" id="list-4" name="list">
@@ -285,11 +299,15 @@
 								            <td class="list__box-item-basket">
 								            	<a class="btn" href="#">В корзину</a>
 								            </td>
+								            <td class="list__box-item-cancellation">
+								            	<a class="btn" href="#">Отменить заказ</a>
+								            </td>
 								        </tr>
+								        
 								    </tbody>
 								</table>
 							</div>
-							<div class="list__remove-checked"><button>Удалить отмеченные</button></div>
+							<div class="list__remove-checked"><button>Отменить отмеченные заказы</button></div>
 						</div>
 					</form>
 				</div>

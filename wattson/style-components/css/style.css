@@ -124,7 +124,7 @@ ul li:before{
 .btn-width:hover, 
 .btn-clear:hover, 
 .btn-clear-h:hover{
-	border-radius: 0px;
+	border-radius: 0px !important;
 }
 
 
@@ -177,7 +177,6 @@ ul li:before{
     position: relative;
     padding: 7px 0 15px;
     margin-bottom: 15px;
-    /*border-right: 2px solid #DDDDDD;*/
 }
 .lk-sidebar__title:after{
 	content: "";
@@ -242,7 +241,6 @@ ul li:before{
 }
 .link-active:before{
 	background: #009a2b;
-	/*border-left: 5px solid #00671d;*/
 }
 .link-active:hover{
 	text-decoration: none !important;
@@ -494,8 +492,6 @@ input[type="checkbox"]:checked + label:after{
 
 
 
-
-
 /*Форма с бордером*/
 .border-box{
 	border: 1px solid #000000;
@@ -590,56 +586,10 @@ input[type="checkbox"]:checked + label:after{
 	display: flex;
 	margin-bottom: 25px;
 }
-.list__box-info p{
-	padding: 10px 0;
-	font-size: 18px;
-	font-family: "Raleway-m";
-}
-.list__box-info p:nth-child(1), 
-.list__item-position:nth-child(1){
-    width: 15%;	
-}
-.list__box-info p:nth-child(2),
-.list__item-position:nth-child(2){
-	width: 18%;
-}
-.list__box-info p:nth-child(3), 
-.list__item-position:nth-child(3){
-    width: 15%;
-}
-.list__box-info p:nth-child(4), 
-.list__item-position:nth-child(4){
-	width: 12%;
-}
-.list__box-info p:nth-child(5), 
-.list__item-position:nth-child(5){
-	width: 22%;
-}
-.list__box-info p:nth-child(6), 
-.list__item-position:nth-child(6){
-	width: 3%;
-}
-.list__box-info p:nth-child(7), 
-.list__item-position:nth-child(7){
-	width: 15%;
-}
 .list__box-items{
 	border-bottom: 2px solid #E5E5E5;
 	padding-bottom: 5px;
 	margin-bottom: 25px;
-}
-.list__box-item-basket{
-	display: flex;
-	justify-content: flex-end;
-}
-.list__box-item-checkbox{
-	display: flex;
-    align-items: end;
-    height: 16px;
-}
-.list__print-btn, 
-.list__box-item-basket a{
-	margin-bottom: 0;
 }
 .list__box-item{
 	display: flex;
@@ -655,27 +605,45 @@ input[type="checkbox"]:checked + label:after{
 .list__box-item-title{
 	display: none;
 }
-.list__print-btn, 
-.list__box-item-basket a{
-	position: relative;
-    padding: 8px 0;
-    width: 102px;
+.list__box-item-basket{
+	display: flex;
+	justify-content: flex-end;
+}
+.list__print-btn {
+	background: none;
+    color: #009028;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 1px solid #009028;
+    margin-bottom: 0;
+    font-family: unset;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    position: relative;
+
 }
 .list__print-drop{
 	position: absolute;
     background: #000;
     flex-direction: column;
+    align-items: end;
     padding: 10px 15px;
     border-radius: 0 5px 5px 5px;
-    top: 32px;
+    top: 27px;
     left: 100px;
     min-width: 260px;
     width: max-content;
     display: none;
     transition: 0.2s;
+    cursor: default;
+}
+.block .list__print-drop{
+    left: 74px;
 }
 .list__print-active{
 	display: flex;
@@ -707,6 +675,16 @@ input[type="checkbox"]:checked + label:after{
 .list__remove-checked button:hover{
 	text-decoration: underline;
 }
+.list__box{
+	padding-bottom: 10px;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 15px;
+}
+.block .list__box{
+	padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+}
 .list__box-control{
 	display: flex;
 	justify-content: flex-end;
@@ -736,78 +714,9 @@ input[type="checkbox"]:checked + label:after{
 .control-active svg{
 	fill: #009028;
 }
-.block .list__box-info{
-	display: none;
-}
-.block .list__box-item p{
-	display: block;
-}
-.block .list__box-items{
-	display: flex;
-    flex-wrap: wrap;
-}
-.block .list__box-item{
-    width: 33.3333333%;
-    flex-direction: column;
-    align-items: end;
-    position: relative;
-    padding: 35px 30px 70px;
-    outline: 2px solid #DDDDDD;
-    outline-offset: -15px;
-}
-.block .list__item-position{
-	width: 100%;
-}
-.block .list__box-item-print{
-	position: absolute;
-    bottom: 35px;
-    left: 30px;
-    width: auto;
-}
-.block .list__box-item-basket{
-	position: absolute;
-    bottom: 35px;
-    right: 30px;
-    width: auto;
-}
-.block .list__box-item-checkbox{
-	position: absolute;
-    top: 13px;
-    right: 3px;
-    width: 20px;
-}
-.block .list__box-items{
-	border-bottom: none;
-    padding-bottom: 0;
-    margin-bottom: 0px;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.list__box-item-title{
-	text-transform: uppercase;
-	font-family: "Raleway-b";
-	margin-bottom: 5px !important;
-}
-.block .list__box-item-txt{
-	margin-bottom: 15px;
-}
-.block .list__box-item{
-	margin-bottom: 0px;
-}
-.list__print-btn-icon{
-	fill: #009028;
-	width: 15px;
-    margin-right: 5px;
-}
 .list__show{
 	margin-left: 30px;
 }
-
-
-
-
-
-
 
 
 
@@ -1015,8 +924,6 @@ input[type="checkbox"]:checked + label:after{
 
 
 
-
-
 /*Футер страницы__________________________*/
 footer{
 	background: #212121;
@@ -1180,10 +1087,6 @@ footer p{
 	width: 20px;
 	height: 20px;
 }
-
-
-
-
 .sum-points{
 	display: flex;
 	align-items: center;
@@ -1192,13 +1095,6 @@ footer p{
 .sum-points span{
 	margin-left: 10px;
 }
-
-
-
-
-
-
-
 
 
 
@@ -1230,8 +1126,6 @@ footer p{
 .table1 tbody tr:last-child td{
 	border: none;
 }
-
-
 .table1 th:nth-child(1){
 	width: 15%;
 }
@@ -1244,6 +1138,8 @@ footer p{
 .table1 th:nth-child(4){
 	width: 15%;
 }
+
+
 
 /*Вторая таблица*/
 .table2 {
@@ -1272,8 +1168,6 @@ footer p{
 .table2 a:hover svg path{
 	fill: #009028;
 }
-
-
 .table2 th:nth-child(1){
 	width: 8%;
 }
@@ -1293,6 +1187,224 @@ footer p{
 	width: 15%;
 }
 
+
+
+/*Третья таблица с 8 колонками_____________________*/
+.table-col-8{
+	border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+}
+.table-col-8 th{
+    border: none;   
+    border-bottom: 1px solid #E5E5E5;
+    vertical-align: top;
+    padding: 15px 0px;
+    text-align: left;
+}
+.table-col-8 td{
+	padding: 11px 0;
+	vertical-align: top;
+	font-size: 14px;
+}
+.table-col-8 tbody tr td:first-child{
+	font-size: 16px;
+}
+.table-col-8 tbody tr:first-child td{
+	padding-top: 25px;
+}
+.table-col-8 th:nth-child(1){
+	width: 14%;
+}
+.table-col-8 th:nth-child(2){
+	width: 16%;
+}
+.table-col-8 th:nth-child(3){
+	width: 13%;
+}
+.table-col-8 th:nth-child(4){
+	width: 14%;
+}
+.table-col-8 th:nth-child(5){
+	width: 14%;
+}
+.table-col-8 th:nth-child(6){
+	width: 14%;
+}
+.table-col-8 th:nth-child(7){
+	width: 5%;
+}
+.table-col-8 th:nth-child(8){
+	width: 10%;
+}
+
+
+
+/*Четвертая таблица с 7 колонками_____________________*/
+.table-col-7{
+	border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+}
+.table-col-7 th{
+    border: none;   
+    border-bottom: 1px solid #E5E5E5;
+    vertical-align: top;
+    padding: 15px 0px;
+    text-align: left;
+}
+.table-col-7 td{
+	padding: 11px 0;
+	vertical-align: top;
+	font-size: 14px;
+}
+.table-col-7 tbody tr td{
+	padding-right: 10px;
+}
+.table-col-7 tbody tr td:first-child{
+	font-size: 16px;
+}
+.table-col-7 tbody tr:first-child td{
+	padding-top: 25px;
+}
+.table-col-7 th:nth-child(1){
+	width: 15%;
+}
+.table-col-7 th:nth-child(2){
+	width: 18%;
+}
+.table-col-7 th:nth-child(3){
+	width: 15%;
+}
+.table-col-7 th:nth-child(4){
+	width: 12%;
+}
+.table-col-7 th:nth-child(5){
+	width: 22%;
+}
+.table-col-7 th:nth-child(6){
+	width: 3%;
+}
+.table-col-7 th:nth-child(7){
+	width: 15%;
+}
+
+
+
+
+
+.list__checkbox-all label:before, 
+.list__box-item-checkbox label:before{
+	top: -15px !important;
+}
+.list__checkbox-all label:after, 
+.list__box-item-checkbox label:after{
+	top: -11px !important;
+}
+.list__box-item-basket a, 
+.block .list__box-item-cancellation a{
+	background: #009028;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 8px;
+    border-radius: 30px;
+    margin-bottom: 0;
+    font-family: unset;
+	text-align: center;
+}
+.block .list__box-item-cancellation a{
+	background: none;
+	color: #009028;
+	border: 1px solid #009028;
+}
+.list__item-hidden{
+	display: none;
+}
+.block .list__item-hidden{
+	display: block;
+}
+.list__box-item-title{
+	text-transform: uppercase;
+	font-family: "Raleway-b";
+	margin-bottom: 5px !important;
+}
+.block .list__box-item-title{
+	display: block;
+}
+.block .list__box-item-basket{
+    width: auto !important;
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+}
+.list__box-item-cancellation{
+	display: none;
+}
+.block .list__box-item-cancellation{
+	display: block;
+	width: auto !important;
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+}
+.block .list__box-item-checkbox {
+    position: absolute;
+    top: 10px;
+    right: 23px;
+    width: 14px !important;
+}
+.block .table-col-8 thead, 
+.block .table-col-7 thead{
+	display: none;
+}
+.block .table-col-8 tbody, 
+.block .table-col-7 tbody{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+.block .table-col-8 tbody tr, 
+.block .table-col-7 tbody tr{
+	width: 33.33333%;
+    outline: 2px solid #eaeaea;
+    outline-offset: -15px;
+    padding: 20px 30px 75px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.block .table-col-8 tbody tr:first-child td, 
+.block .table-col-7 tbody tr:first-child td{
+	margin-top: 0;
+	padding-top: 0;
+	padding: 10px 0;
+}
+.block .table-col-8 td, 
+.block .table-col-7 td{
+	padding-top: 0;
+	padding: 10px 0;
+}
+.list__print-btn-icon{
+	fill: #009028;
+    width: 14px;
+    height: 15px;
+    margin-right: 5px;
+}
+.block .list__print{
+	position: absolute;
+    bottom: 25px;
+    left: 30px;
+}
+.table-col-7 .list__box-item-checkbox label:before {
+    top: -11px !important;
+}
+.table-col-7  .list__box-item-checkbox label:after {
+    top: -7px !important;
+}
 
 
 
@@ -1369,23 +1481,6 @@ footer p{
 	margin-bottom: 5px;
 	margin-top: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1650,8 +1745,6 @@ footer p{
     height: 16px;
 }
 .add-region__select{
-	/*align-self: end;
-	margin-bottom: 30px;*/
 	margin-right: 30px;
 }
 .add-region__select:last-child{
@@ -1709,9 +1802,6 @@ footer p{
 .jq-selectbox__select-text{
 	width: calc(100% - 30px) !important;
 }
-
-
-
 
 
 .reg-banner{

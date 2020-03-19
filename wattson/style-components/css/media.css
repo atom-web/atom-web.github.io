@@ -34,7 +34,11 @@
 	.standart-form__info p{
 		text-align: center;
 	}
-	.block .list__box-item{
+	/*.block .list__box-item{
+		width: 50%;
+	}*/
+	.block .table-col-8 tbody tr, 
+	.block .table-col-7 tbody tr{
 		width: 50%;
 	}
 }
@@ -194,6 +198,82 @@
 	.list__box-control{
 		display: none;
 	}
+	/*.list__box-item{
+		flex-direction: column;
+    	align-items: end;
+    	position: relative;
+    	border: 2px solid #eaeaea;
+    	padding: 15px 15px 65px;
+	}*/
+	/*.block .list__box-item{
+		border: none;
+	}*/
+	.list__item-position{
+		margin-bottom: 15px;
+	}
+	.list__box-item-txt{
+		width: 100% !important;
+	}
+	.list__box-info{
+		display: none;
+	}
+	.list__box-item-print{
+		position: absolute;
+		bottom: 15px;
+    	left: 15px;
+	}
+	.list__box-item-title{
+		display: block;
+	}
+	.list__box-item-basket{
+		width: auto !important;
+		position: absolute;
+		bottom: 25px;
+    	right: 30px;
+	}
+	.list__box-item-checkbox{
+		position: absolute;
+	    top: 10px;
+	    right: 23px;
+	    width: 14px !important;
+	}
+	/*.block .list__box-item{
+		padding: 35px 30px 100px;
+	}*/
+	.table-col-8 thead, 
+	.table-col-7 thead{
+		display: none;
+	}
+	.table-col-8 tbody, 
+	.table-col-7 tbody{
+		display: flex;
+    	flex-wrap: wrap;
+    	margin: 0 -15px;
+	}
+	.table-col-8 tbody tr, 
+	.table-col-7 tbody tr{
+		width: 33.33333%;
+	    outline: 2px solid #eaeaea;
+	    outline-offset: -15px;
+	    padding: 20px 30px 75px;
+	    display: flex;
+	    flex-direction: column;
+	    position: relative;
+
+	}
+	.table-col-8 tbody tr:first-child td, 
+	.table-col-7 tbody tr:first-child td{
+		margin-top: 0;
+		padding-top: 0;
+		padding: 10px 0;
+	}
+	.table-col-8 td, 
+	.table-col-7 td{
+		padding-top: 0;
+		padding: 10px 0;
+	}
+
+
 
 	/*стили для промо страниц__________________________*/
 	.header-authorization__logo img{
@@ -354,9 +434,23 @@
 	.promo-info li{
 		font-size: 16px;
 	}
+	.list__print {
+	    position: absolute;
+	    bottom: 25px;
+	    left: 30px;
+	}
+	.list__box {
+	    padding-bottom: 0;
+	    border-bottom: none;
+	    margin-bottom: 0;
+	}
 
 }
 @media (max-width: 767px){
+	.table-col-8 tbody tr, 
+	.table-col-7 tbody tr{
+		width: 50%;
+	}
 	.head-login__top-cont{
 		flex-direction: column;
 	}
@@ -396,10 +490,10 @@
 	.list__print-drop{
 		left: 7px;
 	}
-	.block .list__box-item-checkbox{
+	/*.block .list__box-item-checkbox{
 	    top: 20px;
-    	right: 18px;
-	}
+    	right: 24px;
+	}*/
 
 
     /*стили для промо страниц__________________________*/
@@ -410,9 +504,9 @@
     .check-content__wrap{
     	width: auto;
     }
-    .block .list__box-item{
+    /*.block .list__box-item{
 		width: 100%;
-	}
+	}*/
 }
 @media (max-width: 575px){
 	.popup-locat__item{
@@ -457,6 +551,14 @@
 	}
 	.table2 tbody a:hover svg path{
 		fill: #000;
+	}
+	.table-col-8 tbody tr, 
+	.table-col-7 tbody tr{
+		width: 100%;
+	}
+	.block .table-col-8 tbody tr, 
+	.block .table-col-7 tbody tr{
+		width: 100%;
 	}
 }
 @media (max-width: 350px){
