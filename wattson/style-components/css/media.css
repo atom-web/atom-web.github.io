@@ -493,9 +493,13 @@
 	.bread-crumbs ul{
 		flex-wrap: wrap;
 	}
+	.card-poduct__price{
+	    margin-bottom: 45px;
+	}
 
 }
 @media (max-width: 767px){
+
 	.head-login__top-phone{
 		padding-bottom: 7px;
 	}

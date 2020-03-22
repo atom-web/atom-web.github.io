@@ -155,12 +155,3 @@ header ul li:before{
 	color: #fff;
 	border-radius: 100%;
 }
-.sticky {
-    position: fixed;
-    z-index: -1;
-}
-
-.stop {
-    position: relative;
-    z-index: 1;
-}

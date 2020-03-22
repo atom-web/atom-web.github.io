@@ -142,7 +142,15 @@ ul li:before{
 	color: #fff;
 }
 
+.sticky {
+    position: fixed;
+    /*z-index: -1;*/
+}
 
+.stop {
+    position: relative;
+    z-index: 1;
+}
 /*ХЛЕБНЫЕ КРОШКИ___________________________________________*/
 .bread-crumbs a{
 	color: #4F4F4F;
@@ -2625,6 +2633,9 @@ footer p{
 .sidebar-accordion__filter-link a:hover{
 	color: #009a2b;
 }
+.sidebar-accordion__filter-form{
+	cursor: default;
+}
 .sidebar-accordion__filter-form-title{
 	display: flex;
 	align-items: center;
@@ -2688,4 +2699,197 @@ footer p{
 .sidebar-accordion__filter-remove:hover{
 	color: #fff;
 	background: #009a2b;
+}
+.card-poduct .select-active{
+	background: #dddddd;
+	color: #000;
+}
+.card-poduct  .lk-content__info-select{
+	margin-bottom: 50px;
+}
+.card-poduct  .lk-content__select-btn{
+	min-width: 183px;
+}
+.card-poduct p{
+	margin-bottom: 0;
+}
+.poduct-title{
+	font-size: 20px;
+	color: #009a2b;
+	font-family: "Raleway-m";
+	margin-bottom: 40px;
+	max-width: 800px;
+}
+.card-poduct__img{
+	width: 100%;
+	height: 300px;
+	padding: 15px 15px;
+}
+.card-poduct__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.card-poduct__vendor-code{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.card-poduct__discount{
+	background: #009028;
+    padding: 3px 15px;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 21px;
+}
+.card-poduct__code{
+	color: #8F8F8F;
+}
+.card-poduct__presence{
+	padding: 20px;
+	border: 1px solid #DDDDDD;
+	margin-bottom: 30px;
+}
+.card-poduct__presence-title{
+	font-size: 20px;
+	font-family: "Raleway-b";
+	text-transform: uppercase;
+	margin-bottom: 25px !important;
+	color: #009028;
+}
+.card-poduct__warehouse{
+	font-size: 14px;
+}
+.card-poduct__warehouse-title{
+	text-transform: uppercase;
+	font-family: "Raleway-b";
+	margin-bottom: 15px !important;
+}
+.card-poduct__warehouse-item{
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: space-between;
+	margin-bottom: 11px;
+}
+.card-poduct__warehouse-item p{
+	background: #fff;
+}
+.card-poduct__warehouse-item:after{
+	content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+    position: absolute;
+    bottom: 4px;
+    z-index: -1;
+}
+.card-poduct__basket{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.card-poduct__basket-icon{
+	margin-right: 10px;
+	width: 15px;
+    height: 15px;
+}
+.card-poduct__basket a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+.card-poduct__basket-icon *{
+	fill: #fff !important;
+}
+.card-poduct__price{
+	display: flex;
+	align-items: flex-end;
+}
+.card-poduct__price p{
+	color: #4F4F4F;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-right: 15px;
+	font-family: "Raleway-m";
+}
+.card-poduct__price-old{
+	text-decoration: line-through;
+}
+.card-poduct__price-new{
+	font-family: "Raleway-b" !important;
+	font-size: 27px !important;
+	color: #009028 !important;
+}
+.card-poduct_specifications-title{
+	margin-bottom: 23px !important;
+	color: #8F8F8F;
+}
+.card-poduct_specifications-item{
+	margin-bottom: 30px;
+}
+.card-poduct_specifications-item p{
+	margin-bottom: 10px !important;
+	font-size: 14px;
+}
+.card-poduct_specifications-item-green{
+	color: #009028;
+}
+.card-poduct_specifications-item-green span{
+	color: #000;
+}
+.card-poduct__info p{
+	margin-bottom: 10px;
+}
+.card-poduct__title{
+	font-size: 26px;
+	font-family: "Raleway-b";
+	font-weight: 100;
+	margin-bottom: 21px !important;
+}
+.card-poduct__ask-form{
+	max-width: 570px;
+}
+.card-poduct__ask-form textarea{
+	width: 100%;
+	outline: none;
+	border: 1px solid #DDDDDD;
+	padding: 15px;
+	margin-bottom: 20px;
+	font-family: "Raleway-r";
+}
+.card-poduct__ask-form-item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.card-poduct__ask-form-item p{
+	margin-bottom: 8px !important;
+	color: #343434;
+}
+.card-poduct__ask-form-item input{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #DDDDDD;
+	padding: 0 15px;
+	outline: none;
+	font-family: "Raleway-r";
+}
+.card-poduct__ask-form #cap{
+	margin-bottom: 25px;
+}
+.card-poduct__ask-form button{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.card-poduct__certificates-lnk{
+	display: flex;
+	flex-direction: column;
+}
+.card-poduct__certificates-lnk a{
+	margin-bottom: 15px;
 }
