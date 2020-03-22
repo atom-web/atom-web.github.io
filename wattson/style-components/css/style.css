@@ -1417,7 +1417,7 @@ footer p{
     max-width: 100%;
     table-layout: fixed;
 }
-table td {
+.table td {
   width: 100%;
 }
 .table th{
