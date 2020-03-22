@@ -122,9 +122,6 @@
 		padding-top: 0;
 		margin-bottom: 50px;
 	}
-	.head-login__top-phone{
-		padding-bottom: 7px;
-	}
 	.lk-content__title-green{
 		text-transform: uppercase;
 		font-family: "Raleway-sb";
@@ -444,9 +441,64 @@
 	    border-bottom: none;
 	    margin-bottom: 0;
 	}
+	.list__info {
+	    margin-top: 15px;
+	}
+	.table-status thead, 
+	.table thead{
+		display: none;
+	}
+	.table-status tbody, 
+	.table tbody{
+		display: flex;
+	    flex-wrap: wrap;
+	    margin: 0 -15px;
+	}
+	.table-status tbody tr, 
+	.table tbody tr{
+		display: flex;
+	    flex-direction: column;
+	    width: 50%;
+	    outline: 2px solid #eaeaea;
+	    outline-offset: -15px;
+	    padding: 30px 30px 30px;
+	    position: relative;
+	}
+	.table-status .list__box-item-checkbox{
+		padding: 11px 0;
+	}
+	.table-status tbody tr td, 
+	.table tbody tr td{
+		border-bottom: none;
+	}
+	.block .table tbody tr{
+		width: 50%;
+	}
+	.lk-content__price-link{
+		display: flex;
+		flex-direction: column;
+	}
+	.lk-content__price-link a{
+		margin-bottom: 10px;
+		margin-right: 0;
+		padding-right: 0;
+		border: none;
+	}
+	.sidebar-accordion{
+		margin-bottom: 25px;
+	}
+	.bread-crumbs{
+		margin-bottom: 20px;
+	}
+	.bread-crumbs ul{
+		flex-wrap: wrap;
+	}
 
 }
 @media (max-width: 767px){
+	.head-login__top-phone{
+		padding-bottom: 7px;
+	}
 	.table-col-8 tbody tr, 
 	.table-col-7 tbody tr{
 		width: 50%;
@@ -490,10 +542,21 @@
 	.list__print-drop{
 		left: 7px;
 	}
-	/*.block .list__box-item-checkbox{
-	    top: 20px;
-    	right: 24px;
-	}*/
+	.list__info-status{
+		font-size: 14px;
+	}
+	.list__info-title{
+		flex-direction: column;
+	}
+	.list__info-status p{
+		padding-bottom: 10px;
+	}
+	.list__info-status{
+		align-self: end;
+	}
+	.list__total{
+		margin-top: 25px;
+	}
 
 
     /*стили для промо страниц__________________________*/
@@ -504,11 +567,11 @@
     .check-content__wrap{
     	width: auto;
     }
-    /*.block .list__box-item{
-		width: 100%;
-	}*/
 }
 @media (max-width: 575px){
+	.block .table tbody tr{
+		width: 100%;
+	}
 	.popup-locat__item{
 		width: 100%;
 	}
@@ -558,6 +621,10 @@
 	}
 	.block .table-col-8 tbody tr, 
 	.block .table-col-7 tbody tr{
+		width: 100%;
+	}
+	.table-status tbody tr, 
+	.table tbody tr{
 		width: 100%;
 	}
 }

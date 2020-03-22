@@ -40,11 +40,18 @@ if ($(window).width() < 991) {
     });
 }
 
+//Аккордеон в сайдбаре
+if ($('.accordion').length) {
+    $('.accordion').click(function() {
+        $('.accordion').find('.accordion-cont').removeClass('accordion-active');
+        $(this).find('.accordion-cont').addClass('accordion-active');
+    });
+}
 
 // Прилипающий сайдбар
-if ($('.lk-sidebar').length) {
+if ($('.lk-sidebar, .sidebar-accordion').length) {
     if ($(window).width() > 991) {
-        var a = document.querySelector('.lk-sidebar'), 
+        var a = document.querySelector('.lk-sidebar, .sidebar-accordion'), 
         b = null, 
         K = null, 
         Z = 0, 
@@ -168,8 +175,10 @@ if ($('.selection-question').length) {
 
         if (objPosLeft + objWidth + isEmpty >= winWidth) {
            $(this).addClass('selection-question-left');
+           console.log('1') 
         } else {
             $(this).removeClass('selection-question-left');
+            console.log(objPosLeft + objWidth + isEmpty) 
         }
     });
 };
@@ -356,6 +365,16 @@ $(checkboxes).change(function(){
             $(checkInp)[i].checked = false;
         });
     }
+});
+
+
+//Сброс фильтра в сайдбаре
+$('.sidebar-accordion__filter-remove').click(function() {
+    var sidebarInp = '.sidebar-accordion__form-check input';
+    
+    $(sidebarInp).each(function(i, e) {
+        $(sidebarInp)[i].checked = false;
+    });
 });
 
 

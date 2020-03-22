@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>wattson</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#009028">
+	<link rel="stylesheet" href="../style-components/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="../style-components/css/slick.css">
+	<link rel="stylesheet" href="../style-components/css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="../style-components/css/header/header-lk.css">
+	<link rel="stylesheet" href="../style-components/css/style.css">
+	<link rel="stylesheet" href="../style-components/css/media.css">
+</head>
+<body>
+	<header class="head-login">
+		<div class="head-login__top">
+			<div class="container">
+				<div class="row head-login__row">
+					<div class="head-login__top-nav col-lg-6 col-md-12">
+						<a href="#">Каталог</a>
+						<a href="#">Новости</a>
+						<a href="#">Акции</a>
+						<a href="#">Новинки</a>
+						<a href="#">Распродажа</a>
+						<a href="#">Тех. решения</a>
+					</div>
+					<div class="head-login__top-cont col-lg-6">
+						<div class="head-login__top-phone">
+							<p>ОБСЛУЖИВАНИЕ КЛИЕНТОВ:</p>
+							<a href="tel: 88009999999" title="Позвонить 8 (800) 999-99-99"> 8 (800) 999-99-99</a>
+						</div>
+						<div class="head-login__top-locat">
+							<p>ВАШ ГОРОД:</p>
+							<a data-fancybox data-src="#popup-locat" href="javascript:;" class="head-login__top-city">Орел</a>
+						</div>
+					</div>
+					<div class="burger">
+						<div class="burger-item"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="head-login__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="head-login__bottom-logo col-lg-2 col-md-12">
+						<a href="#">
+							<img src="../style-components/img/logo-1.png" alt="Логотип">
+						</a>
+					</div>
+					<div class="head-login__bottom-form col-lg-5 col-md-12">
+						<form action="" method="get">
+							<input name="s" placeholder="Наименование товара" type="search">
+						  	<button type="submit"></button>
+						</form>
+					</div>
+					<div class="head-login__bottom-lk col-lg-3 col-md-12">
+						<img class="head-login__bottom-lk-img" src="../style-components/img/svg/user.svg" alt="Личный кабинет">
+						<div class="head-login__bottom-lk-wrap">
+							<p>ООО “Метафактор”</p>
+							<div class="head-login__bottom-lk-btn">
+								<a href="#">Настройки</a>
+								<a href="#">Выйти</a>
+							</div>
+						</div>
+					</div>
+					<div class="head-login__bottom-cart col-lg-2 col-md-12">
+						<a href="#">
+							<div>
+								<span class="head-login__bottom-cart-num">2</span>
+								<img class="head-login__bottom-cart-img" src="../style-components/img/svg/cart.svg" alt="Корзина">
+							</div>
+							<p>Корзина</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="close-nav">
+				<img class="close-nav__icon" src="../style-components/img/svg/arrow-left.svg" alt="">
+			</div>
+		</div>
+	</header>
+	<div class="bread-crumbs">    
+        <div class="container">
+        	<ul itemscope="" itemtype="https://schema.org/BreadcrumbList">
+	            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		            <a itemtype="https://schema.org/Thing" itemscope="" itemprop="item" href="/">
+		                <span itemprop="name">Главная</span>
+		            </a>
+		            <meta itemprop="position" content="1">
+		        </li>
+	            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+	                <a itemtype="https://schema.org/Thing" itemscope="" itemprop="item" href="#">
+	                    <span itemprop="name">Каталог</span>
+	                </a>
+	                <meta itemprop="position" content="2">
+	            </li>
+	            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+	                <a itemtype="https://schema.org/Thing" itemscope="" itemprop="item" href="#">
+	                    <span itemprop="name">Отопление и водоснабжение</span>
+	                </a>
+	                <meta itemprop="position" content="3">
+	            </li> 
+	            <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+	                <a itemtype="https://schema.org/Thing" itemscope="" itemprop="item" href="#">
+	                    <span itemprop="name">Автоматизация и безопасность</span>
+	                </a>
+	                <meta itemprop="position" content="4">
+	            </li>             
+	        </ul>
+        </div>            
+   	</div>
+	<div class="lk">
+		<div class="container">
+			<div class="row">
+				<div class="sidebar col-lg-3">
+					<div class="sidebar-accordion">
+						<div class="sidebar-accordion__account accordion">
+							<div class="sidebar-accordion__account-title">
+								<img class="sidebar-accordion__account-icon" src="../style-components/img/svg/user.svg" alt="">
+								<p>Мой аккаунт</p>
+							</div>
+							<div class="sidebar-accordion__account-content accordion-cont">
+								<div class="sidebar-accordion__links">
+									<a href="#">Мои коммерческие предложения</a>
+									<a href="#">Мои заказы и счета</a>
+									<a href="#">Каталог товара</a>
+									<a href="#">Накладные и задолженность</a>
+									<a href="#">Мой доход</a>
+									<a href="#">Мои сметы на монтаж</a>
+								</div>
+								<div class="sidebar-accordion__links">
+									<a href="#">Мои настройки</a>
+									<a href="#">Выход из личного кабинета</a>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar-accordion__cat accordion">
+							<div class="sidebar-accordion__cat-title">
+								<img class="sidebar-accordion__cat-icon" src="../style-components/img/svg/burger.svg" alt="">
+								<p>Выберите категорию</p>
+							</div>
+							<div class="sidebar-accordion__cat-content accordion-cont">
+								<div class="sidebar-accordion__links">
+									<a href="#">Первая ссылка</a>
+									<a href="#">Вторая ссылка</a>
+									<a href="#">Третья ссылка</a>
+									<a href="#">Четвертая ссылка</a>
+									<a href="#">Пятая ссылка</a>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar-accordion__filter accordion">
+							<div class="sidebar-accordion__filter-title">
+								<img class="sidebar-accordion__filter-icon" src="../style-components/img/svg/filter.svg" alt="">
+								<p>сортировка и фильтр</p>
+							</div>
+							<div class="sidebar-accordion__filter-content accordion-cont accordion-active">
+								<div class="sidebar-accordion__filter-link">
+									<a href="#">Показать заказные</a>
+								</div>
+								<form class="sidebar-accordion__filter-form">
+									<div class="sidebar-accordion__filter-form-item">
+										<div class="sidebar-accordion__filter-form-title">
+											<p>Марка</p>
+										</div>
+										<div class="sidebar-accordion__filter-form-cont">
+											<div class="sidebar-accordion__form-check-item">
+												<div class="sidebar-accordion__form-check">
+													<input type="checkbox" id="accordion__filter1" name="accordion__filter">
+													<label for="accordion__filter1">PUMPMAN</label>
+												</div>
+												<p>1/1</p>
+											</div>
+											<div class="sidebar-accordion__form-check-item">
+												<div class="sidebar-accordion__form-check">
+													<input type="checkbox" id="accordion__filter2" name="accordion__filter">
+													<label for="accordion__filter2">GRUNDFOS</label>
+												</div>
+												<p>1/1</p>
+											</div>
+											<div class="sidebar-accordion__form-check-item">
+												<div class="sidebar-accordion__form-check">
+													<input type="checkbox" id="accordion__filter3" name="accordion__filter">
+													<label for="accordion__filter3">DANFOSS</label>
+												</div>
+												<p>1/1</p>
+											</div>
+											<div class="sidebar-accordion__form-check-item">
+												<div class="sidebar-accordion__form-check">
+													<input type="checkbox" id="accordion__filter4" name="accordion__filter">
+													<label for="accordion__filter4">ДЖИЛЕКС</label>
+												</div>
+												<p>2/2</p>
+											</div>
+											<div class="sidebar-accordion__form-check-item">
+												<div class="sidebar-accordion__form-check">
+													<input type="checkbox" id="accordion__filter5" name="accordion__filter">
+													<label for="accordion__filter5">РОСМА</label>
+												</div>
+												<p>2/2</p>
+											</div>
+											<div class="sidebar-accordion__form-check-item">
+												<div class="sidebar-accordion__form-check">
+													<input type="checkbox" id="accordion__filter6" name="accordion__filter">
+													<label for="accordion__filter6">VALTEC</label>
+												</div>
+												<p>2/2</p>
+											</div>
+										</div>
+									</div>
+									<div class="sidebar-accordion__filter-form-item">
+										<div class="sidebar-accordion__filter-form-title">
+											<p>Рабочая среда</p>
+										</div>
+										<div class="sidebar-accordion__filter-form-cont">
+											<div class="sidebar-accordion__form-check-item">
+												<div class="sidebar-accordion__form-check">
+													<input type="checkbox" id="accordion__filter-water1" name="accordion__filter-water">
+													<label for="accordion__filter-water1">Вода</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="sidebar-accordion__filter-remove">
+										<span>Сбросить фильтр</span>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cat-block col-lg-9">
+					<h1 class="cat-block__title">Реле давления</h1>
+					<div class="row">
+						<div class="cat-block__item col-lg-4 col-md-6">
+							<div class="cat-block__item-wrap">
+								<div class="cat-block__item-img">
+									<img src="../style-components/img/cat-block-img.png" alt="">
+								</div>
+								<div class="cat-block__item-info">
+									<div class="cat-block__item-info-wrap">
+										<p class="cat-block__item-info-title">Реле давления TPS 2-2</p>
+										<a href="#">PUMPMAN</a>
+										<div class="cat-block__item-pres">
+											<div class="cat-block__item-pres-comp">
+												<p>В наличии</p>
+												<p>46 шт</p>
+											</div>
+										</div>
+									</div>
+									<div class="cat-block__price">
+										<p class="style-txt-2">373, 50 руб</p>
+										<a class="btn-white" href="#">В корзину</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cat-block__item col-lg-4 col-md-6">
+							<div class="cat-block__item-wrap">
+								<div class="cat-block__item-img">
+									<img src="../style-components/img/cat-block-img2.png" alt="">
+								</div>
+								<div class="cat-block__item-info">
+									<div class="cat-block__item-info-wrap">
+										<p class="cat-block__item-info-title">Реле давления РД-2Р, подкл. G1/4 диапазон -0,07 - 0,60 МПа, дифференциал 0,06 - 0,4 МПа</p>
+										<a href="#">PUMPMAN</a>
+										<div class="cat-block__item-pres">
+											<p>Под заказ. Поставка до 3 нед</p>
+										</div>
+									</div>
+									<div class="cat-block__price">
+										<p class="style-txt-2">1 518, 40 руб</p>
+										<a class="btn-white" href="#">В корзину</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cat-block__item col-lg-4 col-md-6">
+							<div class="cat-block__item-wrap">
+								<div class="cat-block__item-img">
+									<img src="../style-components/img/cat-block-img.png" alt="">
+								</div>
+								<div class="cat-block__item-info">
+									<div class="cat-block__item-info-wrap">
+										<p class="cat-block__item-info-title">Реле давления TPS 2-2</p>
+										<a href="#">PUMPMAN</a>
+										<div class="cat-block__item-pres">
+											<div class="cat-block__item-pres-comp">
+												<p>В наличии</p>
+												<p>46 шт</p>
+											</div>
+										</div>
+									</div>
+									<div class="cat-block__price">
+										<p class="style-txt-2">373, 50 руб</p>
+										<a class="btn-white" href="#">В корзину</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cat-block__item col-lg-4 col-md-6">
+							<div class="cat-block__item-wrap">
+								<div class="cat-block__item-img">
+									<img src="../style-components/img/cat-block-img2.png" alt="">
+								</div>
+								<div class="cat-block__item-info">
+									<div class="cat-block__item-info-wrap">
+										<p class="cat-block__item-info-title">Реле давления РД-2Р, подкл. G1/4 диапазон -0,07 - 0,60 МПа, дифференциал 0,06 - 0,4 МПа</p>
+										<a href="#">PUMPMAN</a>
+										<div class="cat-block__item-pres">
+											<p>Под заказ. Поставка до 3 нед</p>
+										</div>
+									</div>
+									<div class="cat-block__price">
+										<p class="style-txt-2">1 518, 40 руб</p>
+										<a class="btn-white" href="#">В корзину</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class=" footer__item col-lg-6 col-md-12">
+					<div class="footer__logo">
+						<img src="../style-components/img/logo-footer.png" alt="Логотип">
+					</div>
+					<div class="footer__contacts">
+						<div class="footer__contacts-item">
+							<img class="footer__contacts-img" src="../style-components/img/svg/locat-white.svg" alt="Локация">
+							<p>Тула г , Щегловская засека ул, 31, ворота № 22-23</p>
+						</div>
+						<div class="footer__contacts-item">
+							<img class="footer__contacts-img" src="../style-components/img/svg/time.svg" alt="Время">
+							<p>Пн-Пт 8:00 - 17:00; Сб 9:00 - 14:00</p>
+						</div>
+						<div class="footer__contacts-item">
+							<img class="footer__contacts-img" src="../style-components/img/svg/call.svg" alt="Телефон">
+							<a href="tel:+7 (4872) 71 74 20">+7 (4872) 71 74 20</a>
+						</div>
+					</div>
+					<div class="footer__soc">
+						<a href="#" class="footer__soc-item footer__facebook">
+							<img class="footer__soc-img" src="../style-components/img/svg/facebook.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__twitter">
+							<img class="footer__soc-img" src="../style-components/img/svg/twitter.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__google">
+							<img class="footer__soc-img" src="../style-components/img/svg/google-hangouts.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__insta">
+							<img class="footer__soc-img" src="../style-components/img/svg/instagram.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__pinterest">
+							<img class="footer__soc-img" src="../style-components/img/svg/pinterest.svg" alt="">
+						</a>
+					</div>
+					<p>Copyright © 2019 Wattson</p>
+				</div>
+				<div class="footer__item col-lg-3 col-md-12">
+					<p class="footer__item-title">Информация</p>
+					<div class="footer__item-link">
+						<a href="#">Как заказать и оплатить</a>
+						<a href="#">Проект и монтаж</a>
+						<a href="#">Ремонт и сервис</a>
+						<a href="#">Доставка</a>
+						<a href="#">Бонусы за покупки</a>
+						<a href="#">Отсрочка платежа</a>
+					</div>
+				</div>
+				<div class="footer__item col-lg-3 col-md-12">
+					<p class="footer__item-title">Информация</p>
+					<p class="footer__item-desc">Введите ваш номер телефона и мы перезвоним вам в течении 15 минут</p>
+					<form class="footer__pseudo-call">
+						<input type="phone" >
+						<button></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<div id="popup-locat">
+		<p class="popup-locat__title">Выбор города</p>
+		<p class="popup-locat__desc">Выбор города обеспечит вывод товаров по вашему местоположению.</p>
+		<div class="popup-locat__items">
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Белгород</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Брянск</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Владимир</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Вологда</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Воронеж</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Иваново</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Калуга</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Кострома</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Курск</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Липецк</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Москва</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Нижний Новгород</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Орел</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Пенза</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Рязань</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Саранск</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Смоленск</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Тамбов</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Тверь</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Тула</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Чебоксары</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+		</div>
+		<p class="popup-locat__selected">Выбран город: <span class="popup-locat__select-city"></span></p>
+	</div>
+
+
+	<script src="../style-components/js/plugins/jq.min.js"></script>
+	<script src="../style-components/js/plugins/jquery.fancybox.min.js"></script>
+	<script src="../style-components/js/plugins/slick.min.js"></script>
+	<script src="../style-components/js/plugins/jquery.mask.min.js"></script>
+	<script src="../style-components/js/main.js"></script>
+	<script src="../style-components/js/ajax.js"></script>
+</body>
+</html>
