@@ -1991,6 +1991,12 @@ footer p{
 .add-region{
 	margin-bottom: 25px;
 }
+.add-region ul li:before{
+	display: none;
+}
+.add-region ul li{
+	margin: 0;
+}
 .add-region__title{
 	font-size: 18px;
 	font-family: "Raleway-m";
