@@ -41,6 +41,9 @@
 	.block .table-col-7 tbody tr{
 		width: 50%;
 	}
+	#work-overlay{
+		/*width: 600px;*/
+	}
 }
 @media (max-width: 991px){
 	.head-login__top-cont{
@@ -496,10 +499,124 @@
 	.card-poduct__price{
 	    margin-bottom: 45px;
 	}
+	.estimate__btn{
+		justify-content: end;
+    	flex-direction: column;
+	}
+	.estimate__btn-save a{
+		margin-right: 10px;
+		margin-left: 0;
+	}
+	.related-stick__wrap{
+		width: auto;
+	}
+	.related-stick__wrap{
+		flex-direction: column;
+	}
+	.related-stick__control, 
+	.related-stick__items{
+		flex: 0 0 100%;
+    	max-width: 100%;
+	}
+	.related-stick__control-btn{
+		border-bottom: none;
+	}
+	.related-stick__control{
+		border-right: none;
+	    border-bottom: 1px solid #dddddd;
+	    margin-bottom: 20px;
+	    padding-bottom: 10px;
+	}
+	.related-stick__item-table{
+		flex-direction: column;
+	    align-items: end;
+	    margin-bottom: 25px;
+	    border: 1px solid #dddddd;
+	    padding: 10px;
+	}
+	.related-stick__item-table p{
+		margin-bottom: 10px;
+	}
+	#related-stick{
+		padding: 15px;
+	}
 
 }
 @media (max-width: 767px){
-
+	.info-title__status .selection-question{
+		display: none;
+	}
+	.info-title__status{
+		width: max-content;
+	    margin-bottom: 20px;
+	}
+	.info-title{
+		flex-direction: column;
+	}
+	.estimate__table th, 
+	.estimate__table td{
+		border-bottom: none;
+	}
+	.estimate__btn, 
+	.estimate__btn-print, 
+	.estimate__btn-save{
+		flex-direction: column;
+	}
+	.estimate__related-items{
+		display: flex;
+	    flex-wrap: wrap;
+	    margin: 0 -15px;
+	    border-bottom: none;
+	}
+	.estimate__related-item{
+		width: 100%;
+	    flex-direction: column;
+	    align-items: end;
+	    outline: 1px solid #dddddd;
+	    outline-offset: -15px;
+    	padding: 30px;
+    	margin-bottom: 0;
+	}
+	.
+	.estimate__related-stick p {
+	    margin-right: 0;
+	    margin-bottom: 20px;
+	}
+	.estimate__related-stick{
+		flex-direction: column;
+    	align-items: end;	
+	}
+	.estimate__sum-add-work a {
+	    margin-right: 0;
+	    margin-bottom: 15px;
+	}
+	.estimate__sum-add-work{
+		display: flex;
+    	flex-direction: column;
+    	margin-bottom: 15px;
+	}
+	.estimate__sum{
+		flex-direction: column;
+	}
+	.estimate__table tbody{
+		display: flex;
+	    flex-wrap: wrap;
+	    margin: 0 -15px;
+	}
+	.estimate__table tbody tr{
+		display: flex;
+	    flex-direction: column;
+	    width: 50%;
+	    outline: 1px solid #dddddd;
+	    outline-offset: -15px;
+	    padding: 30px;
+	}
+	.estimate__table thead{
+		display: none;
+	}
+	.estimate__table-item-title{
+		display: block;
+	}
 	.head-login__top-phone{
 		padding-bottom: 7px;
 	}
@@ -573,6 +690,21 @@
     }
 }
 @media (max-width: 575px){
+	#work-overlay{
+		padding: 15px;
+	}
+	#work-random-overlay{
+		width: auto;
+	}
+	.work-random-overlay__form{
+	    flex-direction: column;
+	}
+	.work-random-overlay__form input, 
+	.work-random-overlay__form button{
+		width: 100%;
+		height: 40px;
+		margin-bottom: 15px;
+	}
 	.block .table tbody tr{
 		width: 100%;
 	}
@@ -629,6 +761,11 @@
 	}
 	.table-status tbody tr, 
 	.table tbody tr{
+		width: 100%;
+	}
+}
+@media (max-width: 400px){
+	.estimate__table tbody tr{
 		width: 100%;
 	}
 }

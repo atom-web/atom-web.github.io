@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>wattson</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#009028">
+	<link rel="stylesheet" href="../style-components/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="../style-components/css/slick.css">
+	<link rel="stylesheet" href="../style-components/css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="../style-components/css/header/header-lk.css">
+	<link rel="stylesheet" href="../style-components/css/style.css">
+	<link rel="stylesheet" href="../style-components/css/media.css">
+</head>
+<body>
+	<header class="head-login">
+		<div class="head-login__top">
+			<div class="container">
+				<div class="row head-login__row">
+					<div class="head-login__top-nav col-lg-6 col-md-12">
+						<a href="#">Каталог</a>
+						<a href="#">Новости</a>
+						<a href="#">Акции</a>
+						<a href="#">Новинки</a>
+						<a href="#">Распродажа</a>
+						<a href="#">Тех. решения</a>
+					</div>
+					<div class="head-login__top-cont col-lg-6">
+						<div class="head-login__top-phone">
+							<p>ОБСЛУЖИВАНИЕ КЛИЕНТОВ:</p>
+							<a href="tel: 88009999999" title="Позвонить 8 (800) 999-99-99"> 8 (800) 999-99-99</a>
+						</div>
+						<div class="head-login__top-locat">
+							<p>ВАШ ГОРОД:</p>
+							<a data-fancybox data-src="#popup-locat" href="javascript:;" class="head-login__top-city">Орел</a>
+						</div>
+					</div>
+					<div class="burger">
+						<div class="burger-item"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="head-login__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="head-login__bottom-logo col-lg-2 col-md-12">
+						<a href="#">
+							<img src="../style-components/img/logo-1.png" alt="Логотип">
+						</a>
+					</div>
+					<div class="head-login__bottom-form col-lg-5 col-md-12">
+						<form action="" method="get">
+							<input name="s" placeholder="Наименование товара" type="search">
+						  	<button type="submit"></button>
+						</form>
+					</div>
+					<div class="head-login__bottom-lk col-lg-3 col-md-12">
+						<img class="head-login__bottom-lk-img" src="../style-components/img/svg/user.svg" alt="Личный кабинет">
+						<div class="head-login__bottom-lk-wrap">
+							<p>ООО “Метафактор”</p>
+							<div class="head-login__bottom-lk-btn">
+								<a href="#">Настройки</a>
+								<a href="#">Выйти</a>
+							</div>
+						</div>
+					</div>
+					<div class="head-login__bottom-cart col-lg-2 col-md-12">
+						<a href="#">
+							<div>
+								<span class="head-login__bottom-cart-num">2</span>
+								<img class="head-login__bottom-cart-img" src="../style-components/img/svg/cart.svg" alt="Корзина">
+							</div>
+							<p>Корзина</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="close-nav">
+				<img class="close-nav__icon" src="../style-components/img/svg/arrow-left.svg" alt="">
+			</div>
+		</div>
+	</header>
+	<div class="lk">
+		<div class="container">
+			<div class="row">
+				<div class="sidebar col-lg-3">
+					<div class="lk-sidebar">
+						<p class="lk-sidebar__title">Мой аккаунт</p>
+						<div class="lk-sidebar__links">
+							<a href="#">Мои коммерческие предложения</a>
+							<a href="#">Мои заказы и счета</a>
+							<a href="#">Каталог товара</a>
+							<a href="#">Накладные и задолженность</a>
+							<a href="#">Мой доход</a>
+							<a class="link-active" href="#">Мои сметы на монтаж</a>
+						</div>
+						<div class="lk-sidebar__links">
+							<a  href="#">Мои настройки</a>
+							<a href="#">Выход из личного кабинета</a>
+						</div>
+					</div>
+				</div>
+				<div class="lk-content col-lg-9">
+					<div class="info-title">
+						<h1 class="lk-content__title">Смета № <span class="style-txt-2">0000-116505</span></h1>
+						<div class="info-title__status">
+							<p class="list__info-status-green">Собственная</p>
+							<div class="selection-question">
+								<p class="selection-question__status-title">Комплектация заказов</p>
+								<p class="list__info-status-white">Товар по заказу отсутствует в АО “ЦГС”. Запланирована закупка у поставщика</p>
+								<p class="list__info-status-yellow">Часть товара уже зарезервирована</p>
+								<p class="list__info-status-orange">Товар по заказу частично поступил в филиал и готов к продаже</p>
+								<p class="list__info-status-lightgreen">Товар полностью зарезервирован</p>
+								<p class="list__info-status-green">Товар по заказу полностью готов к продаже со склада филиала</p>
+								<p class="list__info-status-red">Вы просрочили вывоз товара более 3 дней</p>
+							</div>
+						</div>
+					</div>
+					<form class="estimate">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="estimate__item">
+									<p>Заказчик</p>
+									<select class="estimate__select">
+										<option>Физическое лицо</option>
+										<option>Юридическое лицо</option>
+									</select>
+								</div>
+								<div class="estimate__item">
+									<p>Имя заказчика</p>
+									<input type="name" required placeholder="Иван Иванов">
+								</div>
+								<div class="estimate__item">
+									<p>Телефон заказчика</p>
+									<input class="estimate__tel" type="text" required>
+								</div>
+								<div class="estimate__item">
+									<p>Адрес монтажа</p>
+									<textarea></textarea>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="estimate__item">
+									<p>Исполнитель</p>
+									<select class="estimate__select">
+										<option>Метафактор ООО</option>
+										<option>Метафактор ЗАО</option>
+									</select>
+								</div>
+							</div>
+							<div class="estimate__info-check col-md-12">
+								<input type="checkbox" id="check1" name="check">
+								<label for="check1">
+									<span>Оповестить клиента?</span>
+									<div class="selection-question">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptas, sapiente! Adipisci eveniet nobis unde cumque, numquam expedita repellendus aut ullam voluptatem voluptates commodi vitae velit. Similique numquam minus amet.</p>
+									</div>
+								</label>
+							</div>
+							<div class="estimate__list col-md-12">
+								<p class="estimate__list-title">Перечень работ</p>
+								<table class="estimate__table">
+								    <thead>
+								        <tr>
+								            <th>Работа:</th>
+								            <th>Количество</th>
+								            <th>Цена</th>
+								            <th>Сумма</th>
+								            <th></th>
+								        </tr>
+								    </thead>
+								    <tbody>
+								        <tr>
+								            <td class="estimate__table-item">
+								            	<p class="estimate__table-item-title">Работа:</p>
+								            	<p>Монтаж врезного смесителя на ванну (до 3 отверстий)</p>
+								            </td>
+								            <td>
+								            	<p class="estimate__table-item-title">Количество</p>
+								            	<input type="number" value="1">
+								            </td>
+								            <td>
+								            	<p class="estimate__table-item-title">Цена</p>
+								            	<input type="number" value="356.00">
+								            </td>
+								            <td>
+								            	<p class="estimate__table-item-title">Сумма</p>
+								            	<span>199 478,92 ₽</span>
+								            </td>
+								            <td>
+								            	<a class="estimate__remove" href="#">Удалить</a>
+								            </td>
+								        </tr>
+								        <tr>
+								            <td>
+								            	<p class="estimate__table-item-title">Работа:</p>
+								            	<p>Монтаж смесителя для ванны</p>
+								            </td>
+								            <td>
+								            	<p class="estimate__table-item-title">Количество</p>
+								            	<input type="number" value="3">
+								            </td>
+								            <td>
+								            	<p class="estimate__table-item-title">Цена</p>
+								            	<input type="number" value="4895.00">
+								            </td>
+								            <td>
+								            	<p class="estimate__table-item-title">Сумма</p>
+								            	<span>13 549,92 ₽</span>
+								            </td>
+								            <td>
+								            	<a class="estimate__remove" href="#">Удалить</a>
+								            </td>
+								        </tr>
+								    </tbody>
+								</table>
+								<div class="estimate__sum">
+									<div class="estimate__sum-add-work">
+										<a class="style-txt" data-fancybox data-src="#work-overlay" href="javascript:;">Работы из каталога</a>
+										<a class="style-txt" data-fancybox data-src="#work-random-overlay" href="javascript:;">Произвольная работа</a>
+									</div>
+									<p>Итого: <span class="style-txt-2">199 478,92</span></p>
+								</div>
+							</div>
+							<div class="estimate__comment col-md-12">
+								<p>Комментарий к заявке</p>
+								<textarea></textarea>
+							</div>
+							<div class="estimate__related col-md-12">
+								<p class="estimate__related-title style-txt-2">Связанные документы (2)</p>
+								<div class="estimate__related-stick">
+									<p>К заявке можно привязать Заказ или КП на материалы</p>
+									<a class="btn-clear" data-fancybox data-src="#related-stick" href="javascript:;">Привязать</a>
+								</div>
+								<div class="estimate__related-items">
+									<div class="estimate__related-item">
+										<p>КП №0000-016099 от 23.03.2020 Сумма: <span class="style-txt-green">1 679,74</span></p>
+										<a class="estimate__remove" href="#">Удалить</a>
+									</div>
+									<div class="estimate__related-item">
+										<p>КП №0000-01609922 от 23.03.2020 Сумма: <span class="style-txt-green">21 698,74</span></p>
+										<a class="estimate__remove" href="#">Удалить</a>
+									</div>
+									<div class="estimate__related-item">
+										<p>КП №0000-015968 от 23.03.2020 Сумма: <span class="style-txt-green">159 908,74</span></p>
+										<a class="estimate__remove" href="#">Удалить</a>
+									</div>
+								</div>
+							</div>
+							<div class="estimate__btn col-md-12">
+								<div class="estimate__btn-print">
+									<a class="btn-clear" href="#">Распечатать смету</a>
+									<a class="btn-clear" href="#">Распечатать договор и акт</a>
+								</div>
+								<div class="estimate__btn-save">
+									<a class="btn" href="#">Сохранить смету</a>
+									<a class="btn" href="#">Отменить смету</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class=" footer__item col-lg-6 col-md-12">
+					<div class="footer__logo">
+						<img src="../style-components/img/logo-footer.png" alt="Логотип">
+					</div>
+					<div class="footer__contacts">
+						<div class="footer__contacts-item">
+							<img class="footer__contacts-img" src="../style-components/img/svg/locat-white.svg" alt="Локация">
+							<p>Тула г , Щегловская засека ул, 31, ворота № 22-23</p>
+						</div>
+						<div class="footer__contacts-item">
+							<img class="footer__contacts-img" src="../style-components/img/svg/time.svg" alt="Время">
+							<p>Пн-Пт 8:00 - 17:00; Сб 9:00 - 14:00</p>
+						</div>
+						<div class="footer__contacts-item">
+							<img class="footer__contacts-img" src="../style-components/img/svg/call.svg" alt="Телефон">
+							<a href="tel:+7 (4872) 71 74 20">+7 (4872) 71 74 20</a>
+						</div>
+					</div>
+					<div class="footer__soc">
+						<a href="#" class="footer__soc-item footer__facebook">
+							<img class="footer__soc-img" src="../style-components/img/svg/facebook.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__twitter">
+							<img class="footer__soc-img" src="../style-components/img/svg/twitter.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__google">
+							<img class="footer__soc-img" src="../style-components/img/svg/google-hangouts.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__insta">
+							<img class="footer__soc-img" src="../style-components/img/svg/instagram.svg" alt="">
+						</a>
+						<a href="#" class="footer__soc-item footer__pinterest">
+							<img class="footer__soc-img" src="../style-components/img/svg/pinterest.svg" alt="">
+						</a>
+					</div>
+					<p>Copyright © 2019 Wattson</p>
+				</div>
+				<div class="footer__item col-lg-3 col-md-12">
+					<p class="footer__item-title">Информация</p>
+					<div class="footer__item-link">
+						<a href="#">Как заказать и оплатить</a>
+						<a href="#">Проект и монтаж</a>
+						<a href="#">Ремонт и сервис</a>
+						<a href="#">Доставка</a>
+						<a href="#">Бонусы за покупки</a>
+						<a href="#">Отсрочка платежа</a>
+					</div>
+				</div>
+				<div class="footer__item col-lg-3 col-md-12">
+					<p class="footer__item-title">Информация</p>
+					<p class="footer__item-desc">Введите ваш номер телефона и мы перезвоним вам в течении 15 минут</p>
+					<form class="footer__pseudo-call">
+						<input type="phone" >
+						<button></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div id="related-stick">
+		<div class="related-stick__wrap row">
+			<div class="related-stick__control col-md-4">
+				<div stick-control="1" class="related-stick__control-btn style-txt-2 control-btn-active">Сантехника и канализация</div>
+				<div stick-control="2" class="related-stick__control-btn style-txt-2">Отопление и водоснабжение</div>
+			</div>
+			<div class="related-stick__items col-md-8">
+				<p class="style-txt-2">Коммерческие предложения</p>
+				<div stick-tab="1" class="related-stick__item tab-active">
+					<div class="related-stick__item-table">
+						<p>0000-01709 от 23.03.2020 Сумма: <span class="style-txt">100 679,74</span></p>
+						<a class="btn" href="#">Выбрать</a>
+					</div>
+					<div class="related-stick__item-table">
+						<p>0000-016099 от 23.03.2020 Сумма: <span class="style-txt">1 679,74</span></p>
+						<a class="btn" href="#">Выбрать</a>
+					</div>
+					<div class="related-stick__item-table">
+						<p>0000-01609999 от 23.03.2020 Сумма: <span class="style-txt">679,74</span></p>
+						<a class="btn" href="#">Выбрать</a>
+					</div>
+					
+				</div>
+				<div stick-tab="2" class="related-stick__item">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti fuga ducimus necessitatibus soluta ipsam molestiae harum eveniet porro, voluptatum alias esse magnam doloribus iusto quod enim laboriosam similique magni possimus.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="work-overlay">
+		<div class="container">
+			<p class="work-overlay__title">Выберите работы для сметы</p>
+			<div class="work-overlay__control">
+				<div work-control="1" class="work-overlay__control-btn control-btn-active">Сантехника и канализация</div>
+				<div work-control="2" class="work-overlay__control-btn">Отопление и водоснабжение</div>
+				<div work-control="3" class="work-overlay__control-btn">Монтаж водоснабжения</div>
+			</div>
+			<div work-tab="1" class="work-overlay__tab tab-active">
+				<div class="row">
+					<div class="work-overlay__item col-lg-4 col-md-6">
+						<div class="work-overlay__item-wrap">
+							<div class="work-overlay__item-img">
+								<img src="../style-components/img/image141.jpg" alt="">
+							</div>
+							<div class="work-overlay__item-info">
+								<div class="work-overlay__item-info-wrap">
+									<p class="work-overlay__item-info-title">Монтаж стальной ванны</p>
+									<p class="work-overlay__item-info-desc">крепление раковины к стене, монтаж смесителя на раковине, установка пьедестала и полупьедестала, монтаж сифона, подключение смесителя и сифона к готовым коммуникациям, без доработки коммуникаций</p>
+								</div>
+								<div class="work-overlay__price">
+									<p class="style-txt-2">373, 50 руб</p>
+									<a class="btn" href="#">Добавить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="work-overlay__item col-lg-4 col-md-6">
+						<div class="work-overlay__item-wrap">
+							<div class="work-overlay__item-img">
+								<img src="../style-components/img/image141.jpg" alt="">
+							</div>
+							<div class="work-overlay__item-info">
+								<div class="work-overlay__item-info-wrap">
+									<p class="work-overlay__item-info-title">Монтаж стальной ванны</p>
+									<p class="work-overlay__item-info-desc">крепление раковины к стене, монтаж смесителя на раковине, установка пьедестала и полупьедестала, монтаж сифона, подключение смесителя и сифона к готовым коммуникациям, без доработки коммуникаций</p>
+								</div>
+								<div class="work-overlay__price">
+									<p class="style-txt-2">373, 50 руб</p>
+									<a class="btn" href="#">Добавить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="work-overlay__item col-lg-4 col-md-6">
+						<div class="work-overlay__item-wrap">
+							<div class="work-overlay__item-img">
+								<img src="../style-components/img/image141.jpg" alt="">
+							</div>
+							<div class="work-overlay__item-info">
+								<div class="work-overlay__item-info-wrap">
+									<p class="work-overlay__item-info-title">Монтаж стальной ванны</p>
+									<p class="work-overlay__item-info-desc">крепление раковины к стене, монтаж смесителя на раковине, установка пьедестала и полупьедестала, монтаж сифона, подключение смесителя и сифона к готовым коммуникациям, без доработки коммуникаций</p>
+								</div>
+								<div class="work-overlay__price">
+									<p class="style-txt-2">373, 50 руб</p>
+									<a class="btn" href="#">Добавить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="work-overlay__item col-lg-4 col-md-6">
+						<div class="work-overlay__item-wrap">
+							<div class="work-overlay__item-img">
+								<img src="../style-components/img/image141.jpg" alt="">
+							</div>
+							<div class="work-overlay__item-info">
+								<div class="work-overlay__item-info-wrap">
+									<p class="work-overlay__item-info-title">Монтаж стальной ванны</p>
+									<p class="work-overlay__item-info-desc">крепление раковины к стене, монтаж смесителя на раковине, установка пьедестала и полупьедестала, монтаж сифона, подключение смесителя и сифона к готовым коммуникациям, без доработки коммуникаций</p>
+								</div>
+								<div class="work-overlay__price">
+									<p class="style-txt-2">373, 50 руб</p>
+									<a class="btn" href="#">Добавить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div work-tab="2" class="work-overlay__tab">
+				<div class="row">
+					<div class="work-overlay__item col-lg-4 col-md-6">
+						<div class="work-overlay__item-wrap">
+							<div class="work-overlay__item-img">
+								<img src="../style-components/img/image135.jpg" alt="">
+							</div>
+							<div class="work-overlay__item-info">
+								<div class="work-overlay__item-info-wrap">
+									<p class="work-overlay__item-info-title">Монтаж умывальника с пьедесталом ("тюльпан")</p>
+									<p class="work-overlay__item-info-desc">крепление раковины к стене, монтаж смесителя на раковине, установка пьедестала и полупьедестала, монтаж сифона, подключение смесителя и сифона к готовым коммуникациям, без доработки коммуникаций</p>
+								</div>
+								<div class="work-overlay__price">
+									<p class="style-txt-2">373, 50 руб</p>
+									<a class="btn" href="#">Добавить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div work-tab="3" class="work-overlay__tab">
+				<div class="row">
+					<div class="work-overlay__item col-lg-4 col-md-6">
+						<div class="work-overlay__item-wrap">
+							<div class="work-overlay__item-img">
+								<img src="../style-components/img/image135.jpg" alt="">
+							</div>
+							<div class="work-overlay__item-info">
+								<div class="work-overlay__item-info-wrap">
+									<p class="work-overlay__item-info-title">Монтаж умывальника с пьедесталом ("тюльпан")</p>
+									<p class="work-overlay__item-info-desc">крепление раковины к стене, монтаж смесителя на раковине, установка пьедестала и полупьедестала, монтаж сифона,  раковины к стене, монтаж смесителя на раковине, установка пьедестала и полупьедестала, монтаж сифона, пподключение смесителя и сифона к готовым коммуникациям, без доработки коммуникаций</p>
+								</div>
+								<div class="work-overlay__price">
+									<p class="style-txt-2">373, 50 руб</p>
+									<a class="btn" href="#">Добавить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="work-random-overlay">
+		<p class="work-random-overlay-title">Введите произвольную работу</p>
+		<form class="work-random-overlay__form">
+			<input type="text">
+			<button>Добавить</button>
+		</form>
+	</div>
+	<div id="popup-locat">
+		<p class="popup-locat__title">Выбор города</p>
+		<p class="popup-locat__desc">Выбор города обеспечит вывод товаров по вашему местоположению.</p>
+		<div class="popup-locat__items">
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Белгород</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Брянск</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Владимир</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Вологда</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Воронеж</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Иваново</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Калуга</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Кострома</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Курск</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Липецк</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Москва</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Нижний Новгород</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Орел</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Пенза</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Рязань</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Саранск</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Смоленск</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Тамбов</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Тверь</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Тула</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+			<div class="popup-locat__item">
+				<a href="#" class="popup-locat__item-link">
+					<span class="popup-locat__item-title">Чебоксары</span>
+					<img class="popup-locat__item-img" src="../style-components/img/svg/locat.svg" alt="Локация пользователя">
+				</a>
+			</div>
+		</div>
+		<p class="popup-locat__selected">Выбран город: <span class="popup-locat__select-city"></span></p>
+	</div>
+
+
+	<script src="../style-components/js/plugins/jq.min.js"></script>
+	<script src="../style-components/js/plugins/jquery.fancybox.min.js"></script>
+	<script src="../style-components/js/plugins/slick.min.js"></script>
+	<script src="../style-components/js/plugins/jquery.mask.min.js"></script>
+	<script src="../style-components/js/plugins/jquery.formstyler.min.js"></script>
+	<script src="../style-components/js/main.js"></script>
+	<script src="../style-components/js/ajax.js"></script>
+</body>
+</html>

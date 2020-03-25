@@ -145,6 +145,11 @@ if ($('.lk-sidebar, .sidebar-accordion').length) {
 }
 
 
+// Form-styler _________________________________
+$('.estimate__select').styler(); //Активация form-styler
+
+
+
 //Маска для форм
 if ($('.footer__pseudo-call input').length) {
     $('.footer__pseudo-call input').mask('+7 (000) 000-00-00', {placeholder: "+7 ( 000 ) 000-00-00"});
@@ -160,6 +165,9 @@ if ($('.standart-form__tel').length) {
 }
 if ($('.check-content__num').length) {
     $('.check-content__num').mask('0000', {placeholder: "0000",});
+}
+if ($('.estimate__tel').length) {
+    $('.estimate__tel').mask('+7 (000) 000-00-00', {placeholder: "+7 ( 000 ) 000-00-00"});
 }
 
 
@@ -389,3 +397,38 @@ $('.list__box-control>div').click(function() {
      $('.list').addClass('block');
    }
 });
+
+
+if ($('.work-overlay__control').length) {
+    $('.work-overlay__control-btn').click(function() {
+        var lnkData = $(this).attr('work-control');
+
+        $('.work-overlay__tab').each(function(i, e) {
+            $(this).removeClass('tab-active');
+            if ($(e).attr('work-tab') == lnkData) {
+                $(this).addClass('tab-active');
+            }
+            
+        });
+    });
+}
+
+
+
+
+if ($('#related-stick').length) {
+    $('.related-stick__control-btn').click(function() {
+        var lnkData = $(this).attr('stick-control');
+
+        $('.related-stick__control-btn').removeClass('control-btn-active');
+        $(this).addClass('control-btn-active');
+
+        $('.related-stick__item').each(function(i, e) {
+            $(this).removeClass('tab-active');
+            if ($(e).attr('stick-tab') == lnkData) {
+                $(this).addClass('tab-active');
+            }
+            
+        });
+    });
+}
