@@ -454,7 +454,7 @@ $('.standart-form__check-btn').click(function(e) {
         $('.standart-form__error').html(''); //удаление текста при всех введенных цифрах
 
         $.ajax({
-            url: 'http://atom-web.github.io/wattson/style-components/num-tel.json',
+            url: 'http://atom-web.github.io/wattson/style-components/num-tel.json', //ввел тестовый урл
             // url: 'https://www.wattson.ru/PARTNER_MENU_ASYNC?ACTION=GET_CONFIRM_CODE&PHONE=' + valTel,
             // type: 'POST',
             // data: {},
@@ -475,7 +475,7 @@ $('.check-content__wrap').submit(function(e) { //событие при отпр�
     var valCode = $('.check-content__wrap input').val(); //значение введенного кода
     e.preventDefault();
     $.ajax({
-        url: '/',
+        url: 'http://atom-web.github.io/wattson/style-components/num-tel.json', //ввел тестовый урл
         // type: 'POST',
         // data: {},
         success: function(data){
