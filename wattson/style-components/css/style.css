@@ -3218,3 +3218,6 @@ select.estimate__select{
 .related-stick__item-table p{
 	margin-right: 15px;
 }
+iframe{
+    border: none;
+}
