@@ -44,8 +44,14 @@
 	#work-overlay{
 		/*width: 600px;*/
 	}
+	.lk-content__info-item iframe{
+	    height: 500px;
+	}
 }
 @media (max-width: 991px){
+	.lk-content__info-item iframe{
+	    height: 400px;
+	}
 	.head-login__top-cont{
 		margin-bottom: 15px;
 		justify-content: end;
@@ -543,6 +549,9 @@
 
 }
 @media (max-width: 767px){
+	.lk-content__info-item iframe{
+	    height: 300px;
+	}
 	.info-title__status .selection-question{
 		display: none;
 	}
@@ -690,6 +699,9 @@
     }
 }
 @media (max-width: 575px){
+	.lk-content__info-item iframe{
+	    height: 200px;
+	}
 	#work-overlay{
 		padding: 15px;
 	}
