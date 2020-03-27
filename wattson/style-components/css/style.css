@@ -3224,3 +3224,38 @@ select.estimate__select{
 iframe{
     border: none;
 }
+.standart-form__error{
+    margin: 0 0 15px;
+    font-size: 14px;
+}
+.standart-form__error p{
+    color: #bf1d1d;
+}
+.check-content__wrap button{
+    outline: none;
+}
+.form-suc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-suc-active{
+    display: flex;
+}
+.form-suc__txt{
+    margin-bottom: 30px;
+}
+.form-suc__txt-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: "Raleway-sb";
+}

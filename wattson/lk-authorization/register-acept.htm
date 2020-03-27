@@ -94,10 +94,12 @@
 							<div class="standart-form__item">
 								<input class="standart-form__tel" type="tel" required>
 							</div>
+							<div class="standart-form__error" id="#standart-form__error"></div>
 							<div id="cap">
 								<img src="../style-components/img/recap.jpg" alt="">
 							</div>
-							<a data-fancybox data-src="#check-content" href="javascript:;" class="btn-clear standart-form__check-btn">Подтвердить номер телефона</a>
+							<a href="#" class="btn-clear standart-form__check-btn">Подтвердить номер телефона</a>
+
 						</div>
 						<div class="standart-form__contract col-xl-11 col-lg-12">
 							<div class="standart-form__contract-acept">
@@ -178,12 +180,19 @@
 	</footer>
 	
 	<div id="check-content">
-		<div class="check-content__wrap">
+		<form class="check-content__wrap">
 			<p class="check-content__title">Пожалуйста, введите код, полученный в СМС сообщении на указанный номер.</p>
 			<input class="check-content__num" type="text">
-			<a class="btn" href="#">Подтвердить</a>
+			<button class="btn">Подтвердить</button>
 			<p class="check-content__desc">Если SMS не поступило в течение 3-и мин, убедитесь, что телефон указан верно и на нем не заблокировано получение рассылок с коротких номеров.</p>
-		</div>
+			<div class="form-suc">
+				<div class="form-suc__txt">
+					<p class="form-suc__txt-title">Поздравляем, вы успешно зарегистрировались!</p>
+					<p>Логин и пароль для входа в систему отправлен Вам смс сообщением на указанный номер.</p>
+				</div>
+				<a class="btn" href="#">Войти в личный кабинет</a>
+			</div>
+		</form>
 	</div>
 
 	<script src="../style-components/js/plugins/jq.min.js"></script>

@@ -185,10 +185,8 @@ if ($('.selection-question').length) {
 
         if (objPosLeft + objWidth + isEmpty >= winWidth) {
            $(this).addClass('selection-question-left');
-           console.log('1') 
         } else {
             $(this).removeClass('selection-question-left');
-            console.log(objPosLeft + objWidth + isEmpty) 
         }
     });
 };
@@ -217,7 +215,6 @@ if ($('.header-authorization').length) {
 //Добавление иконки обязательного заполнения формы
 $('input[required]').each(function() {
     $(this).parent().addClass('input-required');
-    console.log('1')
 });
 //Добавление иконки вопроса в форму
 $('.selection-question').each(function() { 
@@ -434,3 +431,57 @@ if ($('#related-stick').length) {
         });
     });
 }
+
+
+
+
+
+
+
+//Проверка СМС подтверждения
+$('.standart-form__check-btn').click(function(e) {
+    var valTel= $('.standart-form__tel').val().replace(/\D+/g,""); //значение номера вписанный в поле
+    var numPhone = parseInt(valTel); //получение цифр из строки
+
+    function countDigits(n) {        //Определение количества цифр
+       for(var i = 0; n > 1; i++) {
+          n /= 10;
+       }
+       return i;
+    }
+    if (countDigits(numPhone) == 11) { // проверка количества введенных символов телефона
+        e.preventDefault(); //отмена стандартного поведения кнопки ".standart-form__check-btn"
+        $('.standart-form__error').html(''); //удаление текста при всех введенных цифрах
+
+        $.ajax({
+            url: 'http://atom-web.github.io/wattson/style-components/num-tel.json',
+            // url: 'https://www.wattson.ru/PARTNER_MENU_ASYNC?ACTION=GET_CONFIRM_CODE&PHONE=' + valTel,
+            // type: 'POST',
+            // data: {},
+            success: function(data){
+                // console.log(data.result);
+                if (data.result == true) { //если код был отправлен пользователю
+                    $.fancybox.open({src: '#check-content'}); //открытие окна с вводом кода
+                } else {
+                    $('.standart-form__error').html('<p>' + data.ErrorText + '</p>'); //текст ошибки берется из json
+                }
+            },
+        });
+    } else {
+        $('.standart-form__error').html('<p>Введенный номер очень короткий</p>'); //добавление ошибки при написании неполного номера мобильного
+    }
+});
+$('.check-content__wrap').submit(function(e) { //событие при отправке проверочного кода
+    e.preventDefault();
+    $.ajax({
+        url: '/',
+        // type: 'POST',
+        // data: {},
+        success: function(data){
+            $('.form-suc').addClass('form-suc-active'); //добавление информационного окна для пользователя при успешной отправке
+        },
+    });
+});
+
+
+
