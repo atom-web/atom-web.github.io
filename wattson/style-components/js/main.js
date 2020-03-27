@@ -472,6 +472,7 @@ $('.standart-form__check-btn').click(function(e) {
     }
 });
 $('.check-content__wrap').submit(function(e) { //событие при отправке проверочного кода
+    var valCode = $('.check-content__wrap input').val(); //значение введенного кода
     e.preventDefault();
     $.ajax({
         url: '/',
