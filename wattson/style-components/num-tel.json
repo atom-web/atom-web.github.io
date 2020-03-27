@@ -1,5 +1,5 @@
 {
-"result":false, 
+"result":true, 
 "ErrorBlock":"#standart-form__error",
-"ErrorText":"тут текст ошибки"
+"ErrorText":"Неправильно введено слово с картинки"
 }
