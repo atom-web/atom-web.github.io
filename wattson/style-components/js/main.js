@@ -146,7 +146,9 @@ if ($('.lk-sidebar, .sidebar-accordion').length) {
 
 
 // Form-styler _________________________________
-$('.estimate__select').styler(); //Активация form-styler
+if ($('.estimate__select').length) {
+    $('.estimate__select').styler(); //Активация form-styler
+}
 
 
 
