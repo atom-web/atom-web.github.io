@@ -258,56 +258,62 @@ if ($('.lk-content__info-select').length) {
         $('.add-region__remove').removeClass('remove-vis');
     }
  };
+
+
+//Функция получения данных регионов с json
+function getFileSity(fileName){
+    let  request = new XMLHttpRequest();
+    request.open('GET', fileName, false);
+    request.send(null);
+    return  JSON.parse(request.responseText);
+}
+let sityData = getFileSity('http://atom-web.github.io/wattson/style-components/sity.json');
+console.log(sityData);
+
  //Функция добавления регионов работы
- var regionAjax = function(){
-     if ($('.add-region').length) {
-        $.ajax({
-            url: 'http://atom-web.github.io/wattson/style-components/sity.json',
-            success: function(data){
+var regionAjax = function(){
+    if ($('.add-region').length) {
+        if ($('.add-region__select option').text().length > 0) {
+            //Загрузка после нажатия на "добавить регион"
+            if ($('.add-region__item').find('.add-region__select-city').length) { //Если нет input-а города, то и при добавлении региона, город не будет показываться
+                $('.add-region__items').append('<div class="add-region__item"><select class="add-region__select"></select><select class="add-region__select-city"></select></div>');
+            } else {
+                $('.add-region__items').append('<div class="add-region__item"><select class="add-region__select"></select></div>');
+            }
+            
+            $('.add-region__item:last-child select.add-region__select, .add-region__item:last-child select.add-region__select-city').append('<option></option>'); //Добавление прейсхолдера в города при клике на "Добавить регион"
+            
+            $(sityData.locat).each(function(r, d){ //Добавление регионов при клике на "Добавить регион"
+                $('.add-region__item:last-child').find('select.add-region__select').append('<option value="' + d.id + '">' + d.region + '</option>');
+            });
+        } else {
+            //Первая загрузка страницы
+            $('select.add-region__select, select.add-region__select-city').append('<option></option>'); // Добавление прейсхолдера в город при первой загрузке
+            $(sityData.locat).each(function(r, d){ // Добавление регионов при первой загрузке
+                $('select.add-region__select').append('<option value="' + d.id + '">' + d.region + '</option>');
+            });
+        }  
+        $('.add-region__select').styler({selectPlaceholder: 'Выбрать регион',}); //Активация form-styler
+        $('.add-region__select-city').styler({selectPlaceholder: 'Выбрать город',}); //Активация form-styler
 
-                if ($('.add-region__select option').text().length > 0) {
-                    //Загрузка после нажатия на "добавить регион"
-                    if ($('.add-region__item').find('.add-region__select-city').length) { //Если нет input-а города, то и при добавлении региона, город не будет показываться
-                        $('.add-region__items').append('<div class="add-region__item"><select class="add-region__select"></select><select class="add-region__select-city"></select></div>');
-                    } else {
-                        $('.add-region__items').append('<div class="add-region__item"><select class="add-region__select"></select></div>');
-                    }
-                    
-                    $('.add-region__item:last-child select.add-region__select, .add-region__item:last-child select.add-region__select-city').append('<option></option>'); //Добавление прейсхолдера в города при клике на "Добавить регион"
-                    
-                    $(data.locat).each(function(r, d){ //Добавление регионов при клике на "Добавить регион"
-                        $('.add-region__item:last-child').find('select.add-region__select').append('<option value="' + d.id + '">' + d.region + '</option>');
-                    });
-                } else {
-                    //Первая загрузка страницы
-                    $('select.add-region__select, select.add-region__select-city').append('<option></option>'); // Добавление прейсхолдера в город при первой загрузке
-                    $(data.locat).each(function(r, d){ // Добавление регионов при первой загрузке
-                        $('select.add-region__select').append('<option value="' + d.id + '">' + d.region + '</option>');
-                    });
-                }  
-                $('.add-region__select').styler({selectPlaceholder: 'Выбрать регион',}); //Активация form-styler
-                $('.add-region__select-city').styler({selectPlaceholder: 'Выбрать город',}); //Активация form-styler
+        removeAjax();
 
-                removeAjax();
-
-                $('select.add-region__select').on('change', function() { //Событие при выборе селекта
-                    var cityVal = $(this).val(); //Переменная со значением селекта
-                    
-                    $('select.add-region__select').removeAttr('region-focus');
-                    $(this).attr('region-focus', '');
-                    $('select.add-region__select[region-focus]').closest('.add-region__item').find('select.add-region__select-city').html('');
-                    $(data.locat).each(function(i, e){
-                        if (cityVal == e.id) {
-                            $(e.city).each(function(x, y){
-                                $('select.add-region__select[region-focus]').closest('.add-region__item').find('select.add-region__select-city').append('<option>'+ y +'</option'); // Добавление списка городов при выборе селекта
-                                $('input, select').trigger('refresh'); // Динамическая загрузка form-styler при выборе селекта
-                            });
-                        }
+        $('select.add-region__select').on('change', function() { //Событие при выборе селекта
+            var cityVal = $(this).val(); //Переменная со значением селекта
+            
+            $('select.add-region__select').removeAttr('region-focus');
+            $(this).attr('region-focus', '');
+            $('select.add-region__select[region-focus]').closest('.add-region__item').find('select.add-region__select-city').html('');
+            $(sityData.locat).each(function(i, e){
+                if (cityVal == e.id) {
+                    $(e.city).each(function(x, y){
+                        $('select.add-region__select[region-focus]').closest('.add-region__item').find('select.add-region__select-city').append('<option>'+ y +'</option'); // Добавление списка городов при выборе селекта
+                        $('input, select').trigger('refresh'); // Динамическая загрузка form-styler при выборе селекта
                     });
-                 });
-            },
-        });
-    };
+                }
+            });
+         });
+    };    
 };
 regionAjax();
 $(".add-region").on("click", ".add-region__btn", regionAjax); // Динамическая загрузка функции regionAjax(); при клике на "Добавить регион"
