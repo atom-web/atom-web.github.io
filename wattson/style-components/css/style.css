@@ -3250,12 +3250,20 @@ iframe{
 .form-suc-active{
     display: flex;
 }
-.form-suc__txt{
+.form-suc__txt, 
+.suc__txt{
     margin-bottom: 30px;
 }
-.form-suc__txt-title{
+.form-suc__txt-title, 
+.suc__txt-title{
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 20px;
     font-family: "Raleway-sb";
+}
+#suc{
+    display: none;
+}
+.suc__form-suc{
+    max-width: 350px;
 }

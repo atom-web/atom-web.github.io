@@ -492,3 +492,12 @@ $('.check-content__wrap').submit(function(e) { //событие при отпр�
 
 
 
+//смена пароля
+$('.border-box button').click(function() {
+    $.ajax({
+    url: 'http://atom-web.github.io/wattson/style-components/num-tel.json', //ввел тестовый урл
+    success: function(data){
+        $.fancybox.open({src: '#suc'}); //открытие окна с вводом кода
+    },
+});
+});
