@@ -3036,8 +3036,20 @@ select.estimate__select{
 	justify-content: space-between;
 	margin-bottom: 25px;
 }
+.estimate__sum-add-work{
+    display: flex;
+    align-items: center;
+}
 .estimate__sum-add-work a{
 	margin-right: 30px;
+}
+.estimate__sum-btn{
+    display: flex;
+    align-items: center;
+}
+.estimate__sum-btn button{
+    margin-right: 30px;
+    margin-bottom: 0;
 }
 
 #work-overlay{
@@ -3266,4 +3278,7 @@ iframe{
 }
 .suc__form-suc{
     max-width: 350px;
+}
+#call-suc{
+    display: none;
 }
