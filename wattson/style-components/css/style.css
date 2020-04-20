@@ -3842,7 +3842,7 @@ iframe{
 }
 .cat-block__parent-wrap{
     border: 1px solid #DDDDDD;
-    padding: 135px 15px 15px 15px;
+    padding: 120px 15px 15px 15px;
     position: relative;
     display: flex;
     text-decoration: none;
@@ -3855,7 +3855,7 @@ iframe{
     top: -10px;
     right: -10px;
     width: 140px;
-    height: 140px;
+    height: 120px;
     transition: 0.2s;
 }
 .cat-block__parent-wrap:hover .cat-block__parent-img{
