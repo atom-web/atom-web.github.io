@@ -15,6 +15,27 @@ $('img[src$=".svg"]').each(function() {
     }, 'xml'); 
 });
 
+//Карусель в карточке товара
+ $('.card-poduct__img').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.card-poduct__img-nav',
+  
+});
+$('.card-poduct__img-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.card-poduct__img',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+  dots: false,
+  arrows: false,
+  centerPadding: '5px',
+});
+
 
 // Присваивание города в попап окно "popup-locat__select-city"
 var locPopup = $('.popup-locat__select-city'); //место вставки города

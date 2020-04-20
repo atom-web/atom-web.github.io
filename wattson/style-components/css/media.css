@@ -553,6 +553,9 @@
 
 }
 @media (max-width: 767px){
+	.card-poduct__carousel{
+		margin-bottom: 40px;
+	}
 	.lk-content__info-item iframe{
 	    height: 300px;
 	}
