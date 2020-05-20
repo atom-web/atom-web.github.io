@@ -1729,6 +1729,43 @@ footer p{
 
 
 
+.col1__table{
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+}
+.col1__table td {
+  width: 100%;
+}
+.col1__table th{
+    border: none;
+    vertical-align: top;
+    padding: 15px 0px;
+    text-align: left;
+}
+.col1__table td{
+    padding: 8px 0;
+    vertical-align: top;
+    font-size: 14px;
+}
+.col1__table tbody tr td{
+    padding-right: 10px;
+}
+.col1__table tbody tr:last-child td{
+    border-bottom: 0;
+}
+.col1__table tbody tr td:first-child{
+    font-size: 16px;
+}
+.col1__table-wrap{
+    padding: 0 15px;
+}
+
+
+
+
 
 
 
@@ -2013,6 +2050,10 @@ footer p{
 }
 .col1__info{
     margin-bottom: 35px;
+}
+.col1__info-wrap{
+    display: flex;
+    justify-content: space-between;
 }
 .col1__item-title{
     font-family: "Raleway-b";
@@ -3056,7 +3097,7 @@ footer p{
     color: #009a2b;
 }
 .sidebar-accordion__filter-link{
-    margin: 7px -10px;
+    margin: 5px -10px 0px;
     padding: 0 10px 5px;
     border-bottom: 1px solid #DDDDDD;
 }
@@ -3089,18 +3130,25 @@ footer p{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 15px;
-    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    cursor: pointer;
 }
 .sidebar-accordion__filter-form-title p{
     font-size: 14px;
     color: #4F4F4F;
-}
-.sidebar-accordion__filter-form-title p{
     margin-bottom: 0;
+    transition: 0.2s;
+}
+.sidebar-accordion__filter-form-title:hover p{
+    color: #009a2b;
 }
 .sidebar-accordion__filter-form-cont{
     margin-bottom: 25px;
+    display: none;
+}
+.ac-active .sidebar-accordion__filter-form-cont{
+    display: block;
 }
 .sidebar-accordion__filter-form-title:after{
     content: "";
@@ -3109,6 +3157,10 @@ footer p{
     background-repeat: no-repeat;
     width: 11px;
     height: 11px;
+    transition: 0.2s;
+}
+.ac-active .sidebar-accordion__filter-form-title:after{
+    transform: rotate(90deg);А
 }
 .sidebar-accordion__filter-form-item{
     margin-bottom: 0;

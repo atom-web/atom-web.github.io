@@ -69,6 +69,16 @@ if ($('.accordion').length) {
     });
 }
 
+//Аккордеон В "Сортировка и фильтр"
+$('.sidebar-accordion__filter-form-item').click(function(){
+    if ($(this).hasClass('ac-active')) {
+        $(this).removeClass('ac-active');
+    } else {
+        $(this).addClass('ac-active');
+    }
+    
+});
+
 // Прилипающий сайдбар
 if ($('.lk-sidebar, .sidebar-accordion').length) {
     if ($(window).width() > 991) {
@@ -289,7 +299,6 @@ function getFileSity(fileName){
     return  JSON.parse(request.responseText);
 }
 let sityData = getFileSity('http://atom-web.github.io/wattson/style-components/sity.json');
-console.log(sityData);
 
  //Функция добавления регионов работы
 var regionAjax = function(){
@@ -415,13 +424,15 @@ $('.sidebar-accordion__filter-remove').click(function() {
 //Смена блоков плитка/список
 $('.list__box-control>div').click(function() {
     $('.list__box-control>div').removeClass('control-active');
-   $(this).addClass('control-active');
+    $(this).addClass('control-active');
 
-   if ($(this).attr('control') == 'list') {
-    $('.list').removeClass('block');
-   } else {
-     $('.list').addClass('block');
-   }
+    if ($(this).attr('control') == 'list') {
+        $('.list').removeClass('block');
+        $('.col1-check').addClass('col1-list');
+    } else {
+        $('.list').addClass('block');
+        $('.col1-check').removeClass('col1-list');
+    }
 });
 
 
@@ -438,8 +449,6 @@ if ($('.work-overlay__control').length) {
         });
     });
 }
-
-
 
 
 if ($('#related-stick').length) {
@@ -486,7 +495,6 @@ $('.standart-form__check-btn').click(function(e) {
             // type: 'POST',
             // data: {},
             success: function(data){
-                // console.log(data.result);
                 if (data.result == true) { //если код был отправлен пользователю
                     $.fancybox.open({src: '#check-content'}); //открытие окна с вводом кода
                 } else {
