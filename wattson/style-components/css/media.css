@@ -282,7 +282,65 @@
 		padding-top: 0;
 		padding: 10px 0;
 	}
+	.col1__table tbody{
+	    
+	}
+	.col1__table tbody tr{
+	    
+	}
+	.col1__table-question-wrap{
+		display: none;
+	}
+	.col1__table thead{
+	    display: none;
+	}
+	.col1__table tbody{
+	    display: flex;
+	    flex-wrap: wrap;
+	    margin: 0px -15px;
+	}
+	.col1__table tbody tr{
+	    width: 50%;
+	    display: flex;
+	    flex-direction: column;
+	    outline: 2px solid #eaeaea;
+	    outline-offset: -15px;
+	    padding: 30px;
+	}
+	.col1__table tbody tr td{
+	    border: none;
+	    padding: 0 0 15px 0;
+	}
+	.col1__list-hidden{
+	    display: block;
+	    text-transform: uppercase;
+	    font-size: 16px;
+	    font-family: "Raleway-b";
+	}
 
+	.col1__waybill-item thead{
+	    display: none;
+	}
+	.col1__waybill-item tbody{
+	    display: flex;
+	    flex-wrap: wrap;
+	    margin: 0px -15px;
+	}
+	.col1__waybill-item tbody tr{
+	    width: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    outline: 2px solid #eaeaea;
+	    outline-offset: -15px;
+	    padding: 30px;
+	}
+	.col1__waybill-item tbody tr td{
+	    border: none;
+	    padding: 0 0 15px 0;
+	}
+	.col1__waybill-item{
+		width: 100%;
+	}
 
 
 	/*стили для промо страниц__________________________*/
@@ -780,6 +838,9 @@
 	}
 	.table-status tbody tr, 
 	.table tbody tr{
+		width: 100%;
+	}
+	.col1__table tbody tr{
 		width: 100%;
 	}
 }

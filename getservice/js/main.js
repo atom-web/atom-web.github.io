@@ -75,3 +75,43 @@ $('.btn-popup').click(function(){
 		$('.popup-callback').removeClass('popup-callback-active');
 	});
 });
+
+
+
+function createObject() {
+var request_type;
+var browser = navigator.appName;
+if(browser == "Microsoft Internet Explorer"){
+request_type = new ActiveXObject("Microsoft.XMLHTTP");
+}else{
+request_type = new XMLHttpRequest();
+}
+return request_type;
+}
+
+var http = createObject();
+
+function rad_trackname(){
+    http.open('get', 'http://online.radiorecord.ru:8102/dub_128');
+    http.onreadystatechange = ServerReply;
+    http.send(null);
+}
+
+function ServerReply() {
+    if(http.readyState == 4){ 
+      console.log('1')
+        var response = http.responseText;
+        if(response == ''){
+            document.getElementById('track_name').innerHTML = 'Datas not found';
+             console.log('1')
+        } else {
+            document.getElementById('track_name').innerHTML = response;
+            console.log(response)
+        }
+    }
+}
+
+
+
+
+

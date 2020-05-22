@@ -1734,24 +1734,25 @@ footer p{
     border-collapse: collapse;
     width: 100%;
     max-width: 100%;
-    table-layout: fixed;
+    margin-bottom: 50px;
 }
-.col1__table td {
-  width: 100%;
+.col1__table p{
+    margin-bottom: 0;
 }
 .col1__table th{
     border: none;
     vertical-align: top;
-    padding: 15px 0px;
+    padding: 0 0 15px 0px;
     text-align: left;
 }
 .col1__table td{
-    padding: 8px 0;
-    vertical-align: top;
+    padding: 15px 0;
+    /*vertical-align: top;*/
     font-size: 14px;
 }
 .col1__table tbody tr td{
     padding-right: 10px;
+    border-top: 1px solid #E5E5E5;
 }
 .col1__table tbody tr:last-child td{
     border-bottom: 0;
@@ -1762,6 +1763,151 @@ footer p{
 .col1__table-wrap{
     padding: 0 15px;
 }
+.col1__table-order{
+    display: flex;
+    flex-direction: column;
+}
+.col1__table-order p{
+    text-decoration: underline;
+}
+.col1__table-order span{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Raleway-b";
+}
+.col1__table thead tr th:nth-child(1){
+    width: 25%;
+}
+.col1__table thead tr th:nth-child(2){
+    width: 20%;
+}
+.col1__table thead tr th:nth-child(3){
+    width: 15%;
+}
+.col1__table thead tr th:nth-child(4){
+    width: 15%;
+}
+.col1__table thead tr th:nth-child(5){
+    width: 15%;
+}
+.col1__table thead tr th:nth-child(6){
+    width: 10%;
+}
+
+.col1__table-buy{
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+}
+.col1__table-waybill-btn{
+    margin-bottom: 7px;
+    display: block;
+    text-align: center;
+}
+.col1__list-hidden{
+    display: none;
+}
+.col1-block .col1__table thead{
+    display: none;
+}
+.col1-block .col1__table tbody{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+.col1-block .col1__table tbody tr{
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid #eaeaea;
+    outline-offset: -15px;
+    padding: 30px;
+}
+.col1-block .col1__table tbody tr td{
+    border: none;
+    padding: 0 0 15px 0;
+}
+.col1__table-wrap{
+    width: 100%;
+}
+.col1-block .col1__list-hidden{
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Raleway-b";
+}
+.col1-block .col1__table-order span, 
+.col1-block .col1__list-hidden{
+    margin-bottom: 3px;
+}
+.col1__waybill{
+    display: none;
+}
+.col1__waybill-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #009028;
+    font-family: "Raleway-b";
+}
+.col1__waybill-item{
+    border: none;
+    border-collapse: collapse;
+    width: 850px;
+}
+.col1__waybill-num p{
+    text-decoration: underline;
+}
+.col1__waybill-item thead th{
+    padding: 15px 0;
+}
+.col1__waybill-item tbody td{
+    border-top: 1px solid #E5E5E5;
+    padding: 9px 0;
+}
+.col1__waybill-item tbody td a{
+    margin-bottom: 0;
+}
+.col1__waybill-item th:nth-child(1){
+    width: 20%;
+}
+.col1__waybill-item th:nth-child(2){
+    width: 15%;
+}
+.col1__waybill-item th:nth-child(3){
+    width: 12%;
+}
+.col1__waybill-item th:nth-child(4){
+    width: 20%;
+}
+.col1__waybill-item th:nth-child(5){
+    width: 15%;
+}
+.col1__waybill-item th:nth-child(6){
+    width: 18%;
+}
+.col1__table-question{
+    position: relative;
+}
+.col1__table-question .selection-question{
+    background: #000;
+}
+.col1__table-question .selection-question p{
+    color: #fff;
+    font-family: "Raleway-r";
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.col1__table-debt-green{
+    color: #009028;
+}
+.col1__table-debt-orange{
+    color: #F0BB00;
+}
+.col1__table-debt-red{
+    color: #B85450;
+}
+
+
 
 
 

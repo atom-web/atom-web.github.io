@@ -429,8 +429,10 @@ $('.list__box-control>div').click(function() {
     if ($(this).attr('control') == 'list') {
         $('.list').removeClass('block');
         $('.col1-check').addClass('col1-list');
+        $('.col1-check').removeClass('col1-block');
     } else {
         $('.list').addClass('block');
+        $('.col1-check').addClass('col1-block');
         $('.col1-check').removeClass('col1-list');
     }
 });
