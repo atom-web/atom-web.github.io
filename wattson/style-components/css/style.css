@@ -1890,6 +1890,8 @@ footer p{
 }
 .col1__table-question .selection-question{
     background: #000;
+    right: 0;
+    width: 200px;
 }
 .col1__table-question .selection-question p{
     color: #fff;
