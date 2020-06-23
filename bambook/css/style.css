@@ -1121,3 +1121,24 @@ nav a:hover{
 .calculator__item-remove:hover:before{
     transform: rotate(135deg);
 }
+.cont-404{
+	height: calc(100vh - 350px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cont-404 h1{
+	text-align: center;
+	font-size: 80px;
+	margin-bottom: 50px;
+	color: #e49791;
+}
+.cont-404 h2{
+	text-align: center;
+	font-size: 35px;
+	color: #e49791;
+}
+.title-404-span{
+	font-size: 175px;
+	color: #d5574c;
+}

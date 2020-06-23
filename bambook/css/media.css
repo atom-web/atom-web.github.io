@@ -63,7 +63,16 @@
 	}
 }
 @media (max-width: 991px){
-
+	.cont-404 h1{
+		font-size: 40px;
+		margin-bottom: auto;
+	}
+	.title-404-span{
+		font-size: 70px;
+	}
+	.cont-404 h2{
+		font-size: 14px;
+	}
 	.main-preview__img{
 		display: none;
 	}
@@ -155,6 +164,16 @@
 	}
 }
 @media (max-width: 767px){
+	.cont-404 h1{
+		font-size: 25px;
+		margin-bottom: auto;
+	}
+	.title-404-span{
+		font-size: 25px;
+	}
+	.cont-404 h2{
+		font-size: 14px;
+	}
 	.txt-grad,
 	.txt-white{
 		text-align: center;

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevenee Travel</title>
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/css/fontawesome-all.css">
+    <link rel="stylesheet" href="/css/jquery.formstyler.css">
+    <link rel="stylesheet" href="/css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="head__top">
+            <div class="container">
+                <div class="row">
+                    <div class="head__top-item col-md-2 col-12">
+                        <a class="head__top-logo" href="/">
+                            <img class="head__top-logo-icon" src="/img/svg/logo-header.svg" alt="Логотип">
+                        </a>
+                    </div>
+                    <div class="head__top-item col-md-7">
+                        <form class="head__top-search">
+                            <input type="search">
+                            <button>Поиск</button>
+                        </form>
+                    </div>
+                    <div class="head__top-item head__top-lk col-md-3">
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                            <span>Личный кабинет</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="head__bottom">
+           <div class="container">
+               <div class="row">
+                    <div class="head__bottom-nav col-lg-9 col-md-8 col-4">
+                        <div class="nav">
+                            <a class="nav-open" href="#">
+                                <i class="fas fa-bars"></i>
+                                <span>Все категории</span>
+                            </a>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Категория</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <a class="nav-additions" href="#">Интересные места</a>
+                        <a class="nav-additions" href="#">Погода</a>
+                        <a class="nav-additions" href="#">Дополнительная информация</a>
+                    </div>
+                    <div class="head__bottom-feat col-lg-3 col-md-4 col-8">
+                        <a href="#" class="head__bottom-feat-lnk">
+                            <i class="far fa-heart"></i>
+                            <span>Рейтинг</span>
+                        </a>
+                        <a href="#" class="head__bottom-feat-lnk">
+                            <i class="far fa-question-circle"></i>
+                            <span>О нас</span>
+                        </a>
+                    </div>
+               </div>
+           </div> 
+        </div>
+    </header>
+    <div class="main-prew">
+        <img class="main-prew__bg" src="/img/main-bg-min.jpg" alt="Помощь в поиске приятных мест">
+        <div class="container main-prew__items">
+            <div class="main-prew__info">
+                <h1 class="main-prew__info-title">Отдых в палатке или на рыбалке</h1>
+                <h2 class="main-prew__info-desc">Помощь в поиске приятных мест для отдыа и рыбалки.</h2>
+            </div>
+            <div class="main-prew__feat row">
+                <div class="main-prew__feat-left col-md-6" >
+                    <a href="#" class="main-prew__feat-left-wrap">
+                        <div class="main-prew__feat-left-info">
+                            <h3>Полезные приложения для путешествий</h3>
+                            <h4>Посмотрите какими приложениями пользуются путешественники и рыболовы в поездках</h4>
+                        </div>
+                        <img class="main-prew__feat-left-icon" src="/img/svg/smartphone.svg" alt="Полезные приложения">
+                    </a>
+                </div>
+                <div class="main-prew__feat-right col-md-6" >
+                    <a href="#" class="main-prew__feat-right-wrap">
+                        <div class="main-prew__feat-right-info">
+                            <h3>Популярные направления для отдыха</h3>
+                            <h4>Самые популярные места для поездок, которые выбирают путешественники и рыболовы.</h4>
+                        </div>
+                        <img class="main-prew__feat-right-icon" src="/img/svg/hot-air-balloon.svg" alt="Популярные направления">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="sidebar col-lg-3 col-md-4">
+                    <h3 class="sidebar__title">Фильтр</h3>
+                    <form class="sidebar__wrap">
+                        <div class="sidebar__city">
+                            <span class="sidebar__city-title">Город</span>
+                            <select>
+                                <option selected>Тульская обл.</option>
+                                <option>Орловская обл.</option>
+                            </select>
+                        </div>
+                        <div class="sidebar__item">
+                            <span class="sidebar__item-title">Цель</span>
+                            <div class="sidebar__item-check">
+                                <input type="checkbox" id="target" name="target">
+                                <label for="target">Рыбалка</label>
+                            </div>
+                            <div class="sidebar__item-check">
+                                <input type="checkbox" id="target2" name="target">
+                                <label for="target2">Кемпинг</label>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <span class="sidebar__item-title">Водоем</span>
+                            <div class="sidebar__item-check">
+                                <input type="checkbox" id="water" name="water">
+                                <label for="water">Пруд</label>
+                            </div>
+                            <div class="sidebar__item-check">
+                                <input type="checkbox" id="water2" name="water">
+                                <label for="water2">Река</label>
+                            </div>
+                        </div>
+                        <div class="sidebar__distance">
+                            <span class="sidebar__distance-title">Расстояние</span>
+                            <div class="sidebar__distance-range">
+                                <input type="range" min="1" max="150" class="range-size" oninput="sizeDistance()" value="75">
+                            </div>
+                            <p class="sidebar__distance-val">радиус: <span></span> км</p>
+                        </div>
+                        <p class="inp"></p>
+                    </form>
+                </div>
+                <div class="content col-lg-9 col-md-8 ">
+                 <h3 class="content__title">Места для отдыха и рыбалки</h3>   
+                    <div class="row">
+                        <div class="content__item col-lg-4 col-md-6">
+                            <a href="#" class="content__item-wrap">
+                                <div class="content__item-img">
+                                    <img src="/img/content.jpg" alt="Места для отдыха">
+                                </div>
+                                <p class="content__item-title">Сергеевский пруд</p>
+                                <div class="content__item-desc">
+                                    <p>Кемпинг, Рыбалка</p>
+                                    <p>98 км. от Тулы</p>
+                                    <p>Пруд</p>
+                                    <p>Подъезд: Средний</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="content__item col-lg-4 col-md-6">
+                            <a href="#" class="content__item-wrap">
+                                <div class="content__item-img">
+                                    <img src="/img/content.jpg" alt="Места для отдыха">
+                                </div>
+                                <p class="content__item-title">Сергеевский пруд</p>
+                                <div class="content__item-desc">
+                                    <p>Кемпинг, Рыбалка</p>
+                                    <p>98 км. от Тулы</p>
+                                    <p>Пруд</p>
+                                    <p>Подъезд: Средний</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="content__item col-lg-4 col-md-6">
+                            <a href="#" class="content__item-wrap">
+                                <div class="content__item-img">
+                                    <img src="/img/content.jpg" alt="Места для отдыха">
+                                </div>
+                                <p class="content__item-title">Сергеевский пруд</p>
+                                <div class="content__item-desc">
+                                    <p>Кемпинг, Рыбалка</p>
+                                    <p>98 км. от Тулы</p>
+                                    <p>Пруд</p>
+                                    <p>Подъезд: Средний</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="content__item col-lg-4 col-md-6">
+                            <a href="#" class="content__item-wrap">
+                                <div class="content__item-img">
+                                    <img src="/img/content.jpg" alt="Места для отдыха">
+                                </div>
+                                <p class="content__item-title">Сергеевский пруд</p>
+                                <div class="content__item-desc">
+                                    <p>Кемпинг, Рыбалка</p>
+                                    <p>98 км. от Тулы</p>
+                                    <p>Пруд</p>
+                                    <p>Подъезд: Средний</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer__info col-md-5">
+                    <div class="footer__logo">
+                        <img src="/img/logo-header.png" alt="Логотип">
+                        <p>Просто и удобно искать интересные для вас места</p>
+                    </div>
+                    <p class="copyright">Copyright © 2020 Sevenee</p>
+                </div>
+                <div class="footer__nav col-md-3">
+                    <p class="footer__nav-title">Информация</p>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Как заказать и оплатить</a></li>
+                            <li><a href="#">Проект и монтаж</a></li>
+                            <li><a href="#">Ремонт и сервис</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Бонусы за покупки</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__ask col-md-4">
+                    <p class="footer__ask-title">Задать вопрос</p>
+                    <p class="footer__ask-desc">Вы можете задать интересующий вас вопрос, нажав на кнопку ниже</p>
+                    <a class="footer__ask-btn" href="#">Задать вопрос</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/plugins/jq.min.js"></script>
+    <script src="/js/plugins/jquery.fancybox.min.js"></script>
+    <script src="/js/plugins/jquery.mask.min.js"></script>
+    <script src="/js/plugins/jquery.formstyler.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
