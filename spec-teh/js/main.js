@@ -23,6 +23,26 @@ $('.cat-slider__init').slick({
     autoplay: true,
     dots: true, 
     customPaging: (function(slider, i) {return '<div class="slider-slick-dot"></div>';}),
+    responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: false
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
+        },
+    ]
 });
 
 
@@ -34,6 +54,17 @@ $('.technics__slider-init').slick({
     autoplay: true,
     dots: true, 
     customPaging: (function(slider, i) {return '<div class="slider-slick-dot"></div>';}),
+    responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: false
+            }
+        },
+    ]
 });
 
 
@@ -58,4 +89,9 @@ $('.note__slider-dot').slick({
 $('.note-spec__btn').click(function() {
     var name = $('.prew-page').find('h1').html();
     $('.call-back-buy__tech').val(name);
+});
+
+//открытие мобильного меню
+$('.header__burger').click(function() {
+   $('.header__nav').toggleClass('nav-active');
 });

@@ -24,7 +24,7 @@
                         <a class="header__info-tel" href="tel:8 (920) 270-95-98">8 (920) 270-95-98</a>
                     </div>
                 </div>
-                <div class="header__item">
+                <div class="header__item header__nav">
                     <nav>
                         <a href="/">Главная</a>
                         <a href="#">Аренда техники</a>
@@ -35,6 +35,7 @@
                         <a data-fancybox data-src="#call-back" href="javascript:;">Заказать</a>
                     </div>
                 </div>
+                <div class="header__burger"></div>
             </div>
         </div>
     </header>
@@ -48,39 +49,49 @@
     <div class="note">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 note__slider-wrap">
                     <div class="note__slider">
                         <div class="note__slider-item">
-                            <img src="img/image25.jpg" alt="">
+                            <a href="img/note-bg.jpg" data-fancybox="gallery" data-caption="Фото техники">
+                                <img src="img/note-bg.jpg" alt="">
+                            </a>
+                        </div>
+                       <div class="note__slider-item">
+                            <a href="img/note-bg-2.jpg" data-fancybox="gallery" data-caption="Фото техники">
+                                <img src="img/note-bg.jpg" alt="">
+                            </a>
                         </div>
                         <div class="note__slider-item">
-                            <img src="img/image25.jpg" alt="">
+                            <a href="img/note-bg-3.jpg" data-fancybox="gallery" data-caption="Фото техники">
+                                <img src="img/note-bg-3.jpg" alt="">
+                            </a>
                         </div>
                         <div class="note__slider-item">
-                            <img src="img/image25.jpg" alt="">
+                            <a href="img/note-bg-4.jpg" data-fancybox="gallery" data-caption="Фото техники">
+                                <img src="img/note-bg-4.jpg" alt="">
+                            </a>
                         </div>
                         <div class="note__slider-item">
-                            <img src="img/image25.jpg" alt="">
-                        </div>
-                        <div class="note__slider-item">
-                            <img src="img/image25.jpg" alt="">
+                            <a href="img/note-bg-5.jpg" data-fancybox="gallery" data-caption="Фото техники">
+                                <img src="img/note-bg-5.jpg" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="note__slider-dot">
                         <div class="note__slider-dot-item">
-                            <img src="img/image25.jpg" alt="">
+                            <img src="img/note-bg.jpg" alt="">
                         </div>
                         <div class="note__slider-dot-item">
-                            <img src="img/image25.jpg" alt="">
+                            <img src="img/note-bg-2.jpg" alt="">
                         </div>
                         <div class="note__slider-dot-item">
-                            <img src="img/image25.jpg" alt="">
+                            <img src="img/note-bg-3.jpg" alt="">
                         </div>
                         <div class="note__slider-dot-item">
-                            <img src="img/image25.jpg" alt="">
+                            <img src="img/note-bg-4.jpg" alt="">
                         </div>
                         <div class="note__slider-dot-item">
-                            <img src="img/image25.jpg" alt="">
+                            <img src="img/note-bg-5.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -127,12 +138,12 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-12">
                     <a href="#" class="footer__logo">
                         <img src="img/logo.png" alt="">
                     </a>
                 </div>
-                <div class="col-md-5">
+                <div class="col-lg-5 col-md-12 footer__info-wrap">
                     <div class="footer__info">
                         <div class="footer__info-icon-wrap">
                             <img class="footer__info-icon" src="img/svg/location.svg" alt="">
@@ -140,7 +151,7 @@
                         <p>141441, Московская область, Солнечногорский район, деревня Елино, территория Промышленная зона, владение 1, строение № 1</p>
                     </div>
                 </div>
-                <div class="footer_contacts col-md-3">
+                <div class="footer_contacts col-lg-3 col-md-12">
                     <div class="footer_contacts-tel">
                         <div class="footer_contacts-tel-num">
                             <div class="footer_contacts-tel-icon">
@@ -157,7 +168,7 @@
                         <a href="mailto:support@support.ru">support@support.ru</a>
                     </div>
                 </div>
-                <div class="footer__lnk-popup col-md-2">
+                <div class="footer__lnk-popup col-lg-2 col-md-12">
                     <a data-fancybox data-src="#call-back" href="javascript:;">Заказать</a>
                 </div>
             </div>
@@ -189,7 +200,7 @@
                 <input type="email">
             </div>
             <div class="call-back-buy__info">
-                <span>Выбранная техника</span>
+                <span>Выбранна техника</span>
                 <input type="text" class="call-back-buy__tech" readonly disabled>
             </div>
             <button class="call-back-buy__form-btn">Отправить</button>
