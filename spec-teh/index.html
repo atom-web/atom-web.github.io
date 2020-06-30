@@ -32,7 +32,7 @@
                         <a href="#">О Компании</a>
                     </nav>
                     <div class="header__order">
-                        <a href="#">Заказать</a>
+                        <a data-fancybox data-src="#call-back" href="javascript:;">Заказать</a>
                     </div>
                 </div>
             </div>
@@ -292,10 +292,57 @@
     </div>
     <footer>
         <div class="container">
-            
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="#" class="footer__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer__info">
+                        <div class="footer__info-icon-wrap">
+                            <img class="footer__info-icon" src="img/svg/location.svg" alt="">
+                        </div>
+                        <p>141441, Московская область, Солнечногорский район, деревня Елино, территория Промышленная зона, владение 1, строение № 1</p>
+                    </div>
+                </div>
+                <div class="footer_contacts col-md-3">
+                    <div class="footer_contacts-tel">
+                        <div class="footer_contacts-tel-num">
+                            <div class="footer_contacts-tel-icon">
+                                <img src="img/svg/phone.svg" alt="">
+                            </div>
+                            <a href="tel:+79202749598">+7 (920) 274 95-98</a>
+                        </div>
+                        <span>Ежедневно с 9:00 до 18:00</span>
+                    </div>
+                    <div class="footer_contacts-mail">
+                        <div class="footer_contacts-mail-icon">
+                            <img src="img/svg/mail.svg" alt="">
+                        </div>
+                        <a href="mailto:support@support.ru">support@support.ru</a>
+                    </div>
+                </div>
+                <div class="footer__lnk-popup col-md-2">
+                    <a data-fancybox data-src="#call-back" href="javascript:;">Заказать</a>
+                </div>
+            </div>
         </div>
     </footer>
-
+    <div id="call-back">
+        <form action="#" class="call-back__form">
+            <p class="call-back__form-title">Заявка на обратный звонок</p>
+            <div class="call-back__form-inp">
+                <span>Ваше имя</span>
+                <input type="name">
+            </div>
+            <div class="call-back__form-inp">
+                <span>Ваш Email</span>
+                <input type="email">
+            </div>
+            <button class="call-back__form-btn">Отправить</button>
+        </form>
+    </div>
 
     <script src="js/plugins/jq.min.js"></script>
     <script src="js/plugins/jquery.fancybox.min.js"></script>

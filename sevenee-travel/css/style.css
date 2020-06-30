@@ -425,7 +425,7 @@ svg.main-prew__feat-right-icon{
     right: 2px;
 }
 .sidebar__item-check input:focus + label:after {
-	background: #FFCF90;
+	/* background: #FFCF90; */
 }
 .sidebar__distance-val, 
 .sidebar__distance-val span{
@@ -470,6 +470,8 @@ svg.main-prew__feat-right-icon{
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    position: relative;
+    z-index: 2;
 }
 
 .sidebar__distance-range input:hover {
