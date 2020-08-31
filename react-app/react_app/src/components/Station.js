@@ -1,5 +1,6 @@
 import React from 'react';
 import Player from './Player'
+import dataJson from "../mass.json"
 
 function Templated(props) {
   return (
@@ -16,14 +17,15 @@ function Templated(props) {
   )
 }
 class TemplateClass extends React.Component{
-
+  
   state = {
     arrTemp: [
-      { key: '1',name: 'DFM', img: 'https://redlabels.ru/wp-content/uploads/2019/04/main-logo-2419c1.png', wawe: 'https://dfm.hostingradio.ru/dfm96.aacp', desc: 'Club' },
-      { key: '2', name: 'Радио Record', img: 'https://redlabels.ru/wp-content/uploads/2019/04/record.jpg', wawe: 'http://air.radiorecord.ru:8102/club_320', desc: 'Club' }
+      dataJson
+      // { key: '1',name: 'DFM', img: 'https://redlabels.ru/wp-content/uploads/2019/04/main-logo-2419c1.png', wawe: 'https://dfm.hostingradio.ru/dfm96.aacp', desc: 'Club' },
+      // { key: '2', name: 'Радио Record', img: 'https://redlabels.ru/wp-content/uploads/2019/04/record.jpg', wawe: 'http://air.radiorecord.ru:8102/club_320', desc: 'Club' }
     ]
   }
-
+  
 
   render() {
     return (

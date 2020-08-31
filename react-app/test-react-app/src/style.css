@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding-top: 50px;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.form{
+    max-width: 500px;
+    border: 1px solid #efefef;
+    padding: 40px;
+    border-radius: 4px;
+}
+.form__calc input{
+    height: 40px;
+    padding: 0 15px;
+    outline: none;
+    border: 1px solid #d8d8d8;
+    width: 100%;
+    color: #000;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+input[type="button"]{
+    cursor: pointer;
+    background: #0075ff;
+    color: #fff;
+    transition: 0.2s;
+}
+input[type="button"]:hover{
+    background: #0052b3;
+}
+.form__title{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 800;
+    color: #0075ff;
+}
+.form__desc{
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #6b6b6b;
+}
+.form__calc{
+    display: flex;
+    flex-direction: column;
+}
+.form__result{
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #0075ff;
+}
+.radio-wrap{
+    margin-bottom: 20px;
+}
+.radio label{
+    display: flex;
+    align-items: center;
+}
+.radio input{
+    margin-bottom: 0;
+    width: auto;
+    margin-right: 15px;
+}
+.check-wrap{
+    margin-bottom: 15px;
+}
+.check-wrap select{
+    height: 40px;
+    padding: 0 12px;
+    box-sizing: content-box;
+    color: #717171;
+    border: 1px solid #d8d8d8;
+    font-size: 14px;
+    outline: none;
+}

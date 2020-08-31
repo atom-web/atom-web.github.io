@@ -22,8 +22,8 @@ function App() {
                     </div>
                     <nav className="link-nav">
                         <Link to="/">Радио</Link>
-                        <Link to="/about">Тест</Link>
-                        <Link to="/users">Тест</Link>
+                        <Link to="/about">About</Link>
+                        <Link to="/users">Users</Link>
                     </nav>
                 </div>
             </div>
